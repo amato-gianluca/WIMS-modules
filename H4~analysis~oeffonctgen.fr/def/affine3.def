@@ -1,0 +1,117 @@
+!set title=Ensemble de définition d'une fonction affine
+!if $wims_read_parm!=$empty
+ !goto $wims_read_parm
+!endif
+oef2wims_version=3.22
+author=Marie-Claude, David
+computeanswer=no
+title_it=Ensemble de définition d'une fonction affine
+
+ansorder=r
+varcnt=13
+prevarcnt=12
+postvarcnt=0
+replycnt=1
+choicecnt=0
+conditioncnt=0
+feedbackcnt=0
+format=html
+
+val1=$imagedir
+val2=$confparm1
+val3=$confparm2
+val4=$confparm3
+val5=$confparm4
+
+!if $testcondition=yes
+ !goto test
+!endif
+!if $status=waiting
+ !exit
+!endif
+
+!readproc slib/oef/env lang 
+tmp0=$slib_out
+val6=$(tmp0)
+tmp0=!randint 1, 3
+
+val7=$[rint($(tmp0))]
+tmp0=!randint -5, 5
+
+val8=$[rint($(tmp0))]
+val9=$[rint($val8*$val7)]
+tmp=!translate ";': to $     $ in $val7*x+$val9
+
+tmp=!lower $tmp
+tmp0=!exec maxima fullratsimp($tmp);
+val10=!rawmath $(tmp0)
+tmp0=!texmath $val10
+
+val11=$(tmp0)
+val12=$[rint(-$val8)]
+val13=65x40
+val14=\(\cap\),$val12,\(\cup\)
+tmp=!trim &#93;,-&#8734;,&#44;,+&#8734;,&#91;
+val15=!translate internal $	\
+$ to ;; in $tmp
+tmp0=!itemcnt $(val15[1;])
+
+val16=$(tmp0)+6
+val17=r3
+!if $val6=it 
+!endif
+replytype1=clickfill
+replyname1=
+replygood1=$val15;$val14
+question=__EXECUTED_1692754_EXERCISE__
+
+!goto stat
+
+!exit
+
+:question
+$()<p>	Soit 
+!insmath f
+$() une fonction de la variable réelle 
+!insmath x
+$() définie par 
+!insmath f(x) = $val10 
+$().<br/>	L'ensemble de définition de la fonction 
+!insmath f
+$() est </p>	<div class="wimscenter">  
+!read oef/embed.phtml r1,$val13 x $val16 
+$().</div>	<div class="wims_instruction">Remplir le champ avec ces	éléments en rangeant par ordre croissant les bornes des intervalles.	</div>
+$()
+!exit
+
+:hint
+$()
+$()
+!exit
+
+:help
+$()
+$()
+!exit
+
+:solution
+$()
+$()
+!exit
+
+:latex
+$()
+$()
+!exit
+
+:feedback
+
+!exit
+
+:test
+
+!exit
+
+:stat
+vsavelist=10,13,16
+embedcnt=1

@@ -1,0 +1,715 @@
+!set title=Comparaison et tableau des variations
+!if $wims_read_parm!=$empty
+ !goto $wims_read_parm
+!endif
+oef2wims_version=3.22
+author=Régine, Mangeard
+email=regine@mangeard.fr
+language=fr
+oefcss=<style> table.tab_var {margin-left:auto;margin-right:auto; border:solid 1px black;} table.tab_var tr, table.tab_var td, table.tab_var th { padding:7pt;margin-top:10px; margin-bottom:10px; text-align:center; border-collapse:collapse; min-width:10pt; } table.tab_var th { border:solid 1px black} table.tab_var tr { border:solid 1px black} </style> 
+title_it=Comparaison et tableau des variations
+
+ansorder=r,r,r
+varcnt=230
+prevarcnt=229
+postvarcnt=0
+replycnt=3
+choicecnt=0
+conditioncnt=0
+feedbackcnt=0
+format=html
+
+val1=$imagedir
+val2=$confparm1
+val3=$confparm2
+val4=$confparm3
+val5=$confparm4
+
+!if $testcondition=yes
+ !goto test
+!endif
+!if $status=waiting
+ !exit
+!endif
+
+!readproc slib/oef/env lang 
+tmp0=$slib_out
+val6=$(tmp0)
+val7=lightblue
+val8=\(<)
+val9=\(>)
+val10=inferieur à,supérieur à,on ne peut pas savoir
+val10=<,>,on ne peut pas savoir
+tmp=!trim \(\searrow),\(\nearrow),\(\searrow)	\(\nearrow),\(\searrow),\(\nearrow)
+val11=!translate internal $	\
+$ to ;; in $tmp
+val12=\(\nearrow),\(\searrow)
+val13=\(\nearrow),\(\searrow)
+tmp0=!randitem 1,2
+
+val14=$[rint($(tmp0))]
+tmp0=!randint 1, 4
+
+val15=$[rint($(tmp0))]
+
+!ifval $val14=1
+val16=$[rint(1)]
+!else
+val16=$[rint(2)]
+!endif
+
+!ifval $val14=1
+val17=$[rint(2)]
+!else
+val17=$[rint(1)]
+!endif
+
+!ifval $val14=1
+val18=1,2,1
+!else
+val18=2,1,2
+!endif
+val13=$(val11[$val14;])
+tmp0=!randint -10, 10
+
+val19=$[rint($(tmp0))]
+tmp0=!randint 1, 10
+
+val20=$[rint($val19+$(tmp0))]
+tmp0=!randint 1, 10
+
+val21=$[rint($val20+$(tmp0))]
+tmp0=!randint 1, 10
+
+val22=$[rint($val21+$(tmp0))]
+val23=$val19,$val20,$val21,$val22
+tmp0=!randint -10, 10
+
+val24=$[rint($(tmp0))]
+!if $val14=1 
+tmp0=!randint 1, 10
+
+val25=$[rint($val24-$(tmp0))]
+tmp0=!randint 1, 10
+
+val26=$[rint($val25+$(tmp0))]
+
+!ifval $val26=$val24
+val26=$[rint($val26+1)]
+!endif
+tmp0=!randint 1, 10
+
+val27=$[rint($val26-$(tmp0))]
+
+!ifval $val27=$val24
+val27=$[rint($val27-1)]
+!endif
+
+!ifval $val27=$val25
+val27=$[rint($val27-1)]
+!endif
+!else
+tmp0=!randint 1, 10
+
+val25=$[rint($val24+$(tmp0))]
+tmp0=!randint 1, 10
+
+val26=$[rint($val25-$(tmp0))]
+
+!ifval $val26=$val24
+val26=$[rint($val26-1)]
+!endif
+tmp0=!randint 1, 10
+
+val27=$[rint($val26+$(tmp0))]
+
+!ifval $val27=$val24
+val27=$[rint($val27+1)]
+!endif
+
+!ifval $val27=$val25
+val27=$[rint($val27+1)]
+!endif
+!endif
+val28=$val24,$val25,$val26,$val27
+tmp0=!shuffle 4
+
+val29=$(tmp0)
+val30=$[rint($(val28[$(val29[1])]))]
+val31=$[rint($(val23[$(val29[1])])-$(val28[$(val29[2])]))]
+val24=$[rint($val24+$val31)]
+val25=$[rint($val25+$val31)]
+val26=$[rint($val26+$val31)]
+val27=$[rint($val27+$val31)]
+val30=$[rint($val30+$val31)]
+!if $val14=1 
+val32=top,bottom,top,bottom
+!if $val15=1 
+val33=\(+\infty)
+val34=&#93;
+val24=$[rint(1000)]
+!else
+val33=$val24
+val34=&#91;
+!endif
+val35=$val25
+val36=$val26
+!if $val15=2 
+val37=\(-\infty)
+val38=&#91;
+val27=$[rint(-1000)]
+!else
+val37=$val27
+val38=&#93;
+!endif
+!else
+val32=bottom,top,bottom,top
+!if $val15=2 
+val33=\(-\infty)
+val34=&#93;
+val24=$[rint(-1000)]
+!else
+val33=$val24
+val34=&#91;
+!endif
+val36=$val26
+val35=$val25
+!if $val15=1 
+val37=\(+\infty)
+val38=&#91;
+val27=$[rint(1000)]
+!else
+val37=$val27
+val38=&#93;
+!endif
+!endif
+val39=$[$val19]
+tmp0=!randint $val19*10, $val20*9
+
+val40=$[$(tmp0)/10+0.1]
+
+!ifval $val40>=$val20
+val40=$[(($val19)+($val20))/2]
+!endif
+val41=$[$val20]
+tmp0=!randint $val20*10, $val21*9
+
+val42=$[$(tmp0)/10+0.1]
+
+!ifval $val42>=$val21
+val42=$[(($val20)+($val21))/2]
+!endif
+val43=$[$val21]
+tmp0=!randint $val21*10, $val22*9
+
+val44=$[$(tmp0)/10+0.1]
+
+!ifval $val44>=$val22
+val44=$[(($val21)+($val22))/2]
+!endif
+val45=$[$val22]
+val46=
+val47=
+val48=
+val49=$[$val39]
+val50=$[$val40]
+
+!ifval $val14=1
+val51=$[rint(2)]
+!else
+val51=$[rint(1)]
+!endif
+tmp0=!append item $val49 to $val46
+
+val46=$(tmp0)
+tmp0=!append item f($val50) to $val47
+
+val47=$(tmp0)
+tmp0=!append item $val51 to $val48
+
+val48=$(tmp0)
+val49=$[$val40]
+val50=$[$val41]
+
+!ifval $val14=1
+val51=$[rint(2)]
+!else
+val51=$[rint(1)]
+!endif
+tmp0=!append item $val49 to $val46
+
+val46=$(tmp0)
+tmp0=!append item f($val50) to $val47
+
+val47=$(tmp0)
+tmp0=!append item $val51 to $val48
+
+val48=$(tmp0)
+val49=$[$val41]
+val50=$[$val42]
+
+!ifval $val14=1
+val51=$[rint(1)]
+!else
+val51=$[rint(2)]
+!endif
+tmp0=!append item $val49 to $val46
+
+val46=$(tmp0)
+tmp0=!append item f($val50) to $val47
+
+val47=$(tmp0)
+tmp0=!append item $val51 to $val48
+
+val48=$(tmp0)
+val49=$[$val42]
+val50=$[$val43]
+
+!ifval $val14=1
+val51=$[rint(1)]
+!else
+val51=$[rint(2)]
+!endif
+tmp0=!append item $val49 to $val46
+
+val46=$(tmp0)
+tmp0=!append item f($val50) to $val47
+
+val47=$(tmp0)
+tmp0=!append item $val51 to $val48
+
+val48=$(tmp0)
+val49=$[$val43]
+val50=$[$val44]
+
+!ifval $val14=1
+val51=$[rint(2)]
+!else
+val51=$[rint(1)]
+!endif
+tmp0=!append item $val49 to $val46
+
+val46=$(tmp0)
+tmp0=!append item f($val50) to $val47
+
+val47=$(tmp0)
+tmp0=!append item $val51 to $val48
+
+val48=$(tmp0)
+val49=$[$val44]
+val50=$[$val45]
+
+!ifval $val14=1
+val51=$[rint(2)]
+!else
+val51=$[rint(1)]
+!endif
+tmp0=!append item $val49 to $val46
+
+val46=$(tmp0)
+tmp0=!append item f($val50) to $val47
+
+val47=$(tmp0)
+tmp0=!append item $val51 to $val48
+
+val48=$(tmp0)
+val49=$[$val39]
+val50=$[$val42]
+!if $val14=1 
+
+!ifval $val26>$val24
+val51=$[rint(3)]
+!else
+val51=$[rint(2)]
+!endif
+!else
+
+!ifval $val26<$val24
+val51=$[rint(3)]
+!else
+val51=$[rint(1)]
+!endif
+!endif
+tmp0=!append item $val49 to $val46
+
+val46=$(tmp0)
+tmp0=!append item f($val50) to $val47
+
+val47=$(tmp0)
+tmp0=!append item $val51 to $val48
+
+val48=$(tmp0)
+val49=$[$val39]
+val50=$[$val44]
+!if $val14=1 
+!if $val24>$val26 
+val51=$[rint(2)]
+!else
+
+!ifval $val24<$val27
+val51=$[rint(1)]
+!else
+val51=$[rint(3)]
+!endif
+!endif
+!else
+!if $val24<$val26 
+val51=$[rint(1)]
+!else
+
+!ifval $val24>$val27
+val51=$[rint(2)]
+!else
+val51=$[rint(3)]
+!endif
+!endif
+!endif
+tmp0=!append item $val49 to $val46
+
+val46=$(tmp0)
+tmp0=!append item f($val50) to $val47
+
+val47=$(tmp0)
+tmp0=!append item $val51 to $val48
+
+val48=$(tmp0)
+val49=$[$val40]
+val50=$[$val42]
+val51=$[rint(3)]
+tmp0=!append item $val49 to $val46
+
+val46=$(tmp0)
+tmp0=!append item f($val50) to $val47
+
+val47=$(tmp0)
+tmp0=!append item $val51 to $val48
+
+val48=$(tmp0)
+val49=$[$val42]
+val50=$[$val44]
+val51=$[rint(3)]
+tmp0=!append item $val49 to $val46
+
+val46=$(tmp0)
+tmp0=!append item f($val50) to $val47
+
+val47=$(tmp0)
+tmp0=!append item $val51 to $val48
+
+val48=$(tmp0)
+val49=$[$val40]
+val50=$[$val43]
+!if $val14=1 
+
+!ifval $val24<$val26
+val51=$[rint(1)]
+!else
+val51=$[rint(3)]
+!endif
+!else
+
+!ifval $val24>$val26
+val51=$[rint(2)]
+!else
+val51=$[rint(3)]
+!endif
+!endif
+tmp0=!append item $val49 to $val46
+
+val46=$(tmp0)
+tmp0=!append item f($val50) to $val47
+
+val47=$(tmp0)
+tmp0=!append item $val51 to $val48
+
+val48=$(tmp0)
+val49=$[$val42]
+val50=$[$val45]
+!if $val14=1 
+
+!ifval $val25<$val27
+val51=$[rint(3)]
+!else
+val51=$[rint(2)]
+!endif
+!else
+
+!ifval $val25>$val27
+val51=$[rint(3)]
+!else
+val51=$[rint(1)]
+!endif
+!endif
+tmp0=!append item $val49 to $val46
+
+val46=$(tmp0)
+tmp0=!append item f($val50) to $val47
+
+val47=$(tmp0)
+tmp0=!append item $val51 to $val48
+
+val48=$(tmp0)
+val49=$[$val40]
+val50=$[$val45]
+!if $val14=1 
+!if $val25>$val27 
+val51=$[rint(2)]
+!else
+
+!ifval $val24<$val27
+val51=$[rint(1)]
+!else
+val51=$[rint(3)]
+!endif
+!endif
+!else
+!if $val25<$val27 
+val51=$[rint(1)]
+!else
+
+!ifval $val24>$val27
+val51=$[rint(2)]
+!else
+val51=$[rint(3)]
+!endif
+!endif
+!endif
+tmp0=!append item $val49 to $val46
+
+val46=$(tmp0)
+tmp0=!append item f($val50) to $val47
+
+val47=$(tmp0)
+tmp0=!append item $val51 to $val48
+
+val48=$(tmp0)
+val49=$[$val40]
+val50=$[$val24]
+
+!ifval $val14=1
+val51=$[rint(1)]
+!else
+val51=$[rint(2)]
+!endif
+tmp0=!append item $val49 to $val46
+
+val46=$(tmp0)
+tmp0=!append item $val50 to $val47
+
+val47=$(tmp0)
+tmp0=!append item $val51 to $val48
+
+val48=$(tmp0)
+val49=$[$val40]
+val50=$[$val25]
+
+!ifval $val14=1
+val51=$[rint(2)]
+!else
+val51=$[rint(1)]
+!endif
+tmp0=!append item $val49 to $val46
+
+val46=$(tmp0)
+tmp0=!append item $val50 to $val47
+
+val47=$(tmp0)
+tmp0=!append item $val51 to $val48
+
+val48=$(tmp0)
+val49=$[$val40]
+val50=$[$val26]
+!if $val14=1 
+
+!ifval $val24<$val26
+val51=$[rint(1)]
+!else
+val51=$[rint(3)]
+!endif
+!else
+
+!ifval $val24>$val26
+val51=$[rint(2)]
+!else
+val51=$[rint(3)]
+!endif
+!endif
+tmp0=!append item $val49 to $val46
+
+val46=$(tmp0)
+tmp0=!append item $val50 to $val47
+
+val47=$(tmp0)
+tmp0=!append item $val51 to $val48
+
+val48=$(tmp0)
+val49=$[$val40]
+val50=$[$val27]
+!if $val14=1 
+!if $val25>$val27 
+val51=$[rint(2)]
+!else
+
+!ifval $val24<$val27
+val51=$[rint(1)]
+!else
+val51=$[rint(3)]
+!endif
+!endif
+!else
+!if $val25<$val27 
+val51=$[rint(1)]
+!else
+
+!ifval $val24>$val27
+val51=$[rint(2)]
+!else
+val51=$[rint(3)]
+!endif
+!endif
+!endif
+tmp0=!append item $val49 to $val46
+
+val46=$(tmp0)
+tmp0=!append item $val50 to $val47
+
+val47=$(tmp0)
+tmp0=!append item $val51 to $val48
+
+val48=$(tmp0)
+!if $val34=&#93; 
+tmp0=!shuffle 5
+
+val52=$(tmp0)
+val53=$[rint(1)]
+tmp0=!shuffle 5
+
+val54=$(tmp0)
+val55=$[rint(8)]
+tmp0=!shuffle 3
+
+val56=$(tmp0)
+val57=$[rint(14)]
+!else
+!if $val38=&#91; 
+tmp0=!shuffle 5
+
+val52=$(tmp0)
+val53=$[rint(0)]
+tmp0=!shuffle 5
+
+val54=$(tmp0)
+val55=$[rint(6)]
+tmp0=!shuffle 3
+
+val56=$(tmp0)
+val57=$[rint(13)]
+!else
+tmp0=!shuffle 6
+
+val52=$(tmp0)
+val53=$[rint(0)]
+tmp0=!shuffle 7
+
+val54=$(tmp0)
+val55=$[rint(6)]
+tmp0=!shuffle 4
+
+val56=$(tmp0)
+val57=$[rint(13)]
+!endif
+!endif
+val16=$[rint($(val52[1])+$val53)]
+val58=$(val46[$val16])
+val59=$(val47[$val16])
+val60=$[rint($(val48[$val16]))]
+val17=$[rint($(val54[1])+$val55)]
+val17=$[rint(11)]
+val61=$(val46[$val17])
+val62=$(val47[$val17])
+val63=$[rint($(val48[$val17]))]
+val64=$[rint($(val56[1])+$val57)]
+val65=$(val46[$val64])
+val66=$(val47[$val64])
+val67=$[rint($(val48[$val64]))]
+val68=$val16 $val17 $val64 $val24 $val27
+val68=
+!if $val6=it 
+!endif
+replytype1=menu
+replyname1=\(f($val58)) et \($val59)
+replygood1=$val60;$val10
+replytype2=menu
+replyname2=\(f($val61)) et \($val62)
+replygood2=$val63;$val10
+replytype3=menu
+replyname3=\(f($val65)) et \($val66)
+replygood3=$val67;$val10
+question=__EXECUTED_1692754_EXERCISE__
+
+!goto stat
+
+!exit
+
+:question
+$()	<p>	Soit 
+!insmath f
+$() une fonction définie sur $val34 $val19;$val22 $val38 dont le	tableau des variations est donné ci-dessous	</p>	<table class="wimscenter wimsnoborder tab_var">	<tr>	  <th style="width:15%;"> 
+!insmath x
+$()</th>	      <td style="width:15%;text-align:left"> $val19</td>	      <td style="width:8%;"></td>	      <td style="width:15%;">$val20</td>	      <td style="width:8%;"></td>	      <td style="width:15%;">$val21</td>	      <td style="width:8%;"></td>	      <td style="width:15%;text-align:right">$val22</td>	</tr><tr>	  <th valign="middle" style="width:15%;" >
+!insmath f(x)
+$()</th>	     <td style="width:15%;text-align:left" valign="$(val32[1])"> $val33 </td>	     <td style="width:8%;"> $(val13[1]) </td>	     <td style="width:15%;" valign="$(val32[2])"> $val35 </td>	     <td style="width:8%;"> $(val13[2]) </td>	     <td style="width:15%;" valign="$(val32[3])"> $val36 </td>	     <td style="width:8%;"> $(val13[3]) </td>	     <td style="width:15%;text-align:right" valign="$(val32[4])"> $val37 </td>	      </tr>	</table>	On cherche à comparer certaines images par 
+!insmath f
+$().	<ul>	<li> 
+!insmath f($val58)
+$()  
+!read oef/embed.phtml reply1 
+$() 
+!insmath $val59
+$()	</li><li>	
+!insmath f($val61)
+$()  
+!read oef/embed.phtml reply2 
+$() 
+!insmath $val62
+$()	</li><li>	 
+!insmath f($val65)
+$()  
+!read oef/embed.phtml reply3 
+$() 
+!insmath $val66
+$()	</li></ul>	$val68
+$()
+!exit
+
+:hint
+$()
+$()
+!exit
+
+:help
+$()
+$()
+!exit
+
+:solution
+$()
+$()
+!exit
+
+:latex
+$()
+$()
+!exit
+
+:feedback
+
+!exit
+
+:test
+
+!exit
+
+:stat
+vsavelist=13,19,20,21,22,32,33,34,35,36,37,38,58,59,61,62,65,66,68
+embedcnt=3

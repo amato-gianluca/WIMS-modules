@@ -1,0 +1,474 @@
+!set title=Extremum et représentation graphique
+!if $wims_read_parm!=$empty
+ !goto $wims_read_parm
+!endif
+oef2wims_version=3.22
+author=Régine, Mangeard
+email=regine@mangeard.fr
+language=fr
+title_it=Extremum et représentation graphique
+
+ansorder=r,r,r,r,r,r
+varcnt=152
+prevarcnt=148
+postvarcnt=3
+replycnt=6
+choicecnt=0
+conditioncnt=0
+feedbackcnt=0
+format=html
+
+val1=$imagedir
+val2=$confparm1
+val3=$confparm2
+val4=$confparm3
+val5=$confparm4
+
+!if $testcondition=yes
+ !goto test
+!endif
+!if $status=waiting
+ !exit
+!endif
+
+!readproc slib/oef/env lang 
+tmp0=$slib_out
+val6=$(tmp0)
+val7=lightblue
+val8=$[rint(-10)]
+val9=$[rint(10)]
+val10=$[rint(-10)]
+val11=$[rint(10)]
+tmp=!trim \(\searrow),\(\nearrow),\(\searrow)	\(\nearrow),\(\searrow),\(\nearrow)
+val12=!translate internal $	\
+$ to ;; in $tmp
+val13=\(\nearrow),\(\searrow)
+val14=\(\nearrow),\(\searrow)
+tmp0=!randitem 1,2
+
+val15=$[rint($(tmp0))]
+tmp0=!randint 1, 4
+
+val16=$[rint($(tmp0))]
+
+!ifval $val15=1
+val17=$[rint(1)]
+!else
+val17=$[rint(2)]
+!endif
+
+!ifval $val15=1
+val18=$[rint(2)]
+!else
+val18=$[rint(1)]
+!endif
+
+!ifval $val15=1
+val19=1,2,1
+!else
+val19=2,1,2
+!endif
+val14=$(val12[$val15;])
+tmp0=!randint -10, -5
+
+val20=$[rint($(tmp0))]
+tmp0=!randint 3, 5
+
+val21=$[rint($val20+$(tmp0))]
+tmp0=!randint 3, 5
+
+val22=$[rint($val21+$(tmp0))]
+tmp0=!randint 3, 5
+
+val23=$[rint($val22+$(tmp0))]
+val24=$val20,$val21,$val22,$val23
+tmp0=!randint -3, 3
+
+val25=$[rint($(tmp0))]
+!if $val15=1 
+tmp0=!randint 2, 6
+
+val26=$[rint($val25-$(tmp0))]
+tmp0=!randint 2, 7
+
+val27=$[rint($val26+$(tmp0))]
+
+!ifval $val27=$val25
+val27=$[rint($val27+1)]
+!endif
+tmp0=!randint 2, 5
+
+val28=$[rint($val27-$(tmp0))]
+
+!ifval $val28=$val25
+val28=$[rint($val28-1)]
+!endif
+
+!ifval $val28=$val26
+val28=$[rint($val28-1)]
+!endif
+
+!ifval $val28<$val10
+val28=$[rint($val10)]
+!endif
+!else
+tmp0=!randint 2, 6
+
+val26=$[rint($val25+$(tmp0))]
+tmp0=!randint 2, 7
+
+val27=$[rint($val26-$(tmp0))]
+
+!ifval $val27=$val25
+val27=$[rint($val27-1)]
+!endif
+tmp0=!randint 2, 5
+
+val28=$[rint($val27+$(tmp0))]
+
+!ifval $val28=$val25
+val28=$[rint($val28+1)]
+!endif
+
+!ifval $val28=$val26
+val28=$[rint($val28+1)]
+!endif
+
+!ifval $val28>$val11
+val28=$[rint($val11)]
+!endif
+!endif
+val29=$val25,$val26,$val27,$val28
+tmp0=!shuffle 4
+
+val30=$(tmp0)
+!if $val15=1 
+val31=top,bottom,top,bottom
+!if $val16=1 
+val32=\(+\infty)
+val33=&#93;
+val25=$[rint(2*$val11)]
+!else
+val32=$val25
+val33=&#91;
+!endif
+val34=$val26
+val35=$val27
+!if $val16=2 
+val36=\(-\infty)
+val37=&#91;
+val28=$[rint(2*$val10)]
+!else
+val36=$val28
+val37=&#93;
+!endif
+!else
+val31=bottom,top,bottom,top
+!if $val16=2 
+val32=\(-\infty)
+val33=&#93;
+val25=$[rint(2*$val10)]
+!else
+val32=$val25
+val33=&#91;
+!endif
+val35=$val27
+val34=$val26
+!if $val16=1 
+val36=\(+\infty)
+val37=&#91;
+val28=$[rint(2*$val11)]
+!else
+val36=$val28
+val37=&#93;
+!endif
+!endif
+tmp=!trim $val20,$val21	$val21,$val22	$val22,$val23	$val20,$val22	$val21,$val23
+val38=!translate internal $	\
+$ to ;; in $tmp
+val39=oui, non 
+val40=oui, non 
+val41=minimum
+val42=non monotone, croissante, décroissante
+!if $val15=1 
+
+!ifval $val26<$val28
+val43=$[rint($val26)]
+!else
+val43=$[rint($val28)]
+!endif
+
+!ifval $val25<$val27
+val44=$[rint($val27)]
+!else
+val44=$[rint($val25)]
+!endif
+
+!ifval $val26<$val28
+val45=$[rint($val21)]
+!else
+val45=$[rint($val23)]
+!endif
+
+!ifval $val25<$val27
+val46=$[rint($val22)]
+!else
+val46=$[rint($val20)]
+!endif
+val47=$[rint($val44)]
+val48=$[rint($val46)]
+val49=$[rint($val43)]
+val50=$[rint($val45)]
+!if $val16>2 
+val51=maximum
+val52=$[rint(1)]
+val53=$[rint(1)]
+val54=r3,r4
+val55=r5,r6
+!else
+val55=
+!if $val16=1 
+val52=$[rint(2)]
+val53=$[rint(1)]
+val51=minimum
+val54=r3,r4
+val47=$[rint($val49)]
+val48=$[rint($val50)]
+!else
+val52=$[rint(1)]
+val53=$[rint(2)]
+val51=maximum
+val54=r3,r4
+!endif
+!endif
+!else
+
+!ifval $val25<$val27
+val43=$[rint($val25)]
+!else
+val43=$[rint($val27)]
+!endif
+
+!ifval $val26<$val28
+val44=$[rint($val28)]
+!else
+val44=$[rint($val26)]
+!endif
+
+!ifval $val25<$val27
+val45=$[rint($val20)]
+!else
+val45=$[rint($val22)]
+!endif
+
+!ifval $val26<$val28
+val46=$[rint($val23)]
+!else
+val46=$[rint($val21)]
+!endif
+val47=$[rint($val44)]
+val48=$[rint($val46)]
+val49=$[rint($val43)]
+val50=$[rint($val45)]
+!if $val16>2 
+val51=maximum
+val52=$[rint(1)]
+val53=$[rint(1)]
+val54=r3,r4
+val55=r5,r6
+!else
+val55=
+!if $val16=1 
+val52=$[rint(2)]
+val53=$[rint(1)]
+val51=minimum
+val54=r3,r4
+val47=$[rint($val49)]
+val48=$[rint($val50)]
+!else
+val52=$[rint(1)]
+val53=$[rint(2)]
+val51=maximum
+val54=r3,r4
+!endif
+!endif
+!endif
+tmp0=!shuffle 5
+
+val30=$(tmp0)
+val56=$(val38[$(val30[1]);])
+val57=$(val38[$(val30[2]);])
+val58=$(val38[$(val30[3]);])
+val59=$(val38[$(val30[4]);])
+val60=$(val38[$(val30[5]);])
+tmp0=!randitem 1,2
+
+val61=$[rint($(tmp0))]
+val61=$[rint(2)]
+!if $val61=2 
+t_=!rawmath (($val21)+($val22))/2
+val62=!exec pari print($t_)
+t_=!rawmath (($val26)+($val27))/2
+val63=!exec pari print($t_)
+t_=!rawmath (($val25)-($val26))/(($val20)-($val21))^2
+val64=!exec pari print($t_)
+t_=!rawmath -2*$val64*$val21
+val65=!exec pari print($t_)
+t_=!rawmath ( ($val26)*( ($val20)^2-2*($val20)*($val21) )+($val25)*($val21)^2 )/(($val20)-($val21))^2
+val66=!exec pari print($t_)
+val67=$val64*t^2+($val65)*t+($val66)
+t_=!rawmath (($val63)-($val26))/(($val62)-($val21))^2
+val68=!exec pari print($t_)
+t_=!rawmath -2*$val68*$val21
+val69=!exec pari print($t_)
+t_=!rawmath ( ($val26)*( ($val62)^2-2*($val62)*($val21) )+($val63)*($val21)^2 )/(($val62)-($val21))^2
+val70=!exec pari print($t_)
+val71=$val68*t^2+($val69)*t+($val70)
+t_=!rawmath (($val63)-($val27))/(($val62)-($val22))^2
+val72=!exec pari print($t_)
+t_=!rawmath -2*$val72*$val22
+val73=!exec pari print($t_)
+t_=!rawmath ( ($val27)*( ($val62)^2-2*($val62)*($val22) )+($val63)*($val22)^2 )/(($val62)-($val22))^2
+val74=!exec pari print($t_)
+val75=$val72*t^2+($val73)*t+($val74)
+t_=!rawmath (($val28)-($val27))/(($val23)-($val22))^2
+val76=!exec pari print($t_)
+t_=!rawmath -2*$val76*$val22
+val77=!exec pari print($t_)
+t_=!rawmath ( ($val27)*( ($val23)^2-2*($val23)*($val22) )+($val28)*($val22)^2 )/(($val23)-($val22))^2
+val78=!exec pari print($t_)
+val79=$val76*t^2+($val77)*t+($val78)
+val80=trange $val20,$val21	 plot red,t,$val67	trange $val21,$val62	 plot red,t,$val71	trange $val62,$val22	 plot red,t,$val75	trange $val22,$val23	 plot red,t,$val79	
+!else
+val80=lines red,$val20,$val25,$val21,$val26,$val22,$val27,$val23,$val28	
+!endif
+val81=xrange $val8,$val9	yrange $val10,$val11	linewidth 1	  parallel $val8,$val10,$val8,$val11,0.2,0,100,$val7	  parallel $val8,$val10,$val9,$val10,0,0.2,100,$val7	linewidth 2	  parallel $val8,$val10,$val8,$val11,1,0,21,blue	  parallel $val8,$val10,$val9,$val10,0,1,21,blue	linewidth 2	vline 0,0,black	hline 0,0,black	arrow 0,0,1,0,10,magenta	arrow 0,0,0,1,10,magenta	text red,0.7,-0.1,medium,i	text red,-0.2,0.7,medium,j	text black,-0.2,-0.1,medium,O	    linewidth 2	$val80	
+val82=$val25 $val26 $val27 $val28 max:$val52 min:$val53 valb:$val47 valbx:$val48 valb2:$val49 valbx2:$val50
+val82=
+val83=r1,r2
+!if $val6=it 
+!endif
+dynsteps=yes
+oefsteps=$val83 
+nextstep=!nosubst $val83 
+!readproc oef/steps.proc
+replytype1=menu
+replyname1=\(f) admet un maximum
+replygood1=$val52;$val39
+replytype2=menu
+replyname2=\(f) admet un minimum
+replygood2=$val53;$val40
+replytype3=numeric
+replyname3=$val51
+replygood3=$[$val47]
+replytype4=numeric
+replyname4=abscisse du $val51
+replygood4=$[$val48]
+replytype5=numeric
+replyname5=$val41
+replygood5=$[$val49]
+replytype6=numeric
+replyname6=abscisse du $val41
+replygood6=$[$val50]
+question=__EXECUTED_1692754_EXERCISE__
+
+!goto stat
+
+!exit
+
+:question
+$()	<div class="float_right spacer">  
+!read oef/draw.phtml 400,400 \
+$val81 
+$()	</div>	      Dans le plan muni d'un repère orthogonal 
+!insmath (O,i,j)
+$(),	on a tracé la courbe représentative d'une fonction 
+!insmath f
+$() définie sur l'intervalle	<div class="wimscenter"> $val33 $val20;$val23 $val37.</div>	<p>	On cherche à étudier ses extrema éventuels par lecture graphique.</p>	$val82	<br class="clearall" />	
+!if $m_step=1 
+$()
+!insmath f
+$() admet un maximum global :  
+!read oef/embed.phtml r1 
+$()<br />	
+!insmath f
+$() admet un minimum global :  
+!read oef/embed.phtml r2 
+$()	 
+!else
+$()	 	   
+!if $m_step=2 
+$() 
+!insmath f
+$() atteint son $val51 :  
+!read oef/embed.phtml r3 
+$()	en 
+!insmath x
+$()=  
+!read oef/embed.phtml r4 
+$()	    
+!else
+$()	    
+!if $val83=r5,r6 
+$()
+!insmath f
+$() atteint son minimum :  
+!read oef/embed.phtml r5 
+$() en 
+!insmath x
+$() =  
+!read oef/embed.phtml r6 
+$() 
+!endif
+$()	    
+!endif
+$()	 
+!endif
+$()	
+$()
+!exit
+
+:hint
+$()
+$()
+!exit
+
+:help
+$()
+$()
+!exit
+
+:solution
+$()
+$()
+!exit
+
+:latex
+$()
+$()
+!exit
+
+:postdef
+!if $m_step=2 
+val83=$val54
+!else
+!if $m_step=3 
+val83=$val55
+!else
+val83=
+!endif
+!endif
+
+!exit
+
+:feedback
+
+!exit
+
+:test
+
+!exit
+
+:stat
+vsavelist=20,23,33,37,51,54,55,81,82,83
+embedcnt=6

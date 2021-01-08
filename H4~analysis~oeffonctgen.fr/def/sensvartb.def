@@ -1,0 +1,242 @@
+!set title=Sens et tableau des variations
+!if $wims_read_parm!=$empty
+ !goto $wims_read_parm
+!endif
+oef2wims_version=3.22
+author=Régine, Mangeard
+email=regine@mangeard.fr
+language=fr
+oefcss=<style> table.tab_var {margin-left:auto;margin-right:auto; border:solid 1px black;} table.tab_var tr, table.tab_var td, table.tab_var th { padding:7pt;margin-top:10px; margin-bottom:10px; text-align:center; border-collapse:collapse; min-width:10pt; } table.tab_var th { border:solid 1px black} table.tab_var tr { border:solid 1px black} </style> 
+title_it=Sens et tableau des variations
+
+ansorder=r,r,r,r,r
+varcnt=54
+prevarcnt=53
+postvarcnt=0
+replycnt=5
+choicecnt=0
+conditioncnt=0
+feedbackcnt=0
+format=html
+
+val1=$imagedir
+val2=$confparm1
+val3=$confparm2
+val4=$confparm3
+val5=$confparm4
+
+!if $testcondition=yes
+ !goto test
+!endif
+!if $status=waiting
+ !exit
+!endif
+
+!readproc slib/oef/env lang 
+tmp0=$slib_out
+val6=$(tmp0)
+val7=lightblue
+tmp0=!randint -4, -2
+
+val8=$[rint($(tmp0))]
+tmp0=!randint 1, 3
+
+val9=$[rint($val8+$(tmp0))]
+tmp0=!randint 1, 3
+
+val10=$[rint($val9+$(tmp0))]
+val11=$[rint($val10+1)]
+tmp0=!randint 1, 3
+
+tmp1=!randitem 1,-1
+
+val12=$[rint($(tmp0)*$(tmp1))]
+tmp0=!randint -2, 2
+
+val13=$[rint($(tmp0))]
+tmp=!trim \(\searrow),\(\nearrow),\(\searrow)	\(\nearrow),\(\searrow),\(\nearrow)
+val14=!translate internal $	\
+$ to ;; in $tmp
+val15=\(\nearrow),\(\searrow)
+val16=\(\nearrow),\(\searrow)
+tmp0=!randitem 1,2
+
+val17=$[rint($(tmp0))]
+
+!ifval $val17=1
+val18=$[rint(1)]
+!else
+val18=$[rint(2)]
+!endif
+
+!ifval $val17=1
+val19=$[rint(2)]
+!else
+val19=$[rint(1)]
+!endif
+
+!ifval $val17=1
+val20=1,2,1
+!else
+val20=2,1,2
+!endif
+val16=$(val14[$val17;])
+tmp0=!randint -10, 10
+
+val9=$[rint($(tmp0))]
+tmp0=!randint 1, 10
+
+val10=$[rint($val9+$(tmp0))]
+tmp0=!randint 1, 10
+
+val11=$[rint($val10+$(tmp0))]
+tmp0=!randint 1, 10
+
+val21=$[rint($val11+$(tmp0))]
+val22=$val9,$val10,$val11,$val21
+tmp0=!randint -10, 10
+
+val23=$[rint($(tmp0))]
+!if $val17=1 
+tmp0=!randint 1, 10
+
+val24=$[rint($val23-$(tmp0))]
+tmp0=!randint 1, 10
+
+val25=$[rint($val24+$(tmp0))]
+tmp0=!randint 1, 10
+
+val26=$[rint($val25-$(tmp0))]
+!else
+tmp0=!randint 1, 10
+
+val24=$[rint($val23+$(tmp0))]
+tmp0=!randint 1, 10
+
+val25=$[rint($val24-$(tmp0))]
+tmp0=!randint 1, 10
+
+val26=$[rint($val25+$(tmp0))]
+!endif
+val27=$val23,$val24,$val25,$val26
+tmp0=!shuffle 4
+
+val28=$(tmp0)
+val29=$[rint($(val27[$(val28[1])]))]
+val30=$[rint($(val22[$(val28[1])])-$(val27[$(val28[2])]))]
+val23=$[rint($val23+$val30)]
+val24=$[rint($val24+$val30)]
+val25=$[rint($val25+$val30)]
+val26=$[rint($val26+$val30)]
+val29=$[rint($val29+$val30)]
+!if $val17=1 
+val31=top,bottom,top,bottom
+!else
+val31=bottom,top,bottom,top
+!endif
+val32=$val23
+val33=$val24
+val34=$val25
+val35=$val26
+tmp=!trim $val9,$val10	$val10,$val11	$val11,$val21	$val9,$val11	$val10,$val21
+val36=!translate internal $	\
+$ to ;; in $tmp
+val37=non monotone, croissante, décroissante
+!if $val17=1 
+val38=3,2,3,1,1
+!else
+val38=2,3,2,1,1
+!endif
+tmp0=!shuffle 5
+
+val28=$(tmp0)
+val39=$(val36[$(val28[1]);])
+val40=$(val36[$(val28[2]);])
+val41=$(val36[$(val28[3]);])
+val42=$(val36[$(val28[4]);])
+val43=$(val36[$(val28[5]);])
+!if $val6=it 
+!endif
+replytype1=menu
+replyname1=\(f) est:
+replygood1=$(val38[$(val28[1])]);$val37
+replytype2=menu
+replyname2=\(f) est:
+replygood2=$(val38[$(val28[2])]);$val37
+replytype3=menu
+replyname3=\(f) est:
+replygood3=$(val38[$(val28[3])]);$val37
+replytype4=menu
+replyname4=\(f) est:
+replygood4=$(val38[$(val28[4])]);$val37
+replytype5=menu
+replyname5=\(f) est:
+replygood5=$(val38[$(val28[5])]);$val37
+question=__EXECUTED_1692754_EXERCISE__
+
+!goto stat
+
+!exit
+
+:question
+$()	<p>	Soit 
+!insmath f
+$() une fonction définie sur &#91; $val9;$val21 &#93; dont le	tableau des variations est donné ci-dessous	</p>	<table class="wimscenter wimsborder var_tab">	<tr>	  <th style="width:15%;"> 
+!insmath x
+$()</th>	      <td style="width:15%;text-align:left"> $val9</td>	      <td style="width:8%;"></td>	      <td style="width:15%;">$val10</td>	      <td style="width:8%;"></td>	      <td style="width:15%;">$val11</td>	      <td style="width:8%;"></td>	      <td style="width:15%;text-align:right">$val21</td>	</tr><tr>	  <th valign="middle" style="width:15%;" >
+!insmath f(x)
+$()</th>	     <td style="width:15%;text-align:left" valign="$(val31[1])"> $val32 </td>	     <td style="width:8%;"> $(val16[1]) </td>	     <td style="width:15%;" valign="$(val31[2])"> $val33 </td>	     <td style="width:8%;"> $(val16[2]) </td>	     <td style="width:15%;" valign="$(val31[3])"> $val34 </td>	     <td style="width:8%;"> $(val16[3]) </td>	     <td style="width:15%;text-align:right" valign="$(val31[4])"> $val35 </td>	   </tr>	</table>	Votre réponse :	<ul><li>	sur &#91;$(val39[1]);$(val39[2])&#93;, 
+!insmath f
+$() est  
+!read oef/embed.phtml reply1 
+$()	</li><li>	sur &#91;$(val40[1]);$(val40[2])&#93;, 
+!insmath f
+$() est  
+!read oef/embed.phtml reply2 
+$()	</li><li>	sur &#91;$(val41[1]);$(val41[2])&#93;, 
+!insmath f
+$() est  
+!read oef/embed.phtml reply3 
+$()	</li><li>	sur &#91;$(val42[1]);$(val42[2])&#93;, 
+!insmath f
+$() est  
+!read oef/embed.phtml reply4 
+$()	</li><li>	sur &#91;$(val43[1]);$(val43[2])&#93;, 
+!insmath f
+$() est  
+!read oef/embed.phtml reply5 
+$()	</li></ul>	
+$()
+!exit
+
+:hint
+$()
+$()
+!exit
+
+:help
+$()
+$()
+!exit
+
+:solution
+$()
+$()
+!exit
+
+:latex
+$()
+$()
+!exit
+
+:feedback
+
+!exit
+
+:test
+
+!exit
+
+:stat
+vsavelist=9,10,11,16,21,31,32,33,34,35,39,40,41,42,43
+embedcnt=5

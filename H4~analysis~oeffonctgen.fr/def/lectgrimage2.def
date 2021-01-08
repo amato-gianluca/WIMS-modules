@@ -1,0 +1,224 @@
+!set title=Lecture graphique d'image 2
+!if $wims_read_parm!=$empty
+ !goto $wims_read_parm
+!endif
+oef2wims_version=3.22
+author=Régine, Mangeard
+email=regine@mangeard.fr
+language=fr
+title_it=Lecture graphique d'image 2
+
+ansorder=r,r,r,r
+varcnt=74
+prevarcnt=73
+postvarcnt=0
+replycnt=4
+choicecnt=0
+conditioncnt=0
+feedbackcnt=0
+format=html
+
+val1=$imagedir
+val2=$confparm1
+val3=$confparm2
+val4=$confparm3
+val5=$confparm4
+
+!if $testcondition=yes
+ !goto test
+!endif
+!if $status=waiting
+ !exit
+!endif
+
+!readproc slib/oef/env lang 
+tmp0=$slib_out
+val6=$(tmp0)
+val7=lightblue
+val8=$[rint(-5)]
+val9=$[rint(7)]
+tmp0=!randint -4, -2
+
+val10=$[rint($(tmp0))]
+tmp0=!randint 1, 3
+
+val11=$[rint($val10+$(tmp0))]
+tmp0=!randint 1, 3
+
+val12=$[rint($val11+$(tmp0))]
+tmp0=!randint 1, 3
+
+val13=$[rint($val12+$(tmp0))]
+tmp0=!randint 1, 4
+
+val14=$[rint($(tmp0))]
+!if $val14=4 
+tmp0=!randint 0, 5
+
+val15=$[rint($(tmp0))]
+val16=$[rint($val15)]
+val17=$[rint($val15-($val12)+($val11))]
+val18=($val17 -($val16))*(t-($val12))/($val12-($val11))+($val17)
+evaltmp=$val18
+
+evaltmp=!mathsubst t=($val13) in $evaltmp
+tmp0=($evaltmp)
+t_=!rawmath $(tmp0)
+val19=!exec pari print($t_)
+val20=$val15+sin((t-($val10))*pi/($val11-($val10)))
+val21=$val19+sin((t-($val13))*pi/($val10-($val11)))
+val22=$[rint($val17)]
+t_=!rawmath $val19
+val17=!exec pari print($t_)
+val19=$[rint($val22)]
+tmp0=!randitem 1,-1
+
+val23=$[rint($(tmp0))]
+val20=$val23*($val20)
+val21=$val23*($val21)
+val18=$val23*($val18)
+val15=$[rint($val23*($val15))]
+val19=$[rint($val23*($val19))]
+val16=$[rint($val23*($val16))]
+val17=$[rint($val23*($val17))]
+val24=$[rint($val13+($val11)-($val10))]
+val25=trange $val10,$val11	   plot red,t,$val20	   trange $val11,$val13	   plot red,t,$val18	   trange $val13,$val24	   plot red,t,$val21
+val26=2 $val10 $val11
+val27=$val12
+val28=numeric
+val29=wlist
+val30=$[rint($val12)]
+t_=!rawmath $val13
+val12=!exec pari print($t_)
+val13=$[rint($val30)]
+!endif
+!if $val14=3 
+tmp0=!randint -6, 0
+
+val15=$[rint($(tmp0))]
+tmp0=!randint 1, 3
+
+val16=$[rint($val15+$(tmp0))]
+val17=$[rint($val15)]
+tmp0=!randint 3, 5
+
+val19=$[rint($(tmp0))]
+val20=$val15*(t-($val11))*(t-($val12))/(($val10-($val11))*($val10-($val12)))
+val21=$val16*(t-($val10))*(t-($val12))/(($val11-($val10))*($val11-($val12)))
+val31=$val17*(t-($val11))*(t-($val10))/(($val12-($val11))*($val12-($val10)))
+val32=$val20 + ($val21) +($val31)
+val18=($val19 -($val15))*(t-($val12))/($val13-($val12))+($val17)
+val25=trange $val8,$val12	   plot red,t,$val32	   trange $val12,$val9	   plot red,t,$val18
+val26=2 $val10 $val12
+val27=$val13
+val28=numeric
+val29=wlist
+!endif
+!if $val14=1 
+tmp0=!randint -5, 0
+
+val15=$[rint($(tmp0))]
+val16=$[rint($val15)]
+val17=$[rint($val15)]
+tmp0=!randint 3, 6
+
+val19=$[rint($(tmp0))]
+val26=3 $val10 $val11 $val12
+val27=$val13
+val28=numeric
+val29=wlist
+!endif
+!if $val14=2 
+tmp0=!randint -6, -3
+
+val15=$[rint($(tmp0))]
+tmp0=!randint 0, 5
+
+val16=$[rint($(tmp0))]
+val17=$[rint($val16)]
+val19=$[rint($val16)]
+val26=$val10
+val27=3 $val11 $val12 $val13
+val29=numeric
+val28=wlist
+!endif
+!if $val14<3 
+val20=$val15*(x-($val11))*(x-($val12))*(x-($val13))/(($val10-($val11))*($val10-($val12))*($val10-($val13)))
+val21=$val16*(x-($val10))*(x-($val12))*(x-($val13))/(($val11-($val10))*($val11-($val12))*($val11-($val13)))
+val31=$val17*(x-($val11))*(x-($val10))*(x-($val13))/(($val12-($val11))*($val12-($val10))*($val12-($val13)))
+val33=$val19*(x-($val11))*(x-($val12))*(x-($val10))/(($val13-($val11))*($val13-($val12))*($val13-($val10)))
+val32=$val20 + ($val21) +($val31)+ ($val33)
+val25=plot red,$val32
+!endif
+val34=xrange $val8,$val9	yrange -6,6	gridfill 0,0,5,5,$val7	linewidth 1	linewidth 2	  parallel -5,-6,-5,6,1,0,12,blue	  parallel -5,-6,7,-6,0,1,13,blue	linewidth 2	vline 0,0,black	hline 0,0,black	arrow 0,0,1,0,10,magenta	arrow 0,0,0,1,10,magenta	text red,0.7,-0.1,medium,i	text red,-0.2,0.7,medium,j	text black,-0.2,-0.1,medium,O	    linewidth 2	$val25	
+!if $val6=it 
+!endif
+replytype1=numeric
+replyname1=image de x0
+replygood1=$[$val15]
+replytype2=numeric
+replyname2=image de x1
+replygood2=$[$val16]
+replytype3=numeric
+replyname3=image de x2
+replygood3=$[$val17]
+replytype4=numeric
+replyname4=image de x3
+replygood4=$[$val19]
+question=__EXECUTED_1692754_EXERCISE__
+
+!goto stat
+
+!exit
+
+:question
+$()	<p>	Dans le plan muni d'un repère orthonormé 
+!insmath (O,i,j)
+$(),	on a tracé la courbe représentative d'une fonction 
+!insmath f
+$().</p>	<div class="wimscenter">  
+!read oef/draw.phtml 400,400 \
+$val34 
+$()</div>	<p>	Par lecture graphique déterminer les images des réels suivants.	</p>	Votre réponse :	<ul><li>	image de $val10 :  
+!read oef/embed.phtml reply 1,3 
+$()	</li><li>	image de $val11 :  
+!read oef/embed.phtml reply 2,3 
+$()	</li><li>	image de $val12 :  
+!read oef/embed.phtml reply 3,3 
+$()	</li><li>	image de $val13 :  
+!read oef/embed.phtml reply 4,3 
+$()	</li></ul>	
+$()
+!exit
+
+:hint
+$()
+$()
+!exit
+
+:help
+$()
+$()
+!exit
+
+:solution
+$()
+$()
+!exit
+
+:latex
+$()
+$()
+!exit
+
+:feedback
+
+!exit
+
+:test
+
+!exit
+
+:stat
+vsavelist=10,11,12,13,34
+embedcnt=4

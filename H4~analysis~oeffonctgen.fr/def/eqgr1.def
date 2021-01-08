@@ -1,0 +1,154 @@
+!set title=Résolution graphique 1: f(x)=k
+!if $wims_read_parm!=$empty
+ !goto $wims_read_parm
+!endif
+oef2wims_version=3.22
+author=Régine, Mangeard
+email=regine@mangeard.fr
+language=fr
+title_it=Résolution graphique 1: f(x)=k
+
+ansorder=r
+varcnt=29
+prevarcnt=28
+postvarcnt=0
+replycnt=1
+choicecnt=0
+conditioncnt=0
+feedbackcnt=0
+format=html
+
+val1=$imagedir
+val2=$confparm1
+val3=$confparm2
+val4=$confparm3
+val5=$confparm4
+
+!if $testcondition=yes
+ !goto test
+!endif
+!if $status=waiting
+ !exit
+!endif
+
+!readproc slib/oef/env lang 
+tmp0=$slib_out
+val6=$(tmp0)
+val7=lightblue
+tmp0=!randint -4, -2
+
+val8=$[rint($(tmp0))]
+tmp0=!randint 1, 3
+
+val9=$[rint($val8+$(tmp0))]
+tmp0=!randint 1, 3
+
+val10=$[rint($val9+$(tmp0))]
+tmp0=!randint 1, 3
+
+val11=$[rint($val10+$(tmp0))]
+tmp0=!randitem 1,2
+
+val12=$[rint($(tmp0))]
+!if $val12=1 
+tmp0=!randint -5, 0
+
+val13=$[rint($(tmp0))]
+val14=$[rint($val13)]
+val15=$[rint($val13)]
+tmp0=!randint 3, 6
+
+val16=$[rint($(tmp0))]
+val17=$val8,$val9,$val10
+val18=$val11
+!else
+tmp0=!randint -6, -3
+
+val13=$[rint($(tmp0))]
+tmp0=!randint 0, 5
+
+val14=$[rint($(tmp0))]
+val15=$[rint($val14)]
+val16=$[rint($val14)]
+val17=$val8
+val18=$val9,$val10,$val11
+!endif
+val19=$val13*(x-($val9))*(x-($val10))*(x-($val11))/(($val8-($val9))*($val8-($val10))*($val8-($val11)))
+val20=$val14*(x-($val8))*(x-($val10))*(x-($val11))/(($val9-($val8))*($val9-($val10))*($val9-($val11)))
+val21=$val15*(x-($val9))*(x-($val8))*(x-($val11))/(($val10-($val9))*($val10-($val8))*($val10-($val11)))
+val22=$val16*(x-($val9))*(x-($val10))*(x-($val8))/(($val11-($val9))*($val11-($val10))*($val11-($val8)))
+val23=$val19 + ($val20) +($val21)+ ($val22)
+val24=xrange -5,7	yrange -6,6	gridfill 0,0,5,5,$val7	linewidth 1	linewidth 2	  parallel -5,-6,-5,6,1,0,12,blue	  parallel -5,-6,7,-6,0,1,13,blue	linewidth 2	vline 0,0,black	hline 0,0,black	arrow 0,0,1,0,10,magenta	arrow 0,0,0,1,10,magenta	text red,0.7,-0.1,medium,i	text red,-0.2,0.7,medium,j	text black,-0.2,-0.1,medium,O	    linewidth 2	    plot red,$val23	
+tmp0=!randitem 1,2
+
+val25=$[rint($(tmp0))]
+
+!ifval $val25=1
+val26=$[rint($val13)]
+!else
+val26=$[rint($val16)]
+!endif
+
+!ifval $val25=1
+val27=$val17
+!else
+val27=$val18
+!endif
+!if $val6=it 
+!endif
+replytype1=set
+replyname1=solution
+replygood1=$val27
+question=__EXECUTED_1692754_EXERCISE__
+
+!goto stat
+
+!exit
+
+:question
+$()	<div class="float_right spacer">	  
+!read oef/draw.phtml 400,400 \
+$val24 
+$()	 </div>	<p>	Dans le plan muni d'un repère orthonormé 
+!insmath (O,i,j)
+$(),	on a tracé la courbe représentative d'une fonction 
+!insmath f
+$().</p><p>	Résoudre graphiquement l'équation :</p>	<div class="wimscenter"> 
+!insmath f(x) = $val26
+$()</div>	<div class="wims_instruction">	S'il y a plusieurs solutions, il faut les séparer par une virgule.	</div>	Votre réponse : S=  
+!read oef/embed.phtml reply 1,3 
+$().	
+$()
+!exit
+
+:hint
+$()
+$()
+!exit
+
+:help
+$()
+$()
+!exit
+
+:solution
+$()
+$()
+!exit
+
+:latex
+$()
+$()
+!exit
+
+:feedback
+
+!exit
+
+:test
+
+!exit
+
+:stat
+vsavelist=24,26
+embedcnt=1
