@@ -1,0 +1,133 @@
+!set title=Symbol II
+!if $wims_read_parm!=$empty
+ !goto $wims_read_parm
+!endif
+oef2wims_version=3.22
+author=Gang XIAO
+email=xiao@unice.fr
+language=en
+title_it=TITLE_it
+
+ansorder=c
+varcnt=18
+prevarcnt=17
+postvarcnt=0
+replycnt=0
+choicecnt=1
+conditioncnt=0
+feedbackcnt=0
+format=html
+
+val1=$imagedir
+val2=$confparm1
+val3=$confparm2
+val4=$confparm3
+val5=$confparm4
+
+!if $testcondition=yes
+ !goto test
+!endif
+!if $status=waiting
+ !exit
+!endif
+
+!readproc slib/oef/env lang 
+tmp0=$slib_out
+val6=$(tmp0)
+val7=if and only if
+val8=if
+val9=only if
+tmp0=!randitem 0,1
+
+val10=$[rint($(tmp0))]
+
+!ifval $val10=1
+val11=$val8
+!else
+val11=$val9
+!endif
+
+!ifval $val10=1
+val12=$val9
+!else
+val12=$val8
+!endif
+val13=$val7,$val8,$val9
+tmp0=!randitem 1,2,3
+
+val14=$[rint($(tmp0))]
+tmp0=!item $val14 of &lt;=&gt;,=&gt;,&lt;=
+
+val15=$(tmp0)
+
+!ifval $val10=1
+val16=A
+!else
+val16=B
+!endif
+
+!ifval $val10=1
+val17=B
+!else
+val17=A
+!endif
+tmp0=!randitem 1,2
+
+val18=$[rint($(tmp0))]
+tmp0=!item $val18 of holds, does not hold
+
+val19=$(tmp0)
+tmp0=!item $val18 of $val11,$val12
+
+val20=$(tmp0)
+tmp0=!item $val18 of $val12,$val11
+
+val21=$(tmp0)
+tmp0=!item $val14 of $val7,$val21,$val20
+
+val22=$(tmp0)
+choicename1=
+choicegood1=$val22
+choicebad1=$val13
+question=__EXECUTED_1692754_EXERCISE__
+
+!goto stat
+
+!exit
+
+:question
+$()Suppose that <i>A</i> and <i>B</i> are two propositions.	The symbol	<p><center><i>A</i>&nbsp;$val15&nbsp;<i>B</i></center> <p>	means that	<i>$val16</i> $val19 ____________ <i>$val17</i> $val19.
+$()
+!exit
+
+:hint
+$()
+$()
+!exit
+
+:help
+$()
+$()
+!exit
+
+:solution
+$()
+$()
+!exit
+
+:latex
+$()
+$()
+!exit
+
+:feedback
+
+!exit
+
+:test
+
+!exit
+
+:stat
+vsavelist=15,16,17,19
+embedcnt=0

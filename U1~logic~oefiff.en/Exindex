@@ -1,0 +1,6 @@
+!set exolist  =!char 1 to -2 of chsymbol,iff,iff2,iff3,iff4,parity,subset,symbol,symbol2,3func,3func2,
+!set titlelist=!char 1 to -2 of Chained symbols,If or only if,If or only if II,If or only if III,If or only if IV,Parity,Subset,Symbol,Symbol II,Three functions,Three functions II,
+!set titlelist_en=!char 1 to -2 of Chained symbols,If or only if,If or only if II,If or only if III,If or only if IV,Parity,Subset,Symbol,Symbol II,Three functions,Three functions II,
+!set exototal =!itemcnt $exolist
+
+!set titlelist_it=!char 1 to -2 of Chained symbols,If or only if,If or only if II,If or only if III,If or only if IV,Parity,Subset,Symbol,TITLE_it,Three functions,Three functions II,
