@@ -4,10 +4,10 @@ target=3func
 #include "lang_titles.inc"
 #include "lang.inc"
 
-\text{iff=NECSUF}
-\text{nec=NEC}
-\text{suf=SUF}
-\text{non=NONNECSUF}
+\text{iff=\name_NECSUF}
+\text{nec=\name_NEC}
+\text{suf=\name_SUF}
+\text{non=\name_NONNECSUF}
 \integer{gtype=random(0,1)}
 \text{gnec=\gtype=1?\nec:\suf}
 \text{gsuf=\gtype=1?\suf:\nec}
@@ -29,6 +29,7 @@ target=3func
 \text{c2= item(\cc,\iff,\cnec2,\csuf2,\iff,  \iff,  \cnec2,\csuf2,\csuf2,\cnec2)}
 \text{good=item(\cc,\iff,\gnec,\gsuf, \gnec, \gsuf, \gnec, \gsuf, \non,  \non)}
 
-\statement{STATEMENT}
+#include "lang.inc"
+\statement{\name_statement}
 
 \choice{}{\good}{\choices}

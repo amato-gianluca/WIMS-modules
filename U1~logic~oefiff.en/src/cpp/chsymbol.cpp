@@ -8,10 +8,10 @@ target=chsymbol
 \computeanswer{yes}
 \precision{10000}
 
-\text{iff=NECSUF}
-\text{nec=NEC}
-\text{suf=SUF}
-\text{non=PERNON}
+\text{iff=\name_NECSUF}
+\text{nec=\name_NEC}
+\text{suf=\name_SUF}
+\text{non=\name_PERNON}
 \integer{gtype=random(0,1)}
 \text{gnec=\gtype=1?\nec:\suf}
 \text{gsuf=\gtype=1?\suf:\nec}
@@ -33,6 +33,7 @@ target=chsymbol
 \text{s3=item(\order,\ch3,\ch2,\ch3,\ch1,\ch2,\ch1)}
 \text{good=item(\chtype,\iff,\gdir,\gdir,\gdir,\non,\non)}
 
-\statement{STATEMENT}
+#include "lang.inc"
+\statement{\name_statement}
 
 \choice{}{\good}{\choices}

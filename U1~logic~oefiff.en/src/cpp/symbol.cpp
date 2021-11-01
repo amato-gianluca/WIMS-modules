@@ -8,10 +8,10 @@ target=symbol
 \computeanswer{yes}
 \precision{10000}
 
-\text{iff=NECSUF}
-\text{nec=NEC}
-\text{suf=SUF}
-\text{non=NONNECSUF}
+\text{iff=\name_NECSUF}
+\text{nec=\name_NEC}
+\text{suf=\name_SUF}
+\text{non=\name_NONNECSUF}
 \integer{gtype=random(0,1)}
 \text{gnec=\gtype=1?\nec:\suf}
 \text{gsuf=\gtype=1?\suf:\nec}
@@ -22,6 +22,7 @@ target=symbol
 \text{gA=\gtype=1?A:B}
 \text{gB=\gtype=1?B:A}
 
-\statement{STATEMENT}
+#include "lang.inc"
+\statement{\name_statement}
 
 \choice{}{\good}{\choices}
