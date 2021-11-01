@@ -4,6 +4,15 @@ target=etneg1 etneg2 impneg1 impneg2
 #include "lang_titles.inc"
 #include "lang.inc"
 
+\if{\confparm1=1}{
+  \text{P=(P)}
+  \text{Q=(Q)}
+}
+\if{\confparm1=2}{
+  \text{P=P}
+  \text{Q=Q}
+}
+
 \if{randitem(1,2)=1}{
 \text{A=1,1,0,0;1,0,1,0}
 }{
@@ -15,9 +24,9 @@ target=etneg1 etneg2 impneg1 impneg2
 
 #if defined TARGET_etneg1 || defined TARGET_etneg2
 \if{randitem(1,2)=1}{
-\text{lprop=P AND NOT (Q),NOT (P) AND Q,P OR NOT (Q),NOT (P) OR Q}
+\text{lprop=P \name_and \name_not \Q,\name_not \P \name_and Q,P \name_or \name_not \Q,\name_not \P \name_or Q}
 }{
-\text{lprop=NOT (Q) AND P,Q AND NOT (P),NOT (Q) OR P,Q OR NOT (P)}
+\text{lprop=\name_not \Q \name_and P,Q \name_and \name_not \P,\name_not \Q \name_or P,Q \name_or \name_not \P}
 }
 \text{nprop=randint(1..4)}
 \text{prop=\lprop[\nprop]}
@@ -26,13 +35,13 @@ target=etneg1 etneg2 impneg1 impneg2
 #if defined TARGET_impneg1 || defined TARGET_impneg2
 \text{nprop=randint(1..4)}
 \if{randitem(1,2)=1}{
-\text{lprop=P \({\Rightarrow}\) Q,Q \({\Rightarrow}\) P,NOT (P) \({\Rightarrow}\) Q,P \({\Rightarrow}\) NOT (Q)}
+\text{lprop=P \({\Rightarrow}\) Q,Q \({\Rightarrow}\) P,\name_not \P \({\Rightarrow}\) Q,P \({\Rightarrow}\) \name_not \Q}
 }{
 #if defined TARGET_impneg1
-\text{lprop=NOT (Q) \({\Rightarrow}\) NOT (P),NOT (P) \({\Rightarrow}\) NOT (Q),NOT (Q) \({\Rightarrow}\) P,Q \({\Rightarrow}\) NOT (P)}
+\text{lprop=\name_not \Q \({\Rightarrow}\) \name_not \P,\name_not \P \({\Rightarrow}\) \name_not \Q,\name_not \Q \({\Rightarrow}\) P,Q \({\Rightarrow}\) \name_not \P}
 #endif
 #if defined TARGET_impneg2
-\text{lprop=P \({\Rightarrow}\) Q,Q \({\Rightarrow}\) P,NOT (Q) \({\Rightarrow}\) P,Q \({\Rightarrow}\) NOT (P)}
+\text{lprop=P \({\Rightarrow}\) Q,Q \({\Rightarrow}\) P,\name_not \Q \({\Rightarrow}\) P,Q \({\Rightarrow}\) \name_not \P}
 #endif
 }
 \text{prop=\lprop[\nprop]}
@@ -81,7 +90,7 @@ target=etneg1 etneg2 impneg1 impneg2
 \text{valT=wims(replace item 0 by F in \valT)}
 
 #if defined TARGET_etneg1 || defined TARGET_impneg1
-\statement{STATEMENT &laquo; \prop &raquo;.<br class="spacer"/>
+\statement{\name_statement &laquo; \prop &raquo;.<br class="spacer"/>
 <div style="text-align:center;">
 <table class="wimsborder wimscenter">
 <tr>
@@ -116,7 +125,7 @@ target=etneg1 etneg2 impneg1 impneg2
 
 #if defined TARGET_etneg2 || defined TARGET_impneg2
 
-\statement{STATEMENT1 <br class="spacer"/>
+\statement{\name_statement1 <br class="spacer"/>
 <div style="text-align:center;">
 <table class="wimsborder wimscenter">
 <tr>
@@ -142,7 +151,7 @@ target=etneg1 etneg2 impneg1 impneg2
 <td>\valT[4]</td>
 </tr></table></div><br class="spacer"/>
 
-STATEMENT2<br class="spacer"/>
+\name_statement2<br class="spacer"/>
 
 <div>\embed{reply1}</div>
 }

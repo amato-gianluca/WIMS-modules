@@ -1,10 +1,34 @@
 !!!! This file can contain contents which go after the exercise list in the intro.
 !!Model for some configuration parameters. Uncomment if necessary
 !!and replace no by yes in the following line.
-!set introhook_exists=no
+!set introhook_exists=yes
 
 !!<tr><td> </td>
 !!<td>
 !! !formradio confparm1 from 1 to 3
 !!</td>
 !!</tr>
+
+!if $lang = it
+!set name_menu1=Inserire l'argomento del connettivo "non" tra parentesi ?
+!set name_prompt1=sì,no
+!set name_menu2=Usare parole o simboli per i connettivi e, o, non ?
+!set name_prompt2=parole,simboli
+!goto menu
+!endif
+
+!set name_menu1=Insérez l'argument du conjonctif "non" entre parenthèses ?
+!set name_prompt1=oui,non
+!set name_menu2=Utilisez des mots ou des symboles pour les connecteurs et, ou non ?
+!set name_prompt2=mots,symboles
+
+:menu
+!default confparm1=1
+!default confparm2=1
+
+<tr><th>$name_menu1</th><td>
+!formselect confparm1 list 1,2 prompt $name_prompt1
+</td></tr>
+<tr><th>$name_menu2</th><td>
+!formselect confparm2 list 1,2 prompt $name_prompt2
+</td></tr>

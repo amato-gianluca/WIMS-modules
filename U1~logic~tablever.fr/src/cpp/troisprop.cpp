@@ -27,21 +27,21 @@ target= etou1 etou2 impetou1 impetou2
 #if defined TARGET_etou1
 \text{nprop=randint(1..2)}
 \if{\nprop=1}{
-\text{prop=randitem((\P AND \Q) OR \R,\R OR (\P AND \Q))}
+\text{prop=randitem((\P \name_and \Q) \name_or \R,\R \name_or (\P \name_and \Q))}
 }
 \if{\nprop=2}{
-\text{prop=randitem((\P OR \Q) AND \R,\R AND (\P OR \Q))}
+\text{prop=randitem((\P \name_or \Q) \name_and \R,\R \name_and (\P \name_or \Q))}
 }
 #endif
 
 #if defined TARGET_impetou1
 \text{nprop=randint(1..4)}
-\text{lprop=\P \({\Rightarrow}\) (\Q OR \R),\P \({\Rightarrow}\) (\Q AND \R),(\P OR \Q) \({\Rightarrow}\) \R,(\P AND \Q) \({\Rightarrow}\) \R}
+\text{lprop=\P \({\Rightarrow}\) (\Q \name_or \R),\P \({\Rightarrow}\) (\Q \name_and \R),(\P \name_or \Q) \({\Rightarrow}\) \R,(\P \name_and \Q) \({\Rightarrow}\) \R}
 \text{prop=\lprop[\nprop]}
 #endif
 
 #if defined TARGET_etou2
-\text{lprop2=(P AND Q) OR R,(P AND R) OR Q,(Q AND R) OR P,(P OR Q) AND R,(P OR R) AND Q,(Q OR R) AND P}
+\text{lprop2=(P \name_and Q) \name_or R,(P \name_and R) \name_or Q,(Q \name_and R) \name_or P,(P \name_or Q) \name_and R,(P \name_or R) \name_and Q,(Q \name_or R) \name_and P}
 \text{nprop=randint(1..2)}
 \text{nper=randint(1..3)}
 \integer{nprop2=(\nprop-1)*3+\nper}
@@ -61,12 +61,12 @@ target= etou1 etou2 impetou1 impetou2
 \matrix{ss=1,2,3
 2,1,3
 3,2,1}
-\text{lprop2=P \({\Rightarrow}\) (Q OR R),Q \({\Rightarrow}\) (P OR R),R \({\Rightarrow}\) (P OR Q),P \({\Rightarrow}\) (Q AND R),Q \({\Rightarrow}\) (P AND R),R \({\Rightarrow}\) (P AND Q)}
+\text{lprop2=P \({\Rightarrow}\) (Q \name_or R),Q \({\Rightarrow}\) (P \name_or R),R \({\Rightarrow}\) (P \name_or Q),P \({\Rightarrow}\) (Q \name_and R),Q \({\Rightarrow}\) (P \name_and R),R \({\Rightarrow}\) (P \name_and Q)}
 }{
 \matrix{ss=1,2,3
 1,3,2
 2,3,1}
-\text{lprop2=(P OR Q) \({\Rightarrow}\) R,(P OR R) \({\Rightarrow}\) Q,(Q OR R) \({\Rightarrow}\) P,(P AND Q) \({\Rightarrow}\) R,(P AND R) \({\Rightarrow}\) Q,(Q AND R) \({\Rightarrow}\) P}
+\text{lprop2=(P \name_or Q) \({\Rightarrow}\) R,(P \name_or R) \({\Rightarrow}\) Q,(Q \name_or R) \({\Rightarrow}\) P,(P \name_and Q) \({\Rightarrow}\) R,(P \name_and R) \({\Rightarrow}\) Q,(Q \name_and R) \({\Rightarrow}\) P}
 }
 \text{nper=randint(1..3)}
 \integer{nprop2=(\n2-1)*3+\nper}
@@ -111,7 +111,7 @@ target= etou1 etou2 impetou1 impetou2
 \text{valT=wims(replace item 0 by F in \valT)}
 
 #if defined TARGET_etou1 || defined TARGET_impetou1
-\statement{STATEMENT &laquo; \prop &raquo;.<br/ class="spacer">
+\statement{\name_statement &laquo; \prop &raquo;.<br/ class="spacer">
 <div style="text-align:center;">
 <table class="wimsborder wimscenter">
 <tr>
@@ -175,7 +175,7 @@ target= etou1 etou2 impetou1 impetou2
 
 #if defined TARGET_etou2 || defined TARGET_impetou2
 
-\statement{STATEMENT1 <br/ class="spacer">
+\statement{\name_statement1 <br/ class="spacer">
 
 <div style="text-align:center;">
 <table class="wimsborder wimscenter">
@@ -227,7 +227,7 @@ target= etou1 etou2 impetou1 impetou2
 <td>\valT[8]</td>
 </tr></table></div><br/ class="spacer">
 
-STATEMENT2<br/ class="spacer">
+\name_statement2<br/ class="spacer">
 
 <div>\embed{reply1}</div>
 }
