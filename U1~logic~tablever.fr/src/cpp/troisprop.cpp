@@ -1,19 +1,9 @@
 target= etou1 etou2 impetou1 impetou2
-#if defined TARGET_etou1
-\title{Trois propositions (et, ou) 1}
-#endif
-#if defined TARGET_etou2
-\title{Trois propositions (et, ou) 2}
-#endif
-#if defined TARGET_impetou1
-\title{Trois propositions (implication, et, ou) 1}
-#endif
-#if defined TARGET_impetou2
-\title{Trois propositions (implication, et, ou) 2}
-#endif
-\language{fr}
-\author{David Doyen}
-\email{david.doyen@u-pem.fr}
+
+#include "header.inc"
+#include "lang_titles.inc"
+#include "lang.inc"
+
 
 \if{randitem(1,2)=1}{
 \text{A=1,1,1,1,0,0,0,0;1,1,0,0,1,1,0,0;1,0,1,0,1,0,1,0}
@@ -37,21 +27,21 @@ target= etou1 etou2 impetou1 impetou2
 #if defined TARGET_etou1
 \text{nprop=randint(1..2)}
 \if{\nprop=1}{
-\text{prop=randitem((\P et \Q) ou \R,\R ou (\P et \Q))}
+\text{prop=randitem((\P AND \Q) OR \R,\R OR (\P AND \Q))}
 }
 \if{\nprop=2}{
-\text{prop=randitem((\P ou \Q) et \R,\R et (\P ou \Q))}
+\text{prop=randitem((\P OR \Q) AND \R,\R AND (\P OR \Q))}
 }
 #endif
 
 #if defined TARGET_impetou1
 \text{nprop=randint(1..4)}
-\text{lprop=\P \({\Rightarrow}\) (\Q ou \R),\P \({\Rightarrow}\) (\Q et \R),(\P ou \Q) \({\Rightarrow}\) \R,(\P et \Q) \({\Rightarrow}\) \R}
+\text{lprop=\P \({\Rightarrow}\) (\Q OR \R),\P \({\Rightarrow}\) (\Q AND \R),(\P OR \Q) \({\Rightarrow}\) \R,(\P AND \Q) \({\Rightarrow}\) \R}
 \text{prop=\lprop[\nprop]}
 #endif
 
 #if defined TARGET_etou2
-\text{lprop2=(P et Q) ou R,(P et R) ou Q,(Q et R) ou P,(P ou Q) et R,(P ou R) et Q,(Q ou R) et P}
+\text{lprop2=(P AND Q) OR R,(P AND R) OR Q,(Q AND R) OR P,(P OR Q) AND R,(P OR R) AND Q,(Q OR R) AND P}
 \text{nprop=randint(1..2)}
 \text{nper=randint(1..3)}
 \integer{nprop2=(\nprop-1)*3+\nper}
@@ -71,12 +61,12 @@ target= etou1 etou2 impetou1 impetou2
 \matrix{ss=1,2,3
 2,1,3
 3,2,1}
-\text{lprop2=P \({\Rightarrow}\) (Q ou R),Q \({\Rightarrow}\) (P ou R),R \({\Rightarrow}\) (P ou Q),P \({\Rightarrow}\) (Q et R),Q \({\Rightarrow}\) (P et R),R \({\Rightarrow}\) (P et Q)}
+\text{lprop2=P \({\Rightarrow}\) (Q OR R),Q \({\Rightarrow}\) (P OR R),R \({\Rightarrow}\) (P OR Q),P \({\Rightarrow}\) (Q AND R),Q \({\Rightarrow}\) (P AND R),R \({\Rightarrow}\) (P AND Q)}
 }{
 \matrix{ss=1,2,3
 1,3,2
 2,3,1}
-\text{lprop2=(P ou Q) \({\Rightarrow}\) R,(P ou R) \({\Rightarrow}\) Q,(Q ou R) \({\Rightarrow}\) P,(P et Q) \({\Rightarrow}\) R,(P et R) \({\Rightarrow}\) Q,(Q et R) \({\Rightarrow}\) P}
+\text{lprop2=(P OR Q) \({\Rightarrow}\) R,(P OR R) \({\Rightarrow}\) Q,(Q OR R) \({\Rightarrow}\) P,(P AND Q) \({\Rightarrow}\) R,(P AND R) \({\Rightarrow}\) Q,(Q AND R) \({\Rightarrow}\) P}
 }
 \text{nper=randint(1..3)}
 \integer{nprop2=(\n2-1)*3+\nper}
@@ -121,7 +111,7 @@ target= etou1 etou2 impetou1 impetou2
 \text{valT=wims(replace item 0 by F in \valT)}
 
 #if defined TARGET_etou1 || defined TARGET_impetou1
-\statement{Soit P, Q et R, trois propositions logiques. Déterminer la table de vérité de la proposition &laquo; \prop &raquo;.<br/ class="spacer">
+\statement{STATEMENT &laquo; \prop &raquo;.<br/ class="spacer">
 <div style="text-align:center;">
 <table class="wimsborder wimscenter">
 <tr>
@@ -185,7 +175,7 @@ target= etou1 etou2 impetou1 impetou2
 
 #if defined TARGET_etou2 || defined TARGET_impetou2
 
-\statement{Soit P, Q et R, trois propositions logiques. On considère une proposition T(P,Q,R), construite à partir des propositions P, Q et R, dont la table de vérité est donnée ci-dessous. <br/ class="spacer">
+\statement{STATEMENT1 <br/ class="spacer">
 
 <div style="text-align:center;">
 <table class="wimsborder wimscenter">
@@ -237,7 +227,7 @@ target= etou1 etou2 impetou1 impetou2
 <td>\valT[8]</td>
 </tr></table></div><br/ class="spacer">
 
-Parmi les propositions suivantes, laquelle est logiquement équivalente à T(P,Q,R) ?<br/ class="spacer">
+STATEMENT2<br/ class="spacer">
 
 <div>\embed{reply1}</div>
 }

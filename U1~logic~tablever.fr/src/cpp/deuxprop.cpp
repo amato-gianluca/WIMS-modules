@@ -1,19 +1,8 @@
 target=etneg1 etneg2 impneg1 impneg2
-#if defined TARGET_etneg1
-\title{Deux propositions (et, ou, négation) 1}
-#endif
-#if defined TARGET_etneg2
-\title{Deux propositions (et, ou, négation) 2}
-#endif
-#if defined TARGET_impneg1
-\title{Deux propositions (implication, négation) 1}
-#endif
-#if defined TARGET_impneg2
-\title{Deux propositions (implication, négation) 2}
-#endif
-\language{fr}
-\author{David Doyen}
-\email{david.doyen@u-pem.fr}
+
+#include "header.inc"
+#include "lang_titles.inc"
+#include "lang.inc"
 
 \if{randitem(1,2)=1}{
 \text{A=1,1,0,0;1,0,1,0}
@@ -26,9 +15,9 @@ target=etneg1 etneg2 impneg1 impneg2
 
 #if defined TARGET_etneg1 || defined TARGET_etneg2
 \if{randitem(1,2)=1}{
-\text{lprop=P et non (Q),non (P) et Q,P ou non (Q),non (P) ou Q}
+\text{lprop=P AND NOT (Q),NOT (P) AND Q,P OR NOT (Q),NOT (P) OR Q}
 }{
-\text{lprop=non (Q) et P,Q et non (P),non (Q) ou P,Q ou non (P)}
+\text{lprop=NOT (Q) AND P,Q AND NOT (P),NOT (Q) OR P,Q OR NOT (P)}
 }
 \text{nprop=randint(1..4)}
 \text{prop=\lprop[\nprop]}
@@ -37,13 +26,13 @@ target=etneg1 etneg2 impneg1 impneg2
 #if defined TARGET_impneg1 || defined TARGET_impneg2
 \text{nprop=randint(1..4)}
 \if{randitem(1,2)=1}{
-\text{lprop=P \({\Rightarrow}\) Q,Q \({\Rightarrow}\) P,non (P) \({\Rightarrow}\) Q,P \({\Rightarrow}\) non (Q)}
+\text{lprop=P \({\Rightarrow}\) Q,Q \({\Rightarrow}\) P,NOT (P) \({\Rightarrow}\) Q,P \({\Rightarrow}\) NOT (Q)}
 }{
 #if defined TARGET_impneg1
-\text{lprop=non (Q) \({\Rightarrow}\) non (P),non (P) \({\Rightarrow}\) non (Q),non (Q) \({\Rightarrow}\) P,Q \({\Rightarrow}\) non (P)}
+\text{lprop=NOT (Q) \({\Rightarrow}\) NOT (P),NOT (P) \({\Rightarrow}\) NOT (Q),NOT (Q) \({\Rightarrow}\) P,Q \({\Rightarrow}\) NOT (P)}
 #endif
 #if defined TARGET_impneg2
-\text{lprop=P \({\Rightarrow}\) Q,Q \({\Rightarrow}\) P,non (Q) \({\Rightarrow}\) P,Q \({\Rightarrow}\) non (P)}
+\text{lprop=P \({\Rightarrow}\) Q,Q \({\Rightarrow}\) P,NOT (Q) \({\Rightarrow}\) P,Q \({\Rightarrow}\) NOT (P)}
 #endif
 }
 \text{prop=\lprop[\nprop]}
@@ -92,7 +81,7 @@ target=etneg1 etneg2 impneg1 impneg2
 \text{valT=wims(replace item 0 by F in \valT)}
 
 #if defined TARGET_etneg1 || defined TARGET_impneg1
-\statement{Soit P et Q deux propositions logiques. Déterminer la table de vérité de la proposition &laquo; \prop &raquo;.<br class="spacer"/>
+\statement{STATEMENT &laquo; \prop &raquo;.<br class="spacer"/>
 <div style="text-align:center;">
 <table class="wimsborder wimscenter">
 <tr>
@@ -127,7 +116,7 @@ target=etneg1 etneg2 impneg1 impneg2
 
 #if defined TARGET_etneg2 || defined TARGET_impneg2
 
-\statement{Soit P et Q deux propositions logiques. On considère une proposition T(P,Q), construite à partir des propositions P et Q, dont la table de vérité est donnée ci-dessous. <br class="spacer"/>
+\statement{STATEMENT1 <br class="spacer"/>
 <div style="text-align:center;">
 <table class="wimsborder wimscenter">
 <tr>
@@ -153,7 +142,7 @@ target=etneg1 etneg2 impneg1 impneg2
 <td>\valT[4]</td>
 </tr></table></div><br class="spacer"/>
 
-Parmi les propositions suivantes, laquelle est logiquement équivalente à T(P,Q) ?<br class="spacer"/>
+STATEMENT2<br class="spacer"/>
 
 <div>\embed{reply1}</div>
 }
