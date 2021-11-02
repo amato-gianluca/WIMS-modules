@@ -2,7 +2,8 @@ target=3func
 
 #include "header.inc"
 #include "lang_titles.inc"
-#include "lang.inc"
+
+#include "lang1.inc"
 
 \text{iff=\name_NECSUF}
 \text{nec=\name_NEC}

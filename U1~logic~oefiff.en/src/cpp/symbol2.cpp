@@ -2,7 +2,7 @@ target=symbol2
 
 #include "header.inc"
 #include "lang_titles.inc"
-#include "lang.inc"
+#include "lang1.inc"
 
 \text{iff=\name_IFF}
 \text{nec=\name_IF}

@@ -2,7 +2,7 @@ target=chsymbol
 
 #include "header.inc"
 #include "lang_titles.inc"
-#include "lang.inc"
+#include "lang1.inc"
 
 \range{-5..5}
 \computeanswer{yes}

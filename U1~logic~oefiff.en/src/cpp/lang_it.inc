@@ -1,26 +1,14 @@
-\text{name_NECSUF=necessaria e sufficiente}
-\text{name_NEC=necessaria (solo)}
-\text{name_SUF=sufficiente (solo)}
-\text{name_NEC2=necessaria}
-\text{name_SUF2=sufficiente}
-\text{name_NONNECSUF=né necessaria né sufficiente}
-\text{name_IFF=se e solo se}
-\text{name_IF=se}
-\text{name_ONLYIF=solo se}
-\text{name_NONIFONLYIF=né se né solo se}
-\text{name_PERNON=probabilmente né necessaria né sufficiente}
-
 #if defined TARGET_3func
 \text{name_statement=
-Abbiamo tre funzioni reali: <i>f</i>(x), <i>g</i>(x) e
-<i>h</i>(x).
+Abbiamo tre funzioni reali: \(f(x)\), \(g(x)\) e
+\(h(x)\).
 <p>
-Per lo stesso valore di x, <i>\f1</i>(x)&gt;0 è una condizione \c1
-per <i>\f2</i>(x)&gt;0, e <i>\g1</i>(x)&gt;0 è una condizione \c2
-per <i>\g2</i>(x)&gt;0.
+Per lo stesso valore di \(x\), \(\f1(x)>0\) è una condizione \c1
+per \(\f2(x)>0\), e \(\g1(x)>0\) è una condizione \c2
+per \(\g2(x)>0\).
 <p>
-Pertanto, <i>\tf</i>(x)&gt;0
-è una condizione ____________&nbsp;per <i>\th</i>(x)&gt;0.
+Pertanto, \(\tf(x)>0\)
+è una condizione ____________&nbsp;per \(\th(x)>0\).
 }
 #endif
 
@@ -89,14 +77,15 @@ questo significa che
 #endif
 
 #if defined TARGET_parity
-\text{name_odd=dispari}
-\text{name_even=pari}
+\text{name_cases_list=dispari,pari}
+text{name_odd=dispari}
+text{name_even=pari}
 \text{name_statement=
 Siano <i>a</i> e <i>b</i> due interi.
 <p>
-"\t1 è \parity"
+"\t1 è \name_cases_list[\p]"
 è una condizione ____________&nbsp;perché
-\t2 sia \parity2.
+\t2 sia \name_cases_list[\p].
 }
 #endif
 
