@@ -80,13 +80,11 @@ questo significa che
 \text{name_cases_list=dispari,pari}
 text{name_odd=dispari}
 text{name_even=pari}
-\text{name_statement=
-Siano <i>a</i> e <i>b</i> due interi.
-<p>
-"\t1 è \name_cases_list[\p]"
-è una condizione ____________&nbsp;perché
-\t2 sia \name_cases_list[\p].
-}
+\text{name_statement1=Siano \(a\) e \(b\) due interi.}
+\text{name_is=è }
+\text{\name_statement2=è una condizione}
+\text{\name_statement3=perché}
+\text{\name_statement4=sia}
 #endif
 
 #if defined TARGET_subset
