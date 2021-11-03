@@ -47,7 +47,13 @@ target=iff iff2 iff3 iff4
 \text{gB=\gtype=1?B:A}
 
 #include "lang.inc"
-\statement{\name_statement}
+\statement{\name_statement1. \name_statement2
+<div class="wims_question">\name_question</div>
+\name_statement3
+<div class="wims_question">	   
+\(\gA\) \name_statement4 \embed{c1} \name_statement5 \(\gB\)\name_statement6
+</div>
+}
 
 #if defined TARGET_iff || defined TARGET_iff3
 \choice{}{\good}{\choices}

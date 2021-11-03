@@ -39,38 +39,47 @@ Da questo concludiamo che
 }
 #endif
 
+#if defined TARGET_iff || defined TARGET_iff2 || defined TARGET_iff3 || defined TARGET_iff4
+\text{name_statement1=Supponiamo che \(A\) e \(B\) siano due proposizioni}
+\text{name_statement2=Se diciamo che}
+\text{name_statement3=questo significa che}
+#endif
 #if defined TARGET_iff
-\text{name_statement=
-Supponiamo che <i>A</i> e <i>B</i> siano due proposizioni.
-Se diciamo che <i>A</i> è vera \sign <i>B</i> è vera,
-questo significa che
+\text{name_question=\(A\) è vera \sign \(B\) è vera}
+\text{name_statement4=è una condizione}
+\text{name_statement5=per}
+\text{name_statement6=.}
+text{name_statement=
 <i>\gA</i> è una condizione ____________&nbsp;per <i>\gB</i>.
 }
 #endif
 
 #if defined TARGET_iff2
-\text{name_statement=
-Supponiamo che <i>A</i> e <i>B</i> siano due proposizioni.
-Se diciamo che <i>A</i> è una condizione \good per <i>B</i>,
-questo significa che
+\text{name_question=\(A\) è una condizione \good per \(B\)}
+\text{name_statement4=è vera}
+\text{name_statement5=}
+\text{name_statement6=&nbsp;è vera.}
+text{name_statement=
 <i>\gA</i> è vera ____________ <i>\gB</i> è vera.
 }
 #endif
 
 #if defined TARGET_iff3
-\text{name_statement= \
-Supponiamo che <i>A</i> e <i>B</i> siano due proposizioni.
-Se diciamo che <i>A</i> è falsa \sign <i>B</i> è falsa,
-questo significa che
+\text{name_question=\(A\) è falsa \sign \(B\) è falsa}
+\text{name_statement4=è una condizione}
+\text{name_statement5=per}
+\text{name_statement6=.}
+text{name_statement=
 <i>\gA</i> è una condizione ____________&nbsp;per <i>\gB</i>.
 }
 #endif
 
 #if defined TARGET_iff4
-\text{name_statement= \
-Supponiamo che <i>A</i> e <i>B</i> siano due proposizioni.
-Se diciamo che <i>A</i> è una condizione \good per <i>B</i>,
-questo significa che
+\text{name_question=\(A\) è una condizione \good per \(B\)}
+\text{name_statement4=è falsa}
+\text{name_statement5=}
+\text{name_statement6=&nbsp;è falsa.}
+text{name_statement=
 <i>\gA</i> è falsa ____________ <i>\gB</i> è falsa.
 }
 \text{name_nothing=non ha niente a che vedere con}
