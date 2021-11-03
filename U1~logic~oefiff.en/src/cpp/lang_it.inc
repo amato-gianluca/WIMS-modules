@@ -1,23 +1,28 @@
+#if defined TARGET_3func || defined TARGET_3func2
+\text{name_statement1=Abbiamo tre funzioni reali}
+\text{name_and=e}
+\text{name_statement2=Per lo stesso valore di}
+\text{name_thus=Pertanto}
+#endif
 #if defined TARGET_3func
-\text{name_statement=
-Abbiamo tre funzioni reali: \(f(x)\), \(g(x)\) e
-\(h(x)\).
+\text{name_statement3=è una condizione}
+\text{name_statement4=per}
+text{name_statement=
 <p>
 Per lo stesso valore di \(x\), \(\f1(x)>0\) è una condizione \c1
 per \(\f2(x)>0\), e \(\g1(x)>0\) è una condizione \c2
 per \(\g2(x)>0\).
-<p>
+</p><p>
 Pertanto, \(\tf(x)>0\)
 è una condizione ____________&nbsp;per \(\th(x)>0\).
+</p>
 }
 #endif
 
 #if defined TARGET_3func2
-\text{name_statement=
-Abbiamo tre funzioni reali: <i>f</i>(x), <i>g</i>(x) e
-<i>h</i>(x).
+text{name_statement=
 <p>
-Per lo stesso valore di x, <i>\f1</i>(x)&lt;0 \c1
+<i>\f1</i>(x)&lt;0 \c1
 <i>\f2</i>(x)&lt;0, e <i>\g1</i>(x)&lt;0 \c2 <i>\g2</i>(x)&lt;0.
 <p>
 Pertanto, <i>\tf</i>(x)&lt;0

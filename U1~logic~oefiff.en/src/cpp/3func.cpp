@@ -1,14 +1,22 @@
-target=3func
+target=3func 3func2
 
 #include "header.inc"
 #include "lang_titles.inc"
 
 #include "lang1.inc"
 
+#if defined TARGET_3func  
 \text{iff=\name_NECSUF}
 \text{nec=\name_NEC}
 \text{suf=\name_SUF}
 \text{non=\name_NONNECSUF}
+#endif
+#if defined TARGET_3func2
+\text{iff=\name_IFF}
+\text{nec=\name_IF}
+\text{suf=\name_ONLYIF}
+\text{non=\name_NONIFONLYIF}
+#endif
 \integer{gtype=random(0,1)}
 \text{gnec=\gtype=1?\nec:\suf}
 \text{gsuf=\gtype=1?\suf:\nec}
@@ -31,6 +39,32 @@ target=3func
 \text{good=item(\cc,\iff,\gnec,\gsuf, \gnec, \gsuf, \gnec, \gsuf, \non,  \non)}
 
 #include "lang.inc"
-\statement{\name_statement}
+\statement{\name_statement1: \(f(x)\), \(g(x)\) \name_and \(h(x)\).
+<div class="wims_question">
+\name_statement2 \(x\), 
+#if defined TARGET_3func
+\(\f1(x)>0\) \name_statement3 <span class="wims_emph">\c1</span> \name_statement4 \(\f2(x)>0\),
+\name_and \(\g1(x)>0\) \name_statement3 <span class="wims_emph">\c2</span> \name_statement4 \(\g2(x)>0\).
+#endif
+#if defined TARGET_3func2
+\(\f1(x)<0\) <span class="wims_emph">\c1</span> \(\f2(x)<0\), \name_and \(\g1(x)<0\) <span class="wims_emph">\c2</span> \(\g2(x)<0\).
+#endif
+</div><p>
+\name_thus,
+#if defined TARGET_3func
+\(\tf(x)>0\)
+\name_statement3
+#endif
+#if defined TARGET_3func2
+\(\tf(x)<0\)
+#endif
+\embed{c1}
+#if defined TARGET_3func
+\name_statement4 \(\th(x)>0\).
+#endif
+#if defined TARGET_3func2
+\(\th(x)<0\).
+#endif
+</p>}
 
 \choice{}{\good}{\choices}
