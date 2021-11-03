@@ -78,13 +78,13 @@ this means that
 
 #if defined TARGET_parity
 \text{name_cases_list=odd,even}
-text{name_odd=odd}
-text{name_even=even}
-\text{name_statement1=Let \(a\) and \(b\) be two integers.}
-\text{name_is=is}
-\text{\name_statement2=is a}
-\text{\name_statement3=condition for}
-\text{\name_statement4=to be}
+note for translators: keep commas in the following
+\text{name_statement=Let \(a\) and \(b\) be two integers.,is,is a,condition for,to be}
+text{name_statement1=Let \(a\) and \(b\) be two integers.}
+text{name_is=is}
+text{\name_statement2=is a}
+text{\name_statement3=condition for}
+text{\name_statement4=to be}
 #endif
 
 #if defined TARGET_subset

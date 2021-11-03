@@ -24,9 +24,9 @@ text{parity2=item(\p,\name_odd,\name_even)}
 
 #include "lang.inc"
 
-\statement{\name_statement1
-<div class="wims_question">\t1 \name_is \name_cases_list[\p]</div>
-\name_statement2 \embed{c1}
-\name_statement3 \t2 \name_statement4 \name_cases_list[\q]}
+\statement{\name_statement[1]
+<div class="wims_question">\t1 \name_statement[2] \name_cases_list[\p]</div>
+\name_statement[3] \embed{c1}
+\name_statement[4] \t2 \name_statement[5] \name_cases_list[\q]}
 
 \choice{}{\good}{\choices}

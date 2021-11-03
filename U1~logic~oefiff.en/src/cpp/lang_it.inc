@@ -80,11 +80,13 @@ questo significa che
 \text{name_cases_list=dispari,pari}
 text{name_odd=dispari}
 text{name_even=pari}
-\text{name_statement1=Siano \(a\) e \(b\) due interi.}
-\text{name_is=è }
-\text{\name_statement2=è una condizione}
-\text{\name_statement3=perché}
-\text{\name_statement4=sia}
+note for translators: keep commas in the following
+\text{name_statement=Siano \(a\) e \(b\) due interi.,è,è una condizione,perché,sia}
+text{name_statement1=Siano \(a\) e \(b\) due interi.}
+text{name_is=è }
+text{\name_statement2=è una condizione}
+text{\name_statement3=perché}
+text{\name_statement4=sia}
 #endif
 
 #if defined TARGET_subset
