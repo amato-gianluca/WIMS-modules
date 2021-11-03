@@ -10,3 +10,12 @@
 \text{name_NONIFONLYIF=né se né solo se}
 \text{name_PERNON=probabilmente né necessaria né sufficiente}
 
+#if defined TARGET_subset
+\text{name_belongs=appartiene}
+\text{name_nbelongs=non appartiene}
+#endif
+
+#if defined TARGET_symbol2
+\text{name_holds=vale}
+\text{name_nholds=non vale}
+#endif

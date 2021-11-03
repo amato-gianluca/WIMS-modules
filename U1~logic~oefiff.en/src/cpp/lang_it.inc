@@ -99,8 +99,6 @@ text{\name_statement4=sia}
 #endif
 
 #if defined TARGET_subset
-\text{name_belongs=ppartiene}
-\text{name_nbelongs=non appartiene}
 \text{name_statement=
 Siano <i>A</i> e <i>B</i> due insisemi, e supponiamo che
 <i>A</i> sia un sottoinsieme di <i>B</i>.
@@ -121,8 +119,6 @@ significa che
 #endif
 
 #if defined TARGET_symbol2
-\text{name_holds=vale}
-\text{name_nholds=non vale}
 \text{name_statement=
 Supponiamo che <i>A</i> e <i>B</i> siano due proposizioni.
 Il simbolo
