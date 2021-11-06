@@ -2,11 +2,7 @@ target=symbol
 
 #include "header.inc"
 #include "lang_titles.inc"
-#include "lang1.inc"
-
-\range{-5..5}
-\computeanswer{yes}
-\precision{10000}
+#include "lang.inc"
 
 \text{iff=\name_NECSUF}
 \text{nec=\name_NEC}
@@ -17,12 +13,19 @@ target=symbol
 \text{gsuf=\gtype=1?\suf:\nec}
 \text{choices=\iff,\nec,\suf,\non}
 \integer{type=random(1,2,3)}
-\text{sign=item(\type,&lt;=&gt;,=&gt;,&lt;=)}
+\text{sign=item(\type,\Leftrightarrow,\Rightarrow,\Leftarrow)}
 \text{good=item(\type,\iff,\gsuf,\gnec)}
 \text{gA=\gtype=1?A:B}
 \text{gB=\gtype=1?B:A}
 
-#include "lang.inc"
-\statement{\name_statement}
+\statement{\name_statement
+<div class="wims_question">
+\(A \sign B\)
+</div>
+\name_thus
+<div class="wims_question">
+\(\gA\) \name_iscond1 \embed{c1} \name_iscond2 \(\gB\).
+</div>
+}
 
 \choice{}{\good}{\choices}

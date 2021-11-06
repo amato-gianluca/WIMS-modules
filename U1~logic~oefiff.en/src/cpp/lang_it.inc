@@ -1,134 +1,62 @@
+\text{name_NECSUF=necessaria e sufficiente}
+\text{name_NEC=necessaria (solo)}
+\text{name_SUF=sufficiente (solo)}
+\text{name_NEC2=necessaria}
+\text{name_SUF2=sufficiente}
+\text{name_NONNECSUF=né necessaria né sufficiente}
+\text{name_IFF=se e solo se}
+\text{name_IF=se}
+\text{name_ONLYIF=solo se}
+\text{name_NONIFONLYIF=né se né solo se}
+\text{name_PERNON=probabilmente né necessaria né sufficiente}
+
+\text{name_iscond1=è una condizione}
+\text{name_iscond2=per}
+
 #if defined TARGET_3func || defined TARGET_3func2
-\text{name_statement1=Abbiamo tre funzioni reali}
+\text{name_statement1=Abbiamo tre funzioni reali:}
 \text{name_and=e}
 \text{name_statement2=Per lo stesso valore di}
 \text{name_thus=Pertanto}
 #endif
-#if defined TARGET_3func
-\text{name_statement3=è una condizione}
-\text{name_statement4=per}
-text{name_statement=
-<p>
-Per lo stesso valore di \(x\), \(\f1(x)>0\) è una condizione \c1
-per \(\f2(x)>0\), e \(\g1(x)>0\) è una condizione \c2
-per \(\g2(x)>0\).
-</p><p>
-Pertanto, \(\tf(x)>0\)
-è una condizione ____________&nbsp;per \(\th(x)>0\).
-</p>
-}
-#endif
-
-#if defined TARGET_3func2
-text{name_statement=
-<p>
-<i>\f1</i>(x)&lt;0 \c1
-<i>\f2</i>(x)&lt;0, e <i>\g1</i>(x)&lt;0 \c2 <i>\g2</i>(x)&lt;0.
-<p>
-Pertanto, <i>\tf</i>(x)&lt;0
-____________ <i>\th</i>(x)&lt;0.
-}
-#endif
 
 #if defined TARGET_chsymbol
-\text{name_statement=
-Durante una lezione, il professore parla di 4 proprietà riguardanti
-le funzioni. Usiamo le lettere <i>A,B,C,D</i> per indicare queste 4 proprietà.
-<p>
-Il professore dimostra alla lavagna le seguenti relazioni tra queste
-4 proprietà:<p><center>
-<i>A</i>&nbsp;\s1&nbsp;<i>B</i>&nbsp;\s2&nbsp;<i>C</i>&nbsp;\s3&nbsp;<i>D</i>
-</center> <p>
-Da questo concludiamo che
-<i>\gA</i> è una condizione ____________&nbsp;per <i>\gB</i>.
-}
+\text{name_statement1=Durante una lezione, il professore parla di 4 proprietà riguardanti
+le funzioni. Usiamo le lettere \(A, B, C, D\) per indicare queste 4 proprietà.}
+\text{name_statement2=Il professore dimostra alla lavagna le seguenti relazioni tra queste
+4 proprietà:}
+\text{name_thus=Da questo concludiamo che}
 #endif
 
 #if defined TARGET_iff || defined TARGET_iff2 || defined TARGET_iff3 || defined TARGET_iff4
-\text{name_statement1=Supponiamo che \(A\) e \(B\) siano due proposizioni}
+\text{name_statement1=Supponiamo che \(A\) e \(B\) siano due proposizioni.}
 \text{name_statement2=Se diciamo che}
 \text{name_statement3=questo significa che}
-#endif
-#if defined TARGET_iff
-\text{name_question=\(A\) è vera \sign \(B\) è vera}
-\text{name_statement4=è una condizione}
-\text{name_statement5=per}
-\text{name_statement6=.}
-text{name_statement=
-<i>\gA</i> è una condizione ____________&nbsp;per <i>\gB</i>.
-}
-#endif
-
-#if defined TARGET_iff2
-\text{name_question=\(A\) è una condizione \good per \(B\)}
-\text{name_statement4=è vera}
-\text{name_statement5=}
-\text{name_statement6=&nbsp;è vera.}
-text{name_statement=
-<i>\gA</i> è vera ____________ <i>\gB</i> è vera.
-}
-#endif
-
-#if defined TARGET_iff3
-\text{name_question=\(A\) è falsa \sign \(B\) è falsa}
-\text{name_statement4=è una condizione}
-\text{name_statement5=per}
-\text{name_statement6=.}
-text{name_statement=
-<i>\gA</i> è una condizione ____________&nbsp;per <i>\gB</i>.
-}
+\text{name_istrue=è vera}
+\text{name_isfalse=è falsa}
 #endif
 
 #if defined TARGET_iff4
-\text{name_question=\(A\) è una condizione \good per \(B\)}
-\text{name_statement4=è falsa}
-\text{name_statement5=}
-\text{name_statement6=&nbsp;è falsa.}
-text{name_statement=
-<i>\gA</i> è falsa ____________ <i>\gB</i> è falsa.
-}
 \text{name_nothing=non ha niente a che vedere con}
 #endif
 
 #if defined TARGET_parity
-\text{name_cases_list=dispari,pari}
-text{name_odd=dispari}
-text{name_even=pari}
-note for translators: keep commas in the following
 \text{name_statement=Siano \(a\) e \(b\) due interi.,è,è una condizione,perché,sia}
-text{name_statement1=Siano \(a\) e \(b\) due interi.}
-text{name_is=è }
-text{\name_statement2=è una condizione}
-text{\name_statement3=perché}
-text{\name_statement4=sia}
+\text{name_cases_list=dispari,pari}
 #endif
 
 #if defined TARGET_subset
-\text{name_statement=
-Siano <i>A</i> e <i>B</i> due insisemi, e supponiamo che
-<i>A</i> sia un sottoinsieme di <i>B</i>.
-<p>In questo caso, <i>a</i> \atext a <i>\gA</i>
-è una condizione ____________&nbsp;per
-<i>a</i> \btext a <i>\gB</i>.
-}
+\text{name_statement=Siano \(A\) e \(B\) due insiemi, e supponiamo che
+\(A\) sia un sottoinsieme di \(B\).}
+\text{name_thus=In questo caso,}
+\text{name_cases_list=appartiene a,non appartiene a}
 #endif
 
-#if defined TARGET_symbol
-\text{name_statement=
-Supponiamo che <i>A</i> e <i>B</i> siano due proposizioni.
-Il simbolo
-<p><center><i>A</i>&nbsp;\sign&nbsp;<i>B</i></center> <p>
-significa che
-<i>\gA</i> è una condizione ____________&nbsp;per <i>\gB</i>.
-}
+#if defined TARGET_symbol || defined TARGET_symbol2
+\text{name_statement=Supponiamo che \(A\) e \(B\) siano due proposizioni. La notazione simbolica}
+\text{name_thus=significa che}
 #endif
 
 #if defined TARGET_symbol2
-\text{name_statement=
-Supponiamo che <i>A</i> e <i>B</i> siano due proposizioni.
-Il simbolo
-<p><center><i>A</i>&nbsp;\sign&nbsp;<i>B</i></center> <p>
-significa che
-<i>\gA</i> \ttext ____________ <i>\gB</i> \ttext.
-}
+\text{name_cases_list=vale,non vale}
 #endif

@@ -2,11 +2,7 @@ target=subset
 
 #include "header.inc"
 #include "lang_titles.inc"
-#include "lang1.inc"
-
-\range{-5..5}
-\computeanswer{yes}
-\precision{10000}
+#include "lang.inc"
 
 \text{iff=\name_NECSUF}
 \text{nec=\name_NEC}
@@ -17,15 +13,19 @@ target=subset
 \text{gsuf=\gtype=1?\suf:\nec}
 \text{choices=\iff,\nec,\suf,\non}
 \text{atype=random(1,2)}
-\text{atext=item(\atype,\name_belongs,\name_nbelongs)}
 \text{btype=random(1,2)}
-\text{btext=item(\btype,\name_belongs,\name_nbelongs)}
 \text{gA=\gtype=1?A:B}
 \text{gB=\gtype=1?B:A}
 \text{good=item(\atype,\gsuf,\gnec)}
 \text{good=\atype==\btype?\good:\non}
 
-#include "lang.inc"
-\statement{\name_statement}
+\statement{\name_statement
+<p>
+\name_thus
+<div class="wims_question">
+\(a\) \name_cases_list[\atype] \(\gA\) \name_iscond1 \embed{c1}
+\name_iscond2 \(a\) \name_cases_list[\btype] \(\gB\).
+</div>
+}
 
 \choice{}{\good}{\choices}

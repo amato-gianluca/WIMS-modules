@@ -2,7 +2,7 @@ target=symbol2
 
 #include "header.inc"
 #include "lang_titles.inc"
-#include "lang1.inc"
+#include "lang.inc"
 
 \text{iff=\name_IFF}
 \text{nec=\name_IF}
@@ -12,16 +12,22 @@ target=symbol2
 \text{gsuf=\gtype=1?\suf:\nec}
 \text{choices=\iff,\nec,\suf}
 \integer{type=random(1,2,3)}
-\text{sign=item(\type,&lt;=&gt;,=&gt;,&lt;=)}
+\text{sign=item(\type,\Leftrightarrow,\Rightarrow,\Leftarrow)}
 \text{gA=\gtype=1?A:B}
 \text{gB=\gtype=1?B:A}
 \integer{ttype=random(1,2)}
-\text{ttext=item(\ttype,\name_holds,\name_nholds)}
 \text{tnec=item(\ttype,\gnec,\gsuf)}
 \text{tsuf=item(\ttype,\gsuf,\gnec)}
 \text{good=item(\type,\iff,\tsuf,\tnec)}
 
-#include "lang.inc"
-\statement{\name_statement}
+\statement{\name_statement
+<div class="wims_question">
+\(A \sign B\)
+</div>
+\name_thus
+<div class="wims_question">
+\(\gA\) \name_cases_list[\ttype] \embed{c1} \(\gB\) \name_cases_list[\ttype] .
+</div>
+}
 
 \choice{}{\good}{\choices}

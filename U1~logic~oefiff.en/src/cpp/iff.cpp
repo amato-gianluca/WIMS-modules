@@ -2,11 +2,7 @@ target=iff iff2 iff3 iff4
 
 #include "header.inc"
 #include "lang_titles.inc"
-#include "lang1.inc"
-
-\range{-5..5}
-\computeanswer{yes}
-\precision{10000}
+#include "lang.inc"
 
 #if defined TARGET_iff || defined TARGET_iff3
 \text{iff=\name_NECSUF}
@@ -46,12 +42,29 @@ target=iff iff2 iff3 iff4
 \text{gA=\gtype=1?A:B}
 \text{gB=\gtype=1?B:A}
 
-#include "lang.inc"
-\statement{\name_statement1. \name_statement2
-<div class="wims_question">\name_question</div>
+\statement{\name_statement1 \name_statement2
+<div class="wims_question">
+#if defined TARGET_iff
+\(A\) \name_istrue <span class="wims_emph">\sign</span> \(B\) \name_istrue
+#elif defined TARGET_iff2
+\(A\) \name_iscond1 <span class="wims_emph">\good</span> \name_iscond2 \(B\)
+#elif defined TARGET_iff3
+\(A\) \name_isfalse <span class="wims_emph">\sign</span> \(B\) \name_isfalse
+#elif defined TARGET_iff4
+\(A\) \name_iscond1 <span class="wims_emph">\good</span> \name_iscond2 \(B\)
+#endif
+</div>
 \name_statement3
-<div class="wims_question">	   
-\(\gA\) \name_statement4 \embed{c1} \name_statement5 \(\gB\)\name_statement6
+<div class="wims_question">
+#if defined TARGET_iff
+\(\gA\) \name_iscond1 \embed{c1} \name_iscond2 \(\gB\).
+#elif defined TARGET_iff2
+\(\gA\) \name_istrue \embed{c1} \(\gB\) \name_istrue.
+#elif defined TARGET_iff3
+\(\gA\) \name_iscond1 \embed{c1} \name_iscond2 \(\gB\).
+#elif defined TARGET_iff4
+\(\gA\) \name_isfalse \embed{c1} \(\gB\) \name_isfalse.
+#endif
 </div>
 }
 

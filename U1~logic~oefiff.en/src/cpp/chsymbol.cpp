@@ -2,11 +2,7 @@ target=chsymbol
 
 #include "header.inc"
 #include "lang_titles.inc"
-#include "lang1.inc"
-
-\range{-5..5}
-\computeanswer{yes}
-\precision{10000}
+#include "lang.inc"
 
 \text{iff=\name_NECSUF}
 \text{nec=\name_NEC}
@@ -20,9 +16,9 @@ target=chsymbol
 \text{gB=\gtype=1?D:A}
 \integer{dir=random(1,2)}
 \text{gdir=item(\dir,\gsuf,\gnec)}
-\text{sdir=item(\dir,=&gt;,&lt;=)}
-\text{rdir=item(\dir,&lt;=,=&gt;)}
-\text{tiff=&lt;=&gt;}
+\text{sdir=item(\dir,\Rightarrow,\Leftarrow)}
+\text{rdir=item(\dir,\Leftarrow,\Rightarrow)}
+\text{tiff=\Leftrightarrow}
 \integer{chtype=random(1..6)}
 \text{ch1=item(\chtype,\tiff,\tiff,\tiff,\sdir,\tiff,\sdir)}
 \text{ch2=item(\chtype,\tiff,\tiff,\sdir,\sdir,\sdir,\sdir)}
@@ -33,7 +29,16 @@ target=chsymbol
 \text{s3=item(\order,\ch3,\ch2,\ch3,\ch1,\ch2,\ch1)}
 \text{good=item(\chtype,\iff,\gdir,\gdir,\gdir,\non,\non)}
 
-#include "lang.inc"
-\statement{\name_statement}
+\statement{\name_statement1
+<p>
+\name_statement2
+<div class="wims_question">
+\(A \s1 B \s2 C \s3 D\)
+</div>
+\name_thus
+<div class="wims_question">
+\(\gA\) \name_iscond1 \embed{c1} \name_iscond2 \(\gB\).
+</div>
+}
 
 \choice{}{\good}{\choices}

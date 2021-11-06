@@ -2,7 +2,7 @@ target=parity
 
 #include "header.inc"
 #include "lang_titles.inc"
-#include "lang1.inc"
+#include "lang.inc"
 
 \text{iff=\name_NECSUF}
 \text{nec=\name_NEC}
@@ -21,8 +21,6 @@ target=parity
 text{parity=item(\p,\name_odd,\name_even)}
 text{parity2=item(\p,\name_odd,\name_even)}
 \text{good=item(\p,\suf,\nec)}
-
-#include "lang.inc"
 
 \statement{\name_statement[1]
 <div class="wims_question">\t1 \name_statement[2] \name_cases_list[\p]</div>

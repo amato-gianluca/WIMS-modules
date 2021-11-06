@@ -1,122 +1,62 @@
-#if defined TARGET_3func
-\text{name_statement=
-We have 3 real functions: <i>f</i>(x), <i>g</i>(x) and
-<i>h</i>(x).
-<p>
-For a same value of x, <i>\f1</i>(x)&gt;0 is a \c1 condition
-for <i>\f2</i>(x)&gt;0, and <i>\g1</i>(x)&gt;0 is a \c2 condition
-for <i>\g2</i>(x)&gt;0.
-<p>
-Consequently, <i>\tf</i>(x)&gt;0
-is a ____________&nbsp;condition for <i>\th</i>(x)&gt;0.
-}
-#endif
+\text{name_NECSUF=necessary and sufficient}
+\text{name_NEC=necessary (only)}
+\text{name_SUF=sufficient (only)}
+\text{name_NEC2=necessary (only)}
+\text{name_SUF2=sufficient (only)}
+\text{name_NONNECSUF=neither necessary nor sufficient}
+\text{name_IFF=if and only if}
+\text{name_IF=if}
+\text{name_ONLYIF=only if}
+\text{name_NONIFONLYIF=neither if nor only if}
+\text{name_PERNON=perhaps neither necessary nor sufficient}
 
-#if defined TARGET_3func2
-\text{name_statement=
-We have 3 real functions: <i>f</i>(x), <i>g</i>(x) and
-<i>h</i>(x).
-<p>
-For a same value of x, <i>\f1</i>(x)&lt;0 \c1
-<i>\f2</i>(x)&lt;0, and <i>\g1</i>(x)&lt;0 \c2 <i>\g2</i>(x)&lt;0.
-<p>
-Consequently, <i>\tf</i>(x)&lt;0
-____________ <i>\th</i>(x)&lt;0.
-}
+\text{name_iscond1=is a}
+\text{name_iscond2=condition of}
+
+#if defined TARGET_3func || defined TARGET_3func2
+\text{name_statement1=We have 3 real functions:}
+\text{name_and=and}
+\text{name_statement2=For a same value of}
+\text{name_thus=Consequently}
 #endif
 
 #if defined TARGET_chsymbol
-\text{name_statement= \
-During a lecture, the professor talks about 4 properties concerning
-functions. We use the characters <i>A,B,C,D</i> to denote these 4 properties.
-<p>
-The professor proves on the blackboard the following relations between these
-4 properties:<p><center>
-<i>A</i>&nbsp;\s1&nbsp;<i>B</i>&nbsp;\s2&nbsp;<i>C</i>&nbsp;\s3&nbsp;<i>D</i>
-</center> <p>
-From this we conclude that
-<i>\gA</i> is a ____________&nbsp;condition of <i>\gB</i>.
-}
+\text{name_statement1=During a lecture, the professor talks about 4 properties concerning
+functions. We use the characters \(A, B, C, D\) to denote these 4 properties.}
+\text{name_statement2=The professor proves on the blackboard the following relations between these
+4 properties:}
+\text{name_thus=From this we conclude that}
 #endif
 
-#if defined TARGET_iff
-\text{name_statement= \
-Suppose that <i>A</i> and <i>B</i> are two propositions.
-If one says that <i>A</i> is true \sign <i>B</i> is true,
-this means that
-<i>\gA</i> is a ____________&nbsp;condition of <i>\gB</i>.
-}
-#endif
-
-#if defined TARGET_iff2
-\text{name_statement= \
-Suppose that <i>A</i> and <i>B</i> are two propositions.
-If one says that <i>A</i> is a \good condition of <i>B</i>,
-this means that
-<i>\gA</i> is true ____________ <i>\gB</i> is true.
-}
-#endif
-
-#if defined TARGET_iff3
-\text{name_statement= \
-Suppose that <i>A</i> and <i>B</i> are two propositions.
-If one says that <i>A</i> is false \sign <i>B</i> is false,
-this means that
-<i>\gA</i> is a ____________&nbsp;condition of <i>\gB</i>.
-}
+#if defined TARGET_iff || defined TARGET_iff2 || defined TARGET_iff3 || defined TARGET_iff4
+\text{name_statement1=Suppose that \(A\) and \(B\) are two propositions.}
+\text{name_statement2=If one says that}
+\text{name_statement3=this means that}
+\text{name_istrue=is true}
+\text{name_isfalse=is false}
 #endif
 
 #if defined TARGET_iff4
-\text{name_statement= \
-Suppose that <i>A</i> and <i>B</i> are two propositions.
-If one says that <i>A</i> is a \good condition of <i>B</i>,
-this means that
-<i>\gA</i> is false ____________ <i>\gB</i> is false.
-}
 \text{name_nothing=has nothing to do with}
 #endif
 
 #if defined TARGET_parity
-\text{name_cases_list=odd,even}
-note for translators: keep commas in the following
 \text{name_statement=Let \(a\) and \(b\) be two integers.,is,is a,condition for,to be}
-text{name_statement1=Let \(a\) and \(b\) be two integers.}
-text{name_is=is}
-text{\name_statement2=is a}
-text{\name_statement3=condition for}
-text{\name_statement4=to be}
+\text{name_cases_list=odd,even}
 #endif
 
 #if defined TARGET_subset
-\text{name_belongs=belongs}
-\text{name_nbelongs=does not belong}
-\text{name_statement=
-Let <i>A</i> and <i>B</i> be two sets, and suppose that
-<i>A</i> is a subset of <i>B</i>.
-<p>In this case, an element <i>a</i> \atext to <i>\gA</i>
-is a ____________&nbsp;condition for that
-<i>a</i> \btext to <i>\gB</i>.
-}
+\text{name_statement=Let \(A\) and \(B\) be two sets, and suppose that
+\(A\) is a subset of \(B\).}
+\text{name_thus=In this case,}
+\text{name_cases_list=belongs to,does not belong to}
 #endif
 
-#if defined TARGET_symbol
-\text{name_statement=
-Suppose that <i>A</i> and <i>B</i> are two propositions.
-The symbol
-<p><center><i>A</i>&nbsp;\sign&nbsp;<i>B</i></center> <p>
-means that
-<i>\gA</i> is a ____________&nbsp;condition of <i>\gB</i>.
-}
+#if defined TARGET_symbol || defined TARGET_symbol2
+\text{name_statement=Suppose that \(A\) and \(B\) are two propositions. The symbol}
+\text{name_thus=means that}
 #endif
 
 #if defined TARGET_symbol2
-\text{name_holds=holds}
-\text{name_nholds=does not hold}
-\text{name_statement=
-Suppose that <i>A</i> and <i>B</i> are two propositions.
-The symbol
-<p><center><i>A</i>&nbsp;\sign&nbsp;<i>B</i></center> <p>
-means that
-<i>\gA</i> \ttext ____________ <i>\gB</i> \ttext.
-}
+\text{name_cases_list=holds,does not hold}
 #endif
