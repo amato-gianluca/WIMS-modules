@@ -22,10 +22,9 @@ target=subset
 \statement{\name_statement
 <p>
 \name_thus
-<div class="wims_question">
-\(a\) \name_cases_list[\atype] \(\gA\) \name_iscond1 \embed{c1}
-\name_iscond2 \(a\) \name_cases_list[\btype] \(\gB\).
-</div>
+\name_quoteleft\(a\) \name_cases_list[\atype] \(\gA\)\name_quoteright
+\name_iscond1 \embed{c1} \name_iscond2
+\name_quoteleft\(a\) \name_cases_list[\btype] \(\gB\)\name_quoteright.
 }
 
 \choice{}{\good}{\choices}

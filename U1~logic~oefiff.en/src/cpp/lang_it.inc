@@ -50,6 +50,8 @@ le funzioni. Usiamo le lettere \(A, B, C, D\) per indicare queste 4 proprietà.}
 \(A\) sia un sottoinsieme di \(B\).}
 \text{name_thus=In questo caso,}
 \text{name_cases_list=appartiene a,non appartiene a}
+\text{name_quoteleft=&ldquo;}
+\text{name_quoteright=&#32;&rdquo;}
 #endif
 
 #if defined TARGET_symbol || defined TARGET_symbol2
