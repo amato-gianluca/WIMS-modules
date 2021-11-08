@@ -1,0 +1,164 @@
+<!-- 1 -->
+:<p><b>
+Logique de Boole (ou booléenne) :</b> Système logique formel dont les formules 
+sont construites à l'aide des connecteurs booléens et dont les valeurs de vérité sont binaires : Vrai  ou Faux. <br/>
+Un système logique formel est caractérisé par :  les formules qu'il autorise, les règles qu'il autorise pour calculer les valeurs de vérité des formules, enfin les règles de déduction qu'il autorise pour démontrer qu'une formule est conséquence logique de certaines autres.
+</p>
+
+<!-- 2 -->
+:<p> <b>
+Proposition,  assertion,  formule :</b> 
+<ul><li>En logique booléenne, ces termes désignent une "expression formelle", ou "formule",   écrite avec des propositions élémentaires (désignées  en général par des lettres) et des connecteurs booléens. </li>
+<li>En langage naturel, ces termes désignent tout énoncé ou affirmation  dont on se propose d'évaluer la vérité.</li>
+</ul>
+<p><b>
+Connecteurs booléens :</b>
+ négation \(\overline{A} ), disjonction \(A \; ou \; B ), 
+conjonction \(A \; et \; B ), implication \(A  \rightarrow  B ),
+ équivalence \(A  \leftrightarrow  B ).
+</p>
+
+<!-- 3 -->
+:<p><b>
+Priorités entre connecteurs :</b> 
+<ul><li>la négation est prioritaire devant tout autre connecteur ; </li>
+<li>la conjonction et la disjonction 
+sont prioritaires devant l'implication et l'équivalence.</li>
+</ul>
+</p>
+
+<!-- 4 -->
+:<p><b>
+Interprétation ou  modèle  d'un ensemble de formules :</b>
+C'est l'attribution d'une valeur de vérité à chacune des propositions
+élémentaires {A, B, C, ...} à partir desquelles les formules sont composées. En Logique de Boole ces valeurs sont Vrai ou Faux.
+</p>
+
+<!-- 5 -->
+:<p><b>
+Valeur de vérité d'une formule :</b>
+Dans une interprétation donnée, une formule prend une valeur de vérité qui est calculée selon des règles définies par des "tables de vérité". 
+</p>
+<p><b>
+Tables de vérité de la Logique de Boole :</b>
+On les donne par un tableau à double entrée où les valeurs de vérité de \(A) figurent en première colonne et celles de \(B) en première ligne.
+<table width="80%" align="center">
+<tr align="center">
+<td>Négation </td><td>Conjonction </td><td>Disjonction </td>
+<td>Implication </td><td>Equivalence </td></tr>
+<tr align="center"><td>\(\overline{A} )</td><td>\(A et B)</td><td> \(A ou B)</td>
+<td> \(A \rightarrow B)</td><td> \(A \leftrightarrow B)</td></tr>
+<tr>
+<td>
+<table border="solid" cellpadding="10" >
+<tr>
+<td>\(A)</td><td>V</td><td>F</td></tr>
+<tr>
+<td>\(\overline{A} )</td><td> F </td><td> V</td></tr>
+</table></td>
+
+<td><table border="solid" cellpadding="5" >
+<tr>
+<td>A \ B</td><td>V</td><td>F</td></tr>
+<tr>
+<td align="center">V</td><td> V </td><td> F</td></tr>
+<tr>
+<td align="center">F</td><td> F </td><td> F</td></tr>
+</table></td>
+<td>
+<table border="solid" cellpadding="5" >
+<tr>
+<td>A \ B</td><td>V</td><td>F</td></tr>
+<tr>
+<td align="center">V</td><td> V </td><td> V</td></tr>
+<tr>
+<td align="center">F</td><td> V </td><td> F</td></tr>
+</table>
+</td>
+<td>
+<table border="solid" cellpadding="5" >
+<tr>
+<td>A \ B</td><td>V</td><td>F</td></tr>
+<tr>
+<td align="center">V</td><td> V </td><td> F</td></tr>
+<tr>
+<td align="center">F</td><td> V </td><td> V</td></tr>
+</table></td>
+
+<td>
+<table border="solid" cellpadding="5" >
+<tr>
+<td>A \ B</td><td>V</td><td>F</td></tr>
+<tr>
+<td align="center">V</td><td> V </td><td> F</td></tr>
+<tr>
+<td align="center">F</td><td> F </td><td> V</td></tr>
+</table></td>
+</tr>
+</table>
+</p>
+
+
+<!-- 6 -->
+:<p><b>
+Tautologie :</b> formule logique qui est toujours vraie quelle que soit l'interprétation de ses propositions élémentaires. <br/>
+Une antilogie est une formule qui est toujours fausse, dans toute interprétation.
+</p>
+
+<!-- 7 -->
+:<p><b>
+Formules compatibles :</b> un ensemble de formules est compatible si et seulement s'il existe une interprétation dans laquelle toutes les formules de l'ensemble sont vraies. 
+<br/> Un ensemble de formules est incompatible si et seulement si, il n'existe aucune interprétation dans laquelle toutes ses formules puissent être vraies simultanément.
+</p>
+
+<!-- 8 -->
+:<p><b>Conséquence logique, théorème </b>:</br>Une  proposition \(P) se déduit de  \(S) si et seulement si elle est vraie dans  toute interprétation de \(S). On dit alors que \(P) est une <i>conséquence logique</i> ou un  <i>théorème</i> de \(S).
+Les formules de  \(S) sont appelées axiomes, ou prémisses ou hypothèses. 
+</p>
+
+<!-- 9 -->
+:<p><b>Raisonnement,   Déduction logique </b>:</br>
+Dans un raisonnement on distingue les <b>premisses</b> ou <b>hypothèses</b> (<i>H<sub>1</sub></i>, <i>H<sub>2</sub></i>, etc.) et
+la <b>conclusion</b> \(C). <br/>Un raisonnement est <b>valide</b>  si et seulement si la conclusion \(C) est <b>conséquence logique</b> des hypothèses. Cela signifie que la  conclusion doit être vraie 
+si l'on suppose toutes les hypothèses  vraies. <br/>La notion de vérité est celle de la Logique Booléenne.</p>
+
+<!-- 10 -->
+:<p><b>Règles de déduction</b> : <br/>
+Les étapes d'un raisonnement  suivent des règles. Les règles  les plus courantes sont les suivantes : </p>
+<center>
+<table border="solid" cellpadding="10">
+<tr><td>Règle</td><td>Hypothèse(s)</td><td>Conclusion</td></tr>
+<tr><td>Modus Ponens </td><td>si \(A) alors \(B)<br/>\(A)</td><td>\(B)</td></tr>
+<tr><td>Contraposée </td><td>si \(A) alors \(B)</td><td>si non \(B) alors non \(A)</td></tr>
+<tr><td>Raisonnement par cas </td><td>si \(A) alors \(C)<br/>si \(B) alors \(C)</td><td>si \(A) ou \(B) alors \(C)</td></tr>
+<tr><td>Introduction du "et"</td><td>\(A) <br/> \(B)</td><td>\(A et B)</td></tr>
+<tr><td>Introduction du "ou"</td><td>\(A)</td><td>\(A ou B)</td></tr>
+<tr><td>Affaiblissement</td><td>\(A et B)</td><td>\(A)</td></tr>
+</table></center>
+
+<!-- 11 -->
+:<p><b>Les règles de formation des négations </b> :
+<center><table border="solid" cellpadding="10">
+<tr><td>\(P)</td><td>\(\bar{P}) (\(\; non P))</td></tr>
+<tr><td>\(A et  B) </td><td>\(\bar{A} \; ou\; \bar{B})</td></tr>
+<tr><td>\(A ou B) </td><td>\(\bar{A}  \;et  \;\bar{B})</td></tr>
+<tr><td> \(\bar{A}) </td><td>\(A)</td></tr>
+<tr><td>pour tout \(x),  \(A) </td><td>il existe \(x) tel que \(\bar{A})</td></tr>
+<tr><td>il existe \(x) tel que \(A) </td><td> pour tout \(x), \(\bar{A})</td></tr>
+<tr><td></td><td></td></tr>
+</table>
+</center>
+</p>
+
+<!-- 12 -->
+:<p><b>L'implication \(A\rightarrow B) (si \(A) alors \(B)) </b> :
+<ul>
+<li> L'implication \(A\rightarrow B) est vraie si et seulement si \(A) est faux ou \(B) est vrai.</li>
+<li>Les propositions \(A\rightarrow B) et \(\bar{A} \; ou \; B) sont logiquement équivalentes.<br/>
+<small>(c'est à dire qu'elles ont les mêmes tables de vérité.)</small></li>
+<li> Les propositions   \(A\rightarrow B) et \(\bar{B}\rightarrow \bar{A}) sont logiquement équivalentes.</li>
+<li> D'où les règles de déduction :<br/>
+ Modus Ponens :  des deux hypothèses \(A\rightarrow B) et \(A), on peut déduire \(B)<br/>
+ Contraposition : des deux hypothèses \(A\rightarrow B) et \(\bar{B}), on peut déduire \(\bar{A})<br/>
+  Mais des hypothèses \(A\rightarrow B) et \(\bar{A}) on ne peut rien déduire.
+</li></ul>
