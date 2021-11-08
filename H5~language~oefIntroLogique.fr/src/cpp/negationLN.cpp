@@ -3,7 +3,6 @@ target=negationLN
 #include "header.inc"
 #include "lang_titles.inc"
 
-\language{fr}
 \range{-10..10}
 \text{monaide=wims(record 11  of glossaire)}
 \help{\monaide}
@@ -20,17 +19,17 @@ est fou, sont fous, est facile, sont faciles, est comique, sont comiques,est âgé
 \text{nonverbes=\cas==2?est franc,sont francs,
 est sain d'esprit, sont sains d'esprit, est difficile, sont difficiles, est tragique, sont tragiques, est jeune, sont jeunes, est malheureux, sont malheureux,est irresponsable,sont irresponsables}
 
-\text{suj=\cas==2?item(2*\u-1, \sujets)} 
+\text{suj=\cas==2?item(2*\u-1, \sujets)}
 \text{sujs=\cas==2?item(2*\u,\sujets)}
 \text{verb=\cas==2?item(2*\u-1, \verbes)}
-\text{verbs=\cas==2?item(2*\u, \verbes)} 
+\text{verbs=\cas==2?item(2*\u, \verbes)}
 \text{nonverb=\cas==2?item(2*\u-1, \nonverbes)}
-\text{nonverbs=\cas==2?item(2*\u, \nonverbes)} 
-\text{adj=\cas==2?item(\u,menteur,fou,facile,comique, âgé, heureux,responsable)} 
+\text{nonverbs=\cas==2?item(2*\u, \nonverbes)}
+\text{adj=\cas==2?item(\u,menteur,fou,facile,comique, âgé, heureux,responsable)}
 \text{nonadj=\cas==2?item(\u,franc,sain d'esprit,
-difficile,tragique, jeune ,malheureux,irresponsable)} 
+difficile,tragique, jeune ,malheureux,irresponsable)}
 
-\text{Alist=\cas==1? 
+\text{Alist=\cas==1?
 Il pleut,
 Elle danse,
 Il joue de la guitare,
@@ -50,7 +49,7 @@ malheureux,
 les poules nagent
 }
 
-\text{nonAlist=\cas==1? 
+\text{nonAlist=\cas==1?
 Il ne pleut pas,
 Elle ne danse pas,
 Il ne joue pas de la guitare,
@@ -125,7 +124,7 @@ Tous les \sujs \nonverbs
 
 <p>On donne la proposition \(P) suivante :</p>
 <center> <font color="blue"><b>\(P) : " \prop "</b></font></center>
-<p>Quelle est  la négation de \(P) ?</p> 
+<p>Quelle est  la négation de \(P) ?</p>
 </div>
 }
 

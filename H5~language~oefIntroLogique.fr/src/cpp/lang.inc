@@ -1,4 +1,4 @@
-#include "lang_en.inc"
+#include "lang_fr.inc"
 \if{\lang=it}{
 #include "lang_it.inc"
 }

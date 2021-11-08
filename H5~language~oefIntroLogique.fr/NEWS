@@ -1,6 +1,10 @@
 # This file registers changes to the module.
 # Please write in reverse order: the last version first.
 
+Version 2.0: (8 janaury 2021)
+        Refactored as an internationa module.
+        Added Italian translation.
+
 Version 1.8: (5 janvier 2015)
         Une erreur sur la liste des contraposées dans "réciproque / contraposée "
         signalée par M.C. David
