@@ -50,8 +50,8 @@ functions. We use the characters \(A, B, C, D\) to denote these 4 properties.}
 \(A\) is a subset of \(B\).}
 \text{name_thus=In this case,}
 \text{name_cases_list=belongs to,does not belong to}
-\text{name_quoteleft=}
-\text{name_quoteright=}
+\text{name_quoteleft=&ldquo;}
+\text{name_quoteright=&#32;&rdquo;}
 #endif
 
 #if defined TARGET_symbol || defined TARGET_symbol2
