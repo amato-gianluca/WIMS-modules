@@ -2,6 +2,7 @@ target=negationLN
 
 #include "header.inc"
 #include "lang_titles.inc"
+#include "lang.inc"
 
 \range{-10..10}
 \text{monaide=wims(record 11  of glossaire)}
@@ -11,13 +12,9 @@ target=negationLN
 \integer{cas=\a<3?1:2}
 \integer{u=random(1..7)}
 
-\text{sujets=\cas==2?grec,grecs,logicien,logiciens, devoir de maths,
-devoirs de maths,film,films,sage,sages,élève,élèves,adulte,adultes}
-\text{verbes=\cas==2?est menteur,sont menteurs,
-est fou, sont fous, est facile, sont faciles, est comique, sont comiques,est âgé, sont âgés, est heureux,sont heureux,est responsable,sont responsables}
-
-\text{nonverbes=\cas==2?est franc,sont francs,
-est sain d'esprit, sont sains d'esprit, est difficile, sont difficiles, est tragique, sont tragiques, est jeune, sont jeunes, est malheureux, sont malheureux,est irresponsable,sont irresponsables}
+\text{sujets=\cas==2?\name_subjects}
+\text{verbes=\cas==2?\name_verbs}
+\text{nonverbes=\cas==2?\name_nonverbs}
 
 \text{suj=\cas==2?item(2*\u-1, \sujets)}
 \text{sujs=\cas==2?item(2*\u,\sujets)}
@@ -25,112 +22,69 @@ est sain d'esprit, sont sains d'esprit, est difficile, sont difficiles, est trag
 \text{verbs=\cas==2?item(2*\u, \verbes)}
 \text{nonverb=\cas==2?item(2*\u-1, \nonverbes)}
 \text{nonverbs=\cas==2?item(2*\u, \nonverbes)}
-\text{adj=\cas==2?item(\u,menteur,fou,facile,comique, âgé, heureux,responsable)}
-\text{nonadj=\cas==2?item(\u,franc,sain d'esprit,
-difficile,tragique, jeune ,malheureux,irresponsable)}
+\text{adj=\cas==2?item(\u,\name_adj)}
+\text{nonadj=\cas==2?item(\u,\name_nonadj)}
 
-\text{Alist=\cas==1?
-Il pleut,
-Elle danse,
-Il joue de la guitare,
-Elle sera ingénieur,
-Je suis nul en maths,
-On est triste,
-Les poissons ne volent pas
-}
-
-\text{Blist= \cas==1?
-il fait froid,
-elle court,
-il chante,
-travaillera à l'étranger,
-je suis fort en français,
-malheureux,
-les poules nagent
-}
-
-\text{nonAlist=\cas==1?
-Il ne pleut pas,
-Elle ne danse pas,
-Il ne joue pas de la guitare,
-Elle ne sera pas ingénieur,
-Je suis fort en maths,
-On est joyeux,
-Les poissons volent
-}
-
-\text{nonBlist=\cas==1?
-il fait chaud,
-elle ne court pas,
-il ne chante pas,
-restera en France,
-je suis nul en français,
-heureux,
-les poules ne nagent pas
-}
+\text{Alist=\cas==1?\name_Alist}
+\text{Blist= \cas==1?\name_Blist}
+\text{nonAlist=\cas==1?\name_nonAlist}
+\text{nonBlist=\cas==1?\name_nonBlist}
 
 \text{A=\cas==1?item(\u,\Alist)}
 \text{B=\cas==1?item(\u,\Blist)}
 \text{nonA=\cas==1?item(\u,\nonAlist)}
 \text{nonB=\cas==1?item(\u,\nonBlist)}
 
-\text{prop=item(\a,\A et \B,\A ou \B,Il existe un \suj qui \verb,
-Tous les  \sujs \verbs )}
+\text{prop=item(\a,\A \et \B,\A \ou \B,\Ilexiste \suj \qui \verb, \Tous \sujs \verbs )}
 
-\text{neg=\a==1?\nonA ou \nonB}
-\text{neg=\a==2?\nonA et \nonB}
+\text{neg=\a==1?\nonA \ou \nonB}
+\text{neg=\a==2?\nonA \et \nonB}
 
 \text{ass=\a==1?
-\A ou \nonB,
-\nonA ou \B,
-\nonA et \nonB
+\A \ou \nonB,
+\nonA \ou \B,
+\nonA \et \nonB
 }
 
 \text{ass=\a==2?
-\A et \nonB,
-\nonA et \B,
-\nonA ou \nonB
+\A \et \nonB,
+\nonA \et \B,
+\nonA \ou \nonB
 }
 
-\text{neg=(\a==3)?randitem(Aucun \suj n'est \adj, Tous les \sujs \nonverbs)}
+\text{neg=(\a==3)?randitem(\Aucun \suj \nest \adj, \Tous \sujs \nonverbs)}
 
 \text{ass=(\a==3)?
-Tous les \sujs  \verbs,
-Aucun \suj n'est \nonadj,
-Il existe un \suj qui \nonverb,
-Certains \sujs \verbs,
-Certains \sujs \nonverbs
+\Tous \sujs \verbs,
+\Aucun \suj \nest \nonadj,
+\Ilexiste \suj \qui \nonverb,
+\Certains \sujs \verbs,
+\Certains \sujs \nonverbs
 }
 
-\text{neg=(\a==4)?randitem(Il existe un \suj qui \nonverb,
-Certains \sujs \nonverbs)}
+\text{neg=(\a==4)?randitem(\Ilexiste \suj \qui \nonverb, \Certains \sujs \nonverbs)}
 
 \text{ass=(\a==4)?
-Certains \sujs \verbs,
-Il existe un \suj qui \verb,
-Aucun \suj n'est \adj,
-Aucun \suj n'est \nonadj,
-Tous les \sujs \nonverbs
+\Certains \sujs \verbs,
+\Ilexiste \suj \qui \verb,
+\Aucun \suj \nest \adj,
+\Aucun \suj \nest \nonadj,
+\Tous \sujs \nonverbs
 }
 
 \text{choix=shuffle(\ass)}
 
-
-
-#include "lang.inc"
-
 \statement{
 <div style="background-color:#FFFF66;">
 
-<p>On donne la proposition \(P) suivante :</p>
+<p>\name_statement1</p>
 <center> <font color="blue"><b>\(P) : " \prop "</b></font></center>
-<p>Quelle est  la négation de \(P) ?</p>
+<p>\name_statement2</p>
 </div>
 }
 
-\choice{La négation de \(P) est}{\neg}{\choix}
+\choice{\name_question}{\neg}{\choix}
 
-\feedback{\a==4 and (\choice1 issametext Aucun \suj n'est\nonadj)}
-{<b>Remarque</b>
-Votre réponse "Aucun \suj n'est \nonadj" n'est pas la négation de
- "\prop" ; au contraire c'est un synonyme.  }
+\feedback{\a==4 and (\choice1 issametext \Aucun \suj \nest \nonadj)}
+{<b>\Remarque</b>
+\name_remark1 "\Aucun \suj \nest \nonadj" \name_remark2 "\prop" \name_remark3}

@@ -12,7 +12,7 @@ target=implication
 \steps{reply1
 reply2}
 
-\text{si=randitem(\Si,\Quand,\Chaque)}
+\text{si=randitem(\Si2,\Quand,\Chaque)}
 \text{alors=randitem(\alors,&#44;)}
 
 \for{i = 1 to 8 }{

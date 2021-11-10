@@ -67,7 +67,7 @@ item(\ind[4],\typ),item(\ind[5],\typ)}
 <div style="background-color:#FFFF66;">
 
 <p>\name_statement1</p>
-<p><i>\name_remark</i> : \name_statement2</p>
+<p><i>\Remarque</i> : \name_statement2</p>
 <center>
 <font color="blue"><b> \(A) : " \A "</b></font>
 &nbsp; \et  &nbsp; <font color="green"><b>  \(B) : " \B "</b></font>

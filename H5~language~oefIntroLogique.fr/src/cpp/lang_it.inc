@@ -9,6 +9,8 @@
 \text{non=no}
 \text{non2=non}
 \text{spacebeforecolon=}
+\text{Remarque=Nota}
+
 
 #if defined TARGET_connecteursLN
 \text{Alist =
@@ -91,7 +93,6 @@ non siamo innamorati,
 la soddisfazione è parziale
 }
 
-\text{name_remark=Nota}
 \text{name_statement1=Per ciascuna delle seguenti proposizioni, a sinistra, determina la sua struttura logica.}
 \text{name_statement2=le proposizioni possono essere solo vere o false... }
 \text{name_statement3=(Fare clic sugli elementi corrispondenti a due a due.)}
@@ -264,6 +265,67 @@ nessuna interpretazione in cui \(P_1), \(P_2) e \(P_3) sono simultaneamente veri
 #endif
 
 #if defined TARGET_negationLN
+
+\text{name_subjects=greco, greci, logico, logici, compiti di matematica, compiti di matematica, film, film, saggio, saggi, allievo, allievi, adulto, adulti}
+\text{name_verbs=è un bugiardo, sono bugiardi, è pazzo, sono pazzi, è facile, sono facili, è divertente, sono divertenti, è vecchio, sono vecchi, è felice,
+sono felici, è responsabile, sono responsabili}
+\text{name_nonverbs=è schietto, aono schietti, è sano di mente, sono sani di mente, è difficile, sono difficili, è tragico, sono tragicu, è giovane, sono giovani,
+è infelice, sono infelici, è irresponsabile, sono irresponsabili}
+\text{name_adj=bugiardo, pazzo, facile, comico, vecchio, felice, responsabile}
+\text{name_nonadj=franco, sano di mente, difficile, tragico, giovane, infelice, irresponsabile}
+
+\text{name_Alist=
+Sta piovendo,
+Lei balla,
+Lui suona la chitarra,
+Sarà un ingegnere,
+Faccio schifo in matematica,
+Siamo tristi,
+I pesci non volano}
+
+\text{name_Blist=
+fa freddo,
+lei corre,
+lui canta,
+lavorerà all'estero,
+sono bravo in italiano,
+sfortunato,
+le galline nuotano
+}
+
+\text{name_nonAlist=
+Non sta piovendo,
+Lei non balla,
+Lui non suona la chitarra,
+Non sarà un ingegnere,
+Sono bravo in matematica,
+Siamo felici,
+Il pesci volano
+}
+
+\text{name_nonBlist=
+fa caldo,
+lei non corre,
+lui non canta,
+resterà in Italia,
+faccio schifo in italiano,
+felice,
+le galline non nuotano
+}
+
+\text{Ilexiste=Esiste un}
+\text{qui=che}
+\text{Tous=Tutti i/gli}
+\text{Aucun=Nessun}
+\text{nest=è}
+\text{Certains=Alcuni}
+
+\text{name_statement1=Sia data la proposizione \(P\) seguente:}
+\text{name_statement2=Qual è la negazione di \(P\)?}
+\text{name_question=La negazione di \(P) è}
+\text{name_remark1=La vostra risposta}
+\text{name_remark2=non è la negazione di}
+\text{name_remark3=&#32; al contrario è sinonimo}
 #endif
 
 #if defined TARGET_negationMath

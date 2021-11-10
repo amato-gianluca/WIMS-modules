@@ -10,6 +10,7 @@
 \text{non=non}
 \text{non2=non}
 \text{spacebeforecolon=&#32;}
+\text{Remarque=Remarque}
 
 #if defined TARGET_connecteursLN
 \text{Alist =
@@ -92,7 +93,6 @@ on n'est pas amoureux,
 la satisfaction est partielle
 }
 
-\text{name_remark=Remarque}
 \text{name_statement1=Pour chacune des propositions  suivantes, à gauche, déterminer sa structure logique.}
 \text{name_statement2=les propositions peuvent être vraies ou fausses ...}
 \text{name_statement3=(Cliquer sur les élements qui se correspondent deux à deux.)}
@@ -276,6 +276,66 @@ aucune interprétation dans laquelle \(P_1), \(P_2) et \(P_3) soient simultanémen
 
 
 #if defined TARGET_negationLN
+
+\text{name_subjects=grec,grecs,logicien,logiciens, devoir de maths,devoirs de maths,film,films,sage,sages,élève,élèves,adulte,adultes}
+\text{name_verbs=est menteur,sont menteurs,est fou, sont fous, est facile, sont faciles, est comique, sont comiques,est âgé, sont âgés, est heureux,
+sont heureux,est responsable,sont responsables}
+\text{name_nonverbs=est franc,sont francs, est sain d'esprit, sont sains d'esprit, est difficile, sont difficiles, est tragique, sont tragiques, est jeune, sont jeunes,
+est malheureux, sont malheureux,est irresponsable,sont irresponsables}
+\text{name_adj=menteur, fou, facile, comique, âgé, heureux, responsable}
+\text{name_nonadj=franc,sain d'esprit, difficile, tragique, jeune, malheureux, irresponsable}
+
+\text{name_Alist=Il pleut,
+Elle danse,
+Il joue de la guitare,
+Elle sera ingénieur,
+Je suis nul en maths,
+On est triste,
+Les poissons ne volent pas}
+
+\text{name_Blist=
+il fait froid,
+elle court,
+il chante,
+travaillera à l'étranger,
+je suis fort en français,
+malheureux,
+les poules nagent
+}
+
+\text{name_nonAlist=
+Il ne pleut pas,
+Elle ne danse pas,
+Il ne joue pas de la guitare,
+Elle ne sera pas ingénieur,
+Je suis fort en maths,
+On est joyeux,
+Les poissons volent
+}
+
+\text{name_nonBlist=
+il fait chaud,
+elle ne court pas,
+il ne chante pas,
+restera en France,
+je suis nul en français,
+heureux,
+les poules ne nagent pas
+}
+
+\text{Ilexiste=Il existe un}
+\text{qui=qui}
+\text{Tous=Tous les}
+\text{Aucun=Aucun}
+\text{nest=n'est}
+\text{Certains=Certains}
+
+\text{name_statement1=On donne la proposition \(P) suivante :}
+\text{name_statement2=Quelle est  la négation de \(P) ?}
+\text{name_question=La négation de \(P) est}
+\text{name_remark1=Votre réponse}
+\text{name_remark2=n'est pas la négation de}
+\text{name_remark3=&#32; au contraire c'est un synonyme.}
 #endif
 
 #if defined TARGET_negationMath
