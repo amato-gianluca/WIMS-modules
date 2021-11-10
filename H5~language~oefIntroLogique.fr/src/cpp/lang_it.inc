@@ -7,6 +7,8 @@
 \text{alors=allora}
 \text{oui=sì}
 \text{non=no}
+\text{non2=non}
+\text{spacebeforecolon=}
 
 #if defined TARGET_connecteursLN
 \text{Alist =
@@ -157,9 +159,108 @@ parlo normalmente
 #endif
 
 #if defined TARGET_implication
+\text{Quand=Quando}
+\text{Chaque=Ogni volta che}
+\text{whatif=Senza fare altre ipotesi, cosa possiamo dire che succede quando}
+
+\text{prem = Il signor Alex si siede davanti alla TV,
+La signora Alice esce a fare una passeggiata nel parco,
+Fred è nel parco,
+Suzy si arrampica sull'albero,
+Nestor si gira nel parco,
+Bubu si seppellisce sottoterra,
+Fred fruga nella sporcizia,
+La signora Alice è molto arrabbiata
+}
+
+\text{conc = La signora Alice esce a fare una passeggiata nel parco,
+il suo cane Fred lo accompagna,
+Suzy si arrampica sull'albero,
+Nestor lascia l'albero per girarsi nel parco,
+Bubu si seppellisce sottoterra,
+Fred fruga nella sporcizia,
+La signora Alice si arrabbia,
+Il signor Alex si siede davanti alla TV
+}
+
+\text{nonPr = Il signor Alex non si siede davanti alla TV,
+La signora Alice non esce a fare una passeggiata nel parco,
+Fred non è nel parco,
+Suzy non si arrampica sull'albero,
+Nestor non si gira nel parco,
+Bubu non si seppellisce sottoterra,
+Fred non scava nella sporcizia,
+La signora Alice non si arrabbia
+}
+
+\text{nonCo = La signora Alice non esce a fare una passeggiata nel parco,
+Fred non accompagna la signora Alice,
+Suzy non si arrampica sull'albero,
+Nestor non lascia l'albero per girarsi nel parco,
+Bubu non si seppellisce sottoterra,
+Fred non scava nella sporcizia,
+La signora Alice non si arrabbia,
+Il signor Alex non si siede davanti alla TV
+}
+
+\text{sujPr=il Signor Alex, la Signora Alice, Fred il cane, Suzy il gatto, Nestor il passero, Bubu il lombrico, Fred il cane, la Signora Alice}
+\text{sujCo=la Signora Alice, Fred il cane, Suzy il gatto, Nestor il passero, Bubu il lombrico, Fred il cane, la Signora Alice, il Signor Alex}
+\text{none=non possiamo concludere nulla}
+
+\text{name_citation=Questo esercizio si basa su un esempio
+fornito da Alan Selby, in "Elements of Reason: understanding and explaining reason and math"
+Volume 1,
+Stampato in Canada
+ISBN 0-9697564-1-0.
+http://whyslopes.com/volume1a/}
+
+\text{Question=Domanda}
+\text{name_characters=I nostri personaggi sono}
+\text{name_statement1=Si consideri la seguente implicazione, che assumiamo essere vera:}
+\text{name_statement2=Si considerino le seguenti implicazioni, che assumiamo essere entrambe vere:}
+
 #endif
 
 #if defined TARGET_incoherence
+\text{Alist=è svedese, è scozzese, è australiano, è tedesca, è cubana, è giapponese}
+\text{Blist=gioca a tennis, suona il violino, fa surf, suona il piano, balla la salsa, fa Kendo}
+\text{Clist=è biondo, indossa una gonna, non indossa una cravatta, non si trucca, è bruna, indossa il kimono}
+\text{Dlist=sta sciando, lui gioca a rugby, trascorre le vacanze a Bali, va in bicicletta, ama la matematica, fa gli origami}
+\text{Elist=è vegetariano, è sposato, gli piace la birra, le piacciono i wurstel, beve tequila, è single}
+
+\text{nonAlist=non è svedese, non è scozzese, non è australiano, non è tedesca, non è cubana, non è giapponese }
+\text{nonBlist=non gioca a tennis, non suona il violino, non fa surf, non suona il piano, non balla salsa, non fa Kendo}
+\text{nonClist=non è biondo, non indossa una gonna, indossa una cravatta, è truccata, non è bruna, non indossa un kimono}
+\text{nonDlist=non scia, non gioca a rugby, non passa le vacanze a Bali, non va in bicicletta, odia la matematica, non fa gli origami}
+\text{nonElist=non è vegetariano, è single, non gli piace la birra,  non le piacciono i wurstel, non beve tequila, è sposata}
+
+\text{\name_statement1=Per entrare in un circolo ricreativo }
+\text{\name_statement2=maschile, ogni candidato è tenuto a}
+\text{\name_statement3=femminile, ogni candidata è tenuta a}
+\text{\name_statement4=soddisfare tutte le seguenti condizioni:}
+
+lasciare le virgole in name_statlist1
+\text{name_question1=Trova nel seguente elenco una proposizione \(A\), che dovrebbe essere}
+\text{name_question2=allo stesso tempo vera e falsa}
+\text{name_question3=, e questo}
+\text{name_question4=in qualsiasi interpretazione}
+\text{name_question5=dove i termini del regolamento sarebbero contemporaneamente veri.}
+\text{name_question6=Ciò dimostra per assurdo che i termini del regolamento sono incompatibili.}
+\text{\name_remark=Nota: devi, come Sherlock Holmes, sapere come considerare tutti i casi e tenere traccia di tutte le inferenze...}
+\text{Contradiction=Contraddizione}
+\text{\name_cases=Fai un'analisi dei casi}
+\text{\name_case1=considera le interpretazioni secondo le quali i termini del regolamento sono tutti veri;}
+\text{\name_case2=considera i diversi casi, e per ciascuno assegna i valori di verità alle diverse proposizioni elementari;}
+\text{\name_case3=trova \(A) tale che in ogni interpretazione \(A) dovrebbe essere sia vera che falsa;}
+\text{\name_casesend=Ciò dimostra per assurdo che non esiste un'interpretazione che renda contemporaneamente veri tutti i termini del regolamento.}
+
+\text{Exemple=Esempio}
+\text{name_example1=Supponiamo che le seguenti condizioni siano contemporaneamente vere:}
+\text{name_example2=\(P_1) ci permette di distinguere due casi: o \(A) è vero o \(B) è vero.}
+\text{name_example3=Se \(A) è vero, indipendentemente da \(B): per \(P_2) e \(P_4) deduciamo che C è necessariamente vero; di \(P_3) deduciamo allora che \(A) è falso.}
+\text{name_example4=Se \(A) è falso e quindi \(B) è vero: per \(P_4) deduciamo che \(A) è vero.}
+\text{name_example5=In ogni caso, \(A) dovrebbe essere sia vero che falso. Questo non ha senso. Non c'è quindi
+nessuna interpretazione in cui \(P_1), \(P_2) e \(P_3) sono simultaneamente veri. Diciamo che \(P_1), \(P_2) e \(P_3) sono inconsistenti.}
 #endif
 
 #if defined TARGET_negationLN

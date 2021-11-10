@@ -73,7 +73,6 @@ item(\ind[4],\typ),item(\ind[5],\typ)}
 &nbsp; \et  &nbsp; <font color="green"><b>  \(B) : " \B "</b></font>
 </center>
 
-
 <p align="center"><i>
 \name_statement3</i></p>
 
