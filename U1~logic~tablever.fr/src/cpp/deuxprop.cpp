@@ -4,13 +4,13 @@ target=etneg1 etneg2 impneg1 impneg2
 #include "lang_titles.inc"
 #include "lang.inc"
 
-\if{\confparm1=1}{
-  \text{P=(P)}
-  \text{Q=(Q)}
-}
+
 \if{\confparm1=2}{
   \text{P=P}
   \text{Q=Q}
+}{
+  \text{P=(P)}
+  \text{Q=(Q)}
 }
 
 \if{randitem(1,2)=1}{
