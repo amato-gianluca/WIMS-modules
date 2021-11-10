@@ -20,11 +20,12 @@ target=subset
 \text{good=\atype==\btype?\good:\non}
 
 \statement{\name_statement
-<p>
+<div>
 \name_thus
 \name_quoteleft\(a\) \name_cases_list[\atype] \(\gA\)\name_quoteright
 \name_iscond1 \embed{c1} \name_iscond2
 \name_quoteleft\(a\) \name_cases_list[\btype] \(\gB\)\name_quoteright.
+</div>
 }
 
 \choice{}{\good}{\choices}

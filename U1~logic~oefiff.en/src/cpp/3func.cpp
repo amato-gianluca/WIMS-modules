@@ -47,7 +47,7 @@ target=3func 3func2
 #if defined TARGET_3func2
 \(\f1(x)<0\) <span class="wims_emph">\c1</span> \(\f2(x)<0\), \name_and \(\g1(x)<0\) <span class="wims_emph">\c2</span> \(\g2(x)<0\).
 #endif
-</div><p>
+</div><div>
 \name_thus,
 #if defined TARGET_3func
 \(\tf(x)>0\)
@@ -63,6 +63,6 @@ target=3func 3func2
 #if defined TARGET_3func2
 \(\th(x)<0\).
 #endif
-</p>}
+</div>}
 
 \choice{}{\good}{\choices}
