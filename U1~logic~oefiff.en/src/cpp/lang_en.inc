@@ -10,8 +10,10 @@
 \text{name_NONIFONLYIF=neither if nor only if}
 \text{name_PERNON=perhaps neither necessary nor sufficient}
 
+#if defined TARGET_3func || defined TARGET_3func2 || defined TARGET_subset || defined TARGET_symbol || defined TARGET_chsmbol || defined TARGET_iff || defined TARGET_iff3 || defined TARGET_iff2 || defined TARGET_iff4
 \text{name_iscond1=is a}
 \text{name_iscond2=condition of}
+#endif
 
 #if defined TARGET_3func || defined TARGET_3func2
 \text{name_statement1=We have 3 real functions:}

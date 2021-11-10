@@ -10,8 +10,10 @@
 \text{name_NONIFONLYIF=né se né solo se}
 \text{name_PERNON=probabilmente né necessaria né sufficiente}
 
+#if defined TARGET_3func || defined TARGET_3func2 || defined TARGET_subset || defined TARGET_symbol || defined TARGET_chsmbol || defined TARGET_iff || defined TARGET_iff3 || defined TARGET_iff2 || defined TARGET_iff4
 \text{name_iscond1=è una condizione}
 \text{name_iscond2=per}
+#endif
 
 #if defined TARGET_3func || defined TARGET_3func2
 \text{name_statement1=Abbiamo tre funzioni reali:}
