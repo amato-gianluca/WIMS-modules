@@ -1,0 +1,10 @@
+function:eqgr1,eqgr2,extremgr,lectgrantec,lectgrantec2,lectgrimage,lectgrimage2
+inequalities:ineqgr
+roots:eqgr1,eqgr2,ineqgr
+graphing:eqgr1,eqgr2,extremgr,lectgrantec,lectgrantec2,lectgrimage,lectgrimage2
+functions:constrtbvar
+equations:eqgr1,eqgr2,ineqgr
+intervals:extremgr,ineqgr
+function_variation:constrtbvar
+analysis:constrtbvar
+bound:extremgr

@@ -7,11 +7,10 @@ author=Régine, Mangeard
 email=regine@mangeard.fr
 language=fr
 oefcss=<style> table.tab_var {margin-left:auto;margin-right:auto; border:solid 1px black;} table.tab_var tr, table.tab_var td, table.tab_var th { padding:7pt;margin-top:10px; margin-bottom:10px; text-align:center; border-collapse:collapse; min-width:10pt; } table.tab_var th { border:solid 1px black} table.tab_var tr { border:solid 1px black} </style> 
-title_it=Extremum et tableau des variations
 
 ansorder=r,r,r,r,r,r
-varcnt=130
-prevarcnt=126
+varcnt=129
+prevarcnt=125
 postvarcnt=3
 replycnt=6
 choicecnt=0
@@ -32,310 +31,305 @@ val5=$confparm4
  !exit
 !endif
 
-!readproc slib/oef/env lang 
-tmp0=$slib_out
-val6=$(tmp0)
-val7=lightblue
+val6=lightblue
 tmp0=!randint -4, -2
 
-val8=$[rint($(tmp0))]
+val7=$[rint($(tmp0))]
+tmp0=!randint 1, 3
+
+val8=$[rint($val7+$(tmp0))]
 tmp0=!randint 1, 3
 
 val9=$[rint($val8+$(tmp0))]
-tmp0=!randint 1, 3
-
-val10=$[rint($val9+$(tmp0))]
-val11=$[rint($val10+1)]
+val10=$[rint($val9+1)]
 tmp0=!randint 1, 3
 
 tmp1=!randitem 1,-1
 
-val12=$[rint($(tmp0)*$(tmp1))]
+val11=$[rint($(tmp0)*$(tmp1))]
 tmp0=!randint -2, 2
 
-val13=$[rint($(tmp0))]
+val12=$[rint($(tmp0))]
 tmp=!trim \(\searrow),\(\nearrow),\(\searrow)	\(\nearrow),\(\searrow),\(\nearrow)
-val14=!translate internal $	\
+val13=!translate internal $	\
 $ to ;; in $tmp
+val14=\(\nearrow),\(\searrow)
 val15=\(\nearrow),\(\searrow)
-val16=\(\nearrow),\(\searrow)
 tmp0=!randitem 1,2
 
-val17=$[rint($(tmp0))]
+val16=$[rint($(tmp0))]
 tmp0=!randint 1, 4
 
-val18=$[rint($(tmp0))]
+val17=$[rint($(tmp0))]
 
-!ifval $val17=1
-val19=$[rint(1)]
+!ifval $val16=1
+val18=$[rint(1)]
 !else
+val18=$[rint(2)]
+!endif
+
+!ifval $val16=1
 val19=$[rint(2)]
+!else
+val19=$[rint(1)]
 !endif
 
-!ifval $val17=1
-val20=$[rint(2)]
+!ifval $val16=1
+val20=1,2,1
 !else
-val20=$[rint(1)]
+val20=2,1,2
 !endif
-
-!ifval $val17=1
-val21=1,2,1
-!else
-val21=2,1,2
-!endif
-val16=$(val14[$val17;])
+val15=$(val13[$val16;])
 tmp0=!randint -10, 10
 
-val9=$[rint($(tmp0))]
+val8=$[rint($(tmp0))]
+tmp0=!randint 1, 10
+
+val9=$[rint($val8+$(tmp0))]
 tmp0=!randint 1, 10
 
 val10=$[rint($val9+$(tmp0))]
 tmp0=!randint 1, 10
 
-val11=$[rint($val10+$(tmp0))]
-tmp0=!randint 1, 10
-
-val22=$[rint($val11+$(tmp0))]
-val23=$val9,$val10,$val11,$val22
+val21=$[rint($val10+$(tmp0))]
+val22=$val8,$val9,$val10,$val21
 tmp0=!randint -10, 10
 
-val24=$[rint($(tmp0))]
-!if $val17=1 
+val23=$[rint($(tmp0))]
+!if $val16=1 
 tmp0=!randint 1, 10
 
-val25=$[rint($val24-$(tmp0))]
-tmp0=!randint 1, 10
-
-val26=$[rint($val25+$(tmp0))]
-
-!ifval $val26=$val24
-val26=$[rint($val26+1)]
-!endif
-tmp0=!randint 1, 10
-
-val27=$[rint($val26-$(tmp0))]
-
-!ifval $val27=$val24
-val27=$[rint($val27-1)]
-!endif
-
-!ifval $val27=$val25
-val27=$[rint($val27-1)]
-!endif
-!else
+val24=$[rint($val23-$(tmp0))]
 tmp0=!randint 1, 10
 
 val25=$[rint($val24+$(tmp0))]
+
+!ifval $val25=$val23
+val25=$[rint($val25+1)]
+!endif
 tmp0=!randint 1, 10
 
 val26=$[rint($val25-$(tmp0))]
 
+!ifval $val26=$val23
+val26=$[rint($val26-1)]
+!endif
+
 !ifval $val26=$val24
 val26=$[rint($val26-1)]
 !endif
+!else
 tmp0=!randint 1, 10
 
-val27=$[rint($val26+$(tmp0))]
+val24=$[rint($val23+$(tmp0))]
+tmp0=!randint 1, 10
 
-!ifval $val27=$val24
-val27=$[rint($val27+1)]
+val25=$[rint($val24-$(tmp0))]
+
+!ifval $val25=$val23
+val25=$[rint($val25-1)]
+!endif
+tmp0=!randint 1, 10
+
+val26=$[rint($val25+$(tmp0))]
+
+!ifval $val26=$val23
+val26=$[rint($val26+1)]
 !endif
 
-!ifval $val27=$val25
-val27=$[rint($val27+1)]
+!ifval $val26=$val24
+val26=$[rint($val26+1)]
 !endif
 !endif
-val28=$val24,$val25,$val26,$val27
+val27=$val23,$val24,$val25,$val26
 tmp0=!shuffle 4
 
-val29=$(tmp0)
-val30=$[rint($(val28[$(val29[1])]))]
-val31=$[rint($(val23[$(val29[1])])-$(val28[$(val29[2])]))]
-val24=$[rint($val24+$val31)]
-val25=$[rint($val25+$val31)]
-val26=$[rint($val26+$val31)]
-val27=$[rint($val27+$val31)]
-val30=$[rint($val30+$val31)]
+val28=$(tmp0)
+val29=$[rint($(val27[$(val28[1])]))]
+val30=$[rint($(val22[$(val28[1])])-$(val27[$(val28[2])]))]
+val23=$[rint($val23+$val30)]
+val24=$[rint($val24+$val30)]
+val25=$[rint($val25+$val30)]
+val26=$[rint($val26+$val30)]
+val29=$[rint($val29+$val30)]
+!if $val16=1 
+val31=top,bottom,top,bottom
 !if $val17=1 
-val32=top,bottom,top,bottom
-!if $val18=1 
-val33=\(+\infty)
-val34=&#93;
+val32=\(+\infty)
+val33=&#93;
 !else
-val33=$val24
-val34=&#91;
+val32=$val23
+val33=&#91;
+!endif
+val34=$val24
+val35=$val25
+!if $val17=2 
+val36=\(-\infty)
+val37=&#91;
+!else
+val36=$val26
+val37=&#93;
+!endif
+!else
+val31=bottom,top,bottom,top
+!if $val17=2 
+val32=\(-\infty)
+val33=&#93;
+!else
+val32=$val23
+val33=&#91;
 !endif
 val35=$val25
+val34=$val24
+!if $val17=1 
+val36=\(+\infty)
+val37=&#91;
+!else
 val36=$val26
-!if $val18=2 
-val37=\(-\infty)
-val38=&#91;
-!else
-val37=$val27
-val38=&#93;
-!endif
-!else
-val32=bottom,top,bottom,top
-!if $val18=2 
-val33=\(-\infty)
-val34=&#93;
-!else
-val33=$val24
-val34=&#91;
-!endif
-val36=$val26
-val35=$val25
-!if $val18=1 
-val37=\(+\infty)
-val38=&#91;
-!else
-val37=$val27
-val38=&#93;
+val37=&#93;
 !endif
 !endif
-tmp=!trim $val9,$val10	$val10,$val11	$val11,$val22	$val9,$val11	$val10,$val22
-val39=!translate internal $	\
+tmp=!trim $val8,$val9	$val9,$val10	$val10,$val21	$val8,$val10	$val9,$val21
+val38=!translate internal $	\
 $ to ;; in $tmp
+val39=oui, non 
 val40=oui, non 
-val41=oui, non 
-val42=minimum
-val43=non monotone, croissante, décroissante
-!if $val17=1 
+val41=minimum
+val42=non monotone, croissante, décroissante
+!if $val16=1 
 
-!ifval $val25<$val27
+!ifval $val24<$val26
+val43=$[rint($val24)]
+!else
+val43=$[rint($val26)]
+!endif
+
+!ifval $val23<$val25
 val44=$[rint($val25)]
 !else
-val44=$[rint($val27)]
+val44=$[rint($val23)]
 !endif
 
 !ifval $val24<$val26
-val45=$[rint($val26)]
+val45=$[rint($val9)]
 !else
-val45=$[rint($val24)]
+val45=$[rint($val21)]
 !endif
 
-!ifval $val25<$val27
+!ifval $val23<$val25
 val46=$[rint($val10)]
 !else
-val46=$[rint($val22)]
+val46=$[rint($val8)]
 !endif
-
-!ifval $val24<$val26
-val47=$[rint($val11)]
-!else
-val47=$[rint($val9)]
-!endif
-val48=$[rint($val45)]
-val49=$[rint($val47)]
-val50=$[rint($val44)]
-val51=$[rint($val46)]
-!if $val18>2 
-val52=maximum
+val47=$[rint($val44)]
+val48=$[rint($val46)]
+val49=$[rint($val43)]
+val50=$[rint($val45)]
+!if $val17>2 
+val51=maximum
+val52=$[rint(1)]
 val53=$[rint(1)]
-val54=$[rint(1)]
-val55=r3,r4
-val56=r5,r6
+val54=r3,r4
+val55=r5,r6
 !else
-val56=
-!if $val18=1 
-val53=$[rint(2)]
-val54=$[rint(1)]
-val52=minimum
-val55=r3,r4
+val55=
+!if $val17=1 
+val52=$[rint(2)]
+val53=$[rint(1)]
+val51=minimum
+val54=r3,r4
+val47=$[rint($val49)]
 val48=$[rint($val50)]
-val49=$[rint($val51)]
 !else
-val53=$[rint(1)]
-val54=$[rint(2)]
-val52=maximum
-val55=r3,r4
+val52=$[rint(1)]
+val53=$[rint(2)]
+val51=maximum
+val54=r3,r4
 !endif
 !endif
 !else
 
-!ifval $val24<$val26
-val44=$[rint($val24)]
+!ifval $val23<$val25
+val43=$[rint($val23)]
 !else
+val43=$[rint($val25)]
+!endif
+
+!ifval $val24<$val26
 val44=$[rint($val26)]
+!else
+val44=$[rint($val24)]
 !endif
 
-!ifval $val25<$val27
-val45=$[rint($val27)]
+!ifval $val23<$val25
+val45=$[rint($val8)]
 !else
-val45=$[rint($val25)]
+val45=$[rint($val10)]
 !endif
 
 !ifval $val24<$val26
+val46=$[rint($val21)]
+!else
 val46=$[rint($val9)]
-!else
-val46=$[rint($val11)]
 !endif
-
-!ifval $val25<$val27
-val47=$[rint($val22)]
-!else
-val47=$[rint($val10)]
-!endif
-val48=$[rint($val45)]
-val49=$[rint($val47)]
-val50=$[rint($val44)]
-val51=$[rint($val46)]
-!if $val18>2 
-val52=maximum
+val47=$[rint($val44)]
+val48=$[rint($val46)]
+val49=$[rint($val43)]
+val50=$[rint($val45)]
+!if $val17>2 
+val51=maximum
+val52=$[rint(1)]
 val53=$[rint(1)]
-val54=$[rint(1)]
-val55=r3,r4
-val56=r5,r6
+val54=r3,r4
+val55=r5,r6
 !else
-val56=
-!if $val18=1 
-val53=$[rint(2)]
-val54=$[rint(1)]
-val52=minimum
-val55=r3,r4
+val55=
+!if $val17=1 
+val52=$[rint(2)]
+val53=$[rint(1)]
+val51=minimum
+val54=r3,r4
+val47=$[rint($val49)]
 val48=$[rint($val50)]
-val49=$[rint($val51)]
 !else
-val53=$[rint(1)]
-val54=$[rint(2)]
-val52=maximum
-val55=r3,r4
+val52=$[rint(1)]
+val53=$[rint(2)]
+val51=maximum
+val54=r3,r4
 !endif
 !endif
 !endif
 tmp0=!shuffle 5
 
-val29=$(tmp0)
-val57=$(val39[$(val29[1]);])
-val58=$(val39[$(val29[2]);])
-val59=$(val39[$(val29[3]);])
-val60=$(val39[$(val29[4]);])
-val61=$(val39[$(val29[5]);])
-val62=r1,r2
-!if $val6=it 
-!endif
+val28=$(tmp0)
+val56=$(val38[$(val28[1]);])
+val57=$(val38[$(val28[2]);])
+val58=$(val38[$(val28[3]);])
+val59=$(val38[$(val28[4]);])
+val60=$(val38[$(val28[5]);])
+val61=r1,r2
 dynsteps=yes
-oefsteps=$val62 
-nextstep=!nosubst $val62 
+oefsteps=$val61 
+nextstep=!nosubst $val61 
 !readproc oef/steps.proc
 replytype1=menu
 replyname1=\(f) admet un maximum
-replygood1=$val53;$val40
+replygood1=$val52;$val39
 replytype2=menu
 replyname2=\(f) admet un minimum
-replygood2=$val54;$val41
+replygood2=$val53;$val40
 replytype3=numeric
-replyname3=$val52
-replygood3=$[$val48]
+replyname3=$val51
+replygood3=$[$val47]
 replytype4=numeric
-replyname4=abscisse du $val52
-replygood4=$[$val49]
+replyname4=abscisse du $val51
+replygood4=$[$val48]
 replytype5=numeric
-replyname5=$val42
-replygood5=$[$val50]
+replyname5=$val41
+replygood5=$[$val49]
 replytype6=numeric
-replyname6=abscisse du $val42
-replygood6=$[$val51]
+replyname6=abscisse du $val41
+replygood6=$[$val50]
 question=__EXECUTED_1692754_EXERCISE__
 
 !goto stat
@@ -345,11 +339,11 @@ question=__EXECUTED_1692754_EXERCISE__
 :question
 $()	<p>	Soit 
 !insmath f
-$() une fonction définie sur $val34 $val9;$val22 $val38 dont le	tableau des variations est donné ci-dessous	</p>	<table class="wimscenter wimsnoborder tab_var">	<tr>	  <th style="width:15%;"> 
+$() une fonction définie sur $val33 $val8;$val21 $val37 dont le	tableau des variations est donné ci-dessous	</p>	<table class="wimscenter wimsnoborder tab_var">	<tr>	  <th style="width:15%;"> 
 !insmath x
-$()</th>	      <td style="width:15%;text-align:left"> $val9</td>	      <td style="width:8%;"></td>	      <td style="width:15%;">$val10</td>	      <td style="width:8%;"></td>	      <td style="width:15%;">$val11</td>	      <td style="width:8%;"></td>	      <td style="width:15%;text-align:right">$val22</td>	</tr><tr>	  <th valign="middle" style="width:15%;">
+$()</th>	      <td style="width:15%;text-align:left"> $val8</td>	      <td style="width:8%;"></td>	      <td style="width:15%;">$val9</td>	      <td style="width:8%;"></td>	      <td style="width:15%;">$val10</td>	      <td style="width:8%;"></td>	      <td style="width:15%;text-align:right">$val21</td>	</tr><tr>	  <th valign="middle" style="width:15%;">
 !insmath f(x)
-$()</th>	     <td style="width:15%;text-align:left" valign="$(val32[1])"> $val33 </td>	     <td style="width:8%;"> $(val16[1]) </td>	     <td style="width:15%;" valign="$(val32[2])"> $val35 </td>	     <td style="width:8%;"> $(val16[2]) </td>	     <td style="width:15%;" valign="$(val32[3])"> $val36 </td>	     <td style="width:8%;"> $(val16[3]) </td>	     <td style="width:15%;text-align:right" valign="$(val32[4])"> $val37 </td>	      </tr>	</table>	<p>	On cherche à étudier ses extrema éventuels.</p>	
+$()</th>	     <td style="width:15%;text-align:left" valign="$(val31[1])"> $val32 </td>	     <td style="width:8%;"> $(val15[1]) </td>	     <td style="width:15%;" valign="$(val31[2])"> $val34 </td>	     <td style="width:8%;"> $(val15[2])  </td>	     <td style="width:15%;" valign="$(val31[3])"> $val35 </td>	     <td style="width:8%;"> $(val15[3]) </td>	     <td style="width:15%;text-align:right" valign="$(val31[4])"> $val36 </td>	      </tr>	</table>	<p>	On cherche à étudier ses extrema éventuels.</p>			
 !if $m_step=1 
 $()
 !insmath f
@@ -365,7 +359,7 @@ $()
 !if $m_step=2 
 $() 
 !insmath f
-$() atteint son $val52 :  
+$() atteint son $val51 :  
 !read oef/embed.phtml r3 
 $()<br />	en 
 !insmath x
@@ -411,12 +405,12 @@ $()
 
 :postdef
 !if $m_step=2 
-val62=$val55
+val61=$val54
 !else
 !if $m_step=3 
-val62=$val56
+val61=$val55
 !else
-val62=
+val61=
 !endif
 !endif
 
@@ -431,5 +425,5 @@ val62=
 !exit
 
 :stat
-vsavelist=9,10,11,16,22,32,33,34,35,36,37,38,52,55,56
+vsavelist=8,9,10,15,21,31,32,33,34,35,36,37,51,54,55
 embedcnt=6

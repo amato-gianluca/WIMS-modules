@@ -5,11 +5,10 @@
 oef2wims_version=3.22
 author=Marie-Claude, David
 computeanswer=no
-title_it=Ensemble de définition d'une fonction quotient (3)
 
 ansorder=r
-varcnt=16
-prevarcnt=15
+varcnt=15
+prevarcnt=14
 postvarcnt=0
 replycnt=1
 choicecnt=0
@@ -30,49 +29,44 @@ val5=$confparm4
  !exit
 !endif
 
-!readproc slib/oef/env lang 
-tmp0=$slib_out
-val6=$(tmp0)
 tmp0=!randint 2, 10
 
-val7=$[rint($(tmp0))]
+val6=$[rint($(tmp0))]
 tmp0=!randint -10, 10
 
-val8=$[rint($(tmp0))]
+val7=$[rint($(tmp0))]
 tmp0=!randint 1, 3
 
-val9=$[rint($(tmp0))]
+val8=$[rint($(tmp0))]
 tmp0=!randint -5, 5
 
-val10=$[rint($(tmp0))]
-val11=$[rint($val10*$val9)]
+val9=$[rint($(tmp0))]
+val10=$[rint($val9*$val8)]
 
-!ifval $val10=$val8/$val7 
-val8=$[rint( $val8+1)]
+!ifval $val9=$val7/$val6 
+val7=$[rint( $val7+1)]
 !endif
-tmp=!translate ";': to $     $ in ($val7*x + $val8)/($val9*x+$val11)
+tmp=!translate ";': to $     $ in ($val6*x + $val7)/($val8*x+$val10)
 
 tmp=!lower $tmp
 tmp0=!exec maxima fullratsimp($tmp);
-val12=!rawmath $(tmp0)
-tmp0=!texmath $val12
+val11=!rawmath $(tmp0)
+tmp0=!texmath $val11
 
-val13=$(tmp0)
-val14=$[rint(-$val10)]
-val15=65x40
-val16=\(\cap\)
-tmp=!trim &#93;,-&#8734;,&#44;,$val14, &#91;,\(\cup\),&#93;,$val14,&#44;,+&#8734;,&#91;
-val17=!translate internal $	\
+val12=$(tmp0)
+val13=$[rint(-$val9)]
+val14=65x40
+val15=\(\cap\)
+tmp=!trim &#93;,-&#8734;,&#44;,$val13, &#91;,\(\cup\),&#93;,$val13,&#44;,+&#8734;,&#91;
+val16=!translate internal $	\
 $ to ;; in $tmp
-tmp0=!itemcnt $(val17[1;])
+tmp0=!itemcnt $(val16[1;])
 
-val18=$(tmp0)
-val19=r3
-!if $val6=it 
-!endif
+val17=$(tmp0)
+val18=r3
 replytype1=clickfill
 replyname1=
-replygood1=$val17;$val16
+replygood1=$val16;$val15
 question=__EXECUTED_1692754_EXERCISE__
 
 !goto stat
@@ -85,9 +79,9 @@ $()<p>	Soit
 $() une fonction de la variable réelle 
 !insmath x
 $() définie par 
-!insmath f(x) = $val12 
+!insmath f(x) = $val11 
 $().<br/>	L'ensemble de définition de la fonction f est </p>	<div class="wimscenter">  
-!read oef/embed.phtml r1,$val15 x $val18 
+!read oef/embed.phtml r1,$val14 x $val17 
 $().</div>	<div class="wims_instruction">Remplir le champ avec ces	éléments en rangeant par ordre croissant les bornes des intervalles.	</div>
 $()
 !exit
@@ -121,5 +115,5 @@ $()
 !exit
 
 :stat
-vsavelist=12,15,18
+vsavelist=11,14,17
 embedcnt=1

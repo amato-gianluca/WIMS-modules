@@ -5,11 +5,10 @@
 oef2wims_version=3.22
 author=Marie-Claude, David
 computeanswer=no
-title_it=Ensemble de définition d'une fonction racine
 
 ansorder=r,r,r
-varcnt=26
-prevarcnt=25
+varcnt=25
+prevarcnt=24
 postvarcnt=0
 replycnt=3
 choicecnt=0
@@ -30,73 +29,68 @@ val5=$confparm4
  !exit
 !endif
 
-!readproc slib/oef/env lang 
-tmp0=$slib_out
-val6=$(tmp0)
 tmp0=!randint 2, 10
 
-val7=$[rint($(tmp0))]
+val6=$[rint($(tmp0))]
 tmp0=!randint 2, 20
+
+val7=$[rint($(tmp0))]
+tmp0=!randitem -1,1
 
 val8=$[rint($(tmp0))]
 tmp0=!randitem -1,1
 
 val9=$[rint($(tmp0))]
-tmp0=!randitem -1,1
+val10=$[rint($val9*$val7*$val6)]
+val6=$[rint($val8*$val6)]
+val11=!rawmath sqrt($val6 x +  $val10)
+val12=strictement inférieurs à, inférieurs ou égaux à, différents de, supérieurs ou égaux à, strictement supérieurs à
 
-val10=$[rint($(tmp0))]
-val11=$[rint($val10*$val8*$val7)]
-val7=$[rint($val9*$val7)]
-val12=!rawmath sqrt($val7 x + $val11)
-val13=strictement inférieurs à, inférieurs ou égaux à, différents de, supérieurs ou égaux à, strictement supérieurs à
-
-!ifval $val9=1
-val14=$[rint( 4 )]
+!ifval $val8=1
+val13=$[rint( 4 )]
 !else
-val14=$[rint( 2)]
+val13=$[rint( 2)]
 !endif
-val15=$[rint($val14)]
-val16=$[rint(-$val10*$val9*$val8)]
-val17=$[$val16]
-val18=65x40
-val19=&#91;,$val17,&#44;,+&#8734;,&#91;
-val20=&#93;,-&#8734;,&#44;,$val17,&#93;
-val21=-&#8734;,&#93;,&#93;
-val22=+&#8734;,&#91;,&#91;
-!if $val9=1 
+val14=$[rint($val13)]
+val15=$[rint(-$val9*$val8*$val7)]
+val16=$[$val15]
+val17=65x40
+val18=&#91;,$val16,&#44;,+&#8734;,&#91;
+val19=&#93;,-&#8734;,&#44;,$val16,&#93;
+val20=-&#8734;,&#93;,&#93;
+val21=+&#8734;,&#91;,&#91;
+!if $val8=1 
+tmp=!trim $val18
+val22=!translate internal $	\
+$ to ;; in $tmp
+val23=$val20
+!else
 tmp=!trim $val19
-val23=!translate internal $	\
+val22=!translate internal $	\
 $ to ;; in $tmp
-val24=$val21
-!else
-tmp=!trim $val20
-val23=!translate internal $	\
-$ to ;; in $tmp
-val24=$val22
+val23=$val21
 !endif
-tmp0=!itemcnt $val24
+tmp0=!itemcnt $val23
 
-tmp1=!itemcnt $(val23[1;])
+tmp1=!itemcnt $(val22[1;])
 
-val25=$(tmp0)+$(tmp1)
-val26=r3
+val24=$(tmp0)+$(tmp1)
+val25=r3
 !readproc slib/utilities/mathcalc 
 tmp0=$slib_out
-val27=$(tmp0)
-!if $val6=it 
-!endif
+val26=$(tmp0)
 oefsteps=reply1,reply2	reply3 
 nextstep=!nosubst reply1,reply2	reply3 
 !readproc oef/steps.proc
 replytype1=menu
 replyname1=
-replygood1=$val15;$val13
+replygood1=$val14;$val12
 replytype2=numeric
 replyname2=
-replygood2=$[$val17]
+replygood2=$[$val16]
 replytype3=clickfill
 replyname3=
-replygood3=$val23;$val24
+replygood3=$val22;$val23
 question=__EXECUTED_1692754_EXERCISE__
 hint=__EXECUTED_1692754_EXERCISE__
 help=__EXECUTED_1692754_EXERCISE__
@@ -111,25 +105,25 @@ $()<em>Cet exercice comporte deux étapes.</em> <br/>	Soit
 $() une fonction de la variable réelle 
 !insmath x
 $() définie par 
-!insmath f(x) = $val12 
+!insmath f(x) = $val11 
 $().<br/>	
 !if $m_step=1 
-$()<div class="float_right">	$val27</div> La fonction est définie pour tous les 
+$()<div class="float_right">	$val26</div> La fonction est définie pour tous les 
 !insmath x
 $() 
 !read oef/embed.phtml reply1 
 $()  
 !read oef/embed.phtml reply2,5 
-$()	et seulement pour ceux-ci.  
+$() 	et seulement pour ceux-ci.  
 !endif
 $()	
 !if $m_step=2 
 $()La fonction est définie pour tous les 
 !insmath x
-$() $(val13[$val14]) 
-!insmath $val16
+$() $(val12[$val13]) 
+!insmath $val15
 $() et seulement pour ceux-ci.<br/>	L'ensemble de définition de la fonction f est	  
-!read oef/embed.phtml r3,$val18 x $val25 
+!read oef/embed.phtml r3,$val17 x $val24 
 $()	<hr /> <em>Remplir le champ avec ces éléments.</em> 
 !endif
 $()	
@@ -162,7 +156,7 @@ $()
 :help
 $()On appelle <b>ensemble de définition de la fonction 
 !insmath f
-$()</b> l'ensemble des nombres réels possédant une image par 
+$()</b> l'ensemble des nombres réels possédant une image par  
 !insmath f
 $().
 $()
@@ -179,15 +173,15 @@ $()
 !exit
 
 :feedback
-!ifval $m_reply2<>$val17
+!ifval $m_reply2<>$val16
  <div class='oef_feedbacks'><b>Le nombre 
 !insmath $m_reply2
 $() n'annule pas 
-!insmath $val12
+!insmath $val11
 $().</b>
 $()</div>
 !endif
-!ifval $m_reply2=$val17 and $m_reply1 issametext $(val13[4]) and $val9=-1
+!ifval $m_reply2=$val16 and $m_reply1 issametext $(val12[4]) and $val8=-1
  <div class='oef_feedbacks'><b>Quand on multiplie une inégalité par un nombre négatif, elle change de sens.</b>
 $()</div>
 !endif
@@ -199,5 +193,5 @@ $()</div>
 !exit
 
 :stat
-vsavelist=9,12,13,14,16,17,18,25,27
+vsavelist=8,11,12,13,15,16,17,24,26
 embedcnt=3

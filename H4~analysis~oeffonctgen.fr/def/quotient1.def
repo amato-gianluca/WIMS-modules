@@ -6,11 +6,10 @@ oef2wims_version=3.22
 author=Marie-Claude, David
 email=mcld@math.u-psud.fr
 computeanswer=no
-title_it=Ensemble de définition d'une fonction quotient (1)
 
 ansorder=r,r
-varcnt=14
-prevarcnt=13
+varcnt=13
+prevarcnt=12
 postvarcnt=0
 replycnt=2
 choicecnt=0
@@ -31,46 +30,41 @@ val5=$confparm4
  !exit
 !endif
 
-!readproc slib/oef/env lang 
-tmp0=$slib_out
-val6=$(tmp0)
 tmp0=!randint 2, 10
 
-val7=$[rint($(tmp0))]
+val6=$[rint($(tmp0))]
 tmp0=!randint -10, 10
 
-val8=$[rint($(tmp0))]
+val7=$[rint($(tmp0))]
 tmp0=!randint 1, 3
 
-val9=$[rint($(tmp0))]
+val8=$[rint($(tmp0))]
 tmp0=!randint -5, 5
 
-val10=$[rint($(tmp0))]
-val11=$[rint($val10*$val9)]
+val9=$[rint($(tmp0))]
+val10=$[rint($val9*$val8)]
 
-!ifval $val10=$val8/$val7 
-val8=$[rint( $val8+1)]
+!ifval $val9=$val7/$val6 
+val7=$[rint( $val7+1)]
 !endif
-tmp=!translate ";': to $     $ in ($val7*x + $val8)/($val9*x+$val11)
+tmp=!translate ";': to $     $ in ($val6*x + $val7)/($val8*x+$val10)
 
 tmp=!lower $tmp
 tmp0=!exec maxima fullratsimp($tmp);
-val12=!rawmath $(tmp0)
-tmp0=!texmath $val12
+val11=!rawmath $(tmp0)
+tmp0=!texmath $val11
 
-val13=$(tmp0)
-val14=strictement inférieurs à, inférieurs ou égaux à, différents de, supérieurs ou égaux à, strictement supérieurs à
-val15=$[rint(3)]
-val16=$[rint(-$val10)]
-val17=$[$val16]
-!if $val6=it 
-!endif
+val12=$(tmp0)
+val13=strictement inférieurs à, inférieurs ou égaux à, différents de, supérieurs ou égaux à, strictement supérieurs à
+val14=$[rint(3)]
+val15=$[rint(-$val9)]
+val16=$[$val15]
 replytype1=menu
 replyname1=
-replygood1=$val15;$val14
+replygood1=$val14;$val13
 replytype2=numeric
 replyname2=
-replygood2=$[$val17]
+replygood2=$[$val16]
 question=__EXECUTED_1692754_EXERCISE__
 hint=!nosubst Le quotient par zéro n'existe pas.
 
@@ -86,7 +80,7 @@ $()Soit
 $() une fonction de la variable réelle 
 !insmath x
 $() définie par 
-!insmath f(x) = $val12 
+!insmath f(x) = $val11 
 $().<br/>	La fonction est définie pour tous les 
 !insmath x
 $() 
@@ -130,5 +124,5 @@ $()
 !exit
 
 :stat
-vsavelist=12
+vsavelist=11
 embedcnt=2

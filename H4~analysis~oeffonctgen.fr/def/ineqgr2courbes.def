@@ -1,4 +1,4 @@
-!set title=Résolution graphique 3: f(x)>g(x)
+!set title=Résolution graphique 3: f(x)>g(x) 
 !if $wims_read_parm!=$empty
  !goto $wims_read_parm
 !endif
@@ -6,11 +6,10 @@ oef2wims_version=3.22
 author=Régine, Mangeard
 email=regine@mangeard.fr
 language=fr
-title_it=Résolution graphique 3: f(x)>g(x)
 
 ansorder=r
-varcnt=71
-prevarcnt=70
+varcnt=70
+prevarcnt=69
 postvarcnt=0
 replycnt=1
 choicecnt=0
@@ -31,144 +30,139 @@ val5=$confparm4
  !exit
 !endif
 
-!readproc slib/oef/env lang 
-tmp0=$slib_out
-val6=$(tmp0)
 tmp0=!randint 1, 2
 
-val7=$[rint($(tmp0))]
+val6=$[rint($(tmp0))]
 tmp0=!randint 0, 1
 
-val8=$[rint($(tmp0))]
-val9=lightblue
-val10=$[rint(-10)]
-val11=$[rint(10)]
-val12=$[rint(-10)]
-val13=$[rint(10)]
+val7=$[rint($(tmp0))]
+val8=lightblue
+val9=$[rint(-10)]
+val10=$[rint(10)]
+val11=$[rint(-10)]
+val12=$[rint(10)]
 tmp0=!randitem 1,-1
 
-val14=$[rint($(tmp0))]
-val15=$[rint($val10)]
+val13=$[rint($(tmp0))]
+val14=$[rint($val9)]
 tmp0=!randint 2, 5
 
-val16=$[rint($val15+$(tmp0))]
+val15=$[rint($val14+$(tmp0))]
 tmp0=!randint 3, 5
 
-val17=$[rint($val16+$(tmp0))]
-val18=$[rint($val17+$val16-$val15)]
-val19=$[rint($val11)]
+val16=$[rint($val15+$(tmp0))]
+val17=$[rint($val16+$val15-$val14)]
+val18=$[rint($val10)]
 tmp0=!randint 2, 5
 
-val20=$[rint($(tmp0))]
-tmp0=!randint 7, $val13
+val19=$[rint($(tmp0))]
+tmp0=!randint 7, $val12
 
-val21=$[rint($(tmp0))]
+val20=$[rint($(tmp0))]
 tmp0=!randint 0, 5
 
-val22=$[rint($(tmp0))]
+val21=$[rint($(tmp0))]
 tmp0=!randitem 1,-1
 
-val23=$[rint($(tmp0))]
-val15=$[rint($val23*($val15))]
-val16=$[rint($val23*($val16))]
-val17=$[rint($val23*($val17))]
-val18=$[rint($val23*($val18))]
-val19=$[rint($val23*($val19))]
-val24=>
-val25=\(\ge )
-val26=<
-val27=\(\le )
+val22=$[rint($(tmp0))]
+val14=$[rint($val22*($val14))]
+val15=$[rint($val22*($val15))]
+val16=$[rint($val22*($val16))]
+val17=$[rint($val22*($val17))]
+val18=$[rint($val22*($val18))]
+val23=>
+val24=\(\ge )
+val25=<
+val26=\(\le )
+val27=\($val15)
 val28=\($val16)
 val29=\($val17)
 val30=\($val18)
-val31=\($val19)
-val32=\($val15)
-val33=&#91;
-val34=&#93;
-val35=&#123;
-val36=&#125;
-val37=\(\cup)
-val38=\(\cap)
-val39=\(-\infty)
-val40=\(+\infty)
-val41=\(\emptyset)
-val42=&#59;
+val31=\($val14)
+val32=&#91;
+val33=&#93;
+val34=&#123;
+val35=&#125;
+val36=\(\cup)
+val37=\(\cap)
+val38=\(-\infty)
+val39=\(+\infty)
+val40=\(\emptyset)
+val41=&#59;
 tmp0=!randint -20, -11
 
-val43=$[rint($(tmp0))]
+val42=$[rint($(tmp0))]
 tmp0=!randint 11, 20
 
-val44=$[rint($(tmp0))]
-tmp0=!shuffle $val16,$val17,$val18,$val44,$val43
+val43=$[rint($(tmp0))]
+tmp0=!shuffle $val15,$val16,$val17,$val43,$val42
 
-val45=$(tmp0)
-val46=$val33,$val42,$val34,$val37,$val38,$val39,$val40,$val41,$val35,$val36,$(val45[1]),$(val45[2]),$(val45[3]),$(val45[4]),$(val45[5])	
-val47=60x40x12
+val44=$(tmp0)
+val45=$val32,$val41,$val33,$val36,$val37,$val38,$val39,$val40,$val34,$val35,$(val44[1]),$(val44[2]),$(val44[3]),$(val44[4]),$(val44[5])	
+val46=60x40x12
 
-!ifval $val8=0
-val48=$val34
+!ifval $val7=0
+val47=$val33
+!else
+val47=$val32
+!endif
+
+!ifval $val7=0
+val48=$val32
 !else
 val48=$val33
 !endif
+t_=!rawmath ($val20)/((($val15)-($val14))*(($val16)-($val14)))
+val49=!exec pari print($t_)
+val50=$val49*(t-($val15))*(t-($val16))-$val21
+val50=$val13*($val50)
+evaltmp=$val50
 
-!ifval $val8=0
-val49=$val33
-!else
-val49=$val34
-!endif
-t_=!rawmath ($val21)/((($val16)-($val15))*(($val17)-($val15)))
-val50=!exec pari print($t_)
-val51=$val50*(t-($val16))*(t-($val17))-$val22
-val51=$val14*($val51)
-evaltmp=$val51
-
-evaltmp=!mathsubst t=($val15) in $evaltmp
+evaltmp=!mathsubst t=($val14) in $evaltmp
 tmp0=($evaltmp)
 t_=!rawmath $(tmp0)
+val51=!exec pari print($t_)
+t_=!rawmath ($val19)/((($val17)-($val16))*(($val18)-($val16)))
 val52=!exec pari print($t_)
-t_=!rawmath ($val20)/((($val18)-($val17))*(($val19)-($val17)))
-val53=!exec pari print($t_)
-val54=-($val53)*(t-($val18))*(t-($val19))+($val20)-($val22)
-val54=$val14*($val54)
-evaltmp=$val54
+val53=-($val52)*(t-($val17))*(t-($val18))+($val19)-($val21)
+val53=$val13*($val53)
+evaltmp=$val53
 
-evaltmp=!mathsubst t=($val18) in $evaltmp
+evaltmp=!mathsubst t=($val17) in $evaltmp
 tmp0=($evaltmp)
 t_=!rawmath $(tmp0)
-val55=!exec pari print($t_)
-t_=!rawmath ($val20)/((($val16)-($val15))*(($val17)-($val15)))
-val50=!exec pari print($t_)
-val56=$val50*(t-($val16))*(t-($val17))-($val22)
-val56=$val14*($val56)
-evaltmp=$val56
+val54=!exec pari print($t_)
+t_=!rawmath ($val19)/((($val15)-($val14))*(($val16)-($val14)))
+val49=!exec pari print($t_)
+val55=$val49*(t-($val15))*(t-($val16))-($val21)
+val55=$val13*($val55)
+evaltmp=$val55
 
-evaltmp=!mathsubst t=($val15) in $evaltmp
+evaltmp=!mathsubst t=($val14) in $evaltmp
 tmp0=($evaltmp)
 t_=!rawmath $(tmp0)
-val57=!exec pari print($t_)
-val58=trange $val15,$val19	 plot red,t,$val56	trange $val15,$val17	 plot blue,t,$val51	trange $val17,$val19	 plot blue,t,$val54	
-val59=xrange $val10,$val11	yrange $val12,$val13	linewidth 1	  parallel $val10,$val12,$val10,$val13,0.2,0,100,$val9	  parallel $val10,$val12,$val11,$val12,0,0.2,100,$val9	linewidth 2	  parallel $val10,$val12,$val10,$val13,1,0,21,gray	  parallel $val10,$val12,$val11,$val12,0,1,21,gray	linewidth 2	vline 0,0,black	hline 0,0,black	arrow 0,0,1,0,10,magenta	arrow 0,0,0,1,10,magenta	text red,0.7,-0.1,medium,i	text red,-0.2,0.7,medium,j	text black,-0.2,-0.1,medium,O	    linewidth 2	$val58	
-val60=$val26,$val24,$val27,$val25
-val61=$[rint($val7+2*$val8)]
-val62=\(f(x)) $(val60[$val61]) \(g(x))
-!if ($val7=2 and $val14=1) or ($val7=1 and $val14=-1) 
-!if $val23=1 
-val63=$val48,$val16,$val42,$val17,$val49,$val37,$val48,$val18,$val42,$val40,$val33
+val56=!exec pari print($t_)
+val57=trange $val14,$val18	 plot red,t,$val55	trange $val14,$val16	 plot blue,t,$val50	trange $val16,$val18	 plot blue,t,$val53	
+val58=xrange $val9,$val10	yrange $val11,$val12	linewidth 1	  parallel $val9,$val11,$val9,$val12,0.2,0,100,$val8	  parallel $val9,$val11,$val10,$val11,0,0.2,100,$val8	linewidth 2	  parallel $val9,$val11,$val9,$val12,1,0,21,gray	  parallel $val9,$val11,$val10,$val11,0,1,21,gray	linewidth 2	vline 0,0,black	hline 0,0,black	arrow 0,0,1,0,10,magenta	arrow 0,0,0,1,10,magenta	text red,0.7,-0.1,medium,i	text red,-0.2,0.7,medium,j	text black,-0.2,-0.1,medium,O	    linewidth 2	$val57	
+val59=$val25,$val23,$val26,$val24
+val60=$[rint($val6+2*$val7)]
+val61=\(f(x)) $(val59[$val60]) \(g(x))
+!if ($val6=2 and $val13=1) or ($val6=1 and $val13=-1) 
+!if $val22=1 
+val62=$val47,$val15,$val41,$val16,$val48,$val36,$val47,$val17,$val41,$val39,$val32
 !else
-val63=$val34,$val39,$val42,$val18,$val49,$val37,$val48,$val17,$val42,$val16,$val49
+val62=$val33,$val38,$val41,$val17,$val48,$val36,$val47,$val16,$val41,$val15,$val48
 !endif
 !else
-!if $val23=1 
-val63=$val34,$val39,$val42,$val16,$val49,$val37,$val48,$val17,$val42,$val18,$val49
+!if $val22=1 
+val62=$val33,$val38,$val41,$val15,$val48,$val36,$val47,$val16,$val41,$val17,$val48
 !else
-val63=$val48,$val18,$val42,$val17,$val49,$val37,$val48,$val16,$val42,$val40,$val33
+val62=$val47,$val17,$val41,$val16,$val48,$val36,$val47,$val15,$val41,$val39,$val32
 !endif
-!endif
-!if $val6=it 
 !endif
 replytype1=clickfill
 replyname1=
-replygood1=$val63;$val46
+replygood1=$val62;$val45
 question=__EXECUTED_1692754_EXERCISE__
 
 !goto stat
@@ -178,16 +172,16 @@ question=__EXECUTED_1692754_EXERCISE__
 :question
 $()	<div class="float_right spacer">	 
 !read oef/draw.phtml 400,400 \
-$val59 
+$val58 
 $()	</div>	<p>	Dans le plan muni d'un repère orthonormé 
 !insmath (O,i,j)
 $(),	on a tracé la courbe représentative d'une fonction <span style="color:red">
 !insmath f
 $()</span> et	d'une fonction <span style="color:blue">
 !insmath g
-$()</span>.	</p><p>	On admet que les représentations graphiques ne se coupent pas en dehors du cadre affiché.	</p><p>	Résoudre graphiquement l'inéquation suivante.	</p>	<br class="clearall" />	Votre réponse : $val62 S=  
-!read oef/embed.phtml reply1,$val47 
-$()	
+$()</span>.	</p><p>	On admet que les représentations graphiques ne se coupent pas en dehors du cadre affiché.	</p>	<br class="clearall" />	<div class="wims_question"><p>	Résoudre graphiquement l'inéquation $val61.	</p>	Votre réponse : S=  
+!read oef/embed.phtml reply1,$val46 
+$()	</div>	
 $()
 !exit
 
@@ -220,5 +214,5 @@ $()
 !exit
 
 :stat
-vsavelist=47,59,62
+vsavelist=46,58,61
 embedcnt=1

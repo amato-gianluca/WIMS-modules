@@ -1,1 +1,0 @@
-copiare lang_fr.inc e tradurre

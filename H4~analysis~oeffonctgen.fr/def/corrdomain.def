@@ -5,11 +5,10 @@
 oef2wims_version=3.22
 author=Marie-Claude,David
 email=mcld@math.u-psud.fr
-title_it=Correspondance Fonction/ens. de définition
 
 ansorder=r
-varcnt=28
-prevarcnt=27
+varcnt=27
+prevarcnt=26
 postvarcnt=0
 replycnt=1
 choicecnt=0
@@ -30,35 +29,35 @@ val5=$confparm4
  !exit
 !endif
 
-!readproc slib/oef/env lang 
-tmp0=$slib_out
-val6=$(tmp0)
-val7=$[rint(4)]
-val8=$[rint(80)]
+val6=$[rint(4)]
+val7=$[rint(80)]
+val8=$[rint(250)]
 val9=$[rint(250)]
-val10=$[rint(250)]
-val11=$val8 x $val9 x $val10
+val10=$val7 x $val8 x $val9
 tmp0=!randint 2, 10
 
-val12=$[rint($(tmp0))]
+val11=$[rint($(tmp0))]
 tmp0=!randint -10, 10
 
-val13=$[rint($(tmp0))]
+val12=$[rint($(tmp0))]
 tmp0=!randint 1, 3
 
-val14=$[rint($(tmp0))]
+val13=$[rint($(tmp0))]
 tmp0=!randint 1, 5
 
-val15=$[rint($(tmp0))]
-val16=$[rint($val15*$val14)]
-val17=$[rint($val14^2)]
-!ifval $val15=$val13/$val12 
-val13=$[rint($val13 +1)]
+val14=$[rint($(tmp0))]
+val15=$[rint($val14*$val13)]
+val16=$[rint($val13^2)]
+!ifval $val14=$val12/$val11 
+val12=$[rint($val12 +1)]
 !endif
-val18=!rawmath ($val12*x + $val13)/($val14*x-$val16)
-val19=!rawmath ($val14*x-$val16)/($val12*x^2+$val17)
-val20=!rawmath sqrt($val14*x - $val16)
-val21=!rawmath sqrt(-$val14*x + $val16)
+val17=!rawmath ($val11*x + $val12)/($val13*x-$val15)
+val18=!rawmath ($val13*x-$val15)/($val11*x^2+$val16)
+val19=!rawmath sqrt($val13*x - $val15)
+val20=!rawmath sqrt(-$val13*x + $val15)
+tmp0=!texmath $val17
+
+val21=\($(tmp0)\)
 tmp0=!texmath $val18
 
 val22=\($(tmp0)\)
@@ -68,22 +67,17 @@ val23=\($(tmp0)\)
 tmp0=!texmath $val20
 
 val24=\($(tmp0)\)
-tmp0=!texmath $val21
-
-val25=\($(tmp0)\)
-val26=&#93;\(-\infty,$val15\) &#91;\(\;\cup\;\)&#93; \($val15,+\infty\)&#91;
-val27=\(\RR\)
-val28=&#91; \($val15,+\infty\) &#91;
-val29=&#93; \(-\infty,$val15\) &#93;
-tmp=!trim $val22,$val26	$val23,$val27	$val24,$val28	$val25,$val29
-val30=!translate internal $	\
+val25=&#93;\(-\infty,$val14\) &#91;\(\;\cup\;\)&#93; \($val14,+\infty\)&#91;
+val26=\(\RR\)
+val27=&#91; \($val14,+\infty\) &#91;
+val28=&#93; \(-\infty,$val14\) &#93;
+tmp=!trim $val21,$val25	$val22,$val26	$val23,$val27	$val24,$val28
+val29=!translate internal $	\
 $ to ;; in $tmp
-val31=Associer à chaque expression algébrique l'ensemble de tous les réels x pour lesquels elle est définie.
-!if $val6=it 
-!endif
+val30=Associer à chaque expression algébrique l'ensemble de tous les réels x pour lesquels elle est définie.
 replytype1=correspond
 replyname1=La réponse
-replygood1=$(val30[;1]);$(val30[;2])
+replygood1=$(val29[;1]);$(val29[;2])
 question=__EXECUTED_1692754_EXERCISE__
 
 !goto stat
@@ -91,8 +85,8 @@ question=__EXECUTED_1692754_EXERCISE__
 !exit
 
 :question
-$()$val31	<div class="wimscenter">	 
-!read oef/embed.phtml reply 1,$val11 
+$()$val30	<div class="wimscenter">	 
+!read oef/embed.phtml reply 1,$val10 
 $()	</div>	
 $()
 !exit
@@ -126,5 +120,5 @@ $()
 !exit
 
 :stat
-vsavelist=11,31
+vsavelist=10,30
 embedcnt=1

@@ -1,19 +1,20 @@
 affine3:Marie-Claude, David
 compar2val:Régine, Mangeard
-constrtbvar:Régine, Mangeard
+constrtbvar:Cyrille,Douriez;Bruno,Mifsud
 corrdomain:Marie-Claude,David
-eqgr1:Régine, Mangeard
-eqgr2:Régine, Mangeard
-extremgr:Régine, Mangeard
+eqgr1:Bruno, Mifsud;Cyrille,Douriez
+eqgr2:Bruno, Mifsud;Cyrille,Douriez
+exploitabvar:Cyrille,Douriez;Bruno,MIFSUD
+extremgr:Bruno, Mifsud;Cyrille,Douriez
 extremvar1:Régine, Mangeard
-ineqgr:Régine, Mangeard
+ineqgr:Bruno, Mifsud;Cyrille,Douriez
 ineqgr2:Régine, Mangeard
 ineqgr2courbes:Régine, Mangeard
 ineqgr2dtes:Régine, Mangeard
-lectgrantec:Régine, Mangeard
-lectgrantec2:Régine, Mangeard
-lectgrimage:Régine, Mangeard
-lectgrimage2:Régine, Mangeard
+lectgrantec:Bruno, Mifsud;Cyrille,Douriez
+lectgrantec2:Bruno, Mifsud;Cyrille,Douriez
+lectgrimage:Bruno, Mifsud;Cyrille,Douriez
+lectgrimage2:Bruno, Mifsud;Cyrille,Douriez
 lecttbantec:Régine, Mangeard
 lecttbimage:Régine, Mangeard
 lectvarantec:Régine, Mangeard
@@ -28,3 +29,4 @@ sensvar2:
 sensvar3:
 sensvargr:Régine, Mangeard
 sensvartb:Régine, Mangeard
+signgraph:Cyrille,Douriez;Bruno,Mifsud
