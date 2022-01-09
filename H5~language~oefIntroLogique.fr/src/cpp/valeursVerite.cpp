@@ -2,8 +2,8 @@ target=valeursVerite
 
 #include "header.inc"
 #include "lang_titles.inc"
+#include "lang.inc"
 
-\language{fr}
 \range{-10..10}
 \text{monaide=wims(record 2 to 5  of glossaire)}
 \help{\monaide}
@@ -15,8 +15,8 @@ target=valeursVerite
 \text{Clist=C,R,Z}
 \text{Dlist=D,S,T}
 
-\text{ou=\;ou\;}
-\text{et =\;et\;}
+\text{ou=\;\ou\;}
+\text{et =\;\et\;}
 
 \integer{a=random(1..3)}
 \text{A=\Alist[\a]}
@@ -47,7 +47,7 @@ target=valeursVerite
 \(\A \rightarrow  \B),
 \(\nonA \rightarrow  \B),
 \(\nonC \rightarrow  \D ),
-\( \A \et  \B \rightarrow  \D ), 
+\( \A \et  \B \rightarrow  \D ),
 \( \B \et  \nonC \rightarrow  \D),
 \( \C \et  \nonA \rightarrow \nonD) ,
 \( \B \ou  \D  \rightarrow    \A),
@@ -108,17 +108,13 @@ target=valeursVerite
 \integer{rep3=\conds[(10+\i3)]}
 \integer{rep4=\conds[(10+\i4)]}
 
-
-
-#include "lang.inc"
-
 \statement{
 <div style="background-color:#FFFF66;">
 
 <p>
-Soient  \A, \B, \C et \D quatre propositions.  <br/>
-On définit une <i>interprétation</i> ou un <i>modèle</i> logique de ces propositions en leur affectant les valeurs de vérité, Vrai (V) ou Faux (F), suivantes.
- </p> 
+\Soient \A, \B, \C \et \D \name_statement1 <br/>
+\name_statement2
+ </p>
 <table border="solid" cellpadding="5" align="center">
 <tr><td>\A</td><td>\B</td><td>\C</td><td>\D</td></tr>
 <tr><td>\if{\val[1]==1}{V}{F}</td>
@@ -128,8 +124,7 @@ On définit une <i>interprétation</i> ou un <i>modèle</i> logique de ces proposit
 </tr>
 </table>
 
-<p>Sous cette interprétation, calculer les valeurs de vérité des 
-formules suivantes :
+<p>\name_question1\spacebeforecolon:
 </p>
 <table width="50%" align="center" cellpadding=10>
 <tr>
@@ -155,12 +150,10 @@ formules suivantes :
 </table>
 </div>
 
-<p>
-<i>Pour tout rappel sur les règles de la logique booléenne, cliquer sur le lien  <font color="blue">Aide</font> ci-dessous ou consulter le <font color="blue">glossaire</font>. 
-</i> </p> 
+<p><i>\name_statement3</i></p>
 
 }
-\answer{clause 1}{\rep1;V,F}{type=radio}
-\answer{clause 2}{\rep2;V,F}{type=radio}
-\answer{clause 3}{\rep3;V,F}{type=radio}
-\answer{clause 4}{\rep4;V,F}{type=radio}
+\answer{clause 1}{\rep1;\V,\F}{type=radio}
+\answer{clause 2}{\rep2;\V,\F}{type=radio}
+\answer{clause 3}{\rep3;\V,\F}{type=radio}
+\answer{clause 4}{\rep4;\V,\F}{type=radio}

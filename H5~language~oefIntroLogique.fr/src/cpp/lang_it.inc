@@ -11,7 +11,7 @@
 \text{non2=non}
 \text{spacebeforecolon=}
 \text{Remarque=Nota}
-
+\text{Soient=Siano}
 
 #if defined TARGET_connecteursLN
 \text{Alist =
@@ -466,7 +466,6 @@ le galline non nuotano,
 la soddisfazione è parziale
 }
 
-\text{Soient=Siano}
 \text{name_statement1=Si consideri la proposizione}
 \text{name_statement2=seguente}
 \text{name_question1=A quale formula logica corrisponde}
@@ -475,6 +474,11 @@ la soddisfazione è parziale
 #endif
 
 #if defined TARGET_valeursVerite
+\text{V=V}
+\text{F=F}
+\text{name_statement1=quattro proposizioni.}
+\text{name_statement2=Definiamo una <i>interpretazione</i> o un <i>modello</i> logico di queste proprosizioni assegnando loro i valori di verità Vero (V) o Falso (F).}
+\text{name_statement3=Per un promemoria sulle regole della logica booleana, clicca sul link <font color="blue">Aiuto</font> in basso o consulta il <font color="blue"> glossario </font>.}
 #endif
 
 #if defined TARGET_validite

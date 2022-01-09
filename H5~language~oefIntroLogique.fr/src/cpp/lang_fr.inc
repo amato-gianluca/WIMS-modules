@@ -12,6 +12,7 @@
 \text{non2=non}
 \text{spacebeforecolon=&#32;}
 \text{Remarque=Remarque}
+\text{Soient=Soient}
 
 #if defined TARGET_connecteursLN
 \text{Alist =
@@ -476,7 +477,6 @@ les poules ne nagent pas,
 la satisfaction est partielle
 }
 
-\text{Soient=Soient}
 \text{name_statement1=On considère la proposition}
 \text{name_statement2=suivante}
 \text{name_question1=Quelle formule logique correspond à}
@@ -485,6 +485,11 @@ la satisfaction est partielle
 #endif
 
 #if defined TARGET_valeursVerite
+\text{V=V}
+\text{F=F}
+\text{name_statement1=quatre propositions.}
+\text{name_statement2=On définit une <i>interprétation</i> ou un <i>modèle</i> logique de ces propositions en leur affectant les valeurs de vérité, Vrai (V) ou Faux (F), suivantes.}
+\text{name_statement3=Pour tout rappel sur les règles de la logique booléenne, cliquer sur le lien <font color="blue">Aide</font> ci-dessous ou consulter le <font color="blue">glossaire</font>.}
 #endif
 
 #if defined TARGET_validite
