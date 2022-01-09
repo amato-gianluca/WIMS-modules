@@ -6,6 +6,7 @@
 \text{Si2=Si}
 \text{ssi=si et seulement si}
 \text{alors=alors}
+\text{Alors=Alors}
 \text{oui=oui}
 \text{non=non}
 \text{non2=non}
@@ -339,9 +340,55 @@ les poules ne nagent pas
 #endif
 
 #if defined TARGET_negationMath
+\text{exists=il existe un}
+\text{st=tel que}
+\text{forall=pour tout}
+\text{real=réel}
+\text{theinequation=l'inéquation}
+\text{hasatleast=a au moins}
+\text{hasatmost=a au plus}
+\text{solutions=solutions}
+\text{solution=solution}
+\text{strictlypositive=strictement positif}
+\text{negative=négatif}
+\text{hasless=a moins de}
+\text{hasmore=a plus de}
+\text{hasno=n'a aucune}
+\text{hasinfinite=a une infinité de}
+\text{name_statement1=Soit la proposition}
+\text{name_statement2=Parmi les propositions suivantes, quelle est la négation de}
 #endif
 
 #if defined TARGET_reciproque
+\text{Alist=il est suédois,il est écossais,il est australien,elle est allemande,elle est cubaine, elle est japonaise}
+\text{Blist=il joue au tennis, il joue du biniou, il surfe, elle joue du piano , elle danse la salsa, elle fait du Kendo}
+\text{Clist=il est blond, il porte une jupe, il ne porte pas de cravate,  elle ne se maquille pas , elle est brune, elle  porte des kimonos}
+\text{Dlist=il a des enfants, il sort le dimanche, il passe ses vacances à Bali, elle roule en vélo ,elle adore les maths, elle fait de l'origami}
+\text{Elist=il est végétarien, il est marié, il aime la bière, elle aime la Bratwurst , elle boit de la tequila, elle est célibataire}
+\text{nonAlist=il n'est pas suédois, il n'est pas écossais, il n'est pas australien, elle n'est pas allemande , elle n'est pas cubaine, elle n'est pas japonaise}
+\text{nonBlist=il ne joue pas au tennis, il ne joue pas du biniou , il ne  surfe pas , elle ne joue pas du piano , elle ne danse pas la salsa, elle ne fait pas Kendo}
+\text{nonClist=il n'est pas blond, il ne porte pas de jupe, il porte  une cravate, elle se maquille , elle n'est pas brune, elle ne porte pas de kimono }
+\text{nonDlist=il n'a pas d'enfant, il ne sort pas le dimanche, il ne passe pas ses vacances à Bali, elle ne roule pas en vélo , elle déteste les maths, elle ne fait pas de l'origami}
+\text{nonElist=il n'est pas végétarien, il n'est pas marié, il n'aime pas la bière, elle n'aime pas la Bratwurst, elle ne boit pas de tequila, elle est mariée}
+
+\text{enunciateimpl=énonce l'implication suivante}
+\text{Later=Puis}
+\text{enunciateprop=énonce la proposition}
+\text{Theprop=La proposition}
+\text{theprop=la proposition}
+\text{formulatedby=formulée par}
+\text{enunciatedby=énoncée par}
+\text{ofproposition=de la proposition}
+
+\text{name_answers=est la réciproque,est la contraposée,n'est ni la réciproque ni la contraposée}
+\text{considerimpl=Considérons l'implication}
+\text{its=sa}
+\text{reciproque=réciproque}
+\text{contraposed=contraposée}
+\text{isprop=est la proposition}
+\text{Theconj=La conjonction}
+\text{Thedisj=La disjonction}
+\text{hasnegation=a pour négation}
 #endif
 
 #if defined TARGET_tautologie

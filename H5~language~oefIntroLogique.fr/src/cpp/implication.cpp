@@ -107,7 +107,7 @@ reply2}
 \text{liste2=row(3,\qcm2)}
 
 \statement{
-<p><i><small><font color=blue>\name_citation
+<p><i><small><font color="blue">\name_citation
 </font></small></i></p>
 
 <div style="background-color:#FFFF66;">
@@ -115,7 +115,7 @@ reply2}
 \if{\step=1}{
 <p><b>\Question \step.</b> <br/>\subject \sujA \et \sujB.
 \name_statement1
-<center><font color=green><b> \rule </b></font></center>
+<center><font color="green"><b> \rule </b></font></center>
 </p>
 <p> \whatif  \query1 ?</p>
 <p align="center"> \embed{reply1} </p>
@@ -124,7 +124,7 @@ reply2}
 \if{\step=2}{
 <p><b>\Question \step.</b> <br/>\name_characters \sujA, \sujB \et \sujC.
 \name_statement2
-<font color=green><b>
+<font color="green"><b>
 <ul><li> \rule </li><li> \rule2 </li></ul>
 </b></font> </p>
 <p> \whatif  \query2 ?</p>

@@ -5,6 +5,7 @@
 \text{Si1=Se}
 \text{Si2=Se}
 \text{alors=allora}
+\text{Alors=Allora}
 \text{oui=sì}
 \text{non=no}
 \text{non2=non}
@@ -329,9 +330,55 @@ le galline non nuotano
 #endif
 
 #if defined TARGET_negationMath
+\text{exists=esiste un}
+\text{st=tale che}
+\text{forall=per ogni}
+\text{real=reale}
+\text{theinequation=la disequazione}
+\text{hasatleast=ha almeno}
+\text{hasatmost=ha al più}
+\text{solutions=soluzioni}
+\text{solution=soluzione}
+\text{strictlypositive=strettamente positivo}
+\text{negative=negativo}
+\text{hasless=ha meno di}
+\text{hasmore=ha più di}
+\text{hasno=non ha nessuna}
+\text{hasinfinite=ha una infinità di}
+\text{name_statement1=Sia data la proposizione}
+\text{name_statement2=Tra le proposizioni seguenti, qual è la negazione di}
 #endif
 
 #if defined TARGET_reciproque
+\text{Alist=lui è svedese, lui è scozzese, lui è australiano, lei è tedesca, lei è cubana, lei è giapponese}
+\text{Blist=lui gioca a tennis, gioca a biniou, fa surf, lei suona il piano, balla la salsa, pratica il Kendo}
+\text{Clist=il est blond, il porte une jupe, il ne porte pas de cravate,  elle ne se maquille pas , elle est brune, elle  porte des kimonos}
+\text{Dlist=lui è biondo, indossa una gonna, non porta la cravatta, non si trucca, è bruna, indossa il kimono}
+\text{Elist=lui è vegetariano, lui è sposato, gli piace la birra, a lei piace il Bratwurst, lei beve tequila, è single}
+\text{nonAlist=non è svedese, non è scozzese, non è australiano, lei non è tedesca, non è cubana, non è giapponese}
+\text{nonBlist=lui non gioca a tennis, non gioca a biniou, non fa surf, lei non suona il piano, non balla salsa, non pratica il Kendo }
+\text{nonClist=non è biondo, non indossa la gonna, indossa la cravatta, si trucca, non è bruna, non indossa il kimono }
+\text{nonDlist=non ha figli, non esce la domenica, non trascorre le vacanze a Bali, lei non va in bicicletta, odia la matematica, non fa gli origami }
+\text{nonElist=non è vegetariano, non è sposato, non gli piace la birra, a lei non piace il Bratwurst, non beve tequila, è sposata}
+
+\text{enunciateimpl=afferma la seguente implicazione}
+\text{Later=Successivamente}
+\text{enunciateprop=afferma la proposizione}
+\text{Theprop=La proposizione}
+\text{theprop=la proposizione}
+\text{formulatedby=formulata da}
+\text{enunciatedby=enunciata da}
+\text{ofproposition=della proposizione}
+
+\text{name_answers=è il reciproco,è il contrapposoto,non è né il reciproco né il contrapposto}
+\text{considerimpl=Si consideri l'implicazione}
+\text{its=il suo}
+\text{reciproque=reciproco}
+\text{contraposed=contrapposto}
+\text{isprop=è la proposizione}
+\text{Theconj=La congiunzione}
+\text{Thedisj=La disgiunzione}
+\text{hasnegation=ha per negazione}
 #endif
 
 #if defined TARGET_tautologie
