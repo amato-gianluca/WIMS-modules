@@ -6,7 +6,7 @@ target=connecteursLN
 
 \language{fr}
 \range{-10..10}
-\text{monaide=wims(record 1 to 3 of glossaire)}
+\text{monaide=wims(record 1 to 3 of \glossaire)}
 \help{\monaide}
 
 \integer{n=random(1..17)}

@@ -13,6 +13,7 @@
 \text{spacebeforecolon=}
 \text{Remarque=Nota}
 \text{Soient=Siano}
+\text{glossaire=glossaire_it}
 
 #if defined TARGET_connecteursLN
 \text{Alist =
@@ -479,7 +480,7 @@ la soddisfazione è parziale
 \text{F=F}
 \text{name_statement1=quattro proposizioni.}
 \text{name_statement2=Definiamo una <i>interpretazione</i> o un <i>modello</i> logico di queste proprosizioni assegnando loro i valori di verità Vero (V) o Falso (F).}
-\text{name_statement3=Per un promemoria sulle regole della logica booleana, clicca sul link <font color="blue">Aiuto</font> in basso o consulta il <font color="blue"> glossario </font>.}
+\text{name_statement3=Per un promemoria sulle regole della logica booleana, clicca sul link <font color="blue">Istruzioni</font> in basso o consulta il <font color="blue">glossario</font>.}
 #endif
 
 #if defined TARGET_validite

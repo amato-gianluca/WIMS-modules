@@ -6,7 +6,7 @@ target=implication
 
 \language{fr}
 \range{-10..10}
-\text{monaide=wims(record 12  of glossaire)}
+\text{monaide=wims(record 12  of \glossaire)}
 \help{\monaide}
 
 \steps{reply1

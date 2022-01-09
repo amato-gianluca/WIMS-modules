@@ -6,7 +6,7 @@ target=deduction
 
 \language{fr}
 \integer{init= 10}
-\text{monaide=wims(record 8 to  10 of glossaire)}
+\text{monaide=wims(record 8 to  10 of \glossaire)}
 \help{\monaide}
 
 \integer{a=random(1..\init)}

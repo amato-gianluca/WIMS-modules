@@ -5,7 +5,7 @@ target=tautologie
 #include "lang.inc"
 
 \range{-10..10}
-\text{monaide=wims(record 6  of glossaire)}
+\text{monaide=wims(record 6  of \glossaire)}
 \help{\monaide}
 
 \integer{a=random(1..18)}

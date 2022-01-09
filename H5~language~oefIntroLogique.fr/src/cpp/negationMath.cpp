@@ -5,7 +5,7 @@ target=negationMath
 #include "lang.inc"
 
 \range{-10..10}
-\text{monaide=wims(record 11 of glossaire)}
+\text{monaide=wims(record 11 of \glossaire)}
 \help{\monaide}
 
 \integer{y=random(-20..20)}

@@ -5,7 +5,7 @@ target=validite
 #include "lang.inc"
 
 \range{-10..10}
-\text{monaide=wims(record 4 to 5  of glossaire)}
+\text{monaide=wims(record 4 to 5 of \glossaire)}
 \help{\monaide}
 
 \integer{a=random(1..6)}
