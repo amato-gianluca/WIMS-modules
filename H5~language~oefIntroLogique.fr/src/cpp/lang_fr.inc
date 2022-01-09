@@ -392,6 +392,96 @@ les poules ne nagent pas
 #endif
 
 #if defined TARGET_tautologie
+\text{Alist =
+il y a grève de bus,
+il pleut le matin,
+il fait froid,
+il y a du soleil,
+il pleut,
+je  mange beaucoup de gâteaux,
+je suis joyeux,
+j'écoute  Radio Latina,
+je progresse en maths,
+j'aime l'anglais,
+je suis enrhumé(e),
+elle danse,
+tu joues de la guitare,
+tu veux être ingénieur,
+vous êtes nuls en maths,
+on est triste,
+les poissons ne volent pas,
+le travail est motivant,
+}
+
+\text{Blist =
+j'arrive en retard au lycée,
+je prends mon parapluie,
+je mets un pull,
+je porte des lunettes noires,
+il fait froid,
+je grossis,
+je ris,
+je  danse  la salsa,
+je m'entraîne sous WIMS ,
+je vois tous les films  en VO,
+ma voix est cassée,
+elle court,
+tu chantes,
+tu pars  à l'étranger,
+vous êtes forts français,
+on est amoureux,
+les poules nagent,
+la satisfaction est totale ,
+}
+
+\text{nonAlist=
+il n'y a pas grève de bus,
+il ne pleut pas le matin,
+il ne fait pas froid,
+il n'y a pas de soleil ,
+il ne pleut pas,
+je mange peu de gâteaux,
+je suis triste,
+je n'écoute pas Radio Latina,
+je ne progresse pas  en maths,
+je n'aime pas l'anglais,
+je ne suis pas enrhumé(e),
+elle ne danse pas,
+tu ne joues pas de la guitare,
+tu ne veux pas être  ingénieur,
+vous êtes forts en maths,
+on est joyeux,
+les poissons volent,
+le travail n'est pas motivant
+}
+
+\text{nonBlist=
+je suis arrivé(e) à l'heure au lycée,
+je ne prends pas mon parapluie,
+je n'ai pas mis de pull,
+je ne porte pas de lunettes noires,
+il fait chaud,
+je n'ai pas grossi,
+je ne ris pas,
+je ne danse pas la salsa,
+je ne m'entraîne pas sous WIMS,
+je ne vois aucun film en VO,
+je parle normalement,
+elle ne court pas,
+tu ne chantes pas,
+tu ne pars à l'étranger,
+vous êtes nuls en français,
+on n'est pas amoureux,
+les poules ne nagent pas,
+la satisfaction est partielle
+}
+
+\text{Soient=Soient}
+\text{name_statement1=On considère la proposition}
+\text{name_statement2=suivante}
+\text{name_question1=Quelle formule logique correspond à}
+\text{name_question2=est-elle une tautologie}
+\text{name_hint=Une tautologie est une proposition logique toujours vraie (quelle que soient les valeurs de vérité de ses propositions élémentaires)}
 #endif
 
 #if defined TARGET_valeursVerite

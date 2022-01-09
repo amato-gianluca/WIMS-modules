@@ -270,7 +270,7 @@ nessuna interpretazione in cui \(P_1), \(P_2) e \(P_3) sono simultaneamente veri
 \text{name_subjects=greco, greci, logico, logici, compiti di matematica, compiti di matematica, film, film, saggio, saggi, allievo, allievi, adulto, adulti}
 \text{name_verbs=è un bugiardo, sono bugiardi, è pazzo, sono pazzi, è facile, sono facili, è divertente, sono divertenti, è vecchio, sono vecchi, è felice,
 sono felici, è responsabile, sono responsabili}
-\text{name_nonverbs=è schietto, aono schietti, è sano di mente, sono sani di mente, è difficile, sono difficili, è tragico, sono tragicu, è giovane, sono giovani,
+\text{name_nonverbs=è schietto, sono schietti, è sano di mente, sono sani di mente, è difficile, sono difficili, è tragico, sono tragicu, è giovane, sono giovani,
 è infelice, sono infelici, è irresponsabile, sono irresponsabili}
 \text{name_adj=bugiardo, pazzo, facile, comico, vecchio, felice, responsabile}
 \text{name_nonadj=franco, sano di mente, difficile, tragico, giovane, infelice, irresponsabile}
@@ -382,6 +382,96 @@ le galline non nuotano
 #endif
 
 #if defined TARGET_tautologie
+\text{Alist =
+c'è uno sciopero dell'autobus,
+piove al mattino,
+è freddo,
+c'è il sole,
+piove,
+mangio molte torte,
+sono felice,
+ascolto Radio Latina,
+sto facendo progressi in matematica,
+mi piace l'inglese,
+ho il raffreddore,
+lei balla,
+tu suoni la chitarra,
+vuoi essere un ingegnere,
+fai schifo in matematica,
+siamo tristi,
+i pesci non volano,
+il lavoro è motivante,
+}
+
+\text{Blist =
+sono in ritardo per il liceo,
+prendo il mio ombrello,
+ho messo un maglione,
+indosso gli occhiali scuri,
+è freddo,
+sto ingrassando,
+rido,
+io ballo salsa,
+mi esercito con WIMS,
+vedo tutti i film nella loro versione originale,
+la mia voce è rotta
+lei corre,
+tu canti,
+vai all'estero,
+sei un francese forte,
+siamo innamorati
+le galline nuotano,
+la soddisfazione è totale,
+}
+
+\text{nonAlist=
+non c'è sciopero dell'autobus,
+non piove al mattino,
+non fa freddo,
+non c'è il sole,
+non sta piovendo,
+mangio poche torte,
+sono triste,
+non ascolto Radio Latina,
+non sto facendo progressi in matematica,
+non mi piace l'inglese,
+non ho il raffreddore,
+lei non balla,
+non suoni la chitarra,
+non vuoi essere un ingegnere,
+sei bravo in matematica,
+siamo felici,
+mosca dei pesci,
+il lavoro non è motivante
+}
+
+\text{nonBlist=
+sono arrivato a scuola in orario,
+non prendo il mio ombrello
+non ho indossato un maglione,
+non indosso gli occhiali scuri,
+è caldo,
+non sono ingrassato,
+non rido,
+non ballo salsa,
+non mi esercito con WIMS,
+non vedo nessun film in versione originale,
+parlo normalmente,
+lei non corre,
+tu non canti,
+non vai all'estero,
+fai schifo in francese,
+non siamo innamorati,
+le galline non nuotano,
+la soddisfazione è parziale
+}
+
+\text{Soient=Siano}
+\text{name_statement1=Si consideri la proposizione}
+\text{name_statement2=seguente}
+\text{name_question1=A quale formula logica corrisponde}
+\text{name_question2=è una tatologia}
+\text{name_hint=Una tautologia è una proposizione logica che è sempre vera (qualunque sia il valore di verità delle sue proposizioni elementari)}
 #endif
 
 #if defined TARGET_valeursVerite
