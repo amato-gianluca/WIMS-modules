@@ -4,6 +4,7 @@
 \text{si2=se}
 \text{Si1=Se}
 \text{Si2=Se}
+\text{seulement=soltanto}
 \text{alors=allora}
 \text{Alors=Allora}
 \text{oui=sì}
@@ -26,7 +27,7 @@ ascolto Radio Latina,
 voglio progredire in matematica,
 voglio migliorare il mio inglese,
 ho il raffreddore,
-lei balla,
+ balla,
 suoni la chitarra,
 non vuole diventare un ingegnere,
 fai schifo in matematica,
@@ -46,9 +47,9 @@ io ballo la salsa,
 mi esercito con WIMS,
 vedrò solo i film in versione originale,
 la mia voce è rotta,
-lei corre,
+ corre,
 tu canti,
-lei vuole andare all'estero,
+ vuole andare all'estero,
 sei forte in francese,
 siamo innamorati,
 la soddisfazione è totale
@@ -66,7 +67,7 @@ non ascolto Radio Latina,
 non voglio progredire in matematica,
 non voglio migliorare il mio inglese,
 non ho il raffreddore,
-lei non balla,
+ non balla,
 non suoni la chitarra,
 vuole diventare un ingegnere,
 sei bravo in matematica,
@@ -86,7 +87,7 @@ non ballo la salsa,
 non mi esercito con WIMS,
 guardo Lost In Translation in italiano,
 parlo normalmente,
-lei non corre,
+ non corre,
 tu non canti,
 vuole restare in Italia,
 fai schifo in francese,
@@ -227,14 +228,14 @@ http://whyslopes.com/volume1a/}
 \text{Alist=è svedese, è scozzese, è australiano, è tedesca, è cubana, è giapponese}
 \text{Blist=gioca a tennis, suona il violino, fa surf, suona il piano, balla la salsa, fa Kendo}
 \text{Clist=è biondo, indossa una gonna, non indossa una cravatta, non si trucca, è bruna, indossa il kimono}
-\text{Dlist=sta sciando, lui gioca a rugby, trascorre le vacanze a Bali, va in bicicletta, ama la matematica, fa gli origami}
+\text{Dlist=sta sciando, gioca a rugby, trascorre le vacanze a Bali, va in bicicletta, ama la matematica, fa gli origami}
 \text{Elist=è vegetariano, è sposato, gli piace la birra, le piacciono i wurstel, beve tequila, è single}
 
 \text{nonAlist=non è svedese, non è scozzese, non è australiano, non è tedesca, non è cubana, non è giapponese }
 \text{nonBlist=non gioca a tennis, non suona il violino, non fa surf, non suona il piano, non balla salsa, non fa Kendo}
 \text{nonClist=non è biondo, non indossa una gonna, indossa una cravatta, è truccata, non è bruna, non indossa un kimono}
 \text{nonDlist=non scia, non gioca a rugby, non passa le vacanze a Bali, non va in bicicletta, odia la matematica, non fa gli origami}
-\text{nonElist=non è vegetariano, è single, non gli piace la birra,  non le piacciono i wurstel, non beve tequila, è sposata}
+\text{nonElist=non è vegetariano, è single, non gli piace la birra, non le piacciono i wurstel, non beve tequila, è sposata}
 
 \text{\name_statement1=Per entrare in un circolo ricreativo }
 \text{\name_statement2=maschile, ogni candidato è tenuto a}
@@ -286,8 +287,8 @@ I pesci non volano}
 
 \text{name_Blist=
 fa freddo,
-lei corre,
-lui canta,
+ corre,
+canta,
 lavorerà all'estero,
 sono bravo in italiano,
 sfortunato,
@@ -306,8 +307,8 @@ Il pesci volano
 
 \text{name_nonBlist=
 fa caldo,
-lei non corre,
-lui non canta,
+ non corre,
+non canta,
 resterà in Italia,
 faccio schifo in italiano,
 felice,
@@ -350,16 +351,16 @@ le galline non nuotano
 #endif
 
 #if defined TARGET_reciproque
-\text{Alist=lui è svedese, lui è scozzese, lui è australiano, lei è tedesca, lei è cubana, lei è giapponese}
-\text{Blist=lui gioca a tennis, gioca a biniou, fa surf, lei suona il piano, balla la salsa, pratica il Kendo}
-\text{Clist=il est blond, il porte une jupe, il ne porte pas de cravate,  elle ne se maquille pas , elle est brune, elle  porte des kimonos}
-\text{Dlist=lui è biondo, indossa una gonna, non porta la cravatta, non si trucca, è bruna, indossa il kimono}
-\text{Elist=lui è vegetariano, lui è sposato, gli piace la birra, a lei piace il Bratwurst, lei beve tequila, è single}
-\text{nonAlist=non è svedese, non è scozzese, non è australiano, lei non è tedesca, non è cubana, non è giapponese}
-\text{nonBlist=lui non gioca a tennis, non gioca a biniou, non fa surf, lei non suona il piano, non balla salsa, non pratica il Kendo }
+\text{Alist=è svedese, è scozzese, è australiano, è tedesca, è cubana, è giapponese}
+\text{Blist=gioca a tennis, gioca a biniou, fa surf, suona il piano, balla la salsa, pratica il Kendo}
+\text{Clist=il est blond, il porte une jupe, il ne porte pas de cravate, elle ne se maquille pas , elle est brune, elle porte des kimonos}
+\text{Dlist=è biondo, indossa una gonna, non porta la cravatta, non si trucca, è bruna, indossa il kimono}
+\text{Elist=è vegetariano, è sposato, gli piace la birra, a piace il Bratwurst, beve tequila, è single}
+\text{nonAlist=non è svedese, non è scozzese, non è australiano, non è tedesca, non è cubana, non è giapponese}
+\text{nonBlist=non gioca a tennis, non gioca a biniou, non fa surf, non suona il piano, non balla salsa, non pratica il Kendo }
 \text{nonClist=non è biondo, non indossa la gonna, indossa la cravatta, si trucca, non è bruna, non indossa il kimono }
-\text{nonDlist=non ha figli, non esce la domenica, non trascorre le vacanze a Bali, lei non va in bicicletta, odia la matematica, non fa gli origami }
-\text{nonElist=non è vegetariano, non è sposato, non gli piace la birra, a lei non piace il Bratwurst, non beve tequila, è sposata}
+\text{nonDlist=non ha figli, non esce la domenica, non trascorre le vacanze a Bali, non va in bicicletta, odia la matematica, non fa gli origami }
+\text{nonElist=non è vegetariano, non è sposato, non gli piace la birra, a non piace il Bratwurst, non beve tequila, è sposata}
 
 \text{enunciateimpl=afferma la seguente implicazione}
 \text{Later=Successivamente}
@@ -394,7 +395,7 @@ ascolto Radio Latina,
 sto facendo progressi in matematica,
 mi piace l'inglese,
 ho il raffreddore,
-lei balla,
+ balla,
 tu suoni la chitarra,
 vuoi essere un ingegnere,
 fai schifo in matematica,
@@ -415,7 +416,7 @@ io ballo salsa,
 mi esercito con WIMS,
 vedo tutti i film nella loro versione originale,
 la mia voce è rotta
-lei corre,
+ corre,
 tu canti,
 vai all'estero,
 sei un francese forte,
@@ -436,7 +437,7 @@ non ascolto Radio Latina,
 non sto facendo progressi in matematica,
 non mi piace l'inglese,
 non ho il raffreddore,
-lei non balla,
+ non balla,
 non suoni la chitarra,
 non vuoi essere un ingegnere,
 sei bravo in matematica,
@@ -457,7 +458,7 @@ non ballo salsa,
 non mi esercito con WIMS,
 non vedo nessun film in versione originale,
 parlo normalmente,
-lei non corre,
+ non corre,
 tu non canti,
 non vai all'estero,
 fai schifo in francese,
@@ -482,5 +483,31 @@ la soddisfazione è parziale
 #endif
 
 #if defined TARGET_validite
+\text{Alist= è svedese, è scozzese, è australiano, è tedesca, è cubana, è giapponese}
+\text{Blist= gioca a tennis, suona il violino, fa surf, suona il piano, balla la salsa, fa kendo}
+\text{Clist= è biondo, indossa la gonna, non indossa la cravatta, non si trucca, è bruna, indossa il kimono}
+\text{Dlist= sta sciando, gioca a rugby, trascorre le vacanze a Bali, va in bicicletta, ama la matematica, impara l'ikebana }
+
+\text{nonAlist= non è svedese, non è scozzese, non è australiano, non è tedesca, non è cubana, non è giapponese}
+\text{nonBlist= non gioca a tennis, non suona il violino, non fa surf, non suona il piano, non balla salsa, non fa kendo}
+\text{nonClist= non è biondo, non indossa la gonna, indossa la cravatta, si trucca, non è bruna, non indossa il kimono}
+\text{nonDlist= non scia, non gioca a rugby, non trascorre le vacanze a Bali, non va in bicicletta, odia la matematica, non impara l'ikebana}
+
+\text{elles=Léa,Lili,Julie,Leila,Lola}
+\text{luis=Léo,Lulu,Jules,Malik,Luis}
+
+\text{masculin=maschile}
+\text{feminin=femminile}
+\text{vrai=vero}
+\text{faux=falso}
+
+\text{name_statement1=possiede le seguenti caratteristiche}
+\text{name_statement2=Per entrare in un club ricreativo}
+\text{name_statement3=deve soddisfare tutte le seguenti condizioni}
+\text{name_statement4=Per ciascuna di esse, indicare se}
+\text{name_statement5=la verifica o no}
+\text{name_hint1=Si tratta di calcolare i valori di verità delle asserzioni (formule) proposte, conoscendo i valori di verità delle proposizioni elementari.}
+\text{name_hint2=Per qualsiasi promemoria sul calcolo dei valori di verità, consultare l'aiuto o l'esercizio "Tabelle di verità".}
+
 #endif
 

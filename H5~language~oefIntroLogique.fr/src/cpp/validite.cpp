@@ -2,30 +2,11 @@ target=validite
 
 #include "header.inc"
 #include "lang_titles.inc"
+#include "lang.inc"
 
-\language{fr}
 \range{-10..10}
 \text{monaide=wims(record 4 to 5  of glossaire)}
 \help{\monaide}
-
-\text{Alist= il est suédois,il est écossais,il est australien,elle est allemande,elle est cubaine, elle est japonaise}
-\text{Blist= il joue au tennis,
-il joue du biniou, il surfe, elle joue du piano , elle danse la salsa,
-elle fait du Kendo}
-\text{Clist= il est blond,
-il porte une jupe, il ne porte pas de cravate,  elle ne se maquille pas , elle est brune, elle  porte des kimonos}
-\text{Dlist= il fait du ski,
-il fait du rugby, il passe ses vacances à Bali, elle roule en vélo ,elle adore les maths, elle apprend l'ikebana}
-
-
-
-\text{nonAlist= il n'est pas suédois, il n'est pas écossais, il n'est pas australien, elle n'est pas allemande , elle n'est pas cubaine, elle n'est pas japonaise}
-\text{nonBlist =il ne joue pas au tennis,
-il ne joue pas du biniou , il ne  surfe pas , elle ne joue pas du piano , elle ne danse pas la salsa, elle ne fait pas Kendo}
-\text{nonClist= il n'est pas blond,
-il ne porte pas de jupe, il porte des cravates, elle se maquille , elle n'est pas brune, elle ne porte pas de kimono }
-\text{nonDlist= il ne fait pas de ski,
-il ne fait pas de rugby, il ne passe pas ses vacances à Bali, elle ne roule pas en vélo , elle déteste les maths, elle n'apprend pas l'ikebana}
 
 \integer{a=random(1..6)}
 
@@ -41,31 +22,29 @@ il ne fait pas de rugby, il ne passe pas ses vacances à Bali, elle ne roule pas 
 
 \text{val=randint(0,1),randint(0,1),randint(0,1),randint(0,1)}
 
-\text{si=\a<4?s':si}
+\text{si=\a<4?\si1:\si2}
 
 \text{liste=oui,1,2,3,4,5,6}
 
-\text{elles=Léa,Lili,Julie,Leila,Lola}
-\text{luis=Léo,Lulu,Jules,Malik,Luis}
 \integer{i=random(1..4)}
 \text{Elle=\elles[\i]}
 \text{Lui=\luis[\i]}
 
 \text{mrx=\a<4?\Lui:\Elle}
 
-/** reglement compatible **/ 
+/** reglement compatible **/
 /**  un  modèle : Av Bv Cv Dv Ef **/
 
 \text{reg=
-\A ou \B,
-\C ou \D,
-\si \A et \si \B alors \D, 
-\si \B et \si \nonC alors \D,
- \si \C et \si \nonA alors \nonD ,
-\si \B ou \si \D  alors   \A,
-\A si et seulement \si \D,
-\A et \B,
-\C et \nonD
+\A \ou \B,
+\C \ou \D,
+\si \A \et \si \B \alors \D,
+\si \B \et \si \nonC \alors \D,
+\si \C et \si \nonA \alors \nonD ,
+\si \B \ou \si \D \alors \A,
+\A \si2 \et \seulement \si \D,
+\A \et \B,
+\C \et \nonD
 }
 
 \text{ind=shuffle(1,2,3,4,5,6,7,8,9)}
@@ -99,27 +78,23 @@ il ne fait pas de rugby, il ne passe pas ses vacances à Bali, elle ne roule pas 
 \integer{rep3=\conditions[\i3]}
 \integer{rep4=\conditions[\i4]}
 
-
-
-#include "lang.inc"
-
 \statement{
 
 <div style="background-color:#FFFF66;">
 
-<p>\mrx  possède les  caractéristiques suivantes :  
+<p>\mrx \name_statement1\spacebeforecolon:
 <ul>
 <li>\if{\val[1]==1}{\A}{\nonA}</li>
 <li>\if{\val[2]==1}{\B}{\nonB}</li>
 <li>\if{\val[3]==1}{\C}{\nonC}</li>
 <li>\if{\val[4]==1}{\D}{\nonD}</li>
 </ul>
-</p> 
+</p>
 
 <p>
-Pour adhérer à  un club de loisir \if{\a<4}{masculin}{féminin},  \mrx  devrait remplir toutes les conditions ci-dessous.
+\name_statement2 \if{\a<4}{\masculin,}{\feminin,} \mrx \name_statement3.
  <br/>
-Pour chacune d'entre elles, indiquez si  \mrx la vérifie ou pas :
+\name_statement4 \mrx \name_statement5\spacebeforecolon:
 </p>
 <table width="75%" align="center" cellpadding=5>
 <tr>
@@ -146,11 +121,9 @@ Pour chacune d'entre elles, indiquez si  \mrx la vérifie ou pas :
 
 </div>
 }
-\answer{clause 1}{\rep1;vrai,faux}{type=radio}
-\answer{clause 2}{\rep2;vrai,faux}{type=radio}
-\answer{clause 3}{\rep3;vrai,faux}{type=radio}
-\answer{clause 4}{\rep4;vrai,faux}{type=radio}
+\answer{clause 1}{\rep1;\vrai,\faux}{type=radio}
+\answer{clause 2}{\rep2;\vrai,\faux}{type=radio}
+\answer{clause 3}{\rep3;\vrai,\faux}{type=radio}
+\answer{clause 4}{\rep4;\vrai,\faux}{type=radio}
 
-\hint{Il s'agit de calculer les valeurs de vérité des assertions (formules) proposées, connaissant les valeurs de vérité
-des propositions élémentaires. <br/> Pour tout rappel sur le calcul des 
-valeurs de vérité, voir l'aide ou l'exercice "Tables de vérité".}
+\hint{\name_hint1<br/>\name_hint2}

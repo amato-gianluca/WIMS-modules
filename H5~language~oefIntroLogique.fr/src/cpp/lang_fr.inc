@@ -5,6 +5,7 @@
 \text{Si1=S'}
 \text{Si2=Si}
 \text{ssi=si et seulement si}
+\text{seulement=seulement}
 \text{alors=alors}
 \text{Alors=Alors}
 \text{oui=oui}
@@ -493,5 +494,30 @@ la satisfaction est partielle
 #endif
 
 #if defined TARGET_validite
+\text{Alist= il est suédois,il est écossais,il est australien,elle est allemande,elle est cubaine, elle est japonaise}
+\text{Blist= il joue au tennis, il joue du biniou, il surfe, elle joue du piano , elle danse la salsa, elle fait du Kendo}
+\text{Clist= il est blond, il porte une jupe, il ne porte pas de cravate,  elle ne se maquille pas , elle est brune, elle  porte des kimonos}
+\text{Dlist= il fait du ski, il fait du rugby, il passe ses vacances à Bali, elle roule en vélo ,elle adore les maths, elle apprend l'ikebana}
+
+\text{nonAlist= il n'est pas suédois, il n'est pas écossais, il n'est pas australien, elle n'est pas allemande , elle n'est pas cubaine, elle n'est pas japonaise}
+\text{nonBlist =il ne joue pas au tennis, il ne joue pas du biniou , il ne  surfe pas , elle ne joue pas du piano , elle ne danse pas la salsa, elle ne fait pas Kendo}
+\text{nonClist= il n'est pas blond, il ne porte pas de jupe, il porte des cravates, elle se maquille , elle n'est pas brune, elle ne porte pas de kimono}
+\text{nonDlist= il ne fait pas de ski, il ne fait pas de rugby, il ne passe pas ses vacances à Bali, elle ne roule pas en vélo , elle déteste les maths, elle n'apprend pas l'ikebana}
+
+\text{elles=Léa,Lili,Julie,Leila,Lola}
+\text{luis=Léo,Lulu,Jules,Malik,Luis}
+
+\text{masculin=masculin}
+\text{feminin=féminin}
+\text{vrai=vrai}
+\text{faux=faux}
+
+\text{name_statement1=possède les  caractéristiques suivantes}
+\text{name_statement2=Pour adhérer à  un club de loisir}
+\text{name_statement3=devrait remplir toutes les conditions ci-dessous}
+\text{name_statement4=Pour chacune d'entre elles, indiquez si}
+\text{name_statement5=la vérifie ou pas}
+\text{name_hint1=Il s'agit de calculer les valeurs de vérité des assertions (formules) proposées, connaissant les valeurs de vérité des propositions élémentaires.}
+\text{name_hint2=Pour tout rappel sur le calcul des valeurs de vérité, voir l'aide ou l'exercice "Tables de vérité".}
 #endif
 
