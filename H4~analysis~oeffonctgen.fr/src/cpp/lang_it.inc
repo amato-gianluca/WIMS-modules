@@ -74,6 +74,23 @@
 #endif
 
 #if defined TARGET_lectgrimage
+\text{lintervalle=l'intervallo}
+\text{definiesur=definita su}
+\text{Limagede=L'immagine di}
+\text{estegalea=è uguale a}
+\text{Paretape=Passo passo}
+
+\text{name_imgalt=rappresentazione grafica}
+\text{name_statement1=Nel piano dotato di un sistema di coordinate cartesiane}
+\text{name_statement2=oabbiamo tracciato la curva che rappresenta una funzione}
+\text{name_statement3=Determinare graficamente l'immagine di}
+\text{name_statement4=per la funzione}
+\text{name_hint1a=Tracciamo la retta di equazione}
+\text{name_hint1b=in blu nel grafico}
+\text{name_hint2a=Quindi individuiamo il punto di intersezione con la curva}
+\text{name_hint2b=croce blu}
+\text{name_hint3a=Infine, guardiamo l'ordinata di questo punto}
+\text{name_hint3b=trattini verdi}
 #endif
 
 #if defined TARGET_sensvar3

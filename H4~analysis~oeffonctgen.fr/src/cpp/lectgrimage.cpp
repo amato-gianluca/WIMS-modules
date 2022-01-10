@@ -2,6 +2,7 @@ target=lectgrimage
 
 #include "header.inc"
 #include "lang_titles.inc"
+#include "lang.inc"
 
 %%%%%%%%%% AF : disparaitre les croix quand les bornes sont infinies%%%%%%%%%%
 \keywords{function,graphing}
@@ -98,7 +99,7 @@ target=lectgrimage
    plot red,t,\f1
    circle \x0,\y0,6,red
    circle \x4,\kk*\y2,6,red}
-   \text{ensdef=l'intervalle \(\left[ \x0 ; \x4 \right])}
+   \text{ensdef=\lintervalle \(\left[ \x0 ; \x4 \right])}
 \text{rep0=\x0,\x1}
 \text{rep1=\x2}
 }
@@ -135,7 +136,7 @@ text black,0.4,4,medium,4
 \text{imgstat0=draw(400,400
 \img
 )}
-\text{imgstat=<img src="\imgstat0" alt="représentation graphique"/>}
+\text{imgstat=<img src="\imgstat0" alt="\name_imgalt"/>}
 %% choix de la question/réponse
 \integer{choixq=random(1,2)}
 \integer{val=\choixq=1?\y0:\y3}
@@ -159,29 +160,25 @@ text green,\delt,\val0,medium,\val}
 \pts
 \line
 )}
-\text{imgsol=<img src="\imgsol0" alt="représentation graphique"/>}
+\text{imgsol=<img src="\imgsol0" alt="\name_imgalt"/>}
 %% fin image solution %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\text{enonce=Déterminez graphiquement l'image de \(\quest) par la fonction \(f)}
+\text{enonce=\name_statement3 \(\quest) \name_statement4 \(f)}
 %% enoncé de l'exo %%
 
-
-#include "lang.inc"
-
 \statement{
-<p>Dans le plan muni d'un repère orthonormé \((O,I,J)\),
-on a tracé la courbe représentative d'une fonction \(f) définie sur \ensdef.</p>
+<p>\name_statement1 \((O,I,J)\), \name_statement2 \(f) \definiesur \ensdef.</p>
 <div class=wimscenter>\imgstat</div>
 <div class=wims_question>\enonce
-<br />L'image de \(\quest) est égale à : \embed{reply 1,3}</div>
+<br />\Limagede \(\quest) \estegalea\spacebeforecolon: \embed{reply 1,3}</div>
 \instruction
 }
 %%%% soumission de réponse %%%%
 \answer{solution}{\val}{type=integer}
 %%%%%%%% solution %%%%%%%%%%%%%%%%%
-\solution{L'image de \(\quest) est égale à \(\val)
+\solution{\Limagede \(\quest) \estegalea \(\val)
 <div class=wimscenter>\imgsol</div>
-Par étape :
-<ul><li>On trace la droite d'équation \(x=\quest) <font color=blue>(en bleue sur le graphique)</font>.</li>
-<li>Puis on repère le point d'intersection avec la courbe <font color=blue>(croix bleue)</font></li>
-<li>Enfin, on regarde l'ordonnée de ce point <font color=green>( Tirets verts)</font>.</li>
+\Paretape\spacebeforecolon:
+<ul><li>\name_hint1a \(x=\quest) <font color=blue>(\name_hint1b)</font>.</li>
+<li>\name_hint2a <font color=blue>(\name_hint2b)</font>.</li>
+<li>\name_hint3a <font color=green>(\name_hint3b)</font>.</li>
 </ul>}

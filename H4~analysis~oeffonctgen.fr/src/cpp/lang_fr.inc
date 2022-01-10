@@ -1,3 +1,5 @@
+\text{spacebeforecolon=&#32;}
+
 #if defined TARGET_compar2val
 #endif
 
@@ -74,6 +76,24 @@
 #endif
 
 #if defined TARGET_lectgrimage
+\text{lintervalle=l'intervalle}
+\text{definiesur=définie sur}
+\text{Limagede=L'image de}
+\text{estegalea=est égale à}
+\text{Paretape=Par étape}
+
+\text{name_imgalt=représentation graphique}
+\text{name_statement1=Dans le plan muni d'un repère orthonormé}
+\text{name_statement2=on a tracé la courbe représentative d'une fonction}
+\text{name_statement3=Déterminez graphiquement l'image de}
+\text{name_statement4=par la fonction}
+\text{name_hint1a=On trace la droite d'équation}
+\text{name_hint1b=en bleue sur le graphique}
+\text{name_hint2a=Puis on repère le point d'intersection avec la courbe}
+\text{name_hint2b=croix bleue}
+\text{name_hint3a=Enfin, on regarde l'ordonnée de ce point}
+\text{name_hint3b=Tirets verts}
+
 #endif
 
 #if defined TARGET_sensvar3
