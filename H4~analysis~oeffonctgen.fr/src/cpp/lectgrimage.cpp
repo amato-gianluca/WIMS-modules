@@ -178,7 +178,7 @@ text green,\delt,\val0,medium,\val}
 \solution{\Limagede \(\quest) \estegalea \(\val)
 <div class=wimscenter>\imgsol</div>
 \Paretape\spacebeforecolon:
-<ul><li>\name_hint1a \(x=\quest) <font color=blue>(\name_hint1b)</font>.</li>
-<li>\name_hint2a <font color=blue>(\name_hint2b)</font>.</li>
-<li>\name_hint3a <font color=green>(\name_hint3b)</font>.</li>
+<ul><li>\name_solution1a \(x=\quest) <font color=blue>(\name_solution1b)</font>.</li>
+<li>\name_solution2a <font color=blue>(\name_solution2b)</font>.</li>
+<li>\name_solution3a <font color=green>(\name_solution3b)</font>.</li>
 </ul>}

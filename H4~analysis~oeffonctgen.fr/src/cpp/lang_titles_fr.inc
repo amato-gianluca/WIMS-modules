@@ -38,7 +38,7 @@
 #define TITLE Ensemble de définition d'une fonction quotient (1)
 #endif
 #if defined TARGET_ineqgr2courbes
-#define TITLE Résolution graphique 3: f(x)>g(x) 
+#define TITLE Résolution graphique 3: f(x)>g(x)
 #endif
 #if defined TARGET_constrtbvar
 #define TITLE Construction du tableau des variations
@@ -56,7 +56,7 @@
 #define TITLE Extremum et tableau des variations
 #endif
 #if defined TARGET_ineqgr2dtes
-#define TITLE Résolution graphique 2: f(x)>g(x) 
+#define TITLE Résolution graphique 2: f(x)>g(x)
 #endif
 #if defined TARGET_lectvarimage
 #define TITLE Image par tableau des variations
@@ -71,10 +71,10 @@
 #define TITLE Ensemble de définition d'une fonction quotient (3)
 #endif
 #if defined TARGET_ineqgr2
-#define TITLE Résolution graphique 1: f(x)>g(x) 
+#define TITLE Résolution graphique 1: f(x)>g(x)
 #endif
 #if defined TARGET_lectgrimage
-#define TITLE Déterminer graphiquement une image 2
+#define TITLE Déterminer graphiquement une image
 #endif
 #if defined TARGET_sensvar3
 #define TITLE Sens de variation 3

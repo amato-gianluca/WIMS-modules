@@ -62,7 +62,7 @@
 #define TITLE_it Image par tableau des variations
 #endif
 #if defined TARGET_lectgrimage2
-#define TITLE_it Déterminer graphiquement une image 2
+#define TITLE_it Determinare graficamente l'immagine 2
 #endif
 #if defined TARGET_sensvartb
 #define TITLE_it Sens et tableau des variations
@@ -74,7 +74,7 @@
 #define TITLE_it Résolution graphique 1: f(x)>g(x)
 #endif
 #if defined TARGET_lectgrimage
-#define TITLE_it Determinare l'immagine dal grafico  2
+#define TITLE_it Determinare graficamente l'immagine
 #endif
 #if defined TARGET_sensvar3
 #define TITLE_it Sens de variation 3

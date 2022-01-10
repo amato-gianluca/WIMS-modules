@@ -63,9 +63,6 @@
 #if defined TARGET_lectvarimage
 #endif
 
-#if defined TARGET_lectgrimage2
-#endif
-
 #if defined TARGET_sensvartb
 #endif
 
@@ -75,7 +72,7 @@
 #if defined TARGET_ineqgr2
 #endif
 
-#if defined TARGET_lectgrimage
+#if defined TARGET_lectgrimage || defined TARGET_lectgrimage2
 \text{lintervalle=l'intervalle}
 \text{definiesur=définie sur}
 \text{Limagede=L'image de}
