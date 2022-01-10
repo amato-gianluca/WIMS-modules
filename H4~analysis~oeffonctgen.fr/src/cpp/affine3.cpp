@@ -33,4 +33,4 @@ L'ensemble de définition de la fonction \(f\) est </p>
 éléments en rangeant par ordre croissant les bornes des intervalles.
 </div>}
 
-\answer{}{\good;\listtotal}{type=clickfill
+\answer{}{\good;\listtotal}{type=clickfill}
