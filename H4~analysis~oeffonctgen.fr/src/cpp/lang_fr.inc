@@ -84,12 +84,12 @@
 \text{name_statement2=on a tracé la courbe représentative d'une fonction}
 \text{name_statement3=Déterminez graphiquement l'image de}
 \text{name_statement4=par la fonction}
-\text{name_hint1a=On trace la droite d'équation}
-\text{name_hint1b=en bleue sur le graphique}
-\text{name_hint2a=Puis on repère le point d'intersection avec la courbe}
-\text{name_hint2b=croix bleue}
-\text{name_hint3a=Enfin, on regarde l'ordonnée de ce point}
-\text{name_hint3b=Tirets verts}
+\text{name_solution1a=On trace la droite d'équation}
+\text{name_solution1b=en bleue sur le graphique}
+\text{name_solution2a=Puis on repère le point d'intersection avec la courbe}
+\text{name_solution2b=croix bleue}
+\text{name_solution3a=Enfin, on regarde l'ordonnée de ce point}
+\text{name_solution3b=Tirets verts}
 
 #endif
 
