@@ -35,5 +35,5 @@
 #define TITLE_it Limite -> asymptote (hv)
 #endif
 #if defined TARGET_asympt2
-#define TITLE_it Asymptote -> limite
+#define TITLE_it Asintoto -> limite
 #endif

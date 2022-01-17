@@ -2,6 +2,7 @@ target=asympt2
 
 #include "header.inc"
 #include "lang_titles.inc"
+#include "lang.inc"
 
 
 \integer{a = randint(-5..5)}
@@ -9,10 +10,8 @@ target=asympt2
 \text{droite = texmath(pari(\b*x+\a))}
 \text{i = random(+,-)}
 
-
-
 \integer{choix = randint(1..3)}
-\text{lieu = item(\choix,en \(\i \infty),,en \(\i \infty))}
+\text{lieu = item(\choix,\en \(\i \infty),,\en \(\i \infty))}
 \text{equation = item(\choix,y = \a,x = \a,y = \droite)}
 \text{rep1= item(\choix,\i inf,\a,\i inf)}
 \text{rep2= item(\choix,f(x),f(x),f(x)-(\droite))}
@@ -26,16 +25,13 @@ target=asympt2
 \text{minf = \(- \infty)}
 
 
-
-#include "lang.inc"
-
-\statement{On considère une fonction \(f) de courbe représentative \(C) dans un repère orthogonal.
-<br/>Pour montrer que la courbe \(C) admet la droite d'équation \equation comme asymptote \lieu, il faut montrer que : <p>
-la limite de \embed{reply2,10} quand \(x) tend vers \embed{reply1,5} est égale à \embed{reply3,5}
+\statement{\name_statement1 \(f) \name_statement2 \(C) \name_statement3.
+<br/>\name_statement4 \(C) \name_statement5 \equation \name_statement6 \lieu, \name_statement7\sbc: <p>
+\lalimitede \embed{reply2,10} \quand \(x) \tendvers \embed{reply1,5} \estegalea \embed{reply3,5}
 </p>
-<b>Remarque</b> Pour écrire \minf, taper <tt>-inf</tt>, 
-pour écrire \pinf, taper <tt>+inf</tt>.<br/>
-Pour écrire " \pinf ou \minf ", taper <tt>inf</tt>.
+<b>\Remarque</b> \Pourecrire \minf, \taper <tt>-inf</tt>,
+\pourecrire \pinf, \taper <tt>+inf</tt>.<br/>
+\Pourecrire " \pinf \ou \minf ", \taper <tt>inf</tt>.
 
 }
 
@@ -44,6 +40,6 @@ Pour écrire " \pinf ou \minf ", taper <tt>inf</tt>.
 \answer{}{\rep3}{type = raw}{option = nospace}
 
 \feedback{1=1}{
-Pour montrer que la courbe \(C) admet la droite d'équation \equation comme asymptote \lieu, il faut montrer que : 
+\name_statement4 \(C) \name_statement5 \equation \name_statement6 \lieu, \name_statement7\sbc:
 \(\lim_{x \to \rep1t} \rep2 = \rep3t) \rep4t
 }
