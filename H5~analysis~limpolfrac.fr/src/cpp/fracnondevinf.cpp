@@ -2,7 +2,7 @@ target=fracnondevinf
 
 #include "header.inc"
 #include "lang_titles.inc"
-
+#include "lang.inc"
 
 \text{dmax=7}
 \text{dev=randint(1..2)}
@@ -93,13 +93,13 @@ target=fracnondevinf
 \if{\dev=1}{
 \text{Q=\R}
 \text{P=\S}
-\text{nomS=numérateur}
-\text{nomR=dénominateur}
+\text{nomS=\numerateur}
+\text{nomR=\denominateur}
 }{
 \text{Q=\S}
 \text{P=\R}
-\text{nomR=numérateur}
-\text{nomS=dénominateur}
+\text{nomR=\numerateur}
+\text{nomS=\denominateur}
 }
 
 \text{PP=texmath(\P)}
@@ -113,15 +113,12 @@ target=fracnondevinf
 \if{\rep=inf}{\text{rrep=+\infty}}
 
 
-
-#include "lang.inc"
-
-\statement{Calculer la limite suivante.<br class="spacer"/>
+\statement{\name_statement1.<br class="spacer"/>
 \(\displaystyle \lim_{x \rightarrow \xx0}\: \frac{\PP}{\QQ}=\)\embed{reply1,4}<br class="spacer"/>
-<div class="wims_instruction"> Pour une limite égale à \(+\infty\), écrire <span class="tt">+inf</span> dans le champ de réponse. Pour une limite égale à \(-\infty\), écrire <span class="tt">-inf</span>.</div>
+<div class="wims_instruction"> \Pourune \(+\infty\), \ecrire <span class="tt">+inf</span> \danslechamp. \Pourune \(-\infty\), \ecrire <span class="tt">-inf</span>.</div>
 }
 \answer{}{\rep}{type=formal}
-\feedback{1=1}{<br/><div class="bold" style="color:gray">Correction</div><br/>
-Le terme dominant du \nomS est \(\as\). Le terme dominant du \nomR, qu'on obtient par un développement partiel, est \(\ar\).<br />
-D'où \(\displaystyle \lim_{x \rightarrow \xx0}\: \frac{\PP}{\QQ}=\rrep\)
+\feedback{1=1}{<br/><div class="bold" style="color:gray">\Correction</div><br/>
+\name_feedback1 \nomS \est \(\as\). \name_feedback1 \nomR, \name_feedback2, \est \(\ar\).<br />
+\Dou \(\displaystyle \lim_{x \rightarrow \xx0}\: \frac{\PP}{\QQ}=\rrep\)
 }

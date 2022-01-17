@@ -3,7 +3,6 @@ target=fracdevinf
 #include "header.inc"
 #include "lang_titles.inc"
 
-
 \text{dmax=7}
 
 % Tirage aléatoire du type de limite : en +inf ou -inf.
@@ -86,8 +85,6 @@ target=fracdevinf
 }
 }
 
-
-
 \text{PP=texmath(\P)}
 \text{QQ=texmath(\Q)}
 \text{PPf=texmath(\Pf)}
@@ -107,23 +104,20 @@ target=fracdevinf
 \if{\rep=inf}{\text{rrep=+\infty}}
 
 
-
-
-
 #include "lang.inc"
 
-\statement{Calculer la limite suivante.<br class="spacer"/>
+\statement{\name_statement1.<br class="spacer"/>
 \(\displaystyle \lim_{x \rightarrow \xx0}\: \frac{\PP}{\QQ}=\)\embed{reply1,4}<br class="spacer"/>
-<div class="wims_instruction"> Pour une limite égale à \(+\infty\), écrire <span class="tt">+inf</span> dans le champ de réponse. Pour une limite égale à \(-\infty\), écrire <span class="tt">-inf</span>.</div>
+<div class="wims_instruction"> \Pourune \(+\infty\), \ecrire <span class="tt">+inf</span> \danslechamp. \Pourune \(-\infty\), \ecrire  <span class="tt">-inf</span>.</div>
 }
 \answer{}{\rep}{type=formal}
-\feedback{1=1}{<br/><div class="bold" style="color:gray">Correction</div><br/>
-En mettant en facteur les termes dominants (en \(\xx0\)) du numérateur et du dénominateur de l'expression, on obtient :<br/> 
- \(\frac{\PP}{\QQ}=\frac{\aap \left(\PPf\right)}{\aaq \left(\QQf\right)} = \aa \times \frac{\PPf}{\QQf}\).<br/> 
+\feedback{1=1}{<br/><div class="bold" style="color:gray">\Correction</div><br/>
+\name_feedback1 (\en \(\xx0\)) \name_feedback2\sbc:<br/>
+ \(\frac{\PP}{\QQ}=\frac{\aap \left(\PPf\right)}{\aaq \left(\QQf\right)} = \aa \times \frac{\PPf}{\QQf}\).<br/>
 \if{\cas=1}{
-Or \(\displaystyle \lim_{x \rightarrow \xx0} \left(\PPf\right) = 1\) et \(\displaystyle \lim_{x \rightarrow \xx0} \left(\QQf\right) = 1\).<br/> 
+\Or \(\displaystyle \lim_{x \rightarrow \xx0} \left(\PPf\right) = 1\) \et \(\displaystyle \lim_{x \rightarrow \xx0} \left(\QQf\right) = 1\).<br/>
 }{
-Or \(\displaystyle \lim_{x \rightarrow \xx0} \aa = \rrep\), \(\displaystyle \lim_{x \rightarrow \xx0} \left(\PPf\right) = 1\) et \(\displaystyle \lim_{x \rightarrow \xx0} \left(\QQf\right) = 1\).<br/> 
+\Or \(\displaystyle \lim_{x \rightarrow \xx0} \aa = \rrep\), \(\displaystyle \lim_{x \rightarrow \xx0} \left(\PPf\right) = 1\) \et \(\displaystyle \lim_{x \rightarrow \xx0} \left(\QQf\right) = 1\).<br/>
 }
- D'où \(\displaystyle \lim_{x \rightarrow \xx0} \frac{\PP}{\QQ}= \rrep \).
+\Dou \(\displaystyle \lim_{x \rightarrow \xx0} \frac{\PP}{\QQ}= \rrep \).
  }

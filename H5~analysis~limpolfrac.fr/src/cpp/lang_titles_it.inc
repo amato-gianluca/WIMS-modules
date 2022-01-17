@@ -1,5 +1,5 @@
 #if defined TARGET_fracdevinf
-#define TITLE_it Limite en l'infini d'une fraction (développée)
+#define TITLE_it Limite all'infinito di una frazione (sviluppata)
 #endif
 #if defined TARGET_moninf
 #define TITLE_it Limite en l'infini d'un monôme
@@ -17,5 +17,5 @@
 #define TITLE_it Limite en l'infini d'un polynôme (factorisé) 2
 #endif
 #if defined TARGET_fracnondevinf
-#define TITLE_it Limite en l'infini d'une fraction (non-développée)
+#define TITLE_it Limite all'infinito di una frazione (non sviluppata)
 #endif
