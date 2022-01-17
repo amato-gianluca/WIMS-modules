@@ -1,5 +1,5 @@
 #if defined TARGET_pdt2
-#define TITLE_it \title  {Produit avec sin ou cos (guidé)
+#define TITLE_it Produit avec sin ou cos (guidé)
 #endif
 #if defined TARGET_tan2
 #define TITLE_it Tangente à une courbe polynomiale
@@ -11,7 +11,7 @@
 #define TITLE_it Tangente à une courbe polynomiale (guidé)
 #endif
 #if defined TARGET_div1
-#define TITLE_it \title  {Dérivée d'un quotient simple
+#define TITLE_it Dérivée d'un quotient simple
 #endif
 #if defined TARGET_form5
 #define TITLE_it Formules5 (sqrt,1/x)
@@ -32,7 +32,7 @@
 #define TITLE_it Formules1 (monomes)
 #endif
 #if defined TARGET_pdt
-#define TITLE_it \title  {Produit avec exponentielle (guidé)
+#define TITLE_it Produit avec exponentielle (guidé)
 #endif
 #if defined TARGET_form6
 #define TITLE_it Formules6 (sin et cos)
@@ -53,7 +53,7 @@
 #define TITLE_it Produit avec exponentielle
 #endif
 #if defined TARGET_pdt1
-#define TITLE_it \title  {Produit avec sqrt (guidé)
+#define TITLE_it Produit avec sqrt (guidé)
 #endif
 #if defined TARGET_form2
 #define TITLE_it Formules2 (polynomes)

@@ -8,7 +8,6 @@ target=div1
 \format {html}
 
 
-
 \integer{a1=random(1..4)}
 \integer{a2=random(1..8)*random(1,-1)}
 \integer{a3=random(1..4)*random(1,-1)}
@@ -74,26 +73,26 @@ target=div1
 
 \statement{<div class="wimscenter">
 <p style = "background-color: #FFCC66">
-Méthode pour calculer la dérivée de la fonction définie 
-sur  \ensder par \(f(x) = \texf) 
+Méthode pour calculer la dérivée de la fonction définie
+sur  \ensder par \(f(x) = \texf)
 </p></div>
 
 <ul>
-<li> 
+<li>
 On remarque que\(f) est de la forme \(\frac{u}{v}) avec :<br />
-<label for="reply1">\(u(x)) = </label> \embed{reply1, 15}  &nbsp; &nbsp;  et &nbsp; &nbsp; 
-<label for="reply2">\(v(x)) =  </label> \embed{reply2, 15}  
+<label for="reply1">\(u(x)) = </label> \embed{reply1, 15}  &nbsp; &nbsp;  et &nbsp; &nbsp;
+<label for="reply2">\(v(x)) =  </label> \embed{reply2, 15}
 <br /> d'où :<br />
-<label for="reply3">\(u'(x)) = </label>  \embed{reply3, 15}  &nbsp; &nbsp;  et &nbsp; &nbsp; 
+<label for="reply3">\(u'(x)) = </label>  \embed{reply3, 15}  &nbsp; &nbsp;  et &nbsp; &nbsp;
 <label for="reply4">\(v'(x) = ) </label> \embed{reply4, 15} <br />
 </li>
 <li> Cocher la formule de dérivation de \(f = \frac{u}{v}):<br />
  \embed{reply5}
 </li>
-<li> En appliquant cette formule, on obtient : 
-<p class = "wimscenter"> 
+<li> En appliquant cette formule, on obtient :
+<p class = "wimscenter">
 <label for="reply6">\(f'(x)) =  </label>\embed{reply6, 50}
-</p> 
+</p>
 </li>
 
 
@@ -110,7 +109,7 @@ On remarque que\(f) est de la forme \(\frac{u}{v}) avec :<br />
 \answer{La dérivée est définie par : \(f'(x))}{\derf}{type=formal}
 
 \feedback{0==0}{<b>Solution.</b> La fonction dérivée \(f') est définie
-\if{\casv==3}{pour tout réel \(x)}{pour tout réel \(x) différent de  \(\vi)} 
- par &nbsp; 
+\if{\casv==3}{pour tout réel \(x)}{pour tout réel \(x) différent de  \(\vi)}
+ par &nbsp;
  \(f'(x)  =\frac{\texnumder0}{\texdeno2}= \frac{\texnumder}{\texdeno2})  .
 }
