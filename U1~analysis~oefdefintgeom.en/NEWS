@@ -1,0 +1,6 @@
+# This file registers changes to the module.
+# Please write in reverse order: the last version first.
+
+Version 1.70: (17 jan 2021)
+        Refactored as an internationa module.
+        Added Italian translation.

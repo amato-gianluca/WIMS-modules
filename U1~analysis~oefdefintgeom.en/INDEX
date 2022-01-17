@@ -6,7 +6,7 @@ address=xiao@unice.fr
 copyright=&copy; 1999- (<a href=COPYING>GNU GPL</a>)
 translator=
 translator_address=
-version=1.60
+version=1.70
 # minimal version of wims server under which the module may run
 wims_version=3.37f
 language=en
@@ -31,3 +31,8 @@ require=
 scoring=yes
 
 vardef=oef/var.def
+translation_language=it
+title_it=OEF integrale e geometria
+description_it=collezione di esercizi sulle applicazioni geometriche degli integrali definiti di una variabile
+translator_it=Gianluca,Amato
+translator_address_it=gianluca.amato.74@gmail.com

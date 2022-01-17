@@ -2,6 +2,7 @@ target=pararea
 
 #include "header.inc"
 #include "lang_titles.inc"
+#include "lang.inc"
 
 \language{en}
 
@@ -28,7 +29,6 @@ target=pararea
 
 
 
-#include "lang.inc"
 
 \statement{Compute the area of the shaded region below, where
 <font color=red><i>C</i></font> is the curve of the function

@@ -1,4 +1,0 @@
-!set exolist  =!char 1 to -2 of arclenexp2d,arclenparm2d,circdist,ccrossarea,qcrossarea,cubicarea,eclipse,logarea,quadarea,parcirc,pararea,pararea2,parabary,lenpolclose,lenpolopen,lenpolspiral,reservoir,suprevx,volrevx,
-!set titlelist=!char 1 to -2 of Arc length explicit 2D,Arc length parametric 2D,Circular distance,Crossed cubic area,Crossed quadratic area,Cubic area,Eclipse area,Given log area,Given quadratic area *,Parabole+circle area,Parabolic area,Parabolic area II,Parabolic barycenter,Polar length closed,Polar length open,Polar length spiral,Spherical reservoir,Surface of revolution X,Volume of revolution X,
-!set exototal =!itemcnt $exolist
-
