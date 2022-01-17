@@ -1,0 +1,15 @@
+xrange -2,5
+yrange -4,6
+plot red,0.4*x^2-2
+line -4,-4,-4,8,red
+line 4,-4,4,7,red
+line -3,0,5,0,red
+line -1,-4,-1,6,red
+fill 0,-1,blue
+fill 3,1,blue
+arrow -5,0,5,0,10,grey
+arrow -1,-4,-1,6,10,grey
+text black,4.6,0.9,medium,x
+text black,-0.7,5.9,medium,y
+text red,1,-2,medium,C
+text red,4.3,2.5,medium,L

@@ -1,0 +1,80 @@
+!set title=Eclipse area
+!if $wims_read_parm!=$empty
+ !goto $wims_read_parm
+!endif
+oef2wims_version=3.22
+language=en
+leftrange=-5.000000
+rightrange=5.000000
+author=Gang XIAO
+email=xiao@unice.fr
+computeanswer=no
+precision=600
+
+ansorder=r
+varcnt=4
+prevarcnt=3
+postvarcnt=0
+replycnt=1
+choicecnt=0
+conditioncnt=0
+feedbackcnt=0
+format=html
+
+val1=$imagedir
+val2=$confparm1
+val3=$confparm2
+val4=$confparm3
+val5=$confparm4
+
+!if $testcondition=yes
+ !goto test
+!endif
+!if $status=waiting
+ !exit
+!endif
+
+tmp0=!random 350, 550
+
+val6=$[round($(tmp0))/1000]
+val7=$[$val6/2]
+val8=$[100-200*($val7*sqrt(1-$val7^2)+asin($val7))/pi]
+replyname1=The percentage
+replygood1=$val8
+question=__EXECUTED_1692754_EXERCISE__
+
+!goto stat
+
+!exit
+
+:question
+$()Here we have a partial sun eclipse, where the shade of the moon	has a radius exactly equal to that of the sun, and the distance between the	centers of the sun and the moon equals $val6 times the radius of the sun.	Compute the percentage of the eclipse, that is, the percentage of the	sun surface (as a disk) hidden by the moon.	<p><center>	<img src=$val1/eclipse.gif></center> <p>	Please give the result of your computation with a precision of 0.1% or	better.
+$()
+!exit
+
+:hint
+$()
+$()
+!exit
+
+:help
+$()
+$()
+!exit
+
+:solution
+$()
+$()
+!exit
+
+:feedback
+
+!exit
+
+:test
+
+!exit
+
+:stat
+vsavelist=1,6
+embedcnt=0

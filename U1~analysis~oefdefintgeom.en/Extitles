@@ -1,0 +1,19 @@
+arclenexp2d:Arc length explicit 2D
+arclenparm2d:Arc length parametric 2D
+ccrossarea:Crossed cubic area
+circdist:Circular distance
+cubicarea:Cubic area
+eclipse:Eclipse area
+lenpolclose:Polar length closed
+lenpolopen:Polar length open
+lenpolspiral:Polar length spiral
+logarea:Given log area
+parabary:Parabolic barycenter
+pararea:Parabolic area
+pararea2:Parabolic area II
+parcirc:Parabole+circle area
+qcrossarea:Crossed quadratic area
+quadarea:Given quadratic area *
+reservoir:Spherical reservoir
+suprevx:Surface of revolution X
+volrevx:Volume of revolution X
