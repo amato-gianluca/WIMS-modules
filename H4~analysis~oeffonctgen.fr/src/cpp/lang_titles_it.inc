@@ -14,7 +14,7 @@
 #define TITLE_it Lecture d'antécédents par tableau de valeurs
 #endif
 #if defined TARGET_lectgrantec
-#define TITLE_it Déterminer graphiquement les antécédents
+#define TITLE_it Determinare graficamente le controimmagini
 #endif
 #if defined TARGET_ineqgr
 #define TITLE_it Résolution graphique f(x) &#139; k
@@ -83,7 +83,7 @@
 #define TITLE_it Lecture graphique du sens de variation
 #endif
 #if defined TARGET_lectgrantec2
-#define TITLE_it Déterminer graphiquement les antécédents 2
+#define TITLE_it Determinare graficamente le controimmagini 2
 #endif
 #if defined TARGET_lecttbimage
 #define TITLE_it Lecture d'image par tableau de valeurs

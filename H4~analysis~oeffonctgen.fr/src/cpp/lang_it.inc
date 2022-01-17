@@ -70,7 +70,7 @@
 #if defined TARGET_ineqgr2
 #endif
 
-#if defined TARGET_lectgrimage || defined TARGET_lectgrimage2
+#if defined TARGET_lectgrimage || defined TARGET_lectgrimage2 || defined TARGET_lectgrantec || defined TARGET_lectgrantec2
 \text{lintervalle=l'intervallo}
 \text{definiesur=definita su}
 \text{Limagede=L'immagine di}
@@ -80,7 +80,6 @@
 \text{name_imgalt=rappresentazione grafica}
 \text{name_statement1=Nel piano dotato di un sistema di coordinate cartesiane}
 \text{name_statement2=abbiamo tracciato la curva che rappresenta una funzione}
-\text{name_statement3=Determinare graficamente l'immagine di}
 \text{name_statement4=per la funzione}
 \text{name_solution1a=Tracciamo la retta di equazione}
 \text{name_solution1b=in blu nel grafico}
@@ -88,6 +87,24 @@
 \text{name_solution2b=croce blu}
 \text{name_solution3a=Infine, guardiamo l'ordinata di questo punto}
 \text{name_solution3b=trattini verdi}
+#endif
+
+#if defined TARGET_lectgrimage || defined TARGET_lectgrimage2
+\text{name_statement3=Determinare graficamente l'immagine di}
+#endif
+
+#if defined TARGET_lectgrantec || defined TARGET_lectgrantec2
+\text{name_statement3=Determinare graficamente tutte le controimmagini di}
+\text{name_instruction=Se ci sono più soluzioni, devono essere separate da una virgola.}
+\text{name_statement5=Le controimmagini sono}
+\text{Lantecedentde=La controimmagine di}
+\text{Lantecedentsde=Le controimmagini di}
+\text{est=è}
+\text{sont=sono}
+\text{et=e}
+\text{name_solution1b=in verde sul grafico}
+\text{name_solution3a=Infine, osserviamo le ascisse di questi punti}
+\text{name_solution3b=Trattini blu}
 #endif
 
 #if defined TARGET_sensvar3

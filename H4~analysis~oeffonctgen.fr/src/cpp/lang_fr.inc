@@ -15,9 +15,6 @@
 #if defined TARGET_lecttbantec
 #endif
 
-#if defined TARGET_lectgrantec
-#endif
-
 #if defined TARGET_ineqgr
 #endif
 
@@ -72,7 +69,7 @@
 #if defined TARGET_ineqgr2
 #endif
 
-#if defined TARGET_lectgrimage || defined TARGET_lectgrimage2
+#if defined TARGET_lectgrimage || defined TARGET_lectgrimage2 || defined TARGET_lectgrantec || defined TARGET_lectgrantec2
 \text{lintervalle=l'intervalle}
 \text{definiesur=définie sur}
 \text{Limagede=L'image de}
@@ -82,7 +79,6 @@
 \text{name_imgalt=représentation graphique}
 \text{name_statement1=Dans le plan muni d'un repère orthonormé}
 \text{name_statement2=on a tracé la courbe représentative d'une fonction}
-\text{name_statement3=Déterminez graphiquement l'image de}
 \text{name_statement4=par la fonction}
 \text{name_solution1a=On trace la droite d'équation}
 \text{name_solution1b=en bleue sur le graphique}
@@ -90,16 +86,30 @@
 \text{name_solution2b=croix bleue}
 \text{name_solution3a=Enfin, on regarde l'ordonnée de ce point}
 \text{name_solution3b=Tirets verts}
+#endif
 
+#if defined TARGET_lectgrimage || defined TARGET_lectgrimage2
+\text{name_statement3=Déterminez graphiquement l'image de}
+#endif
+
+#if defined TARGET_lectgrantec || defined TARGET_lectgrantec2
+\text{name_statement3=Déterminez graphiquement tous les antécédents de}
+\text{name_instruction=S'il y a plusieurs solutions, il faut les séparer par une virgule.}
+\text{name_statement5=Les antécédents sont}
+\text{Lantecedentde=L'antécédent de}
+\text{Lantecedentsde=Les antécédents de}
+\text{est=est}
+\text{sont=sont}
+\text{et=et}
+\text{name_solution1b=en vert sur le graphique}
+\text{name_solution3a=Enfin, on regarde les abscisses de ces points}
+\text{name_solution3b=Tirets bleus}
 #endif
 
 #if defined TARGET_sensvar3
 #endif
 
 #if defined TARGET_sensvargr
-#endif
-
-#if defined TARGET_lectgrantec2
 #endif
 
 #if defined TARGET_lecttbimage
