@@ -38,7 +38,7 @@
 #define TITLE_it Surface of revolution X
 #endif
 #if defined TARGET_pararea
-#define TITLE_it Parabolic area
+#define TITLE_it Area parabolica
 #endif
 #if defined TARGET_reservoir
 #define TITLE_it Spherical reservoir

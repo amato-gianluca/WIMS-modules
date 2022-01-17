@@ -38,6 +38,12 @@
 #endif
 
 #if defined TARGET_pararea
+\text{name_statement1=Calcola l'area della regione in grigio qui sotto, dove}
+\text{name_statement2=è il grafico della funzione}
+\text{name_statement3=è la retta definita dall'equazione}
+\text{name_precision=Fornire il risultato del calcolo con una precisione di almeno 5 cifre decimali.}
+\text{\and=e}
+\text{\Thearea=L'area}
 #endif
 
 #if defined TARGET_reservoir

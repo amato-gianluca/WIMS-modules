@@ -30,15 +30,12 @@ target=pararea
 
 
 
-\statement{Compute the area of the shaded region below, where
-<font color=red><i>C</i></font> is the curve of the function
-<i>f</i>(x)&nbsp;=&nbsp;\qc\x<sup>2</sup>, and <font color=green><i>L</i></font>
-is the line defined by the equation \subt\cx\x+\cy\y=\cc.
+\statement{\name_statement1
+<font color=red><i>C</i></font> \name_statement2
+<i>f</i>(x)&nbsp;=&nbsp;\qc\x<sup>2</sup>, \and <font color=green><i>L</i></font>
+\name_statement3 \subt\cx\x+\cy\y=\cc.
 <p><center>
 <img src=\imagedir/quad\type\rtype.gif></center> <p>
-Please give your result of computation with a precision of at least
-5 decimal places.}
+\name_precision}
 
-\answer{The area}{\sol}
-
-
+\answer{\Thearea}{\sol}

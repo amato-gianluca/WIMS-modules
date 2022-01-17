@@ -38,6 +38,12 @@
 #endif
 
 #if defined TARGET_pararea
+\text{name_statement1=Compute the area of the shaded region below, where}
+\text{name_statement2=is the curve of the function}
+\text{name_statement3=is the line defined by the equation}
+\text{name_precision=Please give your result of computation with a precision of at least 5 decimal places.}
+\text{\and=and}
+\text{\Thearea=The area}
 #endif
 
 #if defined TARGET_reservoir
