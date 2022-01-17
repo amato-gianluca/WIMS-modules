@@ -2,6 +2,7 @@ target=ineqgr
 
 #include "header.inc"
 #include "lang_titles.inc"
+#include "lang.inc"
 
 \keywords{equations,inequalities,intervals,roots}
 %%%%%%%%%% AF : disparaitre les croix quand les bornes sont infinies%%%%%%%%%%
@@ -135,7 +136,7 @@ Il faudrait aussi ajouter des ronds rouges aux extrémités de la courbe pour indi
    plot red,t,\ft
    trange \x3,\x4
    plot red,t,\f1}
-   \text{ensdef=l'intervalle \(\left[ \x0 ; \x4 \right])}
+   \text{ensdef=\lintervalle \(\left[ \x0 ; \x4 \right])}
 \text{rep0=\x0,\x1}
 \text{rep1=\x2}
 }
@@ -172,7 +173,7 @@ text black,0.4,4,medium,4
 \text{imgstat0=draw(400,400
 \img
 )}
-\text{imgstat=<img src="\imgstat0" alt="représentation graphique"/>}
+\text{imgstat=<img src="\imgstat0" alt="\name_imgalt"/>}
 %% choix de la question/réponse
 \integer{choixq=random(1,2)}
 \integer{val=\choixq=1?\y0:\y3}
@@ -475,37 +476,34 @@ dline \xmin,\val,\xmax,\val,\colsol
 \pts
 \line
 )}
-\text{imgsol=<img src="\imgsol0" alt="représentation graphique"/>}
+\text{imgsol=<img src="\imgsol0" alt="\name_imgalt"/>}
 %% fin image solution %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% préparation de la question
 \text{symb=\slt,\sgt,\sle,\sge}
 \integer{j=\sensineq+2*\strictineq}
 \text{quest= \(f(x)) \symb[\j] \(\val)}
-\text{enonce=Résoudre graphiquement l'inéquation : \quest.}
+\text{enonce=\name_statement3\spacebeforecolon: \quest.}
 %% enoncé de l'exo %%
 
-
-#include "lang.inc"
-
 \statement{
-<p>Dans le plan muni d'un repère orthonormé \((O,I,J)\),
-on a tracé la courbe représentative d'une fonction \(f) définie sur \ensdef.</p>
+<p>\name_statement1 \((O,I,J)\),
+\name_statement2 \(f) \definiesur \ensdef.</p>
 <div class=wimscenter>\imgstat</div>
 <div class=wims_question>\enonce
-<BR />Votre réponse :
-<br />L'ensemble des solutions est S= \embed{reply1,\size}
+<br />\Votrereponse\spacebeforecolon:
+<br />\Lensemble S= \embed{reply1,\size}
 </div>
 }
 %%%% soumission de réponse %%%%
 \answer{}{\grep;\clicList}{type=clickfill}
 %%%%%%%% solution %%%%%%%%%%%%%%%%%
 \solution{
-<div class=wimscenter>Il faut résoudre graphiquement l'inéquation : \quest</div>
-<ul>Codages :
-<li>Les croix vertes sont les points de la courbe qui permettent de résoudre.</li>
-<li>Les segments bleus contiennent les nombres qui sont solutions de l'équation \(f(x)=\val). </li>
-<li>Les croix bleues sont les bornes de l'ensemble des solutions.</i>
+<div class=wimscenter>\name_solution0\spacebeforecolon: \quest</div>
+<ul>\Codages\spacebeforecolon:
+<li>\name_solution1.</li>
+<li>\name_solution2 \(f(x)=\val). </li>
+<li>\name_solution3.</i>
 </ul>
-<p> La solution est : \grepsol</p>
+<p>\Lasolutionest\spacebeforecolon: \grepsol</p>
 <div class=wimscenter>\imgsol</div>
 }

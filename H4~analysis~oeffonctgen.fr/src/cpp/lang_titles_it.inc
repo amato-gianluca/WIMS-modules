@@ -17,7 +17,7 @@
 #define TITLE_it Determinare graficamente le controimmagini
 #endif
 #if defined TARGET_ineqgr
-#define TITLE_it Résolution graphique f(x) &#139; k
+#define TITLE_it Risoluzione grafica f(x) &#139; k
 #endif
 #if defined TARGET_eqgr2
 #define TITLE_it Résolution graphique 2: f(x) &#61; k

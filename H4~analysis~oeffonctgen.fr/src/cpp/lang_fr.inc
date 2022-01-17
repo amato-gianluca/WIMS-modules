@@ -15,9 +15,6 @@
 #if defined TARGET_lecttbantec
 #endif
 
-#if defined TARGET_ineqgr
-#endif
-
 #if defined TARGET_eqgr2
 #endif
 
@@ -69,7 +66,7 @@
 #if defined TARGET_ineqgr2
 #endif
 
-#if defined TARGET_lectgrimage || defined TARGET_lectgrimage2 || defined TARGET_lectgrantec || defined TARGET_lectgrantec2
+#if defined TARGET_lectgrimage || defined TARGET_lectgrimage2 || defined TARGET_lectgrantec || defined TARGET_lectgrantec2 || defined TARGET_ineqgr
 \text{lintervalle=l'intervalle}
 \text{definiesur=définie sur}
 \text{Limagede=L'image de}
@@ -104,6 +101,18 @@
 \text{name_solution1b=en vert sur le graphique}
 \text{name_solution3a=Enfin, on regarde les abscisses de ces points}
 \text{name_solution3b=Tirets bleus}
+#endif
+
+#if defined TARGET_ineqgr
+\text{name_statement3=Résoudre graphiquement l'inéquation}
+\text{Votrereponse=Votre réponse}
+\text{Lensemble=L'ensemble des solutions est}
+\text{name_solution0=Il faut résoudre graphiquement l'inéquation}
+\text{Codages=Legenda}
+\text{name_solution1=Les croix vertes sont les points de la courbe qui permettent de résoudre}
+\text{name_solution2=Les segments bleus contiennent les nombres qui sont solutions de l'équation}
+\text{name_solution3=Les croix bleues sont les bornes de l'ensemble des solutions}
+\text{Lasolutionest=La solution est}
 #endif
 
 #if defined TARGET_sensvar3

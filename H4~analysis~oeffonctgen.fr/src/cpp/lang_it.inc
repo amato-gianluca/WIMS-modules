@@ -13,12 +13,6 @@
 #if defined TARGET_lecttbantec
 #endif
 
-#if defined TARGET_lectgrantec
-#endif
-
-#if defined TARGET_ineqgr
-#endif
-
 #if defined TARGET_eqgr2
 #endif
 
@@ -70,7 +64,7 @@
 #if defined TARGET_ineqgr2
 #endif
 
-#if defined TARGET_lectgrimage || defined TARGET_lectgrimage2 || defined TARGET_lectgrantec || defined TARGET_lectgrantec2
+#if defined TARGET_lectgrimage || defined TARGET_lectgrimage2 || defined TARGET_lectgrantec || defined TARGET_lectgrantec2 || defined TARGET_ineqgr
 \text{lintervalle=l'intervallo}
 \text{definiesur=definita su}
 \text{Limagede=L'immagine di}
@@ -107,13 +101,22 @@
 \text{name_solution3b=Trattini blu}
 #endif
 
+#if defined TARGET_ineqgr
+\text{name_statement3=Risolvere graficamente la disequazione}
+\text{Votrereponse=La tua risposta}
+\text{Lensemble=L'insieme delle soluzioni è}
+\text{name_solution0=Risolvi graficamente la disequazione}
+\text{Codages=Codici}
+\text{name_solution1=Le croci verdi sono i punti della curva che permettono di risolvere}
+\text{name_solution2=I segmenti blu contengono i numeri che sono soluzioni dell'equazione}
+\text{name_solution3=Le croci blu sono i limiti dell'insieme delle soluzioni}
+\text{Lasolutionest=La soluzione è}
+#endif
+
 #if defined TARGET_sensvar3
 #endif
 
 #if defined TARGET_sensvargr
-#endif
-
-#if defined TARGET_lectgrantec2
 #endif
 
 #if defined TARGET_lecttbimage
