@@ -1,3 +1,10 @@
+\text{sbc=}
+\text{et=e}
+\text{est=è}
+\text{Si=Se}
+\text{si=se}
+\text{alors=allora}
+
 #if defined TARGET_pdt2
 #endif
 
@@ -20,6 +27,13 @@
 #endif
 
 #if defined TARGET_der3
+\text{name_notation1=Per scrivere}
+\text{name_notation2=per esempio, puoi scegliere tra}
+\text{Laderivee=La derivata di}
+\text{name_statement1=Calcolare la}
+\text{name_statement2=derivata della funzione}
+\text{name_statement3=definita da}
+\text{\estconstante=è una costante}
 #endif
 
 #if defined TARGET_tan3

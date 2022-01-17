@@ -20,7 +20,7 @@
 #define TITLE_it Dérivée de polynome 2
 #endif
 #if defined TARGET_der3
-#define TITLE_it Dérivée d'exponentielle
+#define TITLE_it Derivata della funzione esponenziale
 #endif
 #if defined TARGET_tan3
 #define TITLE_it Tangente à une courbe (avec exp)
