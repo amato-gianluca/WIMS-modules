@@ -26,7 +26,7 @@
 #if defined TARGET_der2
 #endif
 
-#if defined TARGET_der3
+#if defined TARGET_der3 || defined TARGET_der4 || defined TARGET_der5 || defined TARGET_der6
 \text{name_notation1=Pour écrire}
 \text{name_notation2=par exemple, vous avez le choix entre}
 \text{Laderivee=La dérivée de}
@@ -60,9 +60,6 @@
 #if defined TARGET_form3
 #endif
 
-#if defined TARGET_der6
-#endif
-
 #if defined TARGET_der3_b
 #endif
 
@@ -71,10 +68,3 @@
 
 #if defined TARGET_form2
 #endif
-
-#if defined TARGET_der4
-#endif
-
-#if defined TARGET_der5
-#endif
-

@@ -47,7 +47,7 @@
 #define TITLE_it Formules3 (exponentielles)
 #endif
 #if defined TARGET_der6
-#define TITLE_it Dérivée de trinome degré2
+#define TITLE_it Derivata del trinomio di secondo grado
 #endif
 #if defined TARGET_der3_b
 #define TITLE_it Produit avec exponentielle
@@ -59,8 +59,8 @@
 #define TITLE_it Formules2 (polynomes)
 #endif
 #if defined TARGET_der4
-#define TITLE_it Dérivée de logarithme 1
+#define TITLE_it Derivata del logaritmo 1
 #endif
 #if defined TARGET_der5
-#define TITLE_it Dérivée de logarithme 2
+#define TITLE_it Derivata del logaritmo 2
 #endif
