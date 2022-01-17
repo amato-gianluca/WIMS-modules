@@ -23,7 +23,7 @@
 #define TITLE Résolution graphique 2: f(x) &#61; k
 #endif
 #if defined TARGET_exploitabvar
-#define TITLE Exploiter un tableau de variations, équations
+#define TITLE Exploiter un tableau de variations; équations
 #endif
 #if defined TARGET_corrdomain
 #define TITLE Correspondance Fonction/ens. de définition
