@@ -195,7 +195,7 @@ target=transflogexp
 
 #include "lang.inc"
 
-\statement{<div> Ecrire l'expression suivante sous la forme \(\ff (a)\), où \(a\) est un nombre.</div><br/>
+\statement{<div>\name_statement1 \(\ff (a)\), \ou  \(a\) \name_statement2.</div><br/>
 
 <div> \(\expr= \ff\)(\embed{reply1,6})</div>
 }
