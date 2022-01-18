@@ -1,6 +1,9 @@
 # This file registers changes to the module.
 # Please write in reverse order: the last version first.
 
+Version 1.10:
+    Refactored as a multi-language module.
+    Added Italian version.
 Version 1.01:
 	Correction du code html.
 Version 1.00:
