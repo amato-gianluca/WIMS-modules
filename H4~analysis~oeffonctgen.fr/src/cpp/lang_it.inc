@@ -73,11 +73,11 @@
 
 \text{name_imgalt=rappresentazione grafica}
 \text{name_statement1=Nel piano dotato di un sistema di coordinate cartesiane}
-\text{name_statement2=abbiamo tracciato la curva che rappresenta una funzione}
+\text{name_statement2=abbiamo tracciato il grafico di una funzione}
 \text{name_statement4=per la funzione}
 \text{name_solution1a=Tracciamo la retta di equazione}
 \text{name_solution1b=in blu nel grafico}
-\text{name_solution2a=Quindi individuiamo il punto di intersezione con la curva}
+\text{name_solution2a=Quindi individuiamo il punto di intersezione con il grafico}
 \text{name_solution2b=croce blu}
 \text{name_solution3a=Infine, guardiamo l'ordinata di questo punto}
 \text{name_solution3b=trattini verdi}
