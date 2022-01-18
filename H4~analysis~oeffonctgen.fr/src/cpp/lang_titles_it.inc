@@ -38,7 +38,7 @@
 #define TITLE_it Ensemble de définition d'une fonction quotient (1)
 #endif
 #if defined TARGET_ineqgr2courbes
-#define TITLE_it Résolution graphique 3: f(x)>g(x)
+#define TITLE_it Risoluzione grafica 3: f(x)>g(x)
 #endif
 #if defined TARGET_constrtbvar
 #define TITLE_it Construction du tableau des variations

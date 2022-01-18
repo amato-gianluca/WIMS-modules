@@ -31,9 +31,6 @@
 #if defined TARGET_quotient1
 #endif
 
-#if defined TARGET_ineqgr2courbes
-#endif
-
 #if defined TARGET_constrtbvar
 #endif
 
@@ -64,7 +61,7 @@
 #if defined TARGET_ineqgr2
 #endif
 
-#if defined TARGET_lectgrimage || defined TARGET_lectgrimage2 || defined TARGET_lectgrantec || defined TARGET_lectgrantec2 || defined TARGET_ineqgr
+#if defined TARGET_lectgrimage || defined TARGET_lectgrimage2 || defined TARGET_lectgrantec || defined TARGET_lectgrantec2 || defined TARGET_ineqgr || defined TARGET_ineqgr2courbes
 \text{lintervalle=l'intervallo}
 \text{definiesur=definita su}
 \text{Limagede=L'immagine di}
@@ -107,10 +104,17 @@
 \text{Lensemble=L'insieme delle soluzioni è}
 \text{name_solution0=Risolvi graficamente la disequazione}
 \text{Codages=Codici}
-\text{name_solution1=Le croci verdi sono i punti della curva che permettono di risolvere}
+\text{name_solution1=Le croci verdi sono i punti del grafico che permettono di risolvere}
 \text{name_solution2=I segmenti blu contengono i numeri che sono soluzioni dell'equazione}
 \text{name_solution3=Le croci blu sono i limiti dell'insieme delle soluzioni}
 \text{Lasolutionest=La soluzione è}
+#endif
+
+#if defined TARGET_ineqgr2courbes
+\text{name_statement2b=e di una funzione}
+\tezt{name_statement2c=Si presume che le rappresentazioni grafiche non si intersechino al di fuori del riquadro visualizzato}
+\text{name_statement3=Risolvere graficamente la disequazione}
+\text{Votrereponse=La tua risposta}
 #endif
 
 #if defined TARGET_sensvar3

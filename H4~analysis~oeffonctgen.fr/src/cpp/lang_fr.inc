@@ -66,7 +66,7 @@
 #if defined TARGET_ineqgr2
 #endif
 
-#if defined TARGET_lectgrimage || defined TARGET_lectgrimage2 || defined TARGET_lectgrantec || defined TARGET_lectgrantec2 || defined TARGET_ineqgr
+#if defined TARGET_lectgrimage || defined TARGET_lectgrimage2 || defined TARGET_lectgrantec || defined TARGET_lectgrantec2 || defined TARGET_ineqgr || defined TARGET_ineqgr2courbes
 \text{lintervalle=l'intervalle}
 \text{definiesur=définie sur}
 \text{Limagede=L'image de}
@@ -113,6 +113,13 @@
 \text{name_solution2=Les segments bleus contiennent les nombres qui sont solutions de l'équation}
 \text{name_solution3=Les croix bleues sont les bornes de l'ensemble des solutions}
 \text{Lasolutionest=La solution est}
+#endif
+
+#if defined TARGET_ineqgr2courbes
+\text{name_statement2b=et d'une fonction}
+\tezt{name_statement2c=On admet que les représentations graphiques ne se coupent pas en dehors du cadre affiché.}
+\text{name_statement3=Résoudre graphiquement l'inéquation}
+\text{Votrereponse=Votre réponse}
 #endif
 
 #if defined TARGET_sensvar3

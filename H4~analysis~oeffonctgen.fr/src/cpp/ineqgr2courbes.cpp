@@ -159,17 +159,16 @@ text black,-0.2,-0.1,medium,O
 \draw{400,400}{\cadre}
 </div>
 <p>
-Dans le plan muni d'un repère orthonormé \((O,i,j)\),
-on a tracé la courbe représentative d'une fonction <span style="color:red">\(f)</span> et
-d'une fonction <span style="color:blue">\(g)</span>.
+\name_statement1 \((O,i,j)\),
+\name_statement2 <span style="color:red">\(f)</span> \name_statement2b <span style="color:blue">\(g)</span>.
 </p><p>
-On admet que les représentations graphiques ne se coupent pas en dehors du cadre affiché.
+\name_statement2c.
 </p>
 <br class="clearall" />
 <div class="wims_question"><p>
-Résoudre graphiquement l'inéquation \quest.
+\name_statement3 \quest.
 </p>
-Votre réponse : S= \embed{reply1,\size}
+\Votrereponse\spacebeforecolon: S= \embed{reply1,\size}
 </div>
 }
 %% soumission de réponse %%
