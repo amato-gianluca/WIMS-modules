@@ -13,12 +13,12 @@ target=implication
 reply2}
 
 \text{si=randitem(\Si2,\Quand,\Chaque)}
-\text{alors=randitem(\alors,&#44;)}
+\text{alors=randitem(&#32;\alors,&#44;)}
 
 \for{i = 1 to 8 }{
 \text{Ai = item(\i,\prem)}
 \text{Bi = item(\i,\conc)}
-\if{\i=1}{\text{rules=\si \Ai \alors \Bi}}{\text{ rules=\rules, \si \Ai  \alors \Bi}}
+\if{\i=1}{\text{rules=\si \Ai\alors \Bi}}{\text{rules=\rules, \si \Ai\alors \Bi}}
 }
 
 \integer{n=randint(1..8)}
@@ -113,21 +113,21 @@ reply2}
 <div style="background-color:#FFFF66;">
 
 \if{\step=1}{
-<p><b>\Question \step.</b> <br/>\subject \sujA \et \sujB.
-\name_statement1
+<p><b>\Question \step.</b> <br/>\name_characters \sujA \et \sujB.
+\name_statement1a
 <center><font color="green"><b> \rule </b></font></center>
 </p>
-<p> \whatif  \query1 ?</p>
+<p>\name_statement2 \query1\spacebeforecolon?</p>
 <p align="center"> \embed{reply1} </p>
 }
 
 \if{\step=2}{
 <p><b>\Question \step.</b> <br/>\name_characters \sujA, \sujB \et \sujC.
-\name_statement2
+\name_statement1b
 <font color="green"><b>
 <ul><li> \rule </li><li> \rule2 </li></ul>
 </b></font> </p>
-<p> \whatif  \query2 ?</p>
+<p>\name_statement2 \query2\spacebeforecolon?</p>
 <p align="center"> \embed{reply2} </p>
 }
 

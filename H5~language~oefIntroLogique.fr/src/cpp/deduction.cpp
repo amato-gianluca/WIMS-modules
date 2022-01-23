@@ -48,20 +48,19 @@ target=deduction
 <ul>
 <li>
 <p>\name_statement1</p>
-<center>
-<font color="green"><b> \(H_1) : " \si \A, \alors \B "</b></font></center></p>
+<center><font color="green"><b> \(H_1) : " \si \A, \alors \B "</b></font></center></p>
 </li>
 <li>
 <p>\name_statement2</p>
-<center> <font color="blue"><b> \(H_2) : " \H "</b> </font></center>
+<center><font color="blue"><b> \(H_2) : " \H "</b></font></center>
 </li>
 <li>
 <p>\name_statement3</p>
-<center><font color="red"><b> \(C) : "  \C "</b> </font></center>
+<center><font color="red"><b> \(C) : "  \C "</b></font></center>
 </li>
 </ul>
 
-<p>\name_statement4 \embed{reply1} </p>
+<p>\name_statement4 \embed{reply1}</p>
 </div>}
 
 \Alist

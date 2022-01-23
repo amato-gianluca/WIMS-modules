@@ -159,16 +159,17 @@ je parle normalement
 \text{name_statement1=On suppose que l'implication suivante est vraie :}
 \text{name_statement2=Quelqu'un me rencontre et constate que :}
 \text{name_statement3=Cette personne en déduit que  :}
-\text{name_statement4=Son raisonnement est-il valide  ?}
+\text{name_statement4=Son raisonnement est-il valide ?}
 \text{name_answer=Raisonnement juste}
 #endif
 
 #if defined TARGET_implication
 \text{Quand=Quand}
 \text{Chaque=Chaque fois que}
-\text{whatif=Sans faire aucune autre hypothèse,que peut-on dire qu'il se passe lorsque}
+\text{Question=Question}
 
-\text{prem = Mr Alex s'installe devant la télé,
+\text{prem=
+Mr Alex s'installe devant la télé,
 Mme Alice sort se promener dans le parc,
 Fred  est dans le parc,Suzy grimpe sur l'arbre,
 Nestor  vire-volte dans le parc,
@@ -176,7 +177,8 @@ Bubu s'enfouit sous  terre,
 Fred  farfouille dans la terre,
 Mme Alice est très fâchée}
 
-\text{conc = Mme Alice sort se promener dans le parc,
+\text{conc=
+Mme Alice sort se promener dans le parc,
 son chien Fred l'accompagne,
 Suzy grimpe sur l'arbre,
 Nestor quitte l'arbre pour vire-volter dans le parc,
@@ -186,7 +188,8 @@ Mme Alice se fâche,
 Mr Alex s'installe devant la télé
 }
 
-\text{nonPr = Mr Alex ne s'installe pas devant la télé,
+\text{nonPr=
+Mr Alex ne s'installe pas devant la télé,
 Mme Alice ne sort pas se promener dans le parc,
 Fred  n'est pas dans le parc,
 Suzy ne grimpe pas sur l'arbre,
@@ -195,7 +198,8 @@ Bubu  ne s'enfouit pas sous  terre,
 Fred  ne farfouille pas dans la terre,
 Mme Alice ne se  fâche pas}
 
-\text{nonCo = Mme Alice ne sort pas se promener dans le parc,
+\text{nonCo=
+Mme Alice ne sort pas se promener dans le parc,
 Fred n'accompagne pas Mme Alice,
 Suzy ne grimpe pas sur l'arbre,
 Nestor ne quitte pas l'arbre pour vire-volter dans le parc,
@@ -209,66 +213,52 @@ Mr Alex ne s'installe pas devant la télé
 \text{sujCo=Mme Alice, Fred le chien, Suzy la chatte, Nestor le moineau, Bubu le ver de terre, Fred le chien, Mme Alice, Mr Alex}
 \text{none=on ne peut rien conclure}
 
-\text{name_citation=Cet exercice s'inspire d'un exemple
-donné par Alan Selby, dans "Elements
-of Reason : understanding and explaining
- reason and math"
-Volume 1,
-Printed in Canada
-ISBN 0-9697564-1-0.
-http://whyslopes.com/volume1a/}
+\text{name_citation=Cet exercice s'inspire d'un exemple donné par Alan Selby, dans "Elements of Reason : understanding and explaining
+ reason and math" Volume 1, Printed in Canada ISBN 0-9697564-1-0. http://whyslopes.com/volume1a/}
 
-\text{Question=Question}
 \text{name_characters=Nos personnages sont}
-\text{name_statement1=On donne l'implication suivante, qu'on suppose vraie :}
-\text{mame_statement2=On donne les implications suivantes, qu'on suppose toutes deux vraies :}
+\text{name_statement1a=On donne l'implication suivante, qu'on suppose vraie :}
+\text{name_statement1b=On donne les implications suivantes, qu'on suppose toutes deux vraies :}
+\text{name_statement2=Sans faire aucune autre hypothèse,que peut-on dire qu'il se passe lorsque}
+
 #endif
 
 #if defined TARGET_incoherence
+\text{Contradiction=Contradiction}
+\text{Exemple=Exemple}
+
 \text{Alist=il est suédois,il est écossais,il est australien,elle est allemande,elle est cubaine, elle est japonaise}
-\text{Blist=il joue au tennis,
-il joue du biniou, il surfe, elle joue du piano , elle danse la salsa,
-elle fait du Kendo}
-\text{Clist=il est blond,
-il porte une jupe, il ne porte pas de cravate,  elle ne se maquille pas , elle est brune, elle  porte des kimonos}
-\text{Dlist=il fait du ski,
-il joue du rugby, il passe ses vacances à Bali, elle roule en vélo ,elle adore les maths, elle fait de l'origami}
-\text{Elist=il est végétarien,
-il est marié, il aime la bière, elle aime la Bratwurst , elle boit de la tequila, elle est célibataire
-}
+\text{Blist=il joue au tennis, il joue du biniou, il surfe, elle joue du piano , elle danse la salsa, elle fait du Kendo}
+\text{Clist=il est blond, il porte une jupe, il ne porte pas de cravate,  elle ne se maquille pas , elle est brune, elle  porte des kimonos}
+\text{Dlist=il fait du ski, il joue du rugby, il passe ses vacances à Bali, elle roule en vélo ,elle adore les maths, elle fait de l'origami}
+\text{Elist=il est végétarien, il est marié, il aime la bière, elle aime la Bratwurst , elle boit de la tequila, elle est célibataire}
 
 \text{nonAlist= il n'est pas suédois, il n'est pas écossais, il n'est pas australien, elle n'est pas allemande , elle n'est pas cubaine, elle n'est pas japonaise}
-\text{nonBlist =il ne joue pas au tennis,
-il ne joue pas du biniou , il ne  surfe pas , elle ne joue pas du piano , elle ne danse pas la salsa, elle ne fait pas Kendo}
-\text{nonClist= il n'est pas blond,
-il ne porte pas de jupe, il porte  une cravate, elle se maquille , elle n'est pas brune, elle ne porte pas de kimono }
-\text{nonDlist= il ne fait pas de ski,
-il ne joue pas du rugby, il ne passe pas ses vacances à Bali, elle ne roule pas en vélo , elle déteste les maths, elle ne fait pas de l'origami}
-\text{nonElist=il n'est pas végétarien,
-il est célibataire, il n'aime pas la bière, elle n'aime pas la Bratwurst, elle ne boit pas de tequila, elle est mariée}
+\text{nonBlist =il ne joue pas au tennis, il ne joue pas du biniou , il ne  surfe pas , elle ne joue pas du piano , elle ne danse pas la salsa, elle ne fait pas Kendo}
+\text{nonClist= il n'est pas blond, il ne porte pas de jupe, il porte  une cravate, elle se maquille , elle n'est pas brune, elle ne porte pas de kimono }
+\text{nonDlist= il ne fait pas de ski, il ne joue pas du rugby, il ne passe pas ses vacances à Bali, elle ne roule pas en vélo , elle déteste les maths, elle ne fait pas de l'origami}
+\text{nonElist=il n'est pas végétarien, il est célibataire, il n'aime pas la bière, elle n'aime pas la Bratwurst, elle ne boit pas de tequila, elle est mariée}
 
 \text{name_statement1=Pour adhérer à un club de loisir}
 \text{name_statement2=masculin, tout candidat est censé}
 \text{name_statement3=féminin, toute candidate est censée}
-\text{name_statement4=remplir chacune des conditions suivantes :}
+\text{name_statement4=remplir chacune des conditions suivantes}
 
 \text{name_question1=Cochez dans la liste suivante une proposition \(A\), qui devrait être}
 \text{name_question2=à la fois vraie et fausse}
-\text{name_question3=et ce,}
+\text{name_question3= et ce,}
 \text{name_question4=dans toute interprétation}
-\text{name_question5=où les conditions du règlement seraient simultanément vraies.}
+\text{name_question5=où les conditions du règlement seraient simultanément vraies}
 \text{name_question6=Cela prouve par l'absurde que les conditions du règlement sont incompatibles.}
 
-\text{\name_remark=Remarque :  vous devez, tel  Sherlock Holmes, savoir envisager tous les cas et pister toutes les déductions ...}
-\text{Contradiction=Contradiction}
+\text{name_remark=Remarque : vous devez, tel Sherlock Holmes, savoir envisager tous les cas et pister toutes les déductions ...}
 
-\text{\name_cases=Faire une analyse de cas}
-\text{\name_case1=considerez  les interprétations dans laquelleles conditions du règlement soient toutes vraies ;}
-\text{\name_case2=envisagez les différents cas, et pour chacun affectez les valeurs de vérité aux différentes propositions élémentaires ;}
-\text{\name_case3=trouvez \(A) telle que, dans toute interprétation,   \(A) devrait être vraie et fausse à la fois ;}
-\text{\name_casesend=Ceci prouve par l'absurde qu'il n'existe aucune interprétation rendant simultanément vraies  toutes les conditions du règlement.}
+\text{name_hint1=Faire une analyse de cas}
+\text{name_hint2=considerez  les interprétations dans laquelleles conditions du règlement soient toutes vraies ;}
+\text{name_hint3=envisagez les différents cas, et pour chacun affectez les valeurs de vérité aux différentes propositions élémentaires ;}
+\text{name_hint4=trouvez \(A) telle que, dans toute interprétation,   \(A) devrait être vraie et fausse à la fois ;}
+\text{name_hint5=Ceci prouve par l'absurde qu'il n'existe aucune interprétation rendant simultanément vraies  toutes les conditions du règlement.}
 
-\text{Exemple=Exemple}
 \text{name_example1=Supposons que les conditions suivantes soient simultanément vraies  :}
 \text{name_example2=\(P_1) donne à distinguer deux cas : ou bien \(A) est vrai ou bien \(B) est vrai.}
 \text{name_example3=Si \(A) est vrai et \(B) quelconque :  par \(P_2) et \(P_4) on déduit que  C est nécessairement vrai ; par \(P_3)
@@ -280,6 +270,12 @@ aucune interprétation dans laquelle \(P_1), \(P_2) et \(P_3) soient simultanémen
 
 
 #if defined TARGET_negationLN
+\text{Ilexiste=Il existe un}
+\text{qui=qui}
+\text{Tous=Tous les}
+\text{Aucun=Aucun}
+\text{nest=n'est}
+\text{Certains=Certains}
 
 \text{name_subjects=grec,grecs,logicien,logiciens, devoir de maths,devoirs de maths,film,films,sage,sages,élève,élèves,adulte,adultes}
 \text{name_verbs=est menteur,sont menteurs,est fou, sont fous, est facile, sont faciles, est comique, sont comiques,est âgé, sont âgés, est heureux,
@@ -327,42 +323,49 @@ heureux,
 les poules ne nagent pas
 }
 
-\text{Ilexiste=Il existe un}
-\text{qui=qui}
-\text{Tous=Tous les}
-\text{Aucun=Aucun}
-\text{nest=n'est}
-\text{Certains=Certains}
-
 \text{name_statement1=On donne la proposition \(P) suivante :}
 \text{name_statement2=Quelle est  la négation de \(P) ?}
 \text{name_question=La négation de \(P) est}
 \text{name_remark1=Votre réponse}
 \text{name_remark2=n'est pas la négation de}
-\text{name_remark3=&#32; au contraire c'est un synonyme.}
+\text{name_remark3=&#32; au contraire c'est un synonyme}
 #endif
 
 #if defined TARGET_negationMath
-\text{exists=il existe un}
-\text{st=tel que}
-\text{forall=pour tout}
-\text{real=réel}
-\text{theinequation=l'inéquation}
-\text{hasatleast=a au moins}
-\text{hasatmost=a au plus}
+\text{ilexiste=il existe un}
+\text{telque=tel que}
+\text{pourtout=pour tout}
+\text{reel=réel}
+\text{linequation=l'inéquation}
+\text{aaumoins=a au moins}
+\text{aauplus=a au plus}
 \text{solutions=solutions}
 \text{solution=solution}
-\text{strictlypositive=strictement positif}
-\text{negative=négatif}
-\text{hasless=a moins de}
-\text{hasmore=a plus de}
-\text{hasno=n'a aucune}
-\text{hasinfinite=a une infinité de}
+\text{strictementpositif=strictement positif}
+\text{negatif=négatif}
+\text{amoinsde=a moins de}
+\text{aplusde=a plus de}
+\text{naaucune=n'a aucune}
+\text{auneinfinite=a une infinité de}
+
 \text{name_statement1=Soit la proposition}
 \text{name_statement2=Parmi les propositions suivantes, quelle est la négation de}
 #endif
 
 #if defined TARGET_reciproque
+\text{Puis=Puis}
+\text{Laproposition=La proposition}
+\text{formuleepar=formulée par}
+\text{enonceepar=énoncée par}
+\text{delaproposition=de la proposition}
+\text{sa=sa}
+\text{reciproque=réciproque}
+\text{contraposee=contraposée}
+\text{estlaproposition=est la proposition}
+\text{Laconjonction=La conjonction}
+\text{Ladisjonction=La disjonction}
+\text{apournegation=a pour négation}
+
 \text{Alist=il est suédois,il est écossais,il est australien,elle est allemande,elle est cubaine, elle est japonaise}
 \text{Blist=il joue au tennis, il joue du biniou, il surfe, elle joue du piano , elle danse la salsa, elle fait du Kendo}
 \text{Clist=il est blond, il porte une jupe, il ne porte pas de cravate,  elle ne se maquille pas , elle est brune, elle  porte des kimonos}
@@ -374,24 +377,11 @@ les poules ne nagent pas
 \text{nonDlist=il n'a pas d'enfant, il ne sort pas le dimanche, il ne passe pas ses vacances à Bali, elle ne roule pas en vélo , elle déteste les maths, elle ne fait pas de l'origami}
 \text{nonElist=il n'est pas végétarien, il n'est pas marié, il n'aime pas la bière, elle n'aime pas la Bratwurst, elle ne boit pas de tequila, elle est mariée}
 
-\text{enunciateimpl=énonce l'implication suivante}
-\text{Later=Puis}
-\text{enunciateprop=énonce la proposition}
-\text{Theprop=La proposition}
-\text{theprop=la proposition}
-\text{formulatedby=formulée par}
-\text{enunciatedby=énoncée par}
-\text{ofproposition=de la proposition}
+\text{name_statement1=énonce l'implication suivante}
+\text{name_statement2=énonce la proposition}
 
-\text{name_answers=est la réciproque,est la contraposée,n'est ni la réciproque ni la contraposée}
-\text{considerimpl=Considérons l'implication}
-\text{its=sa}
-\text{reciproque=réciproque}
-\text{contraposed=contraposée}
-\text{isprop=est la proposition}
-\text{Theconj=La conjonction}
-\text{Thedisj=La disjonction}
-\text{hasnegation=a pour négation}
+\text{name_answers=est la réciproque, est la contraposée, n'est ni la réciproque ni la contraposée}
+\text{name_hint=Considérons l'implication}
 #endif
 
 #if defined TARGET_tautologie
@@ -483,35 +473,34 @@ la satisfaction est partielle
 \text{name_statement2=suivante}
 \text{name_question1=Quelle formule logique correspond à}
 \text{name_question2=est-elle une tautologie}
-\text{name_hint=Une tautologie est une proposition logique toujours vraie (quelle que soient les valeurs de vérité de ses propositions élémentaires)}
+\text{name_hint=Une tautologie est une proposition logique toujours vraie (quelle que soient les valeurs de vérité de ses propositions élémentaires).}
 #endif
 
 #if defined TARGET_valeursVerite
 \text{V=V}
 \text{F=F}
-\text{name_statement1=quatre propositions.}
+
+\text{name_statement1=quatre propositions}
 \text{name_statement2=On définit une <i>interprétation</i> ou un <i>modèle</i> logique de ces propositions en leur affectant les valeurs de vérité, Vrai (V) ou Faux (F), suivantes.}
 \text{name_statement3=Pour tout rappel sur les règles de la logique booléenne, cliquer sur le lien <font color="blue">Aide</font> ci-dessous ou consulter le <font color="blue">glossaire</font>.}
+\text{name_question1=Sous cette interprétation, calculer les valeurs de vérité des formules suivantes :}
 #endif
 
 #if defined TARGET_validite
-\text{Alist= il est suédois,il est écossais,il est australien,elle est allemande,elle est cubaine, elle est japonaise}
-\text{Blist= il joue au tennis, il joue du biniou, il surfe, elle joue du piano , elle danse la salsa, elle fait du Kendo}
-\text{Clist= il est blond, il porte une jupe, il ne porte pas de cravate,  elle ne se maquille pas , elle est brune, elle  porte des kimonos}
-\text{Dlist= il fait du ski, il fait du rugby, il passe ses vacances à Bali, elle roule en vélo ,elle adore les maths, elle apprend l'ikebana}
-
-\text{nonAlist= il n'est pas suédois, il n'est pas écossais, il n'est pas australien, elle n'est pas allemande , elle n'est pas cubaine, elle n'est pas japonaise}
-\text{nonBlist =il ne joue pas au tennis, il ne joue pas du biniou , il ne  surfe pas , elle ne joue pas du piano , elle ne danse pas la salsa, elle ne fait pas Kendo}
-\text{nonClist= il n'est pas blond, il ne porte pas de jupe, il porte des cravates, elle se maquille , elle n'est pas brune, elle ne porte pas de kimono}
-\text{nonDlist= il ne fait pas de ski, il ne fait pas de rugby, il ne passe pas ses vacances à Bali, elle ne roule pas en vélo , elle déteste les maths, elle n'apprend pas l'ikebana}
-
-\text{elles=Léa,Lili,Julie,Leila,Lola}
-\text{luis=Léo,Lulu,Jules,Malik,Luis}
-
 \text{masculin=masculin}
 \text{feminin=féminin}
 \text{vrai=vrai}
 \text{faux=faux}
+
+\text{Alist=il est suédois,il est écossais,il est australien,elle est allemande,elle est cubaine, elle est japonaise}
+\text{Blist=il joue au tennis, il joue du biniou, il surfe, elle joue du piano , elle danse la salsa, elle fait du Kendo}
+\text{Clist=il est blond, il porte une jupe, il ne porte pas de cravate,  elle ne se maquille pas , elle est brune, elle  porte des kimonos}
+\text{Dlist=il fait du ski, il fait du rugby, il passe ses vacances à Bali, elle roule en vélo ,elle adore les maths, elle apprend l'ikebana}
+
+\text{nonAlist=il n'est pas suédois, il n'est pas écossais, il n'est pas australien, elle n'est pas allemande , elle n'est pas cubaine, elle n'est pas japonaise}
+\text{nonBlist=il ne joue pas au tennis, il ne joue pas du biniou , il ne  surfe pas , elle ne joue pas du piano , elle ne danse pas la salsa, elle ne fait pas Kendo}
+\text{nonClist=il n'est pas blond, il ne porte pas de jupe, il porte des cravates, elle se maquille , elle n'est pas brune, elle ne porte pas de kimono}
+\text{nonDlist=il ne fait pas de ski, il ne fait pas de rugby, il ne passe pas ses vacances à Bali, elle ne roule pas en vélo , elle déteste les maths, elle n'apprend pas l'ikebana}
 
 \text{name_statement1=possède les  caractéristiques suivantes}
 \text{name_statement2=Pour adhérer à  un club de loisir}

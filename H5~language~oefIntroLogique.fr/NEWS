@@ -1,7 +1,7 @@
 # This file registers changes to the module.
 # Please write in reverse order: the last version first.
 
-Version 2.0: (8 janaury 2021)
+Version 2.0: (22 janaury 2021)
         Refactored as an internationa module.
         Added Italian translation.
 

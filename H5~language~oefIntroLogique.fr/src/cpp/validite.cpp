@@ -26,6 +26,8 @@ target=validite
 
 \text{liste=oui,1,2,3,4,5,6}
 
+\text{elles=Léa,Lili,Julie,Leila,Lola}
+\text{luis=Léo,Lulu,Jules,Malik,Luis}
 \integer{i=random(1..4)}
 \text{Elle=\elles[\i]}
 \text{Lui=\luis[\i]}
@@ -40,7 +42,7 @@ target=validite
 \C \ou \D,
 \si \A \et \si \B \alors \D,
 \si \B \et \si \nonC \alors \D,
-\si \C et \si \nonA \alors \nonD ,
+\si \C \et \si \nonA \alors \nonD ,
 \si \B \ou \si \D \alors \A,
 \A \si2 \et \seulement \si \D,
 \A \et \B,

@@ -88,14 +88,14 @@ target=reciproque
 \statement{
  <div style="background-color:#FFFF66;">
 
-<ul><li><p>\Lui \enunciateimpl :</p>
+<ul><li><p>\Lui \name_statement1\spacebeforecolon:</p>
 <center>
 <font color="green"> \(P_1) : " \prop1 "</font>
 </center>
 
 </li>
 <li>
-<p>\Later \Elle \enunciateprop \(P_2 ) :</p>
+<p>\Puis \Elle \name_statement2 \(P_2 )\spacebeforecolon:</p>
 <center>
 <font color="blue">\(P_2) : " \prop2 "</font>
 </center>
@@ -103,24 +103,24 @@ target=reciproque
 </li>
 </ul>
 
-<p>\Theprop \(P_2) \formulatedby \Elle
- \embed{reply1} \ofproposition \(P_1) \enunciatedby \Lui.  </p>
+<p>\Laproposition \(P_2) \formuleepar \Elle
+ \embed{reply1} \delaproposition \(P_1) \enonceepar \Lui.  </p>
 
 </div>
 }
 
-
 \answer{}{\rep;\name_answers}{type=menu}
 
 \hint{
-<ul>\considerimpl "\si \(A) \alors \(B)". \Alors :
+\name_hint "\si \(A) \alors \(B)". \Alors\spacebeforecolon:
+<ul>
 <li>
-\its <b>\reciproque</b> \isprop "\si \(B) \alors \(A)" ;
+\sa <b>\reciproque</b> \estlaproposition "\si \(B) \alors \(A)"\spacebeforecolon;
 </li>
 <li>
-\its <b>\contraposed</b> \isprop "\si \(non B) \alors \(non A)"
+\sa <b>\contraposee</b> \estlaproposition "\si \(non B) \alors \(non A)".
 </li>
 </ul>
-\Theconj "\(A) \et \(B)" \hasnegation "\(\non A) \ou \(\non B)".  <bt/>
-\Thedisj "\(A) \ou \(B)" \hasnegation "\(\non A) \et \(\non B)".  <br/>
+\Laconjonction "\(A) \et \(B\;)" \apournegation "\(\non2 A) \ou \(\non2 B\;)".  <bt/>
+\Ladisjonction "\(A) \ou \(B\;)" \apournegation "\(\non2 A) \et \(\non2 B\;)".  <br/>
 }

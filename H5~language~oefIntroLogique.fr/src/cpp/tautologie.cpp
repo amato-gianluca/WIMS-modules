@@ -23,7 +23,7 @@ target=tautologie
 \A \ou \B \ou (\nonA \et \nonB),
 \A \ou \nonA,
 \A \ou \B \ou \nonA,
-\si \nonA \alors  \A \ou \nonA,
+\si \nonA \alors \A \ou \nonA,
 \si \nonA \et \si \A \alors \B,
 \si \A \et \si2 \B \alors \A \ou \B,
 \si \A \alors \B \ou \si2 \B \alors \A,
@@ -89,14 +89,14 @@ item(4,\shtyp),item(5,\shtyp)}
 <div style="background-color:#FFFF66;">
 
 <p>\Soient \(A) : " \A " \et  \(B) : " \B ". </p>
-<p>\name_statement1 \(P) \name_statement2 :</p>
+<p>\name_statement1 \(P) \name_statement2\spacebeforecolon:</p>
 <center><font color="blue"> \(P) : " \P "</font></center>
-<p>\name_question1 \(P) ?</p>
+<p>\name_question1 \(P)\spacebeforecolon?</p>
 <center>\embed{reply1}</center>
-<p> \(P) \name_question2 ?  \embed{reply2}</p>
+<p> \(P) \name_question2\spacebeforecolon? \embed{reply2}</p>
 </div>
 }
 
 \answer{Type formule}{\rep1;\liste}{type=checkbox}
 \answer{Tautologie?}{\rep2;\oui,\non}{type=checkbox}
-\hint{\name_hint.}
+\hint{\name_hint}

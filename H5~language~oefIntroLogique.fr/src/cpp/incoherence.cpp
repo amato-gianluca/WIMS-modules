@@ -71,7 +71,7 @@ target=incoherence
 <div style="background-color:#FFFF66;">
 
 <p>
-\name_statement1 \if{\a<4}{\name_statement2}{\name_statement3} \name_statement4
+\name_statement1 \if{\a<4}{\name_statement2}{\name_statement3} \name_statement4\spacebeforecolon:
 </p>
 <ol>
 <li>\reg[1]</li>
@@ -84,8 +84,8 @@ target=incoherence
 \if{\cas==3}{<li>\reg[8]</li>}
 </ol>
 
-<p>\name_question1 <b><font color="blue">\name_question2</font></b> \name_question3, <b><font color="blue">\name_question4</font></b>
-\name_question5<br/>
+<p>\name_question1 <b><font color="blue">\name_question2</font></b>\name_question3 <b><font color="blue">\name_question4</font></b>
+\name_question5.<br/>
 \name_question6
 </p>
 <center>\embed{reply1}</center>
@@ -98,13 +98,13 @@ target=incoherence
 
 \hint{<font color="blue">
 <p>
-<b>\name_cases</b>\spacebeforecolon:
+<b>\name_hint1</b>\spacebeforecolon:
 <ul>
-<li>\name_case1</li>
-<li>\name_case2</li>
-<li>\name_case3</li>
+<li>\name_hint2</li>
+<li>\name_hint3</li>
+<li>\name_hint3</li>
 </ul>
-\name_casesend
+\name_hint5
 <p/>
 <p><b>\Exemple</b>\spacebeforecolon:</p>
 \name_example1

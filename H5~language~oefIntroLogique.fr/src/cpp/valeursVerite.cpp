@@ -15,9 +15,6 @@ target=valeursVerite
 \text{Clist=C,R,Z}
 \text{Dlist=D,S,T}
 
-\text{ou=\;\ou\;}
-\text{et =\;\et\;}
-
 \integer{a=random(1..3)}
 \text{A=\Alist[\a]}
 \text{B=\Blist[\a]}
@@ -30,30 +27,33 @@ target=valeursVerite
 
 \text{val=randint(0,1),randint(0,1),randint(0,1),randint(0,1)}
 
+\text{op_ou=\;\ou\;}
+\text{op_et=\;\et\;}
+
 \text{form1=
-\(\A \ou \B),
-\(\C \ou \D),
-\(\A \et \B),
-\(\C \et \D),
-\(\A \ou \nonB),
-\(\nonC \ou \D),
-\(\A \et \nonB),
-\(\nonC \et \D),
-\(\nonC \et \nonD),
-\(\nonA \ou \nonB)
+\(\A \op_ou \B),
+\(\C \op_ou \D),
+\(\A \op_et \B),
+\(\C \op_et \D),
+\(\A \op_ou \nonB),
+\(\nonC \op_ou \D),
+\(\A \op_et \nonB),
+\(\nonC \op_et \D),
+\(\nonC \op_et \nonD),
+\(\nonA \op_ou \nonB)
 }
 
 \text{form2=
-\(\A \rightarrow  \B),
-\(\nonA \rightarrow  \B),
-\(\nonC \rightarrow  \D ),
-\( \A \et  \B \rightarrow  \D ),
-\( \B \et  \nonC \rightarrow  \D),
-\( \C \et  \nonA \rightarrow \nonD) ,
-\( \B \ou  \D  \rightarrow    \A),
-\(\A \leftrightarrow  \D ),
-\(\A \leftrightarrow \C \ou \D),
-\(\A \et \nonB \leftrightarrow \C )
+\(\A \rightarrow \B),
+\(\nonA \rightarrow \B),
+\(\nonC \rightarrow \D),
+\( \A \op_et \B \rightarrow  \D ),
+\( \B \op_et \nonC \rightarrow  \D),
+\( \C \op_et \nonA \rightarrow \nonD) ,
+\( \B \op_ou \D \rightarrow \A),
+\(\A \leftrightarrow \D ),
+\(\A \leftrightarrow \C \op_ou \D),
+\(\A \op_et \nonB \leftrightarrow \C)
 }
 
 \text{ind=shuffle(1,2,3,4,5,6,7,8,9,10)}
@@ -98,8 +98,6 @@ target=valeursVerite
 \integer{valAetnonB=\val[1]==1 and \val[2]==0?1:0}
 \integer{cond20=\valAetnonB==\val[3] ?1:2}
 
-
-
 \text{conds=\cond1,\cond2,\cond3,\cond4,\cond5,\cond6,\cond7,\cond8,\cond9,
 \cond10,\cond11,\cond12,\cond13,\cond14,\cond15,\cond16,\cond17,\cond18,
 \cond19,\cond20}
@@ -112,9 +110,9 @@ target=valeursVerite
 <div style="background-color:#FFFF66;">
 
 <p>
-\Soient \A, \B, \C \et \D \name_statement1 <br/>
+\Soient \A, \B, \C \et \D \name_statement1.<br/>
 \name_statement2
- </p>
+</p>
 <table border="solid" cellpadding="5" align="center">
 <tr><td>\A</td><td>\B</td><td>\C</td><td>\D</td></tr>
 <tr><td>\if{\val[1]==1}{V}{F}</td>
@@ -124,7 +122,7 @@ target=valeursVerite
 </tr>
 </table>
 
-<p>\name_question1\spacebeforecolon:
+<p>\name_question1
 </p>
 <table width="50%" align="center" cellpadding=10>
 <tr>
@@ -151,8 +149,8 @@ target=valeursVerite
 </div>
 
 <p><i>\name_statement3</i></p>
-
 }
+
 \answer{clause 1}{\rep1;\V,\F}{type=radio}
 \answer{clause 2}{\rep2;\V,\F}{type=radio}
 \answer{clause 3}{\rep3;\V,\F}{type=radio}

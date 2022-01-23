@@ -145,7 +145,6 @@ Les étapes d'un raisonnement  suivent des règles. Les règles  les plus courantes
 <tr><td> \(\bar{A}) </td><td>\(A)</td></tr>
 <tr><td>pour tout \(x),  \(A) </td><td>il existe \(x) tel que \(\bar{A})</td></tr>
 <tr><td>il existe \(x) tel que \(A) </td><td> pour tout \(x), \(\bar{A})</td></tr>
-<tr><td></td><td></td></tr>
 </table>
 </center>
 </p>

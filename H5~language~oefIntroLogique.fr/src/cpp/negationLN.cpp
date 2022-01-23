@@ -87,4 +87,4 @@ target=negationLN
 
 \feedback{\a==4 and (\choice1 issametext \Aucun \suj \nest \nonadj)}
 {<b>\Remarque</b>
-\name_remark1 "\Aucun \suj \nest \nonadj" \name_remark2 "\prop" \name_remark3}
+\name_remark1 "\Aucun \suj \nest \nonadj" \name_remark2 "\prop" \name_remark3.}

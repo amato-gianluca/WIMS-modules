@@ -1,50 +1,42 @@
 <!-- 1 -->
-:<p><b>
-Logica di Boole (o booleana):</b> Sistema logico formale nel quale le formule
-sono costruite utilizzando i connettivi booleani e i cui valori di verità sono binari: Vero o Falso. <br/>
-Un sistema logico formale è caratterizzato da: le formule che si possono scrivere, le regole che consentono di calcolare i valori di verità delle formule, e infine le regole di deduzione che
-consentono di dimostrare che una formula è una conseguenza logica di altre.
-</p>
+:<p><b>Logica di Boole (o booleana):</b> Sistema logico formale nel quale le formule
+sono costruite utilizzando i connettivi booleani e i cui valori di verità sono binari: Vero o Falso.</p>
+<p>Un sistema logico formale è caratterizzato da: le formule che si possono scrivere, le regole che consentono di calcolare i valori di verità delle formule, e infine le regole di deduzione che
+consentono di dimostrare che una formula è una conseguenza logica di altre.</p>
 
 <!-- 2 -->
-:<p> <b>
-Proposizioni, asserzioni, formule:</b>
+:<p><b>Proposizioni, asserzioni, formule:</b>
 <ul><li>Nella logica booleana, questi termini designano una “espressione formale”, o “formula”, scritta a partire da proposizioni elementari (generalmente indicate da lettere) e connettivi logici.</li>
 <li>Nel linguaggio naturale, questi termini designano qualsiasi enuncato o affermazione la cui verità deve essere valutata.</li>
-</ul>
-<p><b>
-Connettivi booleani:</b>
- negazione \(\overline{A} ), disgiunzione \(A \; o \; B ), congiunzione \(A \; e \; B ), implicazione \(A  \rightarrow  B ), equivalenza \(A  \leftrightarrow  B ).
+</ul></p>
+<p><b>Connettivi booleani:</b>
+negazione \(\overline{A} ), disgiunzione \(A \; o \; B), congiunzione \(A \; e \; B), implicazione \(A \rightarrow B), equivalenza \(A \leftrightarrow B).
 </p>
 
 <!-- 3 -->
-:<p><b>
-Precedenze tra connettivi:</b>
+:<p><b>Precedenze tra connettivi:</b>
 <ul><li>la negazione ha la precedenza su qualsiasi altro connettivo;</li>
 <li>la congiunzione e la disgiunzione hanno la precedenza rispetto all'implicazione e alla equivalenza.</li>
 </ul>
 </p>
 
 <!-- 4 -->
-:<p><b>
-Interpretazione o modello di un insieme di formule:</b>
+:<p><b>Interpretazione o modello di un insieme di formule:</b>
 È l'attribuzione di un valore di verità a ciascuna delle proposizioni
-elementari (A, B, C, ...) da cui sono composte le formule. Nella logica booleana questi valori sono Vero o Falso.
+elementari (\(A), \(B), \(C), ...) di cui sono composte le formule. Nella logica booleana questi valori sono Vero o Falso.
 </p>
 
 <!-- 5 -->
-:<p><b>
-Valore di verità di una formula:</b>
+:<p><b>Valore di verità di una formula:</b>
 In una data interpretazione, una formula assume un valore di verità che viene calcolato secondo le regole definite dalle "tavole di verità".
 </p>
-<p><b>
-Tavole di verità della logica booleana: </b>
+<p><b>Tavole di verità della logica booleana:</b>
 Sono date da una tabella a doppia entrata dove nella prima colonna compaiono i valori di verità di \(A) e nella prima riga quelli di \(B).
 <table width="80%" align="center">
 <tr align="center">
-<td>Negazione</td><td>Congiunzione</td><td>Dishiunzione</td>
-<td>Implicazione</td><td>Equivalenza</td></tr>
-<tr align="center"><td>\(\overline{A} )</td><td>\(A e B)</td><td> \(A o B)</td>
+<td>Negazione</td><td>Congiunzione</td><td>Disgiunzione</td>
+<td>Implicazione</td><td>Doppia implicazione</td></tr>
+<tr align="center"><td>\(\overline{A})</td><td>\(A \;e\; B)</td><td> \(A \;o\; B)</td>
 <td> \(A \rightarrow B)</td><td> \(A \leftrightarrow B)</td></tr>
 <tr>
 <td>
@@ -96,11 +88,11 @@ Sono date da una tabella a doppia entrata dove nella prima colonna compaiono i v
 </table>
 </p>
 
-
 <!-- 6 -->
 :<p><b>
-Tautologia:</b> formula logica che è sempre vera qualunque sia l'interpretazione delle sue proposizioni elementari.<br/>
-Un'antilogia (o contraddizione) è una formula che è sempre sbagliata in ogni interpretazione.
+Tautologia:</b> formula logica che è sempre vera qualunque sia l'interpretazione delle sue proposizioni elementari.
+</p><p>
+Un'antilogia (o contraddizione) è una formula che è sempre falsa in ogni interpretazione.
 </p>
 
 <!-- 7 -->
@@ -114,15 +106,14 @@ Un insieme di formule è inconsistente se e solo se non esiste un'interpretazione
 </p>
 
 <!-- 9 -->
-:<p><b>Ragionamento, Deduzione logica:</b>:
-In un ragionamento distinguiamo le <b>premesse</b> o <b>ipotesi</b> (<i>H<sub>1</sub></i>, <i>H<sub>2</sub></i>, ecc...) e la <b>conclusione</b> \(C).<br/>
-Un ragionamento è <b>valido</b> se e solo se la conclusione \(C) è una <b>conseguenza logica</b> delle ipotesi. Significa che la conclusione deve essere vera
-supponendo che tutte le ipotesi siano vere.<br/>
-La nozione di verità è quella della logica booleana.
-</p>
+:<p><b>Ragionamento, Deduzione logica:</b>
+In un ragionamento distinguiamo le <b>premesse</b> o <b>ipotesi</b> (\(H_1\), \(H_2\), ecc...) e la <b>conclusione</b> \(C).</p>
+<p>Un ragionamento è <b>valido</b> se e solo se la conclusione \(C) è una <b>conseguenza logica</b> delle ipotesi. Significa che la conclusione deve essere vera
+supponendo che tutte le ipotesi siano vere.</p>
+<p>La nozione di verità è quella della logica booleana.</p>
 
 <!-- 10 -->
-:<p><b>Regole di inferenza</b>: <br/>
+:<p><b>Regole di inferenza:</b>
 Le fasi del ragionamento seguono delle regole. Le regole più comuni sono:</p>
 <center>
 <table border="solid" cellpadding="10">
@@ -130,34 +121,33 @@ Le fasi del ragionamento seguono delle regole. Le regole più comuni sono:</p>
 <tr><td>Modus Ponens</td><td>se \(A) allora \(B)<br/>\(A)</td><td>\(B)</td></tr>
 <tr><td>Contrapposizione</td><td>se \(A) allora \(B)</td><td>se non \(B) allora non \(A)</td></tr>
 <tr><td>Ragionamento per casi</td><td>se \(A) allora \(C)<br/>se \(B) allora \(C)</td><td>se \(A) o \(B) allora \(C)</td></tr>
-<tr><td>Introduzione di "e"</td><td>\(A) <br/> \(B)</td><td>\(A e B)</td></tr>
-<tr><td>Introduzione di "o"</td><td>\(A)</td><td>\(A o B)</td></tr>
-<tr><td>Indebolimento</td><td>\(A e B)</td><td>\(A)</td></tr>
+<tr><td>Introduzione di "e"</td><td>\(A)<br/>\(B)</td><td>\(A \;e\; B)</td></tr>
+<tr><td>Introduzione di "o"</td><td>\(A)</td><td>\(A \;o\; B)</td></tr>
+<tr><td>Indebolimento</td><td>\(A \;e\; B)</td><td>\(A)</td></tr>
 </table></center>
 
 <!-- 11 -->
 :<p><b>Le regole per formare le negazioni</b>:
 <center><table border="solid" cellpadding="10">
-<tr><td>\(P)</td><td>\(\bar{P}) (\(\; non P))</td></tr>
-<tr><td>\(A e  B) </td><td>\(\bar{A} \;o\; \bar{B})</td></tr>
-<tr><td>\(A o B) </td><td>\(\bar{A}  \;e\;\bar{B})</td></tr>
-<tr><td> \(\bar{A}) </td><td>\(A)</td></tr>
-<tr><td>per tutti gli \(x),  \(A)</td><td>esiste \(x) tale che \(\bar{A})</td></tr>
-<tr><td>esiste \(x) tale che \(A)</td><td>per tutti gli \(x), \(\bar{A})</td></tr>
-<tr><td></td><td></td></tr>
+<tr><td>\(P)</td><td>\(\overline{P}) (\(non P))</td></tr>
+<tr><td>\(A \;e\; B)</td><td>\(\overline{A} \;o\; \overline{B})</td></tr>
+<tr><td>\(A \;o\; B)</td><td>\(\overline{A} \;e\; \overline{B})</td></tr>
+<tr><td>\(\overline{A})</td><td>\(A)</td></tr>
+<tr><td>per tutti gli \(x), \(A)</td><td>esiste \(x) tale che \(\overline{A})</td></tr>
+<tr><td>esiste \(x) tale che \(A)</td><td>per tutti gli \(x), \(\overline{A})</td></tr>
 </table>
 </center>
 </p>
 
 <!-- 12 -->
-:<p><b>L'implicazione \(A\rightarrow B) (se \(A) allora \(B))</b> :
+:<p><b>L'implicazione \(A \rightarrow B) (se \(A) allora \(B))</b>:
 <ul>
 <li>L'implicazione \(A \rightarrow B) è vera se e solamente se \(A) è falsa o \(B) è vera.</li>
-<li>Le proposizioni \(A\rightarrow B) et \(\bar{A} \; o \; B) sono logicamente equivalenti.<br/>
+<li>Le proposizioni \(A \rightarrow B) e \(\overline{A} \; o \; B) sono logicamente equivalenti.<br/>
 <small>(cioè hanno le stesse tabelle di verità.)</small></li>
-<li>Les proposizioni  \(A\rightarrow B) e \(\bar{B}\rightarrow \bar{A}) sono logicamente equivalenti.</li>
+<li>Le proposizioni  \(A \rightarrow B) e \(\overline{B} \rightarrow \overline{A}) sono logicamente equivalenti.</li>
 <li>Da qui le regole di inferenza: <br/>
- Modus Ponens: dalle due ipotesi \ (A \rightarrow B) e \(A), possiamo dedurre \(B) <br/>
- Modus Tollents: dalle due ipotesi \(A\rightarrow B) e \(\bar{B}), possiamo dedurre \(\bar{A})<br/>
- Ma dalle ipotesi \(A\rightarrow B) e \(\bar{A}) non si può dedurre nulla.
+ Modus Ponens: dalle due ipotesi \(A \rightarrow B) e \(A), possiamo dedurre \(B) <br/>
+ Modus Tollents: dalle due ipotesi \(A \rightarrow B) e \(\overline{B}), possiamo dedurre \(\overline{A})<br/>
+ Ma dalle ipotesi \(A \rightarrow B) e \(\overline{A}) non si può dedurre nulla.
 </li></ul>
