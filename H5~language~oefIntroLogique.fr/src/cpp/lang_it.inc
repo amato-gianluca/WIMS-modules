@@ -14,7 +14,7 @@
 \text{spacebeforecolon=}
 \text{Remarque=Nota}
 \text{Soient=Siano}
-\text{glossaire=glossaire_it}
+\text{glossaire=data/glossaire_it}
 
 #if defined TARGET_connecteursLN
 \text{Alist =

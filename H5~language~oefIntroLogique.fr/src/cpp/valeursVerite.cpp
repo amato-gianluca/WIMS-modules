@@ -107,7 +107,7 @@ target=valeursVerite
 \integer{rep4=\conds[(10+\i4)]}
 
 \statement{
-<div style="background-color:#FFFF66;">
+<div class="colorst">
 
 <p>
 \Soient \A, \B, \C \et \D \name_statement1.<br/>

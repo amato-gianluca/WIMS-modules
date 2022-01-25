@@ -107,15 +107,14 @@ reply2}
 \text{liste2=row(3,\qcm2)}
 
 \statement{
-<p><i><small><font color="blue">\name_citation
-</font></small></i></p>
+<div class="citation">\name_citation</div>
 
-<div style="background-color:#FFFF66;">
+<div class="colorst">
 
 \if{\step=1}{
 <p><b>\Question \step.</b> <br/>\name_characters \sujA \et \sujB.
 \name_statement1a
-<center><font color="green"><b> \rule </b></font></center>
+<div class="wimscenter"><span class="fraseB"> \rule </span></div>
 </p>
 <p>\name_statement2 \query1\spacebeforecolon?</p>
 <p align="center"> \embed{reply1} </p>
@@ -124,11 +123,11 @@ reply2}
 \if{\step=2}{
 <p><b>\Question \step.</b> <br/>\name_characters \sujA, \sujB \et \sujC.
 \name_statement1b
-<font color="green"><b>
+<span class="fraseB">
 <ul><li> \rule </li><li> \rule2 </li></ul>
-</b></font> </p>
+</span> </p>
 <p>\name_statement2 \query2\spacebeforecolon?</p>
-<p align="center"> \embed{reply2} </p>
+<p class="wimscenter"> \embed{reply2} </p>
 }
 
 </div>

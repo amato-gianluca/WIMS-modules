@@ -82,7 +82,7 @@ target=validite
 
 \statement{
 
-<div style="background-color:#FFFF66;">
+<div class="colorst">
 
 <p>\mrx \name_statement1\spacebeforecolon:
 <ul>

@@ -86,19 +86,19 @@ target=reciproque
 \text{prop2=\rep==3?randitem(\autre)}
 
 \statement{
- <div style="background-color:#FFFF66;">
+ <div class="colorst">
 
 <ul><li><p>\Lui \name_statement1\spacebeforecolon:</p>
-<center>
-<font color="green"> \(P_1) : " \prop1 "</font>
-</center>
+<div class="wimscenter">
+<span class="fraseB"> \(P_1) : " \prop1 "</span>
+</div>
 
 </li>
 <li>
 <p>\Puis \Elle \name_statement2 \(P_2 )\spacebeforecolon:</p>
-<center>
-<font color="blue">\(P_2) : " \prop2 "</font>
-</center>
+<div class="wimscenter">
+<span class="fraseA">\(P_2) : " \prop2 "</span>
+</div>
 
 </li>
 </ul>

@@ -64,22 +64,19 @@ item(\ind[4],\typ),item(\ind[5],\typ)}
 
 \statement{
 
-<div style="background-color:#FFFF66;">
+<div class="colorst">
 
 <p>\name_statement1</p>
 <p><i>\Remarque</i>\spacebeforecolon: \name_statement2</p>
-<center>
-<font color="blue"><b> \(A) : " \A "</b></font>
-&nbsp; \et &nbsp; <font color="green"><b>\(B) : " \B "</b></font>
-</center>
-
-<p align="center"><i>
-\name_statement3
-</i></p>
-
+<div class="wimscenter">
+<span class="fraseA"> \(A) : " \A "</span>
+&nbsp; \et &nbsp; <span class="fraseB">\(B) : " \B "</span>
+</div>
 </div>
 
-<center>\embed{reply1,40x400x100}</center>
+<div class="wims_instruction">\name_statement3</div>
+
+<div class="wimscenter">\embed{reply1,40x400x100}</div>
 
 }
 

@@ -14,7 +14,7 @@
 \text{spacebeforecolon=&#32;}
 \text{Remarque=Remarque}
 \text{Soient=Soient}
-\text{glossaire=glossaire}
+\text{glossaire=data/glossaire_fr}
 
 #if defined TARGET_connecteursLN
 \text{Alist =

@@ -86,13 +86,13 @@ item(4,\shtyp),item(5,\shtyp)}
 \integer{test=(\typP isitemof \choix)?\oui:\non}
 
 \statement{
-<div style="background-color:#FFFF66;">
+<div class="colorst">
 
 <p>\Soient \(A) : " \A " \et  \(B) : " \B ". </p>
 <p>\name_statement1 \(P) \name_statement2\spacebeforecolon:</p>
-<center><font color="blue"> \(P) : " \P "</font></center>
+<div class="wimscenter"><span class="fraseA"> \(P) : " \P "</span></div>
 <p>\name_question1 \(P)\spacebeforecolon?</p>
-<center>\embed{reply1}</center>
+<div class="wimscenter">\embed{reply1}</div>
 <p> \(P) \name_question2\spacebeforecolon? \embed{reply2}</p>
 </div>
 }

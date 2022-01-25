@@ -76,7 +76,7 @@ target=negationMath
 \text{neg=(i==0)?item(\cas,\nonA):item(\cas,\A)}
 
 \statement{
-<div style="background-color:#FFFF66;">
+<div class="colorst">
 
 <p>\name_statement1 \(P) : &#34; \aff &#34; </p>
 <p>\name_statement2 \(P)\spacebeforecolon?</p>

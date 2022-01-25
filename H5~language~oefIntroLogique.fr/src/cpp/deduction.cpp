@@ -44,19 +44,19 @@ target=deduction
 
 \statement{
 
-<div style="background-color:#FFFF66;">
+<div class="colorst">
 <ul>
 <li>
 <p>\name_statement1</p>
-<center><font color="green"><b> \(H_1) : " \si \A, \alors \B "</b></font></center></p>
+<div class="wimscenter"><span class="fraseB"> \(H_1) : " \si \A, \alors \B "</span></div>
 </li>
 <li>
 <p>\name_statement2</p>
-<center><font color="blue"><b> \(H_2) : " \H "</b></font></center>
+<div class="wimscenter"><span class="fraseA"> \(H_2) : " \H "</span></div>
 </li>
 <li>
 <p>\name_statement3</p>
-<center><font color="red"><b> \(C) : "  \C "</b></font></center>
+<div class="wimscenter"><span class="fraseC"> \(C) : "  \C "</span></div>
 </li>
 </ul>
 

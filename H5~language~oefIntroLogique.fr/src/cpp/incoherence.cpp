@@ -68,7 +68,7 @@ target=incoherence
 \text{rep=\cas==3?position(\B,\liste),position(\A,\liste)}
 
 \statement{
-<div style="background-color:#FFFF66;">
+<div class="colorst">
 
 <p>
 \name_statement1 \if{\a<4}{\name_statement2}{\name_statement3} \name_statement4\spacebeforecolon:
@@ -88,7 +88,7 @@ target=incoherence
 \name_question5.<br/>
 \name_question6
 </p>
-<center>\embed{reply1}</center>
+<div class="wimscenter">\embed{reply1}</div>
 <p><i>\name_remark</i>
 </p>
 </div>

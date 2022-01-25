@@ -75,10 +75,10 @@ target=negationLN
 \text{choix=shuffle(\ass)}
 
 \statement{
-<div style="background-color:#FFFF66;">
+<div class="colorst">
 
 <p>\name_statement1</p>
-<center> <font color="blue"><b>\(P) : " \prop "</b></font></center>
+<div class="wimscenter"> <span class="fraseA">\(P) : " \prop "</span></div>
 <p>\name_statement2</p>
 </div>
 }
