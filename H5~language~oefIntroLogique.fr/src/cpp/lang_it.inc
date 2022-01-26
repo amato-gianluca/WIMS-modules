@@ -482,7 +482,7 @@ la soddisfazione è parziale
 
 \text{name_statement1=quattro proposizioni}
 \text{name_statement2=Definiamo una <i>interpretazione</i> o un <i>modello</i> logico di queste proprosizioni assegnando loro i valori di verità Vero (V) o Falso (F).}
-\text{name_statement3=Per un promemoria sulle regole della logica booleana, clicca sul link <font color="blue">Istruzioni</font> in basso o consulta il <font color="blue">glossario</font>.}
+\text{name_statement3=Per un promemoria sulle regole della logica booleana, clicca sul link <span class="wims_button_help disabled">Istruzioni</span> in basso.}
 \text{name_question1=Secondo questa interpretazione, calcola i valori di verità delle seguenti formule:}
 #endif
 

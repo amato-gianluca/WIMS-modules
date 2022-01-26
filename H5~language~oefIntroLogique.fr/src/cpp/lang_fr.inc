@@ -482,7 +482,7 @@ la satisfaction est partielle
 
 \text{name_statement1=quatre propositions}
 \text{name_statement2=On définit une <i>interprétation</i> ou un <i>modèle</i> logique de ces propositions en leur affectant les valeurs de vérité, Vrai (V) ou Faux (F), suivantes.}
-\text{name_statement3=Pour tout rappel sur les règles de la logique booléenne, cliquer sur le lien <font color="blue">Aide</font> ci-dessous ou consulter le <font color="blue">glossaire</font>.}
+\text{name_statement3=Pour tout rappel sur les règles de la logique booléenne, cliquer sur le lien <span class="wims_button_help disabled">Aide</span> ci-dessous ou consulter le <span class="wims_emph">glossaire</span>.}
 \text{name_question1=Sous cette interprétation, calculer les valeurs de vérité des formules suivantes :}
 #endif
 

@@ -109,7 +109,7 @@ reply2}
 \statement{
 <div class="citation">\name_citation</div>
 
-<div class="colorst">
+<div class="wims_question">
 
 \if{\step=1}{
 <p><b>\Question \step.</b> <br/>\name_characters \sujA \et \sujB.

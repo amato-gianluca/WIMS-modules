@@ -50,24 +50,24 @@ target=tautologie
 \(A \rightarrow A \;\ou\; B),
 \(A \rightarrow (B \rightarrow  A)),
 \(A  \; \et  \; B \rightarrow  A),
-\(A  \; \ou  \; B  \; \ou \;  (\bar{A} \;\et\; \bar{B})),
-\(A  \; \ou \;  \bar{A}),
-\(A  \; \ou \;  B \; \ou \;  \bar{A}),
-\(\bar{A} \rightarrow  A \;\ou\; \bar{A}),
-\(\bar{A}  \; \et  \; A  \rightarrow  B),
+\(A  \; \ou  \; B  \; \ou \;  (\overline{A} \;\et\; \overline{B})),
+\(A  \; \ou \;  \overline{A}),
+\(A  \; \ou \;  B \; \ou \;  \overline{A}),
+\(\overline{A} \rightarrow  A \;\ou\; \overline{A}),
+\(\overline{A}  \; \et  \; A  \rightarrow  B),
 \(A  \; \et \;  B  \rightarrow  A \;ou\; B),
 \(A \rightarrow  B \; \ou \; B  \rightarrow A),
-\(A \rightarrow  B \; \ou \;  \bar{A}  \rightarrow B),
+\(A \rightarrow  B \; \ou \;  \overline{A}  \rightarrow B),
 \(A  \; \ou \;  B),
 \(A  \; \et \;  B),
 \( A \rightarrow B),
-\(A \;\et\;\bar{ A}),
-\(A  \rightarrow \bar{A}),
-\( A  \rightarrow \bar{A} \;\ou\; B),
+\(A \;\et\;\overline{ A}),
+\(A  \rightarrow \overline{A}),
+\( A  \rightarrow \overline{A} \;\ou\; B),
 \(A \rightarrow A \;\et\; B),
-\(\bar{A}  \rightarrow A \;\ou\;  B),
+\(\overline{A}  \rightarrow A \;\ou\;  B),
 \(A \;\ou\; B  \rightarrow A \;\et\; B),
-\(\bar{ A} \;\ou\; A \rightarrow  B),
+\(\overline{ A} \;\ou\; A \rightarrow  B),
 \(A \rightarrow  B \; \et \;B  \rightarrow A)
 }
 
@@ -86,7 +86,7 @@ item(4,\shtyp),item(5,\shtyp)}
 \integer{test=(\typP isitemof \choix)?\oui:\non}
 
 \statement{
-<div class="colorst">
+<div class="wims_question">
 
 <p>\Soient \(A) : " \A " \et  \(B) : " \B ". </p>
 <p>\name_statement1 \(P) \name_statement2\spacebeforecolon:</p>

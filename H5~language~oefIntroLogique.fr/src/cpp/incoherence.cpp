@@ -6,7 +6,12 @@ target=incoherence
 
 \language{fr}
 \range{-10..10}
-\text{monaide=wims(record 8 to 10 of \glossaire)}
+\text{monaide=}
+\for{ii = 8 to 10}{
+  \text{currrecord=wims(record \ii of \glossaire)}
+  \text{monaide=\monaide
+	\currrecord}
+}
 \help{\monaide}
 
 \integer{a=random(1..6)}
@@ -68,7 +73,7 @@ target=incoherence
 \text{rep=\cas==3?position(\B,\liste),position(\A,\liste)}
 
 \statement{
-<div class="colorst">
+<div class="wims_question">
 
 <p>
 \name_statement1 \if{\a<4}{\name_statement2}{\name_statement3} \name_statement4\spacebeforecolon:
@@ -84,20 +89,19 @@ target=incoherence
 \if{\cas==3}{<li>\reg[8]</li>}
 </ol>
 
-<p>\name_question1 <b><font color="blue">\name_question2</font></b>\name_question3 <b><font color="blue">\name_question4</font></b>
+<p>\name_question1 <span class="wims_emph">\name_question2</span>\name_question3 <span class="wims_emph">\name_question4</span>
 \name_question5.<br/>
 \name_question6
 </p>
 <div class="wimscenter">\embed{reply1}</div>
-<p><i>\name_remark</i>
-</p>
+</div>
+<div class="wims_instruction">\name_remark
 </div>
 }
 
 \answer{\Contradiction}{\rep;\liste}{type=radio}
 
-\hint{<font color="blue">
-<p>
+\hint{<p>
 <b>\name_hint1</b>\spacebeforecolon:
 <ul>
 <li>\name_hint2</li>
@@ -120,5 +124,4 @@ target=incoherence
 <li>\name_example3</li>
 <li>\name_example4</li>
 </ol>\name_example5
-</font>
 }

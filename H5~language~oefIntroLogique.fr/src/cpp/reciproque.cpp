@@ -6,6 +6,7 @@ target=reciproque
 
 \integer{init= 10}
 
+usare slib lang/fname?  
 \text{elles=Léa,Lili,Julie,Leila,Lola}
 \text{luis=Léo,Lulu,Jules,Malik,Luis}
 \integer{i=random(1..4)}
@@ -86,7 +87,7 @@ target=reciproque
 \text{prop2=\rep==3?randitem(\autre)}
 
 \statement{
- <div class="colorst">
+ <div class="wims_question">
 
 <ul><li><p>\Lui \name_statement1\spacebeforecolon:</p>
 <div class="wimscenter">

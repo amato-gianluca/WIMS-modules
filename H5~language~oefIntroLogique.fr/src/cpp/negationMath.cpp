@@ -76,11 +76,11 @@ target=negationMath
 \text{neg=(i==0)?item(\cas,\nonA):item(\cas,\A)}
 
 \statement{
-<div class="colorst">
+<div class="wims_question">
 
 <p>\name_statement1 \(P) : &#34; \aff &#34; </p>
 <p>\name_statement2 \(P)\spacebeforecolon?</p>
 </div>
 }
 
-\choice{ \(\bar{P}) : }{\neg}{\choix}
+\choice{ \(\overline{P}) : }{\neg}{\choix}

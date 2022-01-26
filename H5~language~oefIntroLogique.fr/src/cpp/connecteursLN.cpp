@@ -6,7 +6,12 @@ target=connecteursLN
 
 \language{fr}
 \range{-10..10}
-\text{monaide=wims(record 1 to 3 of \glossaire)}
+\text{monaide=}
+\for{ii = 1 to 3}{
+  \text{currrecord=wims(record \ii of \glossaire)}
+  \text{monaide=\monaide
+	\currrecord}
+}
 \help{\monaide}
 
 \integer{n=random(1..17)}
@@ -48,12 +53,12 @@ target=connecteursLN
 \BimplA,\nonBimplA,\BimplnonA,\nonBimplnonA
 }
 \text{typ=
-\(A \etconn  B), \(\bar{A} \etconn  B), \(A \etconn  \bar{B}), \(\bar{A} \etconn  \bar{B}),
-\(A \ouconn B), \(A \ouconn \bar{B}), \(\bar{A} \ouconn  B), \(\bar{A} \ouconn \bar{B}),
-\(A \rightarrow B), \(\bar{A}\rightarrow B),
-\(A\rightarrow\bar{B}), \(\bar{A}\rightarrow\bar{B}),
-\(B\rightarrow A), \(\bar{B}\rightarrow A),
-\(B\rightarrow\bar{A}), \(\bar{B}\rightarrow\bar{A})
+\(A \etconn  B), \(\overline{A} \etconn  B), \(A \etconn  \overline{B}), \(\overline{A} \etconn  \overline{B}),
+\(A \ouconn B), \(A \ouconn \overline{B}), \(\overline{A} \ouconn  B), \(\overline{A} \ouconn \overline{B}),
+\(A \rightarrow B), \(\overline{A}\rightarrow B),
+\(A\rightarrow\overline{B}), \(\overline{A}\rightarrow\overline{B}),
+\(B\rightarrow A), \(\overline{B}\rightarrow A),
+\(B\rightarrow\overline{A}), \(\overline{B}\rightarrow\overline{A})
 }
 
 \text{list1=item(\ind[1],\ass),item(\ind[2],\ass),item(\ind[3],\ass),
@@ -64,7 +69,7 @@ item(\ind[4],\typ),item(\ind[5],\typ)}
 
 \statement{
 
-<div class="colorst">
+<div class="wims_question">
 
 <p>\name_statement1</p>
 <p><i>\Remarque</i>\spacebeforecolon: \name_statement2</p>

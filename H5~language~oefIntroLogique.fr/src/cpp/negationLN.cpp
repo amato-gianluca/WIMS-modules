@@ -75,8 +75,7 @@ target=negationLN
 \text{choix=shuffle(\ass)}
 
 \statement{
-<div class="colorst">
-
+<div class="wims_question">
 <p>\name_statement1</p>
 <div class="wimscenter"> <span class="fraseA">\(P) : " \prop "</span></div>
 <p>\name_statement2</p>

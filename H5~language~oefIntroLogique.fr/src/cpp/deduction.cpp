@@ -6,7 +6,12 @@ target=deduction
 
 \language{fr}
 \integer{init= 10}
-\text{monaide=wims(record 8 to  10 of \glossaire)}
+\text{monaide=}
+\for{ii = 8 to 10}{
+  \text{currrecord=wims(record \ii of \glossaire)}
+  \text{monaide=\monaide
+	\currrecord}
+}
 \help{\monaide}
 
 \integer{a=random(1..\init)}
@@ -44,7 +49,7 @@ target=deduction
 
 \statement{
 
-<div class="colorst">
+<div class="wims_question">
 <ul>
 <li>
 <p>\name_statement1</p>

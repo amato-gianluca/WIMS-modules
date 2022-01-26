@@ -5,7 +5,12 @@ target=valeursVerite
 #include "lang.inc"
 
 \range{-10..10}
-\text{monaide=wims(record 2 to 5 of \glossaire)}
+\text{monaide=}
+\for{ii = 2 to 5}{
+  \text{currrecord=wims(record \ii of \glossaire)}
+  \text{monaide=\monaide
+	\currrecord}
+}
 \help{\monaide}
 
 \integer{a=random(1..6)}
@@ -107,7 +112,7 @@ target=valeursVerite
 \integer{rep4=\conds[(10+\i4)]}
 
 \statement{
-<div class="colorst">
+<div class="wims_question">
 
 <p>
 \Soient \A, \B, \C \et \D \name_statement1.<br/>

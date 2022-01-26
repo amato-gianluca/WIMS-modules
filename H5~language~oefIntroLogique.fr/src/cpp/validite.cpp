@@ -5,7 +5,12 @@ target=validite
 #include "lang.inc"
 
 \range{-10..10}
-\text{monaide=wims(record 4 to 5 of \glossaire)}
+\text{monaide=}
+\for{ii = 4 to 5}{
+  \text{currrecord=wims(record \ii of \glossaire)}
+  \text{monaide=\monaide
+	\currrecord}
+}
 \help{\monaide}
 
 \integer{a=random(1..6)}
@@ -82,7 +87,7 @@ target=validite
 
 \statement{
 
-<div class="colorst">
+<div class="wims_question">
 
 <p>\mrx \name_statement1\spacebeforecolon:
 <ul>
