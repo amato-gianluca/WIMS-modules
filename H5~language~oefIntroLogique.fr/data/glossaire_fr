@@ -1,8 +1,8 @@
 <!-- 1 -->
 :<p><b>
-Logica di Boole (o booleana) :</b> Système logique formel dont les formules
+Logique de Boole (ou booléenne) :</b> Système logique formel dont les formules 
 sont construites à l'aide des connecteurs booléens et dont les valeurs de vérité sont binaires : Vrai  ou Faux. <br/>
-Un système logiq  ue formel est caractérisé par :  les formules qu'il autorise, les règles qu'il autorise pour calculer les valeurs de vérité des formules, enfin les règles de déduction qu'il autorise pour démontrer qu'une formule est conséquence logique de certaines autres.
+Un système logique formel est caractérisé par :  les formules qu'il autorise, les règles qu'il autorise pour calculer les valeurs de vérité des formules, enfin les règles de déduction qu'il autorise pour démontrer qu'une formule est conséquence logique de certaines autres.
 </p>
 
 <!-- 2 -->
@@ -50,14 +50,14 @@ On les donne par un tableau à double entrée où les valeurs de vérité de \(A) fig
 <td> \(A \rightarrow B)</td><td> \(A \leftrightarrow B)</td></tr>
 <tr>
 <td>
-<table border="solid" cellpadding="10" >
+<table class="wimsborder" cellpadding="10" >
 <tr>
 <td>\(A)</td><td>V</td><td>F</td></tr>
 <tr>
 <td>\(\overline{A} )</td><td> F </td><td> V</td></tr>
 </table></td>
 
-<td><table border="solid" cellpadding="5" >
+<td><table class="wimsborder" cellpadding="5" >
 <tr>
 <td>A \ B</td><td>V</td><td>F</td></tr>
 <tr>
@@ -66,7 +66,7 @@ On les donne par un tableau à double entrée où les valeurs de vérité de \(A) fig
 <td align="center">F</td><td> F </td><td> F</td></tr>
 </table></td>
 <td>
-<table border="solid" cellpadding="5" >
+<table class="wimsborder" cellpadding="5" >
 <tr>
 <td>A \ B</td><td>V</td><td>F</td></tr>
 <tr>
@@ -76,7 +76,7 @@ On les donne par un tableau à double entrée où les valeurs de vérité de \(A) fig
 </table>
 </td>
 <td>
-<table border="solid" cellpadding="5" >
+<table class="wimsborder" cellpadding="5" >
 <tr>
 <td>A \ B</td><td>V</td><td>F</td></tr>
 <tr>
@@ -86,7 +86,7 @@ On les donne par un tableau à double entrée où les valeurs de vérité de \(A) fig
 </table></td>
 
 <td>
-<table border="solid" cellpadding="5" >
+<table class="wimsborder" cellpadding="5" >
 <tr>
 <td>A \ B</td><td>V</td><td>F</td></tr>
 <tr>
@@ -125,8 +125,7 @@ si l'on suppose toutes les hypothèses  vraies. <br/>La notion de vérité est cell
 <!-- 10 -->
 :<p><b>Règles de déduction</b> : <br/>
 Les étapes d'un raisonnement  suivent des règles. Les règles  les plus courantes sont les suivantes : </p>
-<center>
-<table border="solid" cellpadding="10">
+<table class="wimscenter wimsborder">
 <tr><td>Règle</td><td>Hypothèse(s)</td><td>Conclusion</td></tr>
 <tr><td>Modus Ponens </td><td>si \(A) alors \(B)<br/>\(A)</td><td>\(B)</td></tr>
 <tr><td>Contraposée </td><td>si \(A) alors \(B)</td><td>si non \(B) alors non \(A)</td></tr>
@@ -134,11 +133,11 @@ Les étapes d'un raisonnement  suivent des règles. Les règles  les plus courantes
 <tr><td>Introduction du "et"</td><td>\(A) <br/> \(B)</td><td>\(A et B)</td></tr>
 <tr><td>Introduction du "ou"</td><td>\(A)</td><td>\(A ou B)</td></tr>
 <tr><td>Affaiblissement</td><td>\(A et B)</td><td>\(A)</td></tr>
-</table></center>
+</table>
 
 <!-- 11 -->
 :<p><b>Les règles de formation des négations </b> :
-<center><table border="solid" cellpadding="10">
+<table class="wimscenter wimsborder">
 <tr><td>\(P)</td><td>\(\overline{P}) (\(\; non P))</td></tr>
 <tr><td>\(A et  B) </td><td>\(\overline{A} \; ou\; \overline{B})</td></tr>
 <tr><td>\(A ou B) </td><td>\(\overline{A}  \;et  \;\overline{B})</td></tr>
@@ -146,7 +145,6 @@ Les étapes d'un raisonnement  suivent des règles. Les règles  les plus courantes
 <tr><td>pour tout \(x),  \(A) </td><td>il existe \(x) tel que \(\overline{A})</td></tr>
 <tr><td>il existe \(x) tel que \(A) </td><td> pour tout \(x), \(\overline{A})</td></tr>
 </table>
-</center>
 </p>
 
 <!-- 12 -->
