@@ -139,12 +139,12 @@ Les étapes d'un raisonnement  suivent des règles. Les règles  les plus courantes
 <!-- 11 -->
 :<p><b>Les règles de formation des négations </b> :
 <center><table border="solid" cellpadding="10">
-<tr><td>\(P)</td><td>\(\bar{P}) (\(\; non P))</td></tr>
-<tr><td>\(A et  B) </td><td>\(\bar{A} \; ou\; \bar{B})</td></tr>
-<tr><td>\(A ou B) </td><td>\(\bar{A}  \;et  \;\bar{B})</td></tr>
-<tr><td> \(\bar{A}) </td><td>\(A)</td></tr>
-<tr><td>pour tout \(x),  \(A) </td><td>il existe \(x) tel que \(\bar{A})</td></tr>
-<tr><td>il existe \(x) tel que \(A) </td><td> pour tout \(x), \(\bar{A})</td></tr>
+<tr><td>\(P)</td><td>\(\overline{P}) (\(\; non P))</td></tr>
+<tr><td>\(A et  B) </td><td>\(\overline{A} \; ou\; \overline{B})</td></tr>
+<tr><td>\(A ou B) </td><td>\(\overline{A}  \;et  \;\overline{B})</td></tr>
+<tr><td> \(\overline{A}) </td><td>\(A)</td></tr>
+<tr><td>pour tout \(x),  \(A) </td><td>il existe \(x) tel que \(\overline{A})</td></tr>
+<tr><td>il existe \(x) tel que \(A) </td><td> pour tout \(x), \(\overline{A})</td></tr>
 </table>
 </center>
 </p>
@@ -153,11 +153,11 @@ Les étapes d'un raisonnement  suivent des règles. Les règles  les plus courantes
 :<p><b>L'implication \(A\rightarrow B) (si \(A) alors \(B)) </b> :
 <ul>
 <li> L'implication \(A\rightarrow B) est vraie si et seulement si \(A) est faux ou \(B) est vrai.</li>
-<li>Les propositions \(A\rightarrow B) et \(\bar{A} \; ou \; B) sont logiquement équivalentes.<br/>
+<li>Les propositions \(A\rightarrow B) et \(\overline{A} \; ou \; B) sont logiquement équivalentes.<br/>
 <small>(c'est à dire qu'elles ont les mêmes tables de vérité.)</small></li>
-<li> Les propositions   \(A\rightarrow B) et \(\bar{B}\rightarrow \bar{A}) sont logiquement équivalentes.</li>
+<li> Les propositions   \(A\rightarrow B) et \(\overline{B}\rightarrow \overline{A}) sont logiquement équivalentes.</li>
 <li> D'où les règles de déduction :<br/>
  Modus Ponens :  des deux hypothèses \(A\rightarrow B) et \(A), on peut déduire \(B)<br/>
- Contraposition : des deux hypothèses \(A\rightarrow B) et \(\bar{B}), on peut déduire \(\bar{A})<br/>
-  Mais des hypothèses \(A\rightarrow B) et \(\bar{A}) on ne peut rien déduire.
+ Contraposition : des deux hypothèses \(A\rightarrow B) et \(\overline{B}), on peut déduire \(\overline{A})<br/>
+  Mais des hypothèses \(A\rightarrow B) et \(\overline{A}) on ne peut rien déduire.
 </li></ul>
