@@ -11,7 +11,7 @@
 \text{oui=oui}
 \text{non=non}
 \text{non2=non}
-\text{spacebeforecolon=&#32;}
+\text{spacebeforecolon=&nbsp;}
 \text{Remarque=Remarque}
 \text{Soient=Soient}
 \text{glossaire=data/glossaire_fr}
@@ -156,10 +156,10 @@ je regarde Lost In Translation en VF,
 je parle normalement
 }
 
-\text{name_statement1=On suppose que l'implication suivante est vraie :}
-\text{name_statement2=Quelqu'un me rencontre et constate que :}
-\text{name_statement3=Cette personne en déduit que  :}
-\text{name_statement4=Son raisonnement est-il valide ?}
+\text{name_statement1=On suppose que l'implication suivante est vraie&nbsp;:}
+\text{name_statement2=Quelqu'un me rencontre et constate que&nbsp;:}
+\text{name_statement3=Cette personne en déduit que&nbsp;:}
+\text{name_statement4=Son raisonnement est-il valide&nbsp;?}
 \text{name_answer=Raisonnement juste}
 #endif
 
@@ -213,13 +213,13 @@ Mr Alex ne s'installe pas devant la télé
 \text{sujCo=Mme Alice, Fred le chien, Suzy la chatte, Nestor le moineau, Bubu le ver de terre, Fred le chien, Mme Alice, Mr Alex}
 \text{none=on ne peut rien conclure}
 
-\text{name_citation=Cet exercice s'inspire d'un exemple donné par Alan Selby, dans "Elements of Reason : understanding and explaining
+\text{name_citation=Cet exercice s'inspire d'un exemple donné par Alan Selby, dans "Elements of Reason&nbsp;: understanding and explaining
  reason and math" Volume 1, Printed in Canada ISBN 0-9697564-1-0. http://whyslopes.com/volume1a/}
 
 \text{name_characters=Nos personnages sont}
-\text{name_statement1a=On donne l'implication suivante, qu'on suppose vraie :}
-\text{name_statement1b=On donne les implications suivantes, qu'on suppose toutes deux vraies :}
-\text{name_statement2=Sans faire aucune autre hypothèse,que peut-on dire qu'il se passe lorsque}
+\text{name_statement1a=On donne l'implication suivante, qu'on suppose vraie&nbsp;:}
+\text{name_statement1b=On donne les implications suivantes, qu'on suppose toutes deux vraies&nbsp;:}
+\text{name_statement2=Sans faire aucune autre hypothèse, que peut-on dire qu'il se passe lorsque}
 
 #endif
 
@@ -251,19 +251,19 @@ Mr Alex ne s'installe pas devant la télé
 \text{name_question5=où les conditions du règlement seraient simultanément vraies}
 \text{name_question6=Cela prouve par l'absurde que les conditions du règlement sont incompatibles.}
 
-\text{name_remark=Remarque : vous devez, tel Sherlock Holmes, savoir envisager tous les cas et pister toutes les déductions ...}
+\text{name_remark=Remarque&nbsp;: vous devez, tel Sherlock Holmes, savoir envisager tous les cas et pister toutes les déductions ...}
 
 \text{name_hint1=Faire une analyse de cas}
-\text{name_hint2=considerez  les interprétations dans laquelleles conditions du règlement soient toutes vraies ;}
-\text{name_hint3=envisagez les différents cas, et pour chacun affectez les valeurs de vérité aux différentes propositions élémentaires ;}
-\text{name_hint4=trouvez \(A) telle que, dans toute interprétation,   \(A) devrait être vraie et fausse à la fois ;}
+\text{name_hint2=considerez  les interprétations dans laquelleles conditions du règlement soient toutes vraies&nbsp;;}
+\text{name_hint3=envisagez les différents cas, et pour chacun affectez les valeurs de vérité aux différentes propositions élémentaires&nbsp;;}
+\text{name_hint4=trouvez \(A) telle que, dans toute interprétation,   \(A) devrait être vraie et fausse à la fois&nbsp;;}
 \text{name_hint5=Ceci prouve par l'absurde qu'il n'existe aucune interprétation rendant simultanément vraies  toutes les conditions du règlement.}
 
-\text{name_example1=Supposons que les conditions suivantes soient simultanément vraies  :}
-\text{name_example2=\(P_1) donne à distinguer deux cas : ou bien \(A) est vrai ou bien \(B) est vrai.}
-\text{name_example3=Si \(A) est vrai et \(B) quelconque :  par \(P_2) et \(P_4) on déduit que  C est nécessairement vrai ; par \(P_3)
+\text{name_example1=Supposons que les conditions suivantes soient simultanément vraies&nbsp;:}
+\text{name_example2=\(P_1) donne à distinguer deux cas&nbsp;: ou bien \(A) est vrai ou bien \(B) est vrai.}
+\text{name_example3=Si \(A) est vrai et \(B) quelconque&nbsp;:  par \(P_2) et \(P_4) on déduit que  C est nécessairement vrai&nbsp;; par \(P_3)
 on déduit alors que \(A) est faux.}
-\text{name_example4=Si \(A) est faux et donc \(B) est vrai :  par \(P_4) on déduit que \(A) est vrai.}
+\text{name_example4=Si \(A) est faux et donc \(B) est vrai&nbsp;:  par \(P_4) on déduit que \(A) est vrai.}
 \text{name_example5=Dans tous les cas, \(A) devrait donc être à la fois vrai et faux. Ceci est  absurde.  Il n'existe donc
 aucune interprétation dans laquelle \(P_1), \(P_2) et \(P_3) soient simultanément vraies.  On dit que \(P_1), \(P_2) et \(P_3) sont incompatibles.}
 #endif
@@ -323,8 +323,8 @@ heureux,
 les poules ne nagent pas
 }
 
-\text{name_statement1=On donne la proposition \(P) suivante :}
-\text{name_statement2=Quelle est  la négation de \(P) ?}
+\text{name_statement1=On donne la proposition \(P) suivante&nbsp;:}
+\text{name_statement2=Quelle est  la négation de \(P)&nbsp;?}
 \text{name_question=La négation de \(P) est}
 \text{name_remark1=Votre réponse}
 \text{name_remark2=n'est pas la négation de}
@@ -483,7 +483,7 @@ la satisfaction est partielle
 \text{name_statement1=quatre propositions}
 \text{name_statement2=On définit une <i>interprétation</i> ou un <i>modèle</i> logique de ces propositions en leur affectant les valeurs de vérité, Vrai (V) ou Faux (F), suivantes.}
 \text{name_statement3=Pour tout rappel sur les règles de la logique booléenne, cliquer sur le lien <span class="wims_button_help disabled">Aide</span> ci-dessous ou consulter le <span class="wims_emph">glossaire</span>.}
-\text{name_question1=Sous cette interprétation, calculer les valeurs de vérité des formules suivantes :}
+\text{name_question1=Sous cette interprétation, calculer les valeurs de vérité des formules suivantes&nbsp;:}
 #endif
 
 #if defined TARGET_validite
