@@ -85,6 +85,8 @@ item(4,\shtyp),item(5,\shtyp)}
 \integer{rep2=\ind<13?1:2}
 \integer{test=(\typP isitemof \choix)?\oui:\non}
 
+\integer{numliste=items(\liste)}
+
 \statement{
 <div class="wims_question">
 
@@ -92,7 +94,13 @@ item(4,\shtyp),item(5,\shtyp)}
 <p>\name_statement1 \(P) \name_statement2\spacebeforecolon:</p>
 <div class="wimscenter"><span class="fraseA"> \(P) : " \P "</span></div>
 <p>\name_question1 \(P)\spacebeforecolon?</p>
-<div class="wimscenter">\embed{reply1}</div>
+<div class="wimscenter">
+<ul class="inline">
+\for{k=1 to \numliste}{
+<li class="unbreakable">\embed{r1,\k}</li>
+}
+</ul>
+</div>
 <p> \(P) \name_question2\spacebeforecolon? \embed{reply2}</p>
 </div>
 }
