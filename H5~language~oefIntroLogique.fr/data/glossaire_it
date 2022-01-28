@@ -40,14 +40,14 @@ Sono date da una tabella a doppia entrata dove nella prima colonna compaiono i v
 <td> \(A \rightarrow B)</td><td> \(A \leftrightarrow B)</td></tr>
 <tr>
 <td>
-<table border="solid" cellpadding="10" >
+<table class="wimsborder" cellpadding="10" >
 <tr>
 <td>\(A)</td><td>V</td><td>F</td></tr>
 <tr>
 <td>\(\overline{A} )</td><td> F </td><td> V</td></tr>
 </table></td>
 
-<td><table border="solid" cellpadding="5" >
+<td><table class="wimsborder" cellpadding="5" >
 <tr>
 <td>A \ B</td><td>V</td><td>F</td></tr>
 <tr>
@@ -56,7 +56,7 @@ Sono date da una tabella a doppia entrata dove nella prima colonna compaiono i v
 <td align="center">F</td><td> F </td><td> F</td></tr>
 </table></td>
 <td>
-<table border="solid" cellpadding="5" >
+<table class="wimsborder" cellpadding="5" >
 <tr>
 <td>A \ B</td><td>V</td><td>F</td></tr>
 <tr>
@@ -66,7 +66,7 @@ Sono date da una tabella a doppia entrata dove nella prima colonna compaiono i v
 </table>
 </td>
 <td>
-<table border="solid" cellpadding="5" >
+<table class="wimsborder" cellpadding="5" >
 <tr>
 <td>A \ B</td><td>V</td><td>F</td></tr>
 <tr>
@@ -76,7 +76,7 @@ Sono date da una tabella a doppia entrata dove nella prima colonna compaiono i v
 </table></td>
 
 <td>
-<table border="solid" cellpadding="5" >
+<table class="wimsborder" cellpadding="5" >
 <tr>
 <td>A \ B</td><td>V</td><td>F</td></tr>
 <tr>
@@ -115,8 +115,7 @@ supponendo che tutte le ipotesi siano vere.</p>
 <!-- 10 -->
 :<p><b>Regole di inferenza:</b>
 Le fasi del ragionamento seguono delle regole. Le regole più comuni sono:</p>
-<center>
-<table border="solid" cellpadding="10">
+<table class="wimscenter wimsborder">
 <tr><td>Regola</td><td>Ipotesi</td><td>Conclusione</td></tr>
 <tr><td>Modus Ponens</td><td>se \(A) allora \(B)<br/>\(A)</td><td>\(B)</td></tr>
 <tr><td>Contrapposizione</td><td>se \(A) allora \(B)</td><td>se non \(B) allora non \(A)</td></tr>
@@ -124,11 +123,11 @@ Le fasi del ragionamento seguono delle regole. Le regole più comuni sono:</p>
 <tr><td>Introduzione di "e"</td><td>\(A)<br/>\(B)</td><td>\(A \;e\; B)</td></tr>
 <tr><td>Introduzione di "o"</td><td>\(A)</td><td>\(A \;o\; B)</td></tr>
 <tr><td>Indebolimento</td><td>\(A \;e\; B)</td><td>\(A)</td></tr>
-</table></center>
+</table>
 
 <!-- 11 -->
 :<p><b>Le regole per formare le negazioni</b>:
-<center><table border="solid" cellpadding="10">
+<table class="wimscenter wimsborder">
 <tr><td>\(P)</td><td>\(\overline{P}) (\(non P))</td></tr>
 <tr><td>\(A \;e\; B)</td><td>\(\overline{A} \;o\; \overline{B})</td></tr>
 <tr><td>\(A \;o\; B)</td><td>\(\overline{A} \;e\; \overline{B})</td></tr>
@@ -136,7 +135,6 @@ Le fasi del ragionamento seguono delle regole. Le regole più comuni sono:</p>
 <tr><td>per tutti gli \(x), \(A)</td><td>esiste \(x) tale che \(\overline{A})</td></tr>
 <tr><td>esiste \(x) tale che \(A)</td><td>per tutti gli \(x), \(\overline{A})</td></tr>
 </table>
-</center>
 </p>
 
 <!-- 12 -->
