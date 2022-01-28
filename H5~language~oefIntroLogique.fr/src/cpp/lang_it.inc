@@ -439,7 +439,7 @@ non ascolto Radio Latina,
 non sto facendo progressi in matematica,
 non mi piace l'inglese,
 non ho il raffreddore,
- non balla,
+non balla,
 non suoni la chitarra,
 non vuoi essere un ingegnere,
 sei bravo in matematica,
@@ -450,7 +450,7 @@ il lavoro non è motivante
 
 \text{nonBlist=
 sono arrivato a scuola in orario,
-non prendo il mio ombrello
+non prendo il mio ombrello,
 non ho indossato un maglione,
 non indosso gli occhiali scuri,
 è caldo,
