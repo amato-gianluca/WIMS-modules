@@ -272,7 +272,8 @@ aucune interprétation dans laquelle \(P_1), \(P_2) et \(P_3) soient simultanémen
 #if defined TARGET_negationLN
 \text{Ilexiste=Il existe un}
 \text{qui=qui}
-\text{Tous=Tous les}
+\text{Tous1=Tous les}
+\text{Tous2=Tous les}
 \text{Aucun=Aucun}
 \text{nest=n'est}
 \text{Certains=Certains}

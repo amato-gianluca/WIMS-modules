@@ -35,6 +35,7 @@ target=negationLN
 \text{nonA=\cas==1?item(\u,\nonAlist)}
 \text{nonB=\cas==1?item(\u,\nonBlist)}
 
+\text{Tous=\u<6?\Tous1:\Tous2}
 \text{prop=item(\a,\A \et \B,\A \ou \B,\Ilexiste \suj \qui \verb, \Tous \sujs \verbs )}
 
 \text{neg=\a==1?\nonA \ou \nonB}

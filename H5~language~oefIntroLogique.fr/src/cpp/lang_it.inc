@@ -271,7 +271,8 @@ nessuna interpretazione in cui \(P_1), \(P_2) e \(P_3) sono simultaneamente veri
 #if defined TARGET_negationLN
 \text{Ilexiste=Esiste un}
 \text{qui=che}
-\text{Tous=Tutti i/gli}
+\text{Tous1=Tutti i}
+\text{Tous2=Tutti gli}
 \text{Aucun=Nessun}
 \text{nest=è}
 \text{Certains=Alcuni}
