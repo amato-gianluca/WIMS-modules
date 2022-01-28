@@ -99,7 +99,7 @@ la soddisfazione è parziale
 
 \text{name_statement1=Per ciascuna delle seguenti proposizioni, a sinistra, determina la sua struttura logica.}
 \text{name_statement2=le proposizioni possono essere solo vere o false... }
-\text{name_statement3=(Fare clic sugli elementi corrispondenti a due a due.)}
+\text{name_statement3=Fare clic sugli elementi corrispondenti a due a due.}
 #endif
 
 #if defined TARGET_deduction

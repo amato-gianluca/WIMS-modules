@@ -6,7 +6,7 @@
 \language{fr}
 
 
-\css{<style type="text/css">
+\css{<style>
 .fraseA {font-weight:bold;color:blue;}
 .fraseB {font-weight:bold;color:green;}
 .fraseC {font-weight:bold;color:red;}

@@ -89,7 +89,7 @@ target=incoherence
 \if{\cas==3}{<li>\reg[8]</li>}
 </ol>
 
-<p>\name_question1 <span class="wims_emph">\name_question2</span>\name_question3 <span class="wims_emph">\name_question4</span>
+<p>\name_question1 <span class="wims_emph">\name_question2</span>\spacebeforecolon\name_question3 <span class="wims_emph">\name_question4</span>
 \name_question5.<br/>
 \name_question6
 </p>

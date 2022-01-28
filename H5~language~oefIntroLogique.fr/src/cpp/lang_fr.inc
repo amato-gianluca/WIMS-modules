@@ -99,7 +99,7 @@ la satisfaction est partielle
 
 \text{name_statement1=Pour chacune des propositions  suivantes, à gauche, déterminer sa structure logique.}
 \text{name_statement2=les propositions peuvent être vraies ou fausses ...}
-\text{name_statement3=(Cliquer sur les élements qui se correspondent deux à deux.)}
+\text{name_statement3=Cliquer sur les élements qui se correspondent deux à deux.}
 #endif
 
 
