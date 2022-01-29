@@ -1,5 +1,5 @@
-\text{ou=ou}
-\text{et=et}
+\text{name_ou=ou}
+\text{name_et=et}
 \text{si1=s'}
 \text{si2=si}
 \text{Si1=S'}

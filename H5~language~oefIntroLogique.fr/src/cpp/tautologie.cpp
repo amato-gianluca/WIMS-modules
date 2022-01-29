@@ -17,32 +17,32 @@ target=tautologie
 \text{si=\a<6?\si1:\si2}
 
 \text{tau=\si \A \alors  \A,
-\si \A \alors  \A \ou \B,
+\si \A \alors  \A \name_ou \B,
 \si \A \alors \si2 \B \alors  \A,
-\si \A \et \si \B \alors \A,
-\A \ou \B \ou (\nonA \et \nonB),
-\A \ou \nonA,
-\A \ou \B \ou \nonA,
-\si \nonA \alors \A \ou \nonA,
-\si \nonA \et \si \A \alors \B,
-\si \A \et \si2 \B \alors \A \ou \B,
-\si \A \alors \B \ou \si2 \B \alors \A,
-\si \A \alors \B \ou \si2 \nonA \alors \B
+\si \A \name_et \si \B \alors \A,
+\A \name_ou \B \name_ou (\nonA \name_et \nonB),
+\A \name_ou \nonA,
+\A \name_ou \B \name_ou \nonA,
+\si \nonA \alors \A \name_ou \nonA,
+\si \nonA \name_et \si \A \alors \B,
+\si \A \name_et \si2 \B \alors \A \name_ou \B,
+\si \A \alors \B \name_ou \si2 \B \alors \A,
+\si \A \alors \B \name_ou \si2 \nonA \alors \B
 }
 
 /** les 12 premières  sont tautologiques , les 11 suivantes non **/
 \text{ass=\tau,
-\A \ou \B,
-\A \et \B,
+\A \name_ou \B,
+\A \name_et \B,
 \si \A \alors \B,
-\A \et \nonA,
+\A \name_et \nonA,
 \si \A \alors \nonA,
-\si \A \alors \nonA \ou \B,
-\si \A \alors \A \et \B,
-\si \nonA \alors \A \ou  \B,
-\si \A \ou \si \B \alors \A et \B,
-\si \nonA \ou \si \A \alors  \B,
-\si \A \alors \B \et \si \B \alors \A
+\si \A \alors \nonA \name_ou \B,
+\si \A \alors \A \name_et \B,
+\si \nonA \alors \A \name_ou  \B,
+\si \A \name_ou \si \B \alors \A et \B,
+\si \nonA \name_ou \si \A \alors  \B,
+\si \A \alors \B \name_et \si \B \alors \A
 }
 
 \text{typ=
@@ -55,7 +55,7 @@ target=tautologie
 \(A  \; \ou \;  B \; \ou \;  \overline{A}),
 \(\overline{A} \rightarrow  A \;\ou\; \overline{A}),
 \(\overline{A}  \; \et  \; A  \rightarrow  B),
-\(A  \; \et \;  B  \rightarrow  A \;ou\; B),
+\(A  \; \et \;  B  \rightarrow  A \;\ou\; B),
 \(A \rightarrow  B \; \ou \; B  \rightarrow A),
 \(A \rightarrow  B \; \ou \;  \overline{A}  \rightarrow B),
 \(A  \; \ou \;  B),
@@ -89,7 +89,9 @@ item(4,\shtyp),item(5,\shtyp)}
 
 \statement{<div class="wims_question">
 
-<p>\Soient \(A) : " \A " \et  \(B) : " \B ". </p>
+<p>\Soient \(A) : <span class="fraseC">" \A "</span>
+\name_et
+\(B) : <span class="fraseB">" \B "</span>. </p>
 <p>\name_statement1 \(P) \name_statement2\spacebeforecolon:</p>
 <div class="wimscenter"><span class="fraseA"> \(P) : " \P "</span></div>
 <p>\name_question1 \(P)\spacebeforecolon?</p>

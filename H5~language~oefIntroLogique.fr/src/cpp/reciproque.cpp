@@ -32,44 +32,44 @@ usare slib lang/fname?
 
 \text{ass=
 \si \A \alors \C,
-\si \A \ou \si \B \alors \C,
-\si \A \et \si \B \alors \D,
-\si \A \alors \C \ou \D,
-\si \B \alors \C \et \D,
-\si \nonA \ou \si \B \alors \C,
+\si \A \name_ou \si \B \alors \C,
+\si \A \name_et \si \B \alors \D,
+\si \A \alors \C \name_ou \D,
+\si \B \alors \C \name_et \D,
+\si \nonA \name_ou \si \B \alors \C,
 \si \A et \si \nonB \alors \D,
-\si \A \alors \nonC \ou \D,
-\si \B \alors \C \ou \nonD,
-\si \A \alors \C \et \nonD,
-\si \B \alors \nonC \et \D
+\si \A \alors \nonC \name_ou \D,
+\si \B \alors \C \name_ou \nonD,
+\si \A \alors \C \name_et \nonD,
+\si \B \alors \nonC \name_et \D
 }
 
 \text{contra=
 \si \nonC \alors \nonA,
-\si \nonC \alors \nonA \et \nonB,
-\si \nonD \alors \nonA \ou \nonB,
-\si \nonC \et \si \nonD \alors  \nonA,
-\si \nonC \ou \si \nonD \alors  \nonB,
+\si \nonC \alors \nonA \name_et \nonB,
+\si \nonD \alors \nonA \name_ou \nonB,
+\si \nonC \name_et \si \nonD \alors  \nonA,
+\si \nonC \name_ou \si \nonD \alors  \nonB,
 \si \nonC \alors \A et \nonB,
-\si \nonD \alors \nonA \ou \B,
-\si \C \et \si \nonD \alors \nonA,
-\si \nonC \et \si \D \alors \nonB,
-\si \nonC \ou \si \D \alors \nonA,
-\si \C \ou \si \nonD \alors  \nonB
+\si \nonD \alors \nonA \name_ou \B,
+\si \C \name_et \si \nonD \alors \nonA,
+\si \nonC \name_et \si \D \alors \nonB,
+\si \nonC \name_ou \si \D \alors \nonA,
+\si \C \name_ou \si \nonD \alors  \nonB
 }
 
 \text{rec=
 \si \C \alors \A,
-\si \C \alors \A \ou \B,
-\si \D \alors \A \et \B,
-\si \C \ou \si \D \alors \A,
-\si \C \et \si \D \alors \B,
-\si \C \alors \nonA \ou \B,
-\si \D \alors \A \et \nonB,
-\si \nonC \ou \si \D \alors \A,
-\si \C \ou \si \nonD \alors \B,
-\si \C \et \si \nonD \alors \A,
-\si \nonC \et \si \D \alors \B
+\si \C \alors \A \name_ou \B,
+\si \D \alors \A \name_et \B,
+\si \C \name_ou \si \D \alors \A,
+\si \C \name_et \si \D \alors \B,
+\si \C \alors \nonA \name_ou \B,
+\si \D \alors \A \name_et \nonB,
+\si \nonC \name_ou \si \D \alors \A,
+\si \C \name_ou \si \nonD \alors \B,
+\si \C \name_et \si \nonD \alors \A,
+\si \nonC \name_et \si \D \alors \B
 }
 
 \integer{rep=random(1..3)}
@@ -119,6 +119,6 @@ usare slib lang/fname?
 \sa <b>\contraposee</b> \estlaproposition "\si \(non B) \alors \(non A)".
 </li>
 </ul>
-<p>\Laconjonction "\(A) \et \(B\;)" \apournegation "\(\non2 A) \ou \(\non2 B\;)".</p>
-<p>\Ladisjonction "\(A) \ou \(B\;)" \apournegation "\(\non2 A) \et \(\non2 B\;)".</p>
+<p>\Laconjonction "\(A) \name_et \(B\;)" \apournegation "\(\non2 A) \name_ou \(\non2 B\;)".</p>
+<p>\Ladisjonction "\(A) \name_ou \(B\;)" \apournegation "\(\non2 A) \name_et \(\non2 B\;)".</p>
 }

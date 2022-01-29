@@ -43,15 +43,15 @@ target=validite
 /**  un  modèle : Av Bv Cv Dv Ef **/
 
 \text{reg=
-\A \ou \B,
-\C \ou \D,
-\si \A \et \si \B \alors \D,
-\si \B \et \si \nonC \alors \D,
-\si \C \et \si \nonA \alors \nonD ,
-\si \B \ou \si \D \alors \A,
-\A \si2 \et \seulement \si \D,
-\A \et \B,
-\C \et \nonD
+\A \name_ou \B,
+\C \name_ou \D,
+\si \A \name_et \si \B \alors \D,
+\si \B \name_et \si \nonC \alors \D,
+\si \C \name_et \si \nonA \alors \nonD ,
+\si \B \name_ou \si \D \alors \A,
+\A \si2 \name_et \seulement \si \D,
+\A \name_et \B,
+\C \name_et \nonD
 }
 
 \text{ind=shuffle(1,2,3,4,5,6,7,8,9)}

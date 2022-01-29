@@ -36,21 +36,21 @@ target=negationLN
 \text{nonB=\cas==1?item(\u,\nonBlist)}
 
 \text{Tous=\u<6?\Tous1:\Tous2}
-\text{prop=item(\a,\A \et \B,\A \ou \B,\Ilexiste \suj \qui \verb, \Tous \sujs \verbs )}
+\text{prop=item(\a,\A \name_et \B,\A \name_ou \B,\Ilexiste \suj \qui \verb, \Tous \sujs \verbs )}
 
-\text{neg=\a==1?\nonA \ou \nonB}
-\text{neg=\a==2?\nonA \et \nonB}
+\text{neg=\a==1?\nonA \name_ou \nonB}
+\text{neg=\a==2?\nonA \name_et \nonB}
 
 \text{ass=\a==1?
-\A \ou \nonB,
-\nonA \ou \B,
-\nonA \et \nonB
+\A \name_ou \nonB,
+\nonA \name_ou \B,
+\nonA \name_et \nonB
 }
 
 \text{ass=\a==2?
-\A \et \nonB,
-\nonA \et \B,
-\nonA \ou \nonB
+\A \name_et \nonB,
+\nonA \name_et \B,
+\nonA \name_ou \nonB
 }
 
 \text{neg=(\a==3)?randitem(\Aucun \suj \nest \adj, \Tous \sujs \nonverbs)}

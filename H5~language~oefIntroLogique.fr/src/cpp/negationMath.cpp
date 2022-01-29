@@ -33,8 +33,8 @@ target=negationMath
 \text{nonA=
 \ilexiste \reel \(\x) \telque &nbsp; \( \dist > \n  ),
 \linequation \(f(\x) < \y ) \aauplus \m \solutions,
-\(\x \le \y) \ou  \(\x \ge \z),
-\(\x \notin A) \ou \(\x \notin B) ,
+\(\x \le \y \ou  \x \ge \z\),
+\(\x \notin A \ou \x \notin B\) ,
 \ilexiste \reel \(\x) \telque \(\x > \y),
 \ilexiste \reel \(\x) \strictementpositif \telque &nbsp; \(f(\x) \le \y ),
 \(\x) &#8712;  &nbsp;&#93;-&#8734;&#44;\a &#91; &#8746; &#93; \b&#44;+&#8734; &#91;
@@ -52,15 +52,15 @@ target=negationMath
 \linequation \(f(\x) < \y ) \auneinfinite \solutions
 }
 
-\text{choix=(\cas==3)?\(\x \le \y) \et \(\x \ge \z),
-\(\x < \y) \ou  \(\x > \z), \(\y < \x) \ou  \(\x < \z)
+\text{choix=(\cas==3)?\(\x \le \y  \et \x \ge \z\),
+\(\x < \y  \ou  \x > \z\), \(\y < \x \ou  \x < \z\)
 }
 
-\text{choix=(\cas==4)?\(\x \notin A) \et \(\x \notin B),\(\x \in A) \ou \(\x \in B)
+\text{choix=(\cas==4)?\(\x \notin A  \et \x \notin B\),\(\x \in A \ou \x \in B\)
 }
 
 \text{choix=(\cas==5)?\pourtout \reel \(\x) &#44; &nbsp; \(\x < \y),
-\ilexiste \reel \(\x) \telque \(\x \ge \y) \et \(f(\x) \le 0 )
+\ilexiste \reel \(\x) \telque \(\x \ge \y \et f(\x) \le 0 \)
 }
 
 \text{choix=(\cas==6)?\pourtout \reel \(\x) \strictementpositif &#44; &nbsp; \(f(\x) \le \y ),
@@ -68,7 +68,7 @@ target=negationMath
 \ilexiste \reel \(\x) \negatif \telque \(f(\x) >  \y )
 }
 
-\text{choix=(\cas==7)?\(\x\le\a) \ou \(\x\ge\b),\(\x<\a) \et \(\x<\b),
+\text{choix=(\cas==7)?\(\x\le\a \ou \x\ge\b\),\(\x<\a  \et \x<\b\),
 \(\x) &#8712;  &nbsp; &#93; -&#8734; &#44;\a &#93; &#8746; &#91; \b &#44; +&#8734; &#91;
 }
 \integer{i=random(0,1)}

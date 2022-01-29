@@ -1,5 +1,5 @@
-\text{ou=o}
-\text{et=e}
+\text{name_ou=o}
+\text{name_et=e}
 \text{si1=se}
 \text{si2=se}
 \text{Si1=Se}

@@ -21,15 +21,15 @@ target=deduction
 \text{nonA=item(\a,\nonAlist)}
 \text{nonB=item(\a,\nonBlist)}
 
-\text{AouB=\A \ou \B}
-\text{AetB=\A \et \B}
+\text{AouB=\A \name_ou \B}
+\text{AetB=\A \name_et \B}
 
-\text{nonAouB=\nonA \ou  \B}
-\text{AounonB=\A \ou  \nonB}
-\text{nonAounonB=\nonA \ou  \nonB}
-\text{nonAetB=\nonA \et  \B}
-\text{AetnonB=\A \et  \nonB}
-\text{niAniB= \nonA \et  \nonB}
+\text{nonAouB=\nonA \name_ou  \B}
+\text{AounonB=\A \name_ou  \nonB}
+\text{nonAounonB=\nonA \name_ou  \nonB}
+\text{nonAetB=\nonA \name_et  \B}
+\text{AetnonB=\A \name_et  \nonB}
+\text{niAniB= \nonA \name_et  \nonB}
 
 \text{si=\a<4?\Si1:\Si2}
 

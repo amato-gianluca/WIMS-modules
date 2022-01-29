@@ -72,7 +72,7 @@ item(\ind[4],\typ),item(\ind[5],\typ)}
 <p><i>\Remarque</i>\spacebeforecolon: \name_statement2</p>
 <div class="wimscenter">
 <span class="fraseA"> \(A) : " \A "</span>
-&nbsp; \et &nbsp; <span class="fraseB">\(B) : " \B "</span>
+&nbsp; \name_et &nbsp; <span class="fraseB">\(B) : " \B "</span>
 </div>
 </div>
 

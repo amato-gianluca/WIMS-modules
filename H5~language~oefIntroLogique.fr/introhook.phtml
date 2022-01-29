@@ -1,1 +1,20 @@
-!set introhook_exists=no
+!set wims_backslash_insmath=yes
+
+!set name_menu1=Vocabulaire
+!set list_menu1=et&#44;or,\(\vee,\wedge\)
+
+!if $lang=it
+!set name_menu1=Notazione
+!set list_menu1=e&#44;o,\(\vee,\wedge\)
+!goto menu
+!endif
+
+:menu
+!default confparm1=1
+<tr><th>
+$name_menu1
+</th>
+<td>
+!reset wims_formselect_switch
+!formselect confparm1 list 1,2 prompt $list_menu1
+</td></tr>

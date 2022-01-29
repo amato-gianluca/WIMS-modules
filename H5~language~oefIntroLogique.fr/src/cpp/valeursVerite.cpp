@@ -32,33 +32,30 @@ target=valeursVerite
 
 \text{val=randint(0,1),randint(0,1),randint(0,1),randint(0,1)}
 
-\text{op_ou=\;\ou\;}
-\text{op_et=\;\et\;}
-
 \text{form1=
-\(\A \op_ou \B),
-\(\C \op_ou \D),
-\(\A \op_et \B),
-\(\C \op_et \D),
-\(\A \op_ou \nonB),
-\(\nonC \op_ou \D),
-\(\A \op_et \nonB),
-\(\nonC \op_et \D),
-\(\nonC \op_et \nonD),
-\(\nonA \op_ou \nonB)
+\(\A \ou \B),
+\(\C \ou \D),
+\(\A \et \B),
+\(\C \et \D),
+\(\A \ou \nonB),
+\(\nonC \ou \D),
+\(\A \et \nonB),
+\(\nonC \et \D),
+\(\nonC \et \nonD),
+\(\nonA \ou \nonB)
 }
 
 \text{form2=
 \(\A \rightarrow \B),
 \(\nonA \rightarrow \B),
 \(\nonC \rightarrow \D),
-\( \A \op_et \B \rightarrow  \D ),
-\( \B \op_et \nonC \rightarrow  \D),
-\( \C \op_et \nonA \rightarrow \nonD) ,
-\( \B \op_ou \D \rightarrow \A),
+\( \A \et \B \rightarrow  \D ),
+\( \B \et \nonC \rightarrow  \D),
+\( \C \et \nonA \rightarrow \nonD) ,
+\( \B \ou \D \rightarrow \A),
 \(\A \leftrightarrow \D ),
-\(\A \leftrightarrow \C \op_ou \D),
-\(\A \op_et \nonB \leftrightarrow \C)
+\(\A \leftrightarrow \C \ou \D),
+\(\A \ou \nonB \leftrightarrow \C)
 }
 
 \text{ind=shuffle(1,2,3,4,5,6,7,8,9,10)}
@@ -114,7 +111,7 @@ target=valeursVerite
 \statement{<div class="wims_question">
 
 <p>
-\Soient \A, \B, \C \et \D \name_statement1.<br/>
+\Soient \A, \B, \C \name_et \D \name_statement1.<br/>
 \name_statement2
 </p>
 <table class="wimsborder wimscenter">

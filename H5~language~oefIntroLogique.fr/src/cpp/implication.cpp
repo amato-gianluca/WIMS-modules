@@ -112,7 +112,7 @@ reply2}
 <div class="wims_question">
 
 \if{\step=1}{
-<p><b>\Question \step.</b> <br/>\name_characters \sujA \et \sujB.
+<p><b>\Question \step.</b> <br/>\name_characters \sujA \name_et \sujB.
 \name_statement1a
 </p>
 <div class="wimscenter"><span class="fraseB"> \rule </span></div>
@@ -121,7 +121,7 @@ reply2}
 }
 
 \if{\step=2}{
-<p><b>\Question \step.</b> <br/>\name_characters \sujA, \sujB \et \sujC.
+<p><b>\Question \step.</b> <br/>\name_characters \sujA, \sujB \name_et \sujC.
 \name_statement1b
 </p>
 <ul>

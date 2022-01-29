@@ -37,10 +37,10 @@ target=incoherence
 
 \text{reg=\cas==1?shuffle(
 \si \B \alors \A,
-\C \ou \B,
+\C \name_ou \B,
 \si \E \alors \nonD,
 \D \ssi \A,
-\si \C \alors \A \et \E,
+\si \C \alors \A \name_et \E,
 \si \A \alors \C)
 }
 
@@ -49,10 +49,10 @@ target=incoherence
 /** reglement 2; contradiction sur A  **/
 
 \text{reg=\cas==2?shuffle(
-\A \ou \B,
-\si \B \ou \si \C \alors  \A ,
+\A \name_ou \B,
+\si \B \name_ou \si \C \alors  \A ,
 \si \A \ssi \D,
-\si \D \ou  \si \nonC \alors \nonA ,
+\si \D \name_ou  \si \nonC \alors \nonA ,
 \si \B \alors \nonC)
 }
 
@@ -61,12 +61,12 @@ target=incoherence
 /** reglement 3; contradiction sur B  et A ; A et B étant équivalent**/
 
 \text{reg=\cas==3?shuffle(
-\A \ou \B,  \D \ou \C,
-\si \A \et \si \D \alors  \B ,
-\si \A \et \si \C \alors  \B ,
-\si \D \et \si \C \alors  \nonB ,
-\si \B \et \si \nonD \alors \nonA,
-\si \B \et \si \nonC \alors \nonA,
+\A \name_ou \B,  \D \name_ou \C,
+\si \A \name_et \si \D \alors  \B ,
+\si \A \name_et \si \C \alors  \B ,
+\si \D \name_et \si \C \alors  \nonB ,
+\si \B \name_et \si \nonD \alors \nonA,
+\si \B \name_et \si \nonC \alors \nonA,
 \si \nonA \alors \nonB)
 }
 
@@ -116,10 +116,10 @@ target=incoherence
 \name_hint5
 <p><b>\Exemple</b>\spacebeforecolon:</p>
 \name_example1
-<div class="wimscenter">\(P_1)\spacebeforecolon: A \ou B  &nbsp; ;&nbsp;
-\(P_2)\spacebeforecolon: \si A \alors C \ou B &nbsp; ;&nbsp;
-\(P_3)\spacebeforecolon: \si C \alors \non2 A \et B &nbsp; ;&nbsp;
-\(P_4)\spacebeforecolon: \si B \alors A \et C &nbsp; .&nbsp;
+<div class="wimscenter">\(P_1)\spacebeforecolon: A \name_ou B  &nbsp; ;&nbsp;
+\(P_2)\spacebeforecolon: \si A \alors C \name_ou B &nbsp; ;&nbsp;
+\(P_3)\spacebeforecolon: \si C \alors \non2 A \name_et B &nbsp; ;&nbsp;
+\(P_4)\spacebeforecolon: \si B \alors A \name_et C &nbsp; .&nbsp;
 </div>
 <p>
 \name_example2
