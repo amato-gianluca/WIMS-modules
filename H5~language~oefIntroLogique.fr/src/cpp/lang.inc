@@ -7,6 +7,6 @@
 \text{ou=\vee}
 \text{et=\wedge}
 }{
-\text{ou=\;\;\name_ou\;\;}
-\text{et=\;\;\name_et\;\;}
+\text{ou=\;\;\mathrm{\name_ou}\;\;}
+\text{et=\;\;\mathrm{\name_et}\;\;}
 }

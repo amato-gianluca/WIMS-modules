@@ -16,22 +16,19 @@ target=connecteursLN
 
 \integer{n=random(1..17)}
 
-\text{ouconn=\;\ou\;}
-\text{etconn=\;\et\;}
-
 \text{A=item(\n,\Alist)}
 \text{nonA=item(\n,\nonAlist)}
 \text{B=item(\n,\Blist)}
 \text{nonB=item(\n,\nonBlist)}
 
-\text{AouB=\A \ou \B}
-\text{nonAouB=\nonA \ou \B}
-\text{AounonB=\A \ou \nonB}
-\text{nonAounonB=\nonA \ou \nonB}
-\text{AetB=\A \et \B}
-\text{nonAetB=\nonA \et \B}
-\text{AetnonB=\A \et \nonB}
-\text{niAniB=\nonA \et \nonB}
+\text{AouB=\A \name_ou \B}
+\text{nonAouB=\nonA \name_ou \B}
+\text{AounonB=\A \name_ou \nonB}
+\text{nonAounonB=\nonA \name_ou \nonB}
+\text{AetB=\A \name_et \B}
+\text{nonAetB=\nonA \name_et \B}
+\text{AetnonB=\A \name_et \nonB}
+\text{niAniB=\nonA \name_et \nonB}
 
 \text{si=\n<5?\si1:\si2}
 
@@ -53,8 +50,8 @@ target=connecteursLN
 \BimplA,\nonBimplA,\BimplnonA,\nonBimplnonA
 }
 \text{typ=
-\(A \etconn  B), \(\overline{A} \etconn  B), \(A \etconn  \overline{B}), \(\overline{A} \etconn  \overline{B}),
-\(A \ouconn B), \(A \ouconn \overline{B}), \(\overline{A} \ouconn  B), \(\overline{A} \ouconn \overline{B}),
+\(A \et  B), \(\overline{A} \et  B), \(A \et  \overline{B}), \(\overline{A} \et  \overline{B}),
+\(A \ou B), \(A \ou \overline{B}), \(\overline{A} \ou  B), \(\overline{A} \ou \overline{B}),
 \(A \rightarrow B), \(\overline{A}\rightarrow B),
 \(A\rightarrow\overline{B}), \(\overline{A}\rightarrow\overline{B}),
 \(B\rightarrow A), \(\overline{B}\rightarrow A),
@@ -67,7 +64,8 @@ item(\ind[4],\ass),item(\ind[5],\ass)}
 \text{list2=item(\ind[1],\typ),item(\ind[2],\typ),item(\ind[3],\typ),
 item(\ind[4],\typ),item(\ind[5],\typ)}
 
-\statement{<div class="wims_question">
+\statement{
+<div class="wims_question">
 <p>\name_statement1</p>
 <p><i>\Remarque</i>\spacebeforecolon: \name_statement2</p>
 <div class="wimscenter">
@@ -76,9 +74,12 @@ item(\ind[4],\typ),item(\ind[5],\typ)}
 </div>
 </div>
 
+<div class="wimscenter">\embed{r1,40x400x100}</div>
+
 <div class="wims_instruction">\name_statement3</div>
 
-<div class="wimscenter">\embed{reply1,40x400x100}</div>
+<div class="wimscenter">\embed{r1,40x400x100}</div>
+
 }
 
 \answer{\list1;\list2}{\list1;\list2}{type=correspond}{option=split}
