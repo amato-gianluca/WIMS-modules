@@ -108,8 +108,9 @@ target=valeursVerite
 \integer{rep3=\conds[(10+\i3)]}
 \integer{rep4=\conds[(10+\i4)]}
 
-\statement{<div class="wims_question">
+\text{ii=\i1,\i2,\i3,\i4}
 
+\statement{<div class="wims_question">
 <p>
 \Soient \A, \B, \C \name_et \D \name_statement1.<br/>
 \name_statement2
@@ -124,29 +125,14 @@ target=valeursVerite
 </tr>
 </table>
 
-<p>\name_question1
-</p>
+<p>\name_question1</p>
 <table class="wimscenter wimsnoborder">
-<tr>
-<td>1.</td>
-<td>\form1[\i1]</td>
-<td>\embed{reply1}</td>
-</tr>
-<tr>
-<td>2.</td>
-<td width="60%">\form1[\i2]</td>
-<td>\embed{reply2}</td>
-</tr>
-<tr>
-<td>3.</td>
-<td width="60%">\form2[\i3]</td>
-<td>\embed{reply3}</td>
-</tr>
-<tr>
-<td>4.</td>
-<td width="60%">\form2[\i4]</td>
-<td>\embed{reply4}</td>
-</tr>
+\for{j=1 to 4}{
+  <tr><td>\j.</td>
+  <td>\form1[\ii[\j]]</td>
+  <td>\embed{reply\j}</td>
+  </tr>
+}
 </table>
 </div>
 

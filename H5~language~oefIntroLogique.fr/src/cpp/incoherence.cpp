@@ -93,7 +93,6 @@ target=incoherence
 \name_question5.<br/>
 \name_question6
 </p>
-<div class="wimscenter">
 <ul class="inline">
 \for{k=1 to \numliste}{
 <li class="unbreakable">\embed{r1,\k}</li>
