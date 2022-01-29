@@ -111,16 +111,16 @@ target=valeursVerite
 \integer{rep3=\conds[(10+\i3)]}
 \integer{rep4=\conds[(10+\i4)]}
 
-\statement{
-<div class="wims_question">
+\statement{<div class="wims_question">
 
 <p>
 \Soient \A, \B, \C \et \D \name_statement1.<br/>
 \name_statement2
 </p>
-<table border="solid" cellpadding="5" align="center">
-<tr><td>\A</td><td>\B</td><td>\C</td><td>\D</td></tr>
-<tr><td>\if{\val[1]==1}{V}{F}</td>
+<table class="wimsborder wimscenter">
+<tr><th>\A</th><th>\B</th><th>\C</th><th>\D</th></tr>
+<tr>
+<td>\if{\val[1]==1}{V}{F}</td>
 <td>\if{\val[2]==1}{V}{F}</td>
 <td>\if{\val[3]==1}{V}{F}</td>
 <td>\if{\val[4]==1}{V}{F}</td>
@@ -129,31 +129,31 @@ target=valeursVerite
 
 <p>\name_question1
 </p>
-<table width="50%" align="center" cellpadding=10>
+<table class="wimscenter wimsnoborder">
 <tr>
-<td width="10%">1.</td>
-<td width="65%">\form1[\i1]</td>
-<td width="30%">\embed{reply1}</td>
+<td>1.</td>
+<td>\form1[\i1]</td>
+<td>\embed{reply1}</td>
 </tr>
 <tr>
-<td width="10%">2.</td>
+<td>2.</td>
 <td width="60%">\form1[\i2]</td>
-<td width="30%">\embed{reply2}</td>
+<td>\embed{reply2}</td>
 </tr>
 <tr>
-<td width="10%">3.</td>
+<td>3.</td>
 <td width="60%">\form2[\i3]</td>
-<td width="30%">\embed{reply3}</td>
+<td>\embed{reply3}</td>
 </tr>
 <tr>
-<td width="10%">4.</td>
+<td>4.</td>
 <td width="60%">\form2[\i4]</td>
-<td width="30%">\embed{reply4}</td>
+<td>\embed{reply4}</td>
 </tr>
 </table>
 </div>
 
-<p><i>\name_statement3</i></p>
+<div class="wims_instruction">\name_statement3</div>
 }
 
 \answer{clause 1}{\rep1;\V,\F}{type=radio}

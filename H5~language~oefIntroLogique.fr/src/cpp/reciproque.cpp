@@ -86,21 +86,18 @@ usare slib lang/fname?
 \text{prop2=\rep==2?item(\i,\contra)}
 \text{prop2=\rep==3?randitem(\autre)}
 
-\statement{
- <div class="wims_question">
+\statement{<div class="wims_question">
 
-<ul><li><p>\Lui \name_statement1\spacebeforecolon:</p>
+<ul><li>\Lui \name_statement1\spacebeforecolon:
 <div class="wimscenter">
 <span class="fraseB"> \(P_1) : " \prop1 "</span>
 </div>
-
 </li>
 <li>
-<p>\Puis \Elle \name_statement2 \(P_2 )\spacebeforecolon:</p>
+\Puis \Elle \name_statement2 \(P_2 )\spacebeforecolon:
 <div class="wimscenter">
 <span class="fraseA">\(P_2) : " \prop2 "</span>
 </div>
-
 </li>
 </ul>
 
@@ -122,6 +119,6 @@ usare slib lang/fname?
 \sa <b>\contraposee</b> \estlaproposition "\si \(non B) \alors \(non A)".
 </li>
 </ul>
-\Laconjonction "\(A) \et \(B\;)" \apournegation "\(\non2 A) \ou \(\non2 B\;)".  <bt/>
-\Ladisjonction "\(A) \ou \(B\;)" \apournegation "\(\non2 A) \et \(\non2 B\;)".  <br/>
+<p>\Laconjonction "\(A) \et \(B\;)" \apournegation "\(\non2 A) \ou \(\non2 B\;)".</p>
+<p>\Ladisjonction "\(A) \ou \(B\;)" \apournegation "\(\non2 A) \et \(\non2 B\;)".</p>
 }

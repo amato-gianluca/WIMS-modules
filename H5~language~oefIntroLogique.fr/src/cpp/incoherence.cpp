@@ -72,9 +72,9 @@ target=incoherence
 
 \text{rep=\cas==3?position(\B,\liste),position(\A,\liste)}
 
-\statement{
-<div class="wims_question">
+\integer{numliste=items(\liste)}
 
+\statement{<div class="wims_question">
 <p>
 \name_statement1 \if{\a<4}{\name_statement2}{\name_statement3} \name_statement4\spacebeforecolon:
 </p>
@@ -93,33 +93,37 @@ target=incoherence
 \name_question5.<br/>
 \name_question6
 </p>
-<div class="wimscenter">\embed{reply1}</div>
+<div class="wimscenter">
+<ul class="inline">
+\for{k=1 to \numliste}{
+<li class="unbreakable">\embed{r1,\k}</li>
+}
+</ul>
 </div>
-<div class="wims_instruction">\name_remark
-</div>
+<div class="wims_instruction">\name_remark</div>
 }
 
 \answer{\Contradiction}{\rep;\liste}{type=radio}
 
 \hint{<p>
 <b>\name_hint1</b>\spacebeforecolon:
+</p>      
 <ul>
 <li>\name_hint2</li>
 <li>\name_hint3</li>
 <li>\name_hint3</li>
 </ul>
 \name_hint5
-<p/>
 <p><b>\Exemple</b>\spacebeforecolon:</p>
 \name_example1
-<p>
-<center>\(P_1)\spacebeforecolon: A \ou B  &nbsp; ;&nbsp;
+<div class="wimscenter">\(P_1)\spacebeforecolon: A \ou B  &nbsp; ;&nbsp;
 \(P_2)\spacebeforecolon: \si A \alors C \ou B &nbsp; ;&nbsp;
 \(P_3)\spacebeforecolon: \si C \alors \non2 A \et B &nbsp; ;&nbsp;
 \(P_4)\spacebeforecolon: \si B \alors A \et C &nbsp; .&nbsp;
-</center>
+</div>
 <p>
 \name_example2
+</p>
 <ol>
 <li>\name_example3</li>
 <li>\name_example4</li>

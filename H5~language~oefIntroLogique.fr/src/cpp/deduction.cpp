@@ -47,9 +47,7 @@ target=deduction
 
 \integer{rep=\casC<5?1:2}
 
-\statement{
-
-<div class="wims_question">
+\statement{<div class="wims_question">
 <ul>
 <li>
 <p>\name_statement1</p>
@@ -68,5 +66,6 @@ target=deduction
 <p>\name_statement4 \embed{reply1}</p>
 </div>}
 
+??
 \Alist
 \answer{\name_answer}{\rep;\oui,\non}{type=checkbox}

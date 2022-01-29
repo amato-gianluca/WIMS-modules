@@ -67,10 +67,7 @@ item(\ind[4],\ass),item(\ind[5],\ass)}
 \text{list2=item(\ind[1],\typ),item(\ind[2],\typ),item(\ind[3],\typ),
 item(\ind[4],\typ),item(\ind[5],\typ)}
 
-\statement{
-
-<div class="wims_question">
-
+\statement{<div class="wims_question">
 <p>\name_statement1</p>
 <p><i>\Remarque</i>\spacebeforecolon: \name_statement2</p>
 <div class="wimscenter">
@@ -82,7 +79,6 @@ item(\ind[4],\typ),item(\ind[5],\typ)}
 <div class="wims_instruction">\name_statement3</div>
 
 <div class="wimscenter">\embed{reply1,40x400x100}</div>
-
 }
 
 \answer{\list1;\list2}{\list1;\list2}{type=correspond}{option=split}

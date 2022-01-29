@@ -114,18 +114,20 @@ reply2}
 \if{\step=1}{
 <p><b>\Question \step.</b> <br/>\name_characters \sujA \et \sujB.
 \name_statement1a
-<div class="wimscenter"><span class="fraseB"> \rule </span></div>
 </p>
+<div class="wimscenter"><span class="fraseB"> \rule </span></div>
 <p>\name_statement2 \query1\spacebeforecolon?</p>
-<p align="center"> \embed{reply1} </p>
+<div class="wimscenter"> \embed{reply1} </div>
 }
 
 \if{\step=2}{
 <p><b>\Question \step.</b> <br/>\name_characters \sujA, \sujB \et \sujC.
 \name_statement1b
-<span class="fraseB">
-<ul><li> \rule </li><li> \rule2 </li></ul>
-</span> </p>
+</p>
+<ul>
+<li> <span class="fraseB">\rule</span> </li>
+<li> <span class="fraseB">\rule2</span> </li>
+</ul>
 <p>\name_statement2 \query2\spacebeforecolon?</p>
 <p class="wimscenter"> \embed{reply2} </p>
 }

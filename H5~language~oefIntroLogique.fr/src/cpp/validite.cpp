@@ -85,44 +85,41 @@ target=validite
 \integer{rep3=\conditions[\i3]}
 \integer{rep4=\conditions[\i4]}
 
-\statement{
-
-<div class="wims_question">
+\statement{<div class="wims_question">
 
 <p>\mrx \name_statement1\spacebeforecolon:
+</p>
 <ul>
 <li>\if{\val[1]==1}{\A}{\nonA}</li>
 <li>\if{\val[2]==1}{\B}{\nonB}</li>
 <li>\if{\val[3]==1}{\C}{\nonC}</li>
 <li>\if{\val[4]==1}{\D}{\nonD}</li>
 </ul>
-</p>
-
 <p>
 \name_statement2 \if{\a<4}{\masculin,}{\feminin,} \mrx \name_statement3.
- <br/>
+</p><p>
 \name_statement4 \mrx \name_statement5\spacebeforecolon:
 </p>
-<table width="75%" align="center" cellpadding=5>
+<table class="wimscenter wimsnoborder">
 <tr>
-<td width="5%">1.</td>
-<td width="75%">\reg[\i1]</td>
-<td width="20%">\embed{reply1}</td>
+<td>1.</td>
+<td>\reg[\i1]</td>
+<td>\embed{reply1}</td>
 </tr>
 <tr>
-<td width="5%">2.</td>
-<td width="75%">\reg[\i2]</td>
-<td width="20%">\embed{reply2}</td>
+<td>2.</td>
+<td>\reg[\i2]</td>
+<td>\embed{reply2}</td>
 </tr>
 <tr>
-<td width="5%">3.</td>
-<td width="75%">\reg[\i3]</td>
-<td width="20%">\embed{reply3}</td>
+<td>3.</td>
+<td>\reg[\i3]</td>
+<td>\embed{reply3}</td>
 </tr>
 <tr>
-<td width="5%">4.</td>
-<td width="75%">\reg[\i4]</td>
-<td width="20%">\embed{reply4}</td>
+<td>4.</td>
+<td>\reg[\i4]</td>
+<td>\embed{reply4}</td>
 </tr>
 </table>
 
@@ -133,4 +130,4 @@ target=validite
 \answer{clause 3}{\rep3;\vrai,\faux}{type=radio}
 \answer{clause 4}{\rep4;\vrai,\faux}{type=radio}
 
-\hint{\name_hint1<br/>\name_hint2}
+\hint{<p>\name_hint1</p><p>\name_hint2</p>}

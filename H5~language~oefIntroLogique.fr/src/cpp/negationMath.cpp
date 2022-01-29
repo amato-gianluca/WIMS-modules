@@ -75,8 +75,7 @@ target=negationMath
 \text{aff=(i==0)?item(\cas,\A):item(\cas,\nonA)}
 \text{neg=(i==0)?item(\cas,\nonA):item(\cas,\A)}
 
-\statement{
-<div class="wims_question">
+\statement{<div class="wims_question">
 
 <p>\name_statement1 \(P) : &#34; \aff &#34; </p>
 <p>\name_statement2 \(P)\spacebeforecolon?</p>

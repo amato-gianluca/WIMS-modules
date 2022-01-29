@@ -87,8 +87,7 @@ item(4,\shtyp),item(5,\shtyp)}
 
 \integer{numliste=items(\liste)}
 
-\statement{
-<div class="wims_question">
+\statement{<div class="wims_question">
 
 <p>\Soient \(A) : " \A " \et  \(B) : " \B ". </p>
 <p>\name_statement1 \(P) \name_statement2\spacebeforecolon:</p>

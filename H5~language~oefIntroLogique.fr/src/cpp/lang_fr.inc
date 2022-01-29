@@ -171,7 +171,8 @@ je parle normalement
 \text{prem=
 Mr Alex s'installe devant la télé,
 Mme Alice sort se promener dans le parc,
-Fred  est dans le parc,Suzy grimpe sur l'arbre,
+Fred  est dans le parc,
+Suzy grimpe sur l'arbre,
 Nestor  vire-volte dans le parc,
 Bubu s'enfouit sous  terre,
 Fred  farfouille dans la terre,
