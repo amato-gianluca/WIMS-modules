@@ -100,7 +100,7 @@ item(4,\shtyp),item(5,\shtyp)}
 }
 </ul>
 </div>
-<p> \(P) \name_question2\spacebeforecolon? \embed{reply2}</p>
+<div> \(P) \name_question2\spacebeforecolon? \embed{reply2}</div>
 </div>
 }
 

@@ -129,7 +129,7 @@ reply2}
 <li> <span class="fraseB">\rule2</span> </li>
 </ul>
 <p>\name_statement2 \query2\spacebeforecolon?</p>
-<p class="wimscenter"> \embed{reply2} </p>
+<div class="wimscenter"> \embed{reply2} </div>
 }
 
 </div>

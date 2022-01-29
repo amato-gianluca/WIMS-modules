@@ -63,7 +63,7 @@ target=deduction
 </li>
 </ul>
 
-<p>\name_statement4 \embed{reply1}</p>
+<div>\name_statement4 \embed{reply1}</div>
 </div>}
 
 ??

@@ -509,5 +509,5 @@ la soddisfazione è parziale
 \text{name_statement4=Per ciascuna di esse, indicare se}
 \text{name_statement5=la verifica oppure no}
 \text{name_hint1=Si tratta di calcolare i valori di verità delle asserzioni (formule) proposte, conoscendo i valori di verità delle proposizioni elementari.}
-\text{name_hint2=Per qualsiasi promemoria sul calcolo dei valori di verità, consultare l'aiuto o l'esercizio "Valori di verità".}
+\text{name_hint2=Per qualsiasi promemoria sul calcolo dei valori di verità, consultare le <span class="wims_button_help disabled">Istruzioni</span> o l'esercizio "Valori di verità".}
 #endif

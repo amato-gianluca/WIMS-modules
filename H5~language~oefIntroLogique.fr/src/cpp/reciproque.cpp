@@ -101,8 +101,8 @@ usare slib lang/fname?
 </li>
 </ul>
 
-<p>\Laproposition \(P_2) \formuleepar \Elle
- \embed{reply1} \delaproposition \(P_1) \enonceepar \Lui.  </p>
+<div>\Laproposition \(P_2) \formuleepar \Elle
+ \embed{reply1} \delaproposition \(P_1) \enonceepar \Lui.  </div>
 
 </div>
 }
