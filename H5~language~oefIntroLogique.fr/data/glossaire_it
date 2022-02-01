@@ -10,7 +10,7 @@ consentono di dimostrare che una formula è una conseguenza logica di altre.</p>
 <li>Nel linguaggio naturale, questi termini designano qualsiasi enuncato o affermazione la cui verità deve essere valutata.</li>
 </ul></p>
 <p><b>Connettivi booleani:</b>
-negazione \(\overline{A}), disgiunzione \(A \; o \; B), congiunzione \(A \; e \; B), implicazione \(A \rightarrow B), equivalenza \(A \leftrightarrow B).
+negazione \($n_neg{A} ), disgiunzione \(A $n_or B), congiunzione \(A $n_and B), implicazione \(A \rightarrow B), equivalenza \(A \leftrightarrow B).
 </p>
 
 <!-- 3 -->
@@ -35,16 +35,16 @@ Sono date da una tabella a doppia entrata dove nella prima colonna compaiono i v
 <ul class="inline wims_nopuce">
 <li>
 <table class="wimscenter wimsborder">
-<caption>Negazione<br />\(\overline{A})</caption>
+<caption>Negazione<br />\($n_neg{A} )</caption>
 <tr>
 <th>\(A)</th><th>V</th><th>F</th>
 </tr><tr>
-<th>\(\overline{A})</th><td> F </td><td> V</td>
+<th>\($n_neg{A} )</th><td> F </td><td> V</td>
 </tr>
 </table>
 </li><li>
 <table class="wimscenter wimsborder">
-<caption>Congiunzione<br />\(A \;e\; B)</caption>
+<caption>Congiunzione<br />\(A $n_and B)</caption>
 <tr>
 <th>A \ B</th><th>V</th><th>F</th>
 </tr><tr>
@@ -55,7 +55,7 @@ Sono date da una tabella a doppia entrata dove nella prima colonna compaiono i v
 </table>
 </li><li>
 <table class="wimscenter wimsborder">
-<caption>Disgiunzione<br />\(A \;o\; B)</caption>
+<caption>Disgiunzione<br />\(A $n_or B)</caption>
 <tr>
 <th>A \ B</th><th>V</th><th>F</th>
 </tr><tr>
@@ -121,20 +121,20 @@ Le fasi del ragionamento seguono delle regole. Le regole più comuni sono:</p>
 <tr><th>Modus Ponens</th><td>se \(A) allora \(B)<br/>\(A)</td><td>\(B)</td></tr>
 <tr><th>Contrapposizione</th><td>se \(A) allora \(B)</td><td>se non \(B) allora non \(A)</td></tr>
 <tr><th>Ragionamento per casi</th><td>se \(A) allora \(C)<br/>se \(B) allora \(C)</td><td>se \(A) o \(B) allora \(C)</td></tr>
-<tr><th>Introduzione di "e"</th><td>\(A)<br/>\(B)</td><td>\(A \;e\; B)</td></tr>
-<tr><th>Introduzione di "o"</th><td>\(A)</td><td>\(A \;o\; B)</td></tr>
-<tr><th>Indebolimento</th><td>\(A \;e\; B)</td><td>\(A)</td></tr>
+<tr><th>Introduzione di "e"</th><td>\(A)<br/>\(B)</td><td>\(A $n_and B)</td></tr>
+<tr><th>Introduzione di "o"</th><td>\(A)</td><td>\(A $n_or B)</td></tr>
+<tr><th>Indebolimento</th><td>\(A $n_and B)</td><td>\(A)</td></tr>
 </table>
 
 <!-- 11 -->
 :<p><b>Le regole per formare le negazioni</b>:
 <table class="wimscenter wimsborder">
-<tr><td>\(P)</td><td>\(\overline{P}) (\(non P))</td></tr>
-<tr><td>\(A \;e\; B)</td><td>\(\overline{A} \;o\; \overline{B})</td></tr>
-<tr><td>\(A \;o\; B)</td><td>\(\overline{A} \;e\; \overline{B})</td></tr>
-<tr><td>\(\overline{A})</td><td>\(A)</td></tr>
-<tr><td>per tutti gli \(x), \(A)</td><td>esiste \(x) tale che \(\overline{A})</td></tr>
-<tr><td>esiste \(x) tale che \(A)</td><td>per tutti gli \(x), \(\overline{A})</td></tr>
+<tr><td>\(P)</td><td>\($n_neg{P}) (\(non P))</td></tr>
+<tr><td>\(A $n_and B)</td><td>\($n_neg{A} $n_or $n_neg{B})</td></tr>
+<tr><td>\(A $n_or B)</td><td>\($n_neg{A} $n_and $n_neg{B})</td></tr>
+<tr><td>\($n_neg{A})</td><td>\(A)</td></tr>
+<tr><td>per tutti gli \(x), \(A)</td><td>esiste \(x) tale che \($n_neg{A})</td></tr>
+<tr><td>esiste \(x) tale che \(A)</td><td>per tutti gli \(x), \($n_neg{A})</td></tr>
 </table>
 </p>
 
@@ -142,13 +142,13 @@ Le fasi del ragionamento seguono delle regole. Le regole più comuni sono:</p>
 :<p><b>L'implicazione \(A \rightarrow B) (se \(A) allora \(B))</b>:
 <ul>
 <li>L'implicazione \(A \rightarrow B) è vera se e solamente se \(A) è falsa o \(B) è vera.</li>
-<li>Le proposizioni \(A \rightarrow B) e \(\overline{A} \; o \; B) sono logicamente equivalenti.<br/>
+<li>Le proposizioni \(A \rightarrow B) e \($n_neg{A} $n_or B) sono logicamente equivalenti.<br/>
 <small>(cioè hanno le stesse tabelle di verità.)</small></li>
-<li>Le proposizioni  \(A \rightarrow B) e \(\overline{B} \rightarrow \overline{A}) sono logicamente equivalenti.</li>
+<li>Le proposizioni  \(A \rightarrow B) e \($n_neg{B} \rightarrow $n_neg{A}) sono logicamente equivalenti.</li>
 <li>Da qui le regole di inferenza:
 <ul>
  <li>Modus Ponens: dalle due ipotesi \(A \rightarrow B) e \(A), possiamo dedurre \(B) </li>
- <li>Modus Tollents: dalle due ipotesi \(A \rightarrow B) e \(\overline{B}), possiamo dedurre \(\overline{A})</li>
- <li>Ma dalle ipotesi \(A \rightarrow B) e \(\overline{A}) non si può dedurre nulla.</li>
+ <li>Modus Tollents: dalle due ipotesi \(A \rightarrow B) e \($n_neg{B}), possiamo dedurre \($n_neg{A})</li>
+ <li>Ma dalle ipotesi \(A \rightarrow B) e \($n_neg{A}) non si può dedurre nulla.</li>
  </ul>
 </li></ul>

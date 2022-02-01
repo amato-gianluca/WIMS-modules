@@ -13,8 +13,8 @@ Proposition,  assertion,  formule :</b>
 </ul>
 <p><b>
 Connecteurs booléens :</b>
- négation \(\neg{A} ), disjonction \(A \vee B ),
-conjonction \(A \wedge B ), implication \(A  \rightarrow  B ),
+ négation \($n_neg{A} ), disjonction \(A $n_or B ),
+conjonction \(A $n_and B ), implication \(A  \rightarrow  B ),
  équivalence \(A  \leftrightarrow  B ).
 </p>
 
@@ -45,16 +45,16 @@ On les donne par un tableau à double entrée où les valeurs de vérité de \(A) fig
 <ul class="inline wims_nopuce">
 <li>
 <table class="wimscenter wimsborder">
-<caption>Négation<br />\(\neg{A} )</caption>
+<caption>Négation<br />\($n_neg{A} )</caption>
 <tr>
 <th>\(A)</th><th>V</th><th>F</th>
 </tr><tr>
-<th>\(\neg{A} )</th><td> F </td><td> V</td>
+<th>\($n_neg{A} )</th><td> F </td><td> V</td>
 </tr>
 </table>
 </li><li>
 <table class="wimscenter wimsborder">
-<caption>Conjonction <br />\(A \wedge B)</caption>
+<caption>Conjonction <br />\(A $n_and B)</caption>
 <tr>
 <th>A \ B</th><th>V</th><th>F</th>
 </tr><tr>
@@ -65,7 +65,7 @@ On les donne par un tableau à double entrée où les valeurs de vérité de \(A) fig
 </table>
 </li><li>
 <table class="wimscenter wimsborder">
-<caption>Disjonction<br />\(A \vee B)</caption>
+<caption>Disjonction<br />\(A $n_or B)</caption>
 <tr>
 <th>A \ B</th><th>V</th><th>F</th>
 </tr><tr>
@@ -130,20 +130,20 @@ Les étapes d'un raisonnement  suivent des règles. Les règles  les plus courantes
 <tr><th>Modus Ponens </th><td>si \(A) alors \(B)<br/>\(A)</td><td>\(B)</td></tr>
 <tr><th>Contraposée </th><td>si \(A) alors \(B)</td><td>si non \(B) alors non \(A)</td></tr>
 <tr><th>Raisonnement par cas </th><td>si \(A) alors \(C)<br/>si \(B) alors \(C)</td><td>si \(A) ou \(B) alors \(C)</td></tr>
-<tr><th>Introduction du "et"</th><td>\(A) <br/> \(B)</td><td>\(A \wedge B)</td></tr>
-<tr><th>Introduction du "ou"</th><td>\(A)</td><td>\(A \vee B)</td></tr>
-<tr><th>Affaiblissement</td><th>\(A et B)</td><td>\(A)</td></tr>
+<tr><th>Introduction du "et"</th><td>\(A) <br/> \(B)</td><td>\(A $n_and B)</td></tr>
+<tr><th>Introduction du "ou"</th><td>\(A)</td><td>\(A $n_or B)</td></tr>
+<tr><th>Affaiblissement</td><th>\(A $n_and B)</td><td>\(A)</td></tr>
 </table>
 
 <!-- 11 -->
 :<p><b>Les règles de formation des négations </b> :
 <table class="wimscenter wimsborder">
-<tr><td>\(P)</td><td>\(\neg{P}) (\(\; non P))</td></tr>
-<tr><td>\(A \wedge B) </td><td>\(\neg{A} \vee \neg{B})</td></tr>
-<tr><td>\(A \vee B) </td><td>\(\neg{A} \wedge \neg{B})</td></tr>
-<tr><td> \(\neg{A}) </td><td>\(A)</td></tr>
-<tr><td>pour tout \(x),  \(A) </td><td>il existe \(x) tel que \(\neg{A})</td></tr>
-<tr><td>il existe \(x) tel que \(A) </td><td> pour tout \(x), \(\neg{A})</td></tr>
+<tr><td>\(P)</td><td>\($n_neg{P}) (\(non P))</td></tr>
+<tr><td>\(A $n_and B)</td><td>\($n_neg{A} $n_or $n_neg{B})</td></tr>
+<tr><td>\(A $n_or B)</td><td>\($n_neg{A} $n_and $n_neg{B})</td></tr>
+<tr><td> \($n_neg{A}) </td><td>\(A)</td></tr>
+<tr><td>pour tout \(x),  \(A) </td><td>il existe \(x) tel que \($n_neg{A})</td></tr>
+<tr><td>il existe \(x) tel que \(A) </td><td> pour tout \(x), \($n_neg{A})</td></tr>
 </table>
 </p>
 
@@ -151,13 +151,13 @@ Les étapes d'un raisonnement  suivent des règles. Les règles  les plus courantes
 :<p><b>L'implication \(A\rightarrow B) (si \(A) alors \(B)) </b> :
 <ul>
 <li> L'implication \(A\rightarrow B) est vraie si et seulement si \(A) est faux ou \(B) est vrai.</li>
-<li>Les propositions \(A\rightarrow B) et \(\neg{A} \vee B) sont logiquement équivalentes.<br/>
+<li>Les propositions \(A\rightarrow B) et \($n_neg{A} $n_or B) sont logiquement équivalentes.<br/>
 <small>(c'est à dire qu'elles ont les mêmes tables de vérité.)</small></li>
-<li> Les propositions   \(A\rightarrow B) et \(\neg{B}\rightarrow \neg{A}) sont logiquement équivalentes.</li>
+<li> Les propositions   \(A\rightarrow B) et \($n_neg{B}\rightarrow $n_neg{A}) sont logiquement équivalentes.</li>
 <li> D'où les règles de déduction :
 <ul>
  <li>Modus Ponens :  des deux hypothèses \(A\rightarrow B) et \(A), on peut déduire \(B)</li>
- <li>Contraposition : des deux hypothèses \(A\rightarrow B) et \(\neg{B}), on peut déduire \(\neg{A})</li>
- <li>Mais des hypothèses \(A\rightarrow B) et \(\neg{A}) on ne peut rien déduire.</li>
+ <li>Contraposition : des deux hypothèses \(A\rightarrow B) et \($n_neg{B}), on peut déduire \($n_neg{A})</li>
+ <li>Mais des hypothèses \(A\rightarrow B) et \($n_neg{A}) on ne peut rien déduire.</li>
  </ul>
 </li></ul>
