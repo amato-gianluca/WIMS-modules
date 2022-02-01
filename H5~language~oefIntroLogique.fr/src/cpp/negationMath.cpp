@@ -82,4 +82,4 @@ target=negationMath
 </div>
 }
 
-\choice{ \(\overline{P}) : }{\neg}{\choix}
+\choice{ \(\not{P}) : }{\neg}{\choix}

@@ -25,10 +25,10 @@ target=valeursVerite
 \text{B=\Blist[\a]}
 \text{C=\Clist[\a]}
 \text{D=\Dlist[\a]}
-\text{\nonA=\overline{\Alist[\a]}}
-\text{\nonB=\overline{\Blist[\a]}}
-\text{\nonC=\overline{\Clist[\a]}}
-\text{\nonD=\overline{\Dlist[\a]}}
+\text{\nonA=\not{\Alist[\a]}}
+\text{\nonB=\not{\Blist[\a]}}
+\text{\nonC=\not{\Clist[\a]}}
+\text{\nonD=\not{\Dlist[\a]}}
 
 \text{val=randint(0,1),randint(0,1),randint(0,1),randint(0,1)}
 

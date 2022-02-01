@@ -50,12 +50,12 @@ target=connecteursLN
 \BimplA,\nonBimplA,\BimplnonA,\nonBimplnonA
 }
 \text{typ=
-\(A \et  B), \(\overline{A} \et  B), \(A \et  \overline{B}), \(\overline{A} \et  \overline{B}),
-\(A \ou B), \(A \ou \overline{B}), \(\overline{A} \ou  B), \(\overline{A} \ou \overline{B}),
-\(A \rightarrow B), \(\overline{A}\rightarrow B),
-\(A\rightarrow\overline{B}), \(\overline{A}\rightarrow\overline{B}),
-\(B\rightarrow A), \(\overline{B}\rightarrow A),
-\(B\rightarrow\overline{A}), \(\overline{B}\rightarrow\overline{A})
+\(A \et  B), \(\not{A} \et  B), \(A \et \not{B}), \(\not{A} \et \not{B}),
+\(A \ou B), \(A \ou \not{B}), \(\not{A} \ou  B), \(\not{A} \ou \not{B}),
+\(A \rightarrow B), \(\not{A}\rightarrow B),
+\(A\rightarrow\not{B}), \(\not{A}\rightarrow\not{B}),
+\(B\rightarrow A), \(\not{B}\rightarrow A),
+\(B\rightarrow\not{A}), \(\not{B}\rightarrow\not{A})
 }
 
 \text{list1=item(\ind[1],\ass),item(\ind[2],\ass),item(\ind[3],\ass),
