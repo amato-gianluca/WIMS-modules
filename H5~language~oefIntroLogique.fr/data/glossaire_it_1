@@ -10,7 +10,7 @@ consentono di dimostrare che una formula è una conseguenza logica di altre.</p>
 <li>Nel linguaggio naturale, questi termini designano qualsiasi enuncato o affermazione la cui verità deve essere valutata.</li>
 </ul></p>
 <p><b>Connettivi booleani:</b>
-negazione \(\overline{A} ), disgiunzione \(A \; o \; B), congiunzione \(A \; e \; B), implicazione \(A \rightarrow B), equivalenza \(A \leftrightarrow B).
+negazione \(\overline{A}), disgiunzione \(A \; o \; B), congiunzione \(A \; e \; B), implicazione \(A \rightarrow B), equivalenza \(A \leftrightarrow B).
 </p>
 
 <!-- 3 -->
@@ -35,11 +35,11 @@ Sono date da una tabella a doppia entrata dove nella prima colonna compaiono i v
 <ul class="inline wims_nopuce">
 <li>
 <table class="wimscenter wimsborder">
-<caption>Negazione<br />\(\overline{A} )</caption>
+<caption>Negazione<br />\(\overline{A})</caption>
 <tr>
 <th>\(A)</th><th>V</th><th>F</th>
 </tr><tr>
-<th>\(\overline{A} )</th><td> F </td><td> V</td>
+<th>\(\overline{A})</th><td> F </td><td> V</td>
 </tr>
 </table>
 </li><li>
