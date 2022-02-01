@@ -1,5 +1,5 @@
 \text{lang=slib(oef/env lang)}
-\author{Véronique Royer}
+\author{Véronique, Royer}
 \email{royer.veronique@orange.fr}
 \computeanswer{no}
 \format{html}
