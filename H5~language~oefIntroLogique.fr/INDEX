@@ -2,18 +2,18 @@
 # Do not edit by hand.
 
 title=OEF Introduction à la logique
-description=eléments de Logique Propositionnelle au Lycée, en français et mathématiques.
+description=éléments de Logique Propositionnelle au Lycée, en français et mathématiques.
 language=fr
-category=exercise, oef
+category=oef, exercise
 domain=discrete_mathematics
 level=H5
-keywords=logic
+keywords=logic,contraposition,negation,implication
 require=maxima,pari
 scoring=yes
-copyright=&copy; 2005 (<a href="COPYING">GNU GPL</a>) 2006 2007 2010 2015
+copyright=&copy; 2005 (<a href="COPYING">GNU GPL</a>) 2006 2007 2010 2015 2022
 author=Véronique,ROYER
 address=royer.veronique@orange.fr
-version=2.0
+version=2.02
 wims_version=4.15c
 vardef=oef/var.def
 translator=
@@ -21,6 +21,7 @@ translator_address=
 data=
 maintainer=
 maintainer_address=
+deprecated=
 translation_language=it
 title_it=OEF Introduzione alla logica
 description_it=elementi di Logica Proposizionale per le scuole superiori, in italiano e matematica.
