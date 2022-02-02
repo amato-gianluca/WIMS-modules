@@ -7,7 +7,7 @@ Un système logique formel est caractérisé par :  les formules qu'il autorise, le
 
 <!-- 2 -->
 :<p> <b>
-Proposition,  assertion,  formule :</b>
+Proposition,  assertion,  formule :</b></p>
 <ul><li>En logique booléenne, ces termes désignent une "expression formelle", ou "formule",   écrite avec des propositions élémentaires (désignées  en général par des lettres) et des connecteurs booléens. </li>
 <li>En langage naturel, ces termes désignent tout énoncé ou affirmation  dont on se propose d'évaluer la vérité.</li>
 </ul>
@@ -20,12 +20,11 @@ conjonction \(A $n_and B ), implication \(A  \rightarrow  B ),
 
 <!-- 3 -->
 :<p><b>
-Priorités entre connecteurs :</b>
+Priorités entre connecteurs :</b></p>
 <ul><li>la négation est prioritaire devant tout autre connecteur ; </li>
 <li>la conjonction et la disjonction
 sont prioritaires devant l'implication et l'équivalence.</li>
 </ul>
-</p>
 
 <!-- 4 -->
 :<p><b>
@@ -41,7 +40,7 @@ Dans une interprétation donnée, une formule prend une valeur de vérité qui est c
 </p>
 <p><b>
 Tables de vérité de la Logique de Boole :</b>
-On les donne par un tableau à double entrée où les valeurs de vérité de \(A) figurent en première colonne et celles de \(B) en première ligne.
+On les donne par un tableau à double entrée où les valeurs de vérité de \(A) figurent en première colonne et celles de \(B) en première ligne.</p>
 <ul class="inline wims_nopuce">
 <li>
 <table class="wimscenter wimsborder">
@@ -132,11 +131,11 @@ Les étapes d'un raisonnement  suivent des règles. Les règles  les plus courantes
 <tr><th>Raisonnement par cas </th><td>si \(A) alors \(C)<br/>si \(B) alors \(C)</td><td>si \(A) ou \(B) alors \(C)</td></tr>
 <tr><th>Introduction du "et"</th><td>\(A) <br/> \(B)</td><td>\(A $n_and B)</td></tr>
 <tr><th>Introduction du "ou"</th><td>\(A)</td><td>\(A $n_or B)</td></tr>
-<tr><th>Affaiblissement</td><th>\(A $n_and B)</td><td>\(A)</td></tr>
+<tr><th>Affaiblissement</th><td>\(A $n_and B)</td><td>\(A)</td></tr>
 </table>
 
 <!-- 11 -->
-:<p><b>Les règles de formation des négations </b> :
+:<p><b>Les règles de formation des négations </b> :</p>
 <table class="wimscenter wimsborder">
 <tr><td>\(P)</td><td>\($n_neg{P}) (\(non P))</td></tr>
 <tr><td>\(A $n_and B)</td><td>\($n_neg{A} $n_or $n_neg{B})</td></tr>
@@ -145,10 +144,9 @@ Les étapes d'un raisonnement  suivent des règles. Les règles  les plus courantes
 <tr><td>pour tout \(x),  \(A) </td><td>il existe \(x) tel que \($n_neg{A})</td></tr>
 <tr><td>il existe \(x) tel que \(A) </td><td> pour tout \(x), \($n_neg{A})</td></tr>
 </table>
-</p>
 
 <!-- 12 -->
-:<p><b>L'implication \(A\rightarrow B) (si \(A) alors \(B)) </b> :
+:<p><b>L'implication \(A\rightarrow B) (si \(A) alors \(B)) </b> :</p>
 <ul>
 <li> L'implication \(A\rightarrow B) est vraie si et seulement si \(A) est faux ou \(B) est vrai.</li>
 <li>Les propositions \(A\rightarrow B) et \($n_neg{A} $n_or B) sont logiquement équivalentes.<br/>

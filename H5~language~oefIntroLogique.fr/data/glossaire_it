@@ -5,20 +5,19 @@ sono costruite utilizzando i connettivi booleani e i cui valori di verità sono b
 consentono di dimostrare che una formula è una conseguenza logica di altre.</p>
 
 <!-- 2 -->
-:<p><b>Proposizioni, asserzioni, formule:</b>
+:<p><b>Proposizioni, asserzioni, formule:</b></p>
 <ul><li>Nella logica booleana, questi termini designano una “espressione formale”, o “formula”, scritta a partire da proposizioni elementari (generalmente indicate da lettere) e connettivi logici.</li>
 <li>Nel linguaggio naturale, questi termini designano qualsiasi enuncato o affermazione la cui verità deve essere valutata.</li>
-</ul></p>
+</ul>
 <p><b>Connettivi booleani:</b>
 negazione \($n_neg{A} ), disgiunzione \(A $n_or B), congiunzione \(A $n_and B), implicazione \(A \rightarrow B), equivalenza \(A \leftrightarrow B).
 </p>
 
 <!-- 3 -->
-:<p><b>Precedenze tra connettivi:</b>
+:<p><b>Precedenze tra connettivi:</b></p>
 <ul><li>la negazione ha la precedenza su qualsiasi altro connettivo;</li>
 <li>la congiunzione e la disgiunzione hanno la precedenza rispetto all'implicazione e alla equivalenza.</li>
 </ul>
-</p>
 
 <!-- 4 -->
 :<p><b>Interpretazione o modello di un insieme di formule:</b>
@@ -31,7 +30,7 @@ elementari (\(A), \(B), \(C), ...) di cui sono composte le formule. Nella logica
 In una data interpretazione, una formula assume un valore di verità che viene calcolato secondo le regole definite dalle "tavole di verità".
 </p>
 <p><b>Tavole di verità della logica booleana:</b>
-Sono date da una tabella a doppia entrata dove nella prima colonna compaiono i valori di verità di \(A) e nella prima riga quelli di \(B).
+Sono date da una tabella a doppia entrata dove nella prima colonna compaiono i valori di verità di \(A) e nella prima riga quelli di \(B).</p>
 <ul class="inline wims_nopuce">
 <li>
 <table class="wimscenter wimsborder">
@@ -127,7 +126,7 @@ Le fasi del ragionamento seguono delle regole. Le regole più comuni sono:</p>
 </table>
 
 <!-- 11 -->
-:<p><b>Le regole per formare le negazioni</b>:
+:<p><b>Le regole per formare le negazioni</b>:</p>
 <table class="wimscenter wimsborder">
 <tr><td>\(P)</td><td>\($n_neg{P}) (\(non P))</td></tr>
 <tr><td>\(A $n_and B)</td><td>\($n_neg{A} $n_or $n_neg{B})</td></tr>
@@ -136,10 +135,9 @@ Le fasi del ragionamento seguono delle regole. Le regole più comuni sono:</p>
 <tr><td>per tutti gli \(x), \(A)</td><td>esiste \(x) tale che \($n_neg{A})</td></tr>
 <tr><td>esiste \(x) tale che \(A)</td><td>per tutti gli \(x), \($n_neg{A})</td></tr>
 </table>
-</p>
 
 <!-- 12 -->
-:<p><b>L'implicazione \(A \rightarrow B) (se \(A) allora \(B))</b>:
+:<p><b>L'implicazione \(A \rightarrow B) (se \(A) allora \(B))</b>:</p>
 <ul>
 <li>L'implicazione \(A \rightarrow B) è vera se e solamente se \(A) è falsa o \(B) è vera.</li>
 <li>Le proposizioni \(A \rightarrow B) e \($n_neg{A} $n_or B) sono logicamente equivalenti.<br/>

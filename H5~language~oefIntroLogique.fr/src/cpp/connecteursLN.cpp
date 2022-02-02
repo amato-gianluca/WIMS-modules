@@ -74,8 +74,6 @@ item(\ind[4],\typ),item(\ind[5],\typ)}
 </div>
 </div>
 
-<div class="wimscenter">\embed{r1,40x400x100}</div>
-
 <div class="wims_instruction">\name_statement3</div>
 
 <div class="wimscenter">\embed{r1,40x400x100}</div>

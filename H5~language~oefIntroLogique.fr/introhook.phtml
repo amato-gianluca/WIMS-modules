@@ -1,20 +1,22 @@
 !set wims_backslash_insmath=yes
 
+!set list_menu0=\(\vee,\wedge,\neg\)
+                           
 !set name_menu1=Vocabulaire
-!set list_menu1=et&#44;ou&#44;\(\overline{\ }),\(\vee,\wedge,\neg\)
+!set list_menu1=et&#44; ou&#44; \(\overline{\phantom{x}}),$list_menu0
 
 !if $lang=it
   !set name_menu1=Notazione
-  !set list_menu1=e&#44;o&#44;\(\overline{\ }),\(\vee,\wedge,\neg\)
+  !set list_menu1=e&#44; o&#44; \(\overline{\phantom{x}}),$list_menu0
   !goto menu
 !endif
 
 :menu
+!set introhool_tableless=yes
 !default confparm1=1
-<tr><th>
 $name_menu1
-</th>
-<td>
 !reset wims_formselect_switch
-!formselect confparm1 list 1,2 prompt $list_menu1
-</td></tr>
+!set wims_html_mode=li
+<ul class="wims_nopuce inline">
+!formradio confparm1 list 1,2 prompt $list_menu1
+</ul>
