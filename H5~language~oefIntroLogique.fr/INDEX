@@ -13,7 +13,7 @@ scoring=yes
 copyright=&copy; 2005 (<a href="COPYING">GNU GPL</a>) 2006 2007 2010 2015 2022
 author=Véronique,ROYER
 address=royer.veronique@orange.fr
-version=2.02
+version=2.03
 wims_version=4.15c
 vardef=oef/var.def
 translator=
