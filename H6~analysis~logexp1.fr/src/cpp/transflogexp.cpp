@@ -192,7 +192,7 @@ target=transflogexp
 
 #include "lang.inc"
 
-\statement{<div>\name_statement1 \(\ff (a)\), \name_where \(a\) \name_statement2.</div><br/>
+\statement{<div class="spacer">\name_statement1 \(\ff (a)\), \name_where \(a\) \name_statement2.</div>
 
 <div> \(\expr= \ff\)(\embed{reply1,6})</div>
 }
