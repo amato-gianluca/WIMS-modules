@@ -3,7 +3,6 @@ target=transflogexp
 #include "header.inc"
 #include "lang_titles.inc"
 
-
 \if{\confparm1=}{
 \text{type=1}
 }{
@@ -191,11 +190,9 @@ target=transflogexp
 \text{ff=exp}
 }
 
-
-
 #include "lang.inc"
 
-\statement{<div>\name_statement1 \(\ff (a)\), \ou  \(a\) \name_statement2.</div><br/>
+\statement{<div>\name_statement1 \(\ff (a)\), \name_where \(a\) \name_statement2.</div><br/>
 
 <div> \(\expr= \ff\)(\embed{reply1,6})</div>
 }
