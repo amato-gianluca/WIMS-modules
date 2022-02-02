@@ -1,4 +1,14 @@
-<b>Types de transformations </b>
+!set menu_title=Types de transformations
+!set menu_desc=Sélectionnez les types de transformations à effectuer.
+
+!if $lang=it
+  !set menu_title Tipi di trasformazioni
+  !set menu_desc=Selezionare i tipi di trasformazione da utilizzare.
+  !goto menu
+!endif
+  
+:menu  
+<b>$menu_title</b>
 <table class="wimstable">
 <tr>
 <td> 
@@ -99,5 +109,5 @@
 </tr>
 </table>
 <div class="formHelp">
-Sélectionnez les types de transformations à effectuer.
+$menu_desc
 </div><br class="spacer" />
