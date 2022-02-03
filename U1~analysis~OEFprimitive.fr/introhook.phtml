@@ -1,9 +1,21 @@
 !!!! This file can contain contents which go after the exercicse list in the intro.
 !!Model for some configuration parameters. Uncomment if necessary
 
+!if $lang iswordof it
+
+<tr><th>Tipo della funzione u </th>
+<td>
+ !formcheckbox confparm1 from 1 to 6 prompt funzione affine,polinomio di grado da 2 a 4,logaritmo o esponenziale,coseno o seno,x^\alpha,exp(\alpha x)
+</td>
+</tr>
+
+!goto end
+!endif
 
 <tr><th>Nature de la fonction u </th>
 <td>
  !formcheckbox confparm1 from 1 to 6 prompt fonction affine,polynôme de degré 2 à 4,logarithme ou exponentielle,cosinus ou sinus,x^\alpha,exp(\alpha x)
 </td>
 </tr>
+
+:end

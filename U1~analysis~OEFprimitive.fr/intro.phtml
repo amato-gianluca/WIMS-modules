@@ -1,9 +1,23 @@
 !header
 !read Exindex
+
+!if $lang iswordof it
+
+Questo modulo contiene al momento $exototal esercizi sul calcolo
+delle primitive, mediante il riconoscimento di schemi standard.
+<p>
+È possibile scegliere i tipi di funzione da utilizzare.
+</p>
+
+!goto end
+!endif
+
 Ce module regroupe pour l'instant $exototal exercices sur le calcul
  de primitive usuelle par reconnaissance de schémas standards.
 <p>
-Vous pouvez cocher les types de fonctions à utiliser. 
+Vous pouvez cocher les types de fonctions à utiliser.
 </p>
-!read oef/intromenu.phtml
+
+:end
+!read oef/$module_language/intromenu.phtml
 !tail

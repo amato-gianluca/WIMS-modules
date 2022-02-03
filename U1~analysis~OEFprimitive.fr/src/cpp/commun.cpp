@@ -8,6 +8,10 @@ target= cosinus,sinus,expo,puissn,inverse
 \format{html}
 \precision{100000}
 
+\text{lang=slib(oef/env lang)}
+#include "lang_titles.inc"
+#include "lang.inc"
+
 \text{f=randitem(f,g,h,u,v)}
 \text{F=wims(upper \f)}
 \text{x=randitem(x,y,t)}
@@ -37,41 +41,36 @@ choix de la fonction u
 }
 
 #if #TARGET (cosinus)
- \title{Forme u'cos(u)}
  \text{sol=sin(\u)}
 #endif
 
 #if #TARGET (sinus)
- \title{Forme u'sin(u)}
  \text{sol=cos(\u)}
 #endif
 
 #if #TARGET (expo)
- \title{Forme u'exp(u)}
  \text{sol=exp(\u)}
 #endif
 
 #if #TARGET (puissn)
- \title{Forme u'u^n}
  \integer{n=randitem(-2,-3,2,3)}
  \text{sol=(\u)^\n}
 #endif
 
 #if #TARGET (inverse)
- \title{Forme u'/u}
  \if{(\ch=2 and \d=2) and \lt[3]<0}{
   \text{u=simplify(-(\u))}
  }
  \text{sol=ln(\u)}
  \text{ua=texmath(\u)}
- \text{compenonce=, sur un intervalle où la fonction \(\x \mapsto \ua) est strictement positive,}
+ \text{compenonce=, \name_onintervalwhere \(\x \mapsto \ua) \name_ispositive,}
 #endif
 
 
 \text{sol=1/\lt[-1]*\sol}
 \text{formule=diff(\sol,\x)}
 \text{aff=texmath(\formule)}
-\statement{Déterminer\compenonce une primitive de la fonction \(\f:\x\mapsto \aff).}
+\statement{\name_determine \compenonce \name_primitiveof \(\f:\x\mapsto \aff).}
 
 \answer{\F(\x)}{\rep}{type=auto}
 
