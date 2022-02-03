@@ -1,0 +1,7 @@
+cosexp:(Acos(x)+Bsin(x))exp(x)
+cosinus:Forme u'cos(u)
+expo:Forme u'exp(u)
+inverse:Forme u'/u
+polexp:P(x)exp(x)
+puissn:Forme u'u^n
+sinus:Forme u'sin(u)

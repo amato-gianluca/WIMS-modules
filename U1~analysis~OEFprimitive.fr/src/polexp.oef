@@ -1,0 +1,28 @@
+\title{P(x)exp(x)}
+\language{fr}
+\range{-5..5}
+\author{Fabrice,Guerimand}
+\email{fwguerima@free.fr}
+\computeanswer{no}
+\format{html}
+\precision{100000}
+
+\text{f=randitem(f,g,h,u,v)}
+\text{F=wims(upper \f)}
+\text{x=randitem(x,y,t)}
+
+\text{lt=wims(values v,-v for v=2 to 5)}
+\text{lt=shuffle(\lt,-1)}
+\text{P=\lt[2]}
+\integer{d=randitem(1,2)}
+\for{k=1 to \d}{
+	\text{P=\P+\lt[\k+2]*\x^\k}
+}
+\text{sol=(\P)*exp(\lt[1]*\x)}
+\text{formule=simplify(diff(\sol,\x))}
+\text{aff=texmath(\formule)}
+\statement{Déterminer une primitive de la fonction \(\f:\x\mapsto \aff).}
+
+\answer{\F(\x)}{\rep}{type=auto}
+\integer{test=simplify(\rep-\sol)}
+\condition{Analyse}{NaN notin \test}
