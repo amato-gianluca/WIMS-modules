@@ -1,3 +1,8 @@
+
+\text{spacebeforecolon=}
+\text{name_et=e}
+\text{Votrereponse=La tua risposta}
+
 #if defined TARGET_compar2val
 #endif
 
@@ -61,7 +66,7 @@
 #if defined TARGET_ineqgr2
 #endif
 
-#if defined TARGET_lectgrimage || defined TARGET_lectgrimage2 || defined TARGET_lectgrantec || defined TARGET_lectgrantec2 || defined TARGET_ineqgr || defined TARGET_ineqgr2courbes
+#if defined TARGET_lectgrimage || defined TARGET_lectgrimage2 || defined TARGET_lectgrantec || defined TARGET_lectgrantec2 || defined TARGET_ineqgr || defined TARGET_ineqgr2courbes || defined TARGET_ineqgr2dtes
 \text{lintervalle=l'intervallo}
 \text{definiesur=definita su}
 \text{Limagede=L'immagine di}
@@ -100,7 +105,6 @@
 
 #if defined TARGET_ineqgr
 \text{name_statement3=Risolvere graficamente la disequazione}
-\text{Votrereponse=La tua risposta}
 \text{Lensemble=L'insieme delle soluzioni è}
 \text{name_solution0=Risolvi graficamente la disequazione}
 \text{Codages=Codici}
@@ -110,12 +114,17 @@
 \text{Lasolutionest=La soluzione è}
 #endif
 
-#if defined TARGET_ineqgr2courbes
+#if defined TARGET_ineqgr2courbes  || defined TARGET_ineqgr2dtes
 \text{name_statement2b=e di una funzione}
-\tezt{name_statement2c=Si presume che le rappresentazioni grafiche non si intersechino al di fuori del riquadro visualizzato}
+\text{name_statement2c=Si presume che le rappresentazioni grafiche non si intersechino al di fuori del riquadro visualizzato.}
 \text{name_statement3=Risolvere graficamente la disequazione}
-\text{Votrereponse=La tua risposta}
 #endif
+
+#if defined TARGET_ineqgr2dtes
+\text{name_dedeux=e le due funzioni affini}
+\text{name_resoudre_les=Risolvere graficamente le disequazioni seguenti.}
+#endif
+
 
 #if defined TARGET_sensvar3
 #endif

@@ -162,7 +162,7 @@ text black,-0.2,-0.1,medium,O
 \name_statement1 \((O,i,j)\),
 \name_statement2 <span style="color:red">\(f)</span> \name_statement2b <span style="color:blue">\(g)</span>.
 </p><p>
-\name_statement2c.
+\name_statement2c
 </p>
 <br class="clearall" />
 <div class="wims_question"><p>

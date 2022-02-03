@@ -1,4 +1,6 @@
 \text{spacebeforecolon=&#32;}
+\text{name_et=et}
+\text{Votrereponse=Votre réponse}
 
 #if defined TARGET_compar2val
 #endif
@@ -66,7 +68,7 @@
 #if defined TARGET_ineqgr2
 #endif
 
-#if defined TARGET_lectgrimage || defined TARGET_lectgrimage2 || defined TARGET_lectgrantec || defined TARGET_lectgrantec2 || defined TARGET_ineqgr || defined TARGET_ineqgr2courbes
+#if defined TARGET_lectgrimage || defined TARGET_lectgrimage2 || defined TARGET_lectgrantec || defined TARGET_lectgrantec2 || defined TARGET_ineqgr || defined TARGET_ineqgr2courbes || defined TARGET_ineqgr2dtes
 \text{lintervalle=l'intervalle}
 \text{definiesur=définie sur}
 \text{Limagede=L'image de}
@@ -105,7 +107,6 @@
 
 #if defined TARGET_ineqgr
 \text{name_statement3=Résoudre graphiquement l'inéquation}
-\text{Votrereponse=Votre réponse}
 \text{Lensemble=L'ensemble des solutions est}
 \text{name_solution0=Il faut résoudre graphiquement l'inéquation}
 \text{Codages=Legenda}
@@ -115,12 +116,17 @@
 \text{Lasolutionest=La solution est}
 #endif
 
-#if defined TARGET_ineqgr2courbes
+#if defined TARGET_ineqgr2courbes || defined TARGET_ineqgr2dtes
 \text{name_statement2b=et d'une fonction}
 \tezt{name_statement2c=On admet que les représentations graphiques ne se coupent pas en dehors du cadre affiché.}
 \text{name_statement3=Résoudre graphiquement l'inéquation}
-\text{Votrereponse=Votre réponse}
 #endif
+
+#if defined TARGET_ineqgr2dtes
+\text{name_dedeux=et de deux fonctions affines}
+\text{name_resoudre_les=Résoudre graphiquement les inéquations suivantes.}
+#endif
+
 
 #if defined TARGET_sensvar3
 #endif

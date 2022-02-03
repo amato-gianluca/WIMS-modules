@@ -3,9 +3,7 @@ target=ineqgr2dtes
 #include "header.inc"
 #include "lang_titles.inc"
 
-
 # TODO : améliorer la lisibilité en s'inspirant de ineqgr.oef
-
 
 %% choix de la question
 \integer{casineq=random(1,2)}
@@ -79,8 +77,6 @@ target=ineqgr2dtes
 
 \real{x5=(\x1+(\x2))/2}
 \real{x6=(\x2+(\x3))/2}
-
-
 
 \text{sgt=>}
 \text{sge=\(\ge )}
@@ -225,7 +221,6 @@ text black,-0.2,-0.1,medium,O
 
 %% enoncé de l'exo %%
 
-
 #include "lang.inc"
 
 \statement{
@@ -233,16 +228,16 @@ text black,-0.2,-0.1,medium,O
 \draw{400,400}{\cadre}
 </div>
 <p>
-      Dans le plan muni d'un repère orthonormé \((O,i,j)\),
-on a tracé la courbe représentative d'une fonction <span style="color:red">\(f)</span> et
-de deux fonctions affines <span style="color:\colordte[1]">\(g)</span>
- et <span style="color:\colordte[2]">\(h)</span>.
+\name_statement1 \((O,i,j)\),
+\name_statement2 <span style="color:red">\(f)</span>
+\name_dedeux <span style="color:\colordte[1]">\(g)</span>
+\name_et <span style="color:\colordte[2]">\(h)</span>.
 </p><p>
-On admet que les représentations graphiques ne se coupent pas en dehors du cadre affiché.
+\name_statement2c
 </p>
-<p>Résoudre graphiquement les inéquations suivantes.</p>
+<p>\name_resoudre_les</p>
 <br class="clearall" />
-Votre réponse :
+\Votrereponse\spacebeforecolon:
 <ul>
  <li>\questg : S= \embed{reply1,\size}</li>
 <li>\questh : S= \embed{reply2,\size}</li>

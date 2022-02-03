@@ -56,7 +56,7 @@
 #define TITLE_it Extremum et tableau des variations
 #endif
 #if defined TARGET_ineqgr2dtes
-#define TITLE_it Résolution graphique 2: f(x)>g(x)
+#define TITLE_it Risoluzione grafica 2: f(x)>g(x)
 #endif
 #if defined TARGET_lectvarimage
 #define TITLE_it Image par tableau des variations
