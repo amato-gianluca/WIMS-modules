@@ -1,5 +1,0 @@
-!set exolist  =!char 1 to -2 of cosexp,inverse,cosinus,expo,sinus,puissn,polexp,
-!set titlelist=!char 1 to -2 of (Acos(x)+Bsin(x))exp(x),Forme u'/u,Forme u'cos(u),Forme u'exp(u),Forme u'sin(u),Forme u'u^n,P(x)exp(x),
-!set titlelist_fr=!char 1 to -2 of (Acos(x)+Bsin(x))exp(x),Forme u'/u,Forme u'cos(u),Forme u'exp(u),Forme u'sin(u),Forme u'u^n,P(x)exp(x),
-!set exototal =!itemcnt $exolist
-
