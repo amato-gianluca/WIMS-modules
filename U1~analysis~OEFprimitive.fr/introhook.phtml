@@ -1,21 +1,19 @@
 !!!! This file can contain contents which go after the exercicse list in the intro.
 !!Model for some configuration parameters. Uncomment if necessary
 
-!if $lang iswordof it
-
-<tr><th>Tipo della funzione u </th>
-<td>
- !formcheckbox confparm1 from 1 to 6 prompt funzione affine,polinomio di grado da 2 a 4,logaritmo o esponenziale,coseno o seno,x^\alpha,exp(\alpha x)
-</td>
-</tr>
-
-!goto end
+!if $lang=it or $lang_choice=it
+  !set menu_title=Tipo della funzione u
+  !set menu_list=funzione affine,polinomio di grado da 2 a 4,logaritmo o esponenziale,coseno o seno,x^\alpha,exp(\alpha x)
+  !goto menu
 !endif
 
-<tr><th>Nature de la fonction u </th>
+!set menu_title=Nature de la fonction u
+!set menu_list=fonction affine,polynôme de degré 2 à 4,logarithme ou exponentielle,cosinus ou sinus,x^\alpha,exp(\alpha x)
+
+:menu
+<tr><th>$menu_title</th>
 <td>
- !formcheckbox confparm1 from 1 to 6 prompt fonction affine,polynôme de degré 2 à 4,logarithme ou exponentielle,cosinus ou sinus,x^\alpha,exp(\alpha x)
+ !formcheckbox confparm1 from 1 to 6 prompt $menu_list
 </td>
 </tr>
 
-:end
